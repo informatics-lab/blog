@@ -14,11 +14,7 @@ lab and announce any things we think are worth sharing!
 In time we will create a theme all of our own for the blog but for now we're going to
 start by using [pixyll][1].
 
-<blockquote>
-  <p>
-    Pixyll is a simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff. It's mobile _first_, fluidly responsive, and delightfully lightweight.
-  </p>
-</blockquote>
+> Pixyll is a simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff. It's mobile _first_, fluidly responsive, and delightfully lightweight.
 
 So just hang tight and we'll get some excellent content up soon!
 
