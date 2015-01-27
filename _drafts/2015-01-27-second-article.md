@@ -12,7 +12,7 @@ tags:
 
 I've created this article to allow other members of the lab to see the [contribution process](https://github.com/met-office-lab/Lab-Info/wiki/Jekyll-Contributing) in action.
 
-Hopefully someone will fix my __splling mstiakes__ and __issues of major grammarage__!
+Hopefully someone will fix my __sp*e*lling m*i*stakes__ and __issues of *atrocious grammar*__!
 
 They might even suggest that I change the whole article to something which is actually useful!
 
