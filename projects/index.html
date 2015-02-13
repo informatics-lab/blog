@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<h2>What we're working on now</h2>
+<p>These are the things that we are working on right now. If you are interestd in working with us on any of these, please get in contact.</p>
+
+{% for project in site.projects %}
+	{% if project.completed == false %}
+		<ul>
+			<h4><a href={{ project.url }}>{{ project.title }}</a></h4>
+			<p>{{ project.summary }}</p>
+		</ul>
+	{% endif %}
+{% endfor %}
+
+<h2>Previous projects</h2>
+<p>Here you can find a list of the projects we've working on in the past.<p>
+
+{% for project in site.projects %}
+	{% if project.completed %}
+		<ul>
+			<h4><a href={{ project.url }}>{{ project.title }}</a></h4>
+			<p>{{ project.summary }}</p>
+		</ul>
+	{% endif %}
+{% endfor %}
