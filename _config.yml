@@ -2,9 +2,12 @@
 title:       Met Office Lab
 email:       met-office-lab@gmail.com
 author:      Met Office Lab
-description: "A lab at the Met Office for creating things!."
+description: "A lab at the Met Office for creating things!"
 baseurl:     ""
-url:         "http://met-office-lab.github.io"
+url:         "http://met-office-lab.github.io
+github-url:  http://github.com/met-office-lab/
+twitter-url: http://twitter.com/metolab/
+
 
 # Google analytics
 google_analytics:
@@ -37,3 +40,11 @@ permalink:    pretty
 paginate:     3
 sass:
   compressed: true
+
+collections:
+    profiles:
+        output: true
+        permalink: /people/:path/
+    projects:
+        output: true
+        permalink: /projects/:path/
