@@ -1,3 +1,76 @@
+/*
+f6fdd5 glowing green
+aad12b mid
+ccfa33 stronger green
+1a1a1a background grey 
+eaeaea off white
+
+*/
+
 body {
 	background-color: #1a1a1a;
+	color: #eaeaea;
+}
+
+p {
+	color: #eaeaea;
+}
+
+code {
+  color: #7a7a7a;
+}
+
+a {
+  color: #aad12b;
+}
+a:hover {
+	color: #ccfa33;
+}
+
+.site-header a {
+  color: #ccfa33;
+}
+
+.site-header nav a {
+  color: #aad12b;
+}
+
+.site-header nav a:hover {
+  color: #ccfa33;
+  border-bottom: 2px solid #444;
+}
+
+.post-link .post-title {
+  color: #333;
+}
+
+.pagination a, .pagination .disabled {
+  background: #fafafa;
+  border: 1px solid #f3f3f3;
+  color: #333333;
+}
+
+.pagination a:hover, .pagination a:focus {
+  background: white;
+  color: #477dca;
+}
+
+.pagination a:active {
+  background: #f7f7f7;
+}
+
+.meta,
+.post-meta {
+  color: #7a7a7a;
+}
+
+.button-disabled {
+  background-color: #999;
+}
+
+.button-disabled:hover,
+.button-disabled:active,
+.button-disabled:focus {
+  cursor: not-allowed;
+  background-color: #999;
 }
