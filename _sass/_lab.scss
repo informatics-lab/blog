@@ -2,6 +2,8 @@
 f6fdd5 glowing green
 aad12b mid
 ccfa33 stronger green
+5d7218 dark green
+3a470f green black
 1a1a1a background grey 
 eaeaea off white
 
@@ -41,7 +43,12 @@ a:hover {
 }
 
 .post-link .post-title {
-  color: #333;
+  color: #eaeaea;
+}
+
+.meta,
+.post-meta {
+  color: #eaeaea;
 }
 
 .pagination a, .pagination .disabled {
@@ -59,18 +66,23 @@ a:hover {
   background: #f7f7f7;
 }
 
-.meta,
-.post-meta {
-  color: #7a7a7a;
+.button {
+	color: #5d7218;
+	background-color: #eaeaea;
+}
+
+.button:hover {
+	color: #aad12b;
+	background-color: #3a470f;
 }
 
 .button-disabled {
-  background-color: #999;
+  background-color: #5d7218;
 }
 
 .button-disabled:hover,
 .button-disabled:active,
 .button-disabled:focus {
   cursor: not-allowed;
-  background-color: #999;
+  background-color: #5d7218;
 }
