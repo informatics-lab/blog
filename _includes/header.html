@@ -1,6 +1,10 @@
 <header class="site-header px2 px-responsive">
   <div class="mt2 wrap">
     <div class="measure">
+      <img src="../images/header.png" usemap="#homemap">
+      <map name="homemap">
+          <area shape="rect" coords="0,0,400,200" href="{{ site.url }}" alt="Home">
+      </map>
       <a href="{{ site.url }}" class="site-title">{{ site.title }}</a>
       <nav class="site-nav right">
         {% include navigation.html %}
