@@ -37,3 +37,6 @@ collections:
     projects:
         output: true
         permalink: /projects/:path/
+    concept-notes:
+        output: true
+        permalink: /concept-notes/:path/
