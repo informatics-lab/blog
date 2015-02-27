@@ -11,15 +11,20 @@ tags:		[how-to, jekyll, blog, post]
 
 Follow these instructions to become a brilliant blogger for our website. You'll need to be familiar with [git/github](http://www.git.com) and [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), so if you're not, come back when you are.
 
-##Write a blog post
+This page will tell you how to write a blog post, add a personal profile, and add a project page.
 
 ### In a nutshell
 *Just hurry up and tell me what to do!*
 
-1. Git [this repo](https://github.com/met-office-lab/met-office-lab.github.io.git).
-1. Write a Markdown article in the `_posts` directory with a filename starting `yyyy-mm-dd-<name>`, and don't forget the [front matter](http://jekyllrb.com/docs/frontmatter/). You can view local changes with `jekyll serve`.
+1. `Git clone` [this repo](https://github.com/met-office-lab/met-office-lab.github.io.git).
+1. Write a Markdown page:
+	1. If its a **blog post** put it in the `_posts` directory with a filename starting `yyyy-mm-dd-<name>`
+	1. If its a **personal profile** then put in the the `_profiles` directory.
+	1. If its a **project page** then put it in the `_projects` directory.
+
+	Don't forget the [front matter](http://jekyllrb.com/docs/frontmatter/) (look at other similar pages on the blog for an idea). You can view your local changes with `jekyll serve`.
 1. Push the branch and submit it as a pull-request.
-1. One everyone agrees on a final version, update the file name date and get someone else to merge it to the master branch.
+1. One everyone agrees on a final version, get someone else to merge it to the master branch (you may need to update a blog post date).
 
 ### Eh?
 *I didn't get that. Will you walk me through it?*
@@ -34,9 +39,14 @@ Follow these instructions to become a brilliant blogger for our website. You'll 
 		git branch --track perpetual_motion_blog_post upstream/origin
 	Note that there's no need to fork the repository and push from there.
 
-1. You need to make a file to write your blog post in. The file name should start `yyyy-mm-dd-` and, as its written in [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), end with `.md`. You'll need to start the post with some meta data in the form of [front matter](http://jekyllrb.com/docs/frontmatter/). Put it in the `_posts` directory. Note that if you are trying to write a static page rather than a blog post, you should put it somewhere at the root blog level, and you don't need to start it with a date.
+1. You need to make a file to write your blog page in. 
+	1. If it's a **blog post**, the file name should start `yyyy-mm-dd-` and, as its written in [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), end with `.md`. Put it in the `_posts` directory.
+	1. If it's a **personal profile**, then the should be named `firstname-secondname.md` and live in the `_profiles` directory. Its worth making sure you look at other profiles for and example of the [front matter](http://jekyllrb.com/docs/frontmatter/). If you add any social media addresses you have, then links will appear on you profile. Also, you can specify a mug shot picture in the `images` folder.
+	1. If it's a **project page**, then it should live in the `_projects` directory.
 
-1. `git add _posts/perpetual-motion.md` so that you can commit your changes.
+	In all cases, you'll be able to get an idea of the kind of [front matter](http://jekyllrb.com/docs/frontmatter/) you should provide by looking at pre-existing examples. This is just meta-data that is used for rendering that page.
+
+	Finally, if you are just trying to write a one off static page rather than a blog post, profile or project page, you should put it somewhere at the root blog level.
 
 1. Open the file you just created and write your post using the dazzlingly simple [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) language.
 
@@ -54,4 +64,4 @@ Follow these instructions to become a brilliant blogger for our website. You'll 
 1. Click the green arrowy button on the GitHub page to submit your post for review by other Lab people.
 1. One everyone agrees on the content, make sure the post name is up to date, and get someone else to merge it into the master.
 
-**Congratulations - you've just done a blog post!** For information, you can also visit the [GitHub](http://zachholman.com/posts/how-github-writes-blog-posts/) blogging guide.
+**Congratulations - you've just done a blog!** For more information, you can also visit the [GitHub](http://zachholman.com/posts/how-github-writes-blog-posts/) blogging guide.
