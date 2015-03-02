@@ -1,0 +1,33 @@
+---
+layout: page
+title: Who We Are
+permalink: /who-we-are/
+---
+
+<p>The Met Office Informatics Lab combines scientists, software engineers, and designers to work closely together to come up with new ideas. We try to rapidly prototype non-business-as-usual ideas that allow people from without the Met Office get access to our information, expertise, and facilities.</p>
+
+<p>The core group works as part of the UK's <a href="www.metoffice.gov.uk">Met Office</a>, which is one of the world's <a href="http://www.metoffice.gov.uk/about-us/who/accuracy">leading operational weather forecasters</a> and <a href="http://www.metoffice.gov.uk/climate-guide/science/science-behind-climate-change/hadley">climate change research institutes</a>. However, we are really keen to work with anyone who has and interest and wants to help on any of our projects.</p>
+
+<h2>Core members</h2>
+<p>These are the core members who work full time for the Lab.</p>
+
+{% for profile in site.profiles %}
+	{% if profile.affiliation == 'core' %}
+		<ul>
+			<h4><a href={{ profile.url }}>{{ profile.title }}</a></h4>
+			<p>{{ profile.summary }}</p>
+		</ul>
+	{% endif %}
+{% endfor %}
+
+<h2>Lab Associates</h2>
+<p>Lab assiciates contribute to Lab projects along site their commitments to their "day job". We have Associates from inside and outside the Met Office, so if you'd like to be involved in a semi-formal capacity, then get in touch.<p>
+
+{% for profile in site.profiles %}
+	{% if profile.affiliation == 'associate' %}
+		<ul>
+			<h4><a href={{ profile.url }}>{{ profile.title }}</a></h4>
+			<p>{{ profile.summary }}</p>
+		</ul>
+	{% endif %}
+{% endfor %}
