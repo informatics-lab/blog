@@ -10,7 +10,7 @@ twitter-url: http://twitter.com/metolab/
 
 
 # Google analytics
-google_analytics:
+google_analytics: 'UA-60337429-1'
 
 # Optional features
 animated:           false
