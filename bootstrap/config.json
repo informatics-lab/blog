@@ -1,0 +1,14 @@
+{
+  "vars": {},
+  "css": [
+    "grid.less",
+    "responsive-utilities.less",
+    "component-animations.less",
+    "carousel.less"
+  ],
+  "js": [
+    "carousel.js",
+    "transition.js"
+  ],
+  "customizerUrl": "http://getbootstrap.com/customize/?id=7fc2f3c166375b2b302f"
+}
