@@ -1,0 +1,148 @@
+---
+sass_dir: "_bootstrap-sass/assets/stylesheets/"
+---
+
+$mo-green: #ccff33;
+$mo-blue: #00add0;
+$mo-lilac: #8f8dcb;
+$mo-grey: #9ca299;
+$mo-light-grey: #babcbe;
+$mo-medium-grey: #6c6d6f;
+$mo-dark-grey: #414042; /* from logo */
+
+$link-hover-decoration: "none";
+$link-color: $mo-blue;
+
+$font-family-sans-serif: "Merriweather", "PT Serif";
+$font-weight: 300;
+$font-size-base: 16px;
+
+$headings-font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
+$headings-font-weight: 900;
+$headings-line-height: 1.2;
+
+$brand-primary: $mo-blue;
+$brand-success: $mo-green;
+$brand-info: $mo-lilac;
+$gray: $mo-grey;
+$gray-light: $mo-light-grey;
+$grey-dark: $mo-dark-grey;
+
+
+/* import bootstrap */ 
+@import "bootstrap";
+
+.container {
+	max-width: 70%;
+}
+
+/* Navbar */
+$navbar-split-point: 815px;
+
+.navbar-header {
+	text-align: center; /* this doesn't work */
+  font-weight: bold;
+  font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
+	display: block;
+	bottom: 10px;
+}
+
+@media (max-width: $navbar-split-point) {
+	.navbar-header {
+		width: 90%;
+		margin: 0 auto;
+		top: 0%;
+		position: relative;
+	}
+}
+
+@media (min-width: $navbar-split-point) {
+	.navbar-header {
+		width: 67%;
+		top: 70%;
+		left: 22%;
+		right: 5%;
+		position: absolute;
+	}
+}
+
+/* Site header */
+.site-header {
+	position: relative;
+}
+
+/* posts */
+
+.posts .post {
+  margin-bottom: 0.75em;
+  padding-bottom: .375em;
+  border-bottom: thin solid $mo-grey;
+}
+
+.posts .post:last-child {
+  border-bottom: none;
+  margin-bottom: .375em;
+  padding-bottom: 0;
+}
+
+.post-link .post-title {
+  margin-top: 0;
+  font-weight: 600;
+  color: $mo-blue;
+}
+
+.post-footer {
+  font-style: italic;
+  margin-top: .75rem;
+  text-align: center;
+}
+
+.post-footer {
+  margin: 2rem 0;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.post-meta {
+  width: auto;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+  padding: .25em 0;
+  color: $mo-grey;
+  font-style: italic;
+}
+
+/*profiles  */
+
+.profile-mugshot {
+	float: left;
+	border: 5px black;
+	margin: 0 $padding-base-horizontal $padding-base-vertical 0;
+}
+
+/* footer */
+footer {
+  margin-top: 1rem;
+  padding: 2rem;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  border-top: thin solid #f3f3f3;
+  color: #7a7a7a;
+  background-color: #fafafa;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 300;
+  clear: both;
+}
+
+footer:after {
+  content: "";
+  display: block;
+}
+
+/* general */
+img {
+  width: auto;
+  max-width: 100%;
+}

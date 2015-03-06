@@ -28,7 +28,7 @@ redcarpet:
 permalink:    pretty
 paginate:     3
 sass:
-  compressed: true
+  sass_dir: _bootstrap-sass/assets/stylesheets
 
 collections:
     profiles:

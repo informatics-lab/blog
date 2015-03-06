@@ -1,47 +1,37 @@
-<!DOCTYPE html>
-<html>
-{% include head.html %}
-<body class="{% if site.animated %}animated fade-in-down{% endif %}">
-	<div class="site-wrap">
-		{% include header.html %}
-		<div class="post p2 p-responsive wrap" role="main">
-			<div class="measure">
-				{{ content }}
+---
+layout: default
+---
 
-				{% assign project_concept_notes = site.concept-notes | where: "project", page.project %}
-				{% assign project_posts = site.posts | where: "project", page.project %}
-				{% if project_concept_notes.size > 0 or project_posts.size > 0 %}
-					<h2>Related links</h2>
-				{% endif %}
-				
-				{% if project_concept_notes.size > 0 %}
-					<h3>Concept Notes</h3>
-					Concept notes are more technical specifications of aspects of a project.	
-					{% for concept_note in project_concept_notes %}
-						<div class="post ml2">
-					      <a href="{{ concept_note.url | prepend: site.baseurl }}" class="post-link">
-					        <h4 class="post-title">{{ concept_note.title }}</h4>
-					        <p class="post-summary">{{ concept_note.summary }}</p>
-					      </a>
-					    </div>
-					{% endfor %}
-				{% endif %}
+{{ content }}
 
-				{% if project_posts.size > 0 %}
-					<h3>Related blog posts</h3>
-					News items related to this project
-					{% for project_post in project_posts %}
-					    <div class="post ml2">
-					      <a href="{{ project_post.url | prepend: site.baseurl }}" class="post-link">
-					        <h4 class="post-title">{{ project_post.title }}</h4>
-					        <p class="post-summary">{{ project_post.summary }}</p>
-					      </a>
-					    </div>
-			  		{% endfor %}
-			  	{% endif %}	
-			</div>
-		</div>
-	</div>
-	{% include footer.html %}
-</body>
-</html>
+{% assign project_concept_notes = site.concept-notes | where: "project", page.project %}
+{% assign project_posts = site.posts | where: "project", page.project %}
+{% if project_concept_notes.size > 0 or project_posts.size > 0 %}
+<h2>Related links</h2>
+{% endif %}
+
+{% if project_concept_notes.size > 0 %}
+<h3>Concept Notes</h3>
+Concept notes are more technical specifications of aspects of a project.	
+{% for concept_note in project_concept_notes %}
+<div class="post">
+	<a href="{{ concept_note.url | prepend: site.baseurl }}" class="post-link">
+		<h4 class="post-title">{{ concept_note.title }}</h4>
+		<p class="post-summary">{{ concept_note.summary | strip_html }}</p>
+	</a>
+</div>
+{% endfor %}
+{% endif %}
+
+{% if project_posts.size > 0 %}
+<h3>Related blog posts</h3>
+News items related to this project
+{% for project_post in project_posts %}
+<div class="post">
+	<a href="{{ project_post.url | prepend: site.baseurl }}" class="post-link">
+		<h4 class="post-title">{{ project_post.title }}</h4>
+		<p class="post-summary">{{ project_post.summary | strip_html }}</p>
+	</a>
+</div>
+{% endfor %}
+{% endif %}	
