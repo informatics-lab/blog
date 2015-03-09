@@ -1,0 +1,40 @@
+<div style="height:400px; margin-bottom:30px">
+  <div id="myCarousel" class="carousel slide">
+    <ol class="carousel-indicators">
+      {% assign first_item = true %}
+      {% for c in site.carousel-items %}
+        {% if c.tags contains page.carousel-tag %}
+          {% if first_item %}
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            {% assign first_item = false %}
+          {% else %}
+            <li data-target="#myCarousel" data-slide-to="{{ c.index }}"></li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ol>
+    <div class="carousel-inner">
+      {% assign first_item = true %}
+      {% for c in site.carousel-items %}
+        {% if c.tags contains page.carousel-tag %}
+          {% if first_item %}
+            <div class="item active">
+              <div class="carousel-item">
+                {{ c.content }}
+                {% assign first_item = false %}
+              </div>
+            </div>
+          {% else %}
+            <div class="item">
+              <div class="carousel-item">
+                {{ c.content }}
+              </div>
+            </div>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+     <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+     <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+  </div>
+</div>

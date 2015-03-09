@@ -40,3 +40,6 @@ collections:
     concept-notes:
         output: true
         permalink: /concept-notes/:path/
+    carousel-items:
+        output: true
+        permalink: /carousel-items/:path/
