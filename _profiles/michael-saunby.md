@@ -1,5 +1,5 @@
 ---
-layout:     default
+layout:     profile
 title:      Michael Saunby
 author:     Michael Saunby
 summary:    He likes to break stuff!
