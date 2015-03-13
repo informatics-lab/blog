@@ -1,9 +1,11 @@
 ---
 layout: page
-title: Get Involved
 author: Niall Robinson
 ---
 
+<h1>Say hello here:&emsp;{% include site_social_media.html %}</h1>
+
+<h1>Or just get stuck in</h1>
 If you want to work with us, there are several ways you can go about it:
 
 1. Feel free to just start contributing to our code on [GitHub]({{site.github-url}}).
