@@ -45,12 +45,13 @@ $navbar-split-point: 815px;
   font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
 	display: block;
 	bottom: 10px;
+  font-size: 20px;
 }
 
 @media (max-width: $navbar-split-point) {
 	.navbar-header {
 		width: 90%;
-		margin: 0 auto;
+		margin: auto 15%;
 		top: 0%;
 		position: relative;
 	}
@@ -58,7 +59,7 @@ $navbar-split-point: 815px;
 
 @media (min-width: $navbar-split-point) {
 	.navbar-header {
-		width: 67%;
+		width: 50%;
 		top: 70%;
 		left: 22%;
 		right: 5%;
