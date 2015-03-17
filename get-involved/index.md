@@ -33,8 +33,6 @@ author: Niall Robinson
 		        </div>
 		    </a>
 	    </div>
-	</div>
-	<div class="row" style="margin: 0">
 		<div class="col-md-6">
 			<a href="/get-involved/designer/">
 				<div class="thumbnail">
@@ -63,3 +61,19 @@ author: Niall Robinson
 
 <h1>Our Partners</h1>
 <p>This is the ever growing list of people that we have been involved with through the lab</p>
+<div class="container">
+	<div class="row" style="margin: 0">
+		{% for partner in site.partners %}
+			<div class="col-md-6">
+				<a href="{{partner.image}}}">
+			        <div class="thumbnail">
+			            <div class="caption">
+			               {{ partner.content }}
+			            </div>
+						<img class="img-rounded" src="{{partner.image}}"/>
+			        </div>
+		    	</a>
+		    </div>
+		{% endfor %}
+	</div>
+</div>
