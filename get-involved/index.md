@@ -61,11 +61,11 @@ author: Niall Robinson
 
 <h1>Our Partners</h1>
 <p>This is the ever growing list of people that we have been involved with through the lab</p>
-<div class="container">
+<div class="container-fluid	">
 	<div class="row" style="margin: 0">
 		{% for partner in site.partners %}
-			<div class="col-md-6">
-				<a href="{{ partner.link }}}">
+			<div class="col-md-4">
+				<a href="{{ partner.link }}">
 			        <div class="thumbnail">
 			            <div class="caption">
 			               {{ partner.content }}
