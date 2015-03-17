@@ -1,7 +1,6 @@
 ---
 layout:     profile
-title:      Simon Stanley
-author:     Simon Stanley
+name:       Simon Stanley
 summary:    Simon is a maths man by trade and Python programmer by occupation.
 affiliation: core
 github-url: http://github.com/simonstanley

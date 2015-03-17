@@ -1,7 +1,6 @@
 ---
 layout:     profile
-title:      Michael Saunby
-author:     Michael Saunby
+name:       Michael Saunby
 summary:    He likes to break stuff!
 affiliation: core
 ---
