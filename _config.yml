@@ -40,3 +40,5 @@ collections:
     concept-notes:
         output: true
         permalink: /concept-notes/:path/
+    partners:
+        output: false

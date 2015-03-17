@@ -59,3 +59,7 @@ author: Niall Robinson
 		</div>
 	</div>
 </div>
+
+
+<h1>Our Partners</h1>
+<p>This is the ever growing list of people that we have been involved with through the lab</p>
