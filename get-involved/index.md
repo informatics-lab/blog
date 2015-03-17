@@ -65,12 +65,12 @@ author: Niall Robinson
 	<div class="row" style="margin: 0">
 		{% for partner in site.partners %}
 			<div class="col-md-6">
-				<a href="{{partner.image}}}">
+				<a href="{{ partner.link }}}">
 			        <div class="thumbnail">
 			            <div class="caption">
 			               {{ partner.content }}
 			            </div>
-						<img class="img-rounded" src="{{partner.image}}"/>
+						<img class="img-rounded" src="{{ partner.image }}"/>
 			        </div>
 		    	</a>
 		    </div>
