@@ -92,18 +92,6 @@ $navbar-split-point: 815px;
   color: $mo-blue;
 }
 
-.post-footer {
-  font-style: italic;
-  margin-top: .75rem;
-  text-align: center;
-}
-
-.post-footer {
-  margin: 2rem 0;
-  width: 100px;
-  border-radius: 50%;
-}
-
 .post-meta {
   width: auto;
   font-size: 1rem;
@@ -114,12 +102,29 @@ $navbar-split-point: 815px;
   font-style: italic;
 }
 
+.post-header {
+  margin-bottom: 15px;
+}
+
 /*profiles  */
 
 .profile-mugshot {
 	float: left;
 	border: 5px black;
 	margin: 0 $padding-base-horizontal $padding-base-vertical 0;
+}
+
+.written-by-footer {
+  font-style: italic;
+  color: $gray-light;
+  font-size: 1.2rem;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.written-by-footer .heading {
+  font-size: 1.5rem;
 }
 
 /* footer */
