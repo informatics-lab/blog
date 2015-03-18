@@ -29,7 +29,7 @@ $gray-light: $mo-light-grey;
 $grey-dark: $mo-dark-grey;
 
 
-/* import bootstrap */ 
+/* import bootstrap */
 @import "bootstrap";
 
 .container {
@@ -37,7 +37,7 @@ $grey-dark: $mo-dark-grey;
 }
 
 /* Navbar */
-$navbar-split-point: 815px;
+$navbar-split-point: 15px;
 
 .navbar-header {
 	text-align: center; /* this doesn't work */
@@ -51,7 +51,7 @@ $navbar-split-point: 815px;
 @media (max-width: $navbar-split-point) {
 	.navbar-header {
 		width: 90%;
-		margin: auto 15%;
+		margin: auto 5%;
 		top: 0%;
 		position: relative;
 	}
@@ -59,12 +59,16 @@ $navbar-split-point: 815px;
 
 @media (min-width: $navbar-split-point) {
 	.navbar-header {
-		width: 50%;
-		top: 70%;
-		left: 22%;
+		width: 65%;
+		margin-top: -6%;
+		left: 5%;
 		right: 5%;
-		position: absolute;
+		position: relative;
 	}
+}
+
+.navbar-toggle {
+	margin-left: 3%;
 }
 
 /* Site header */
