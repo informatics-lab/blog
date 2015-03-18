@@ -9,7 +9,7 @@ author: Niall Robinson
 
 <h1>Or just get stuck in</h1>
 <p>What kind of background do you have? Click below for information about how to get involved with the Informatics Lab. Don't worry - we like people who have skills in lots of areas, so if you're not sure where you fit, just contact us directly.</p>
-<div class="container">
+<div class="container-fluid">
 	<div class="row" style="margin: 0">
 		<div class="col-md-6">
 			<a href="/get-involved/software-engineer/">
