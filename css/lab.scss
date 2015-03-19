@@ -152,7 +152,13 @@ footer {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 300;
   clear: both;
+
+  p {
+    text-align: center;
+  }
+
 }
+
 
 footer:after {
   content: "";
