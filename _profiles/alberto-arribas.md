@@ -3,7 +3,7 @@ layout:     profile
 name:       Alberto Arribas
 summary:    Head of Informatics Lab
 affiliation: core
-twitter-url: http://www.twitter.com/niallhrobinson
+twitter-url: http://www.twitter.com/metolab
 github-url: https://github.com/alberto-arribas
 email: arribas.alberto@gmail.com
 
