@@ -9,6 +9,7 @@ $mo-grey: #9ca299;
 $mo-light-grey: #babcbe;
 $mo-medium-grey: #6c6d6f;
 $mo-dark-grey: #414042; /* from logo */
+$white: #ffffff;
 
 $link-hover-decoration: "none";
 $link-color: $mo-blue;
@@ -37,39 +38,39 @@ $grey-dark: $mo-dark-grey;
 }
 
 /* Navbar */
-$navbar-split-point: 15px;
+.navbar-default {
+	background-color: $white;
+	border-color: $white;
+}
 
 .navbar-header {
 	text-align: center; /* this doesn't work */
-  font-weight: bold;
-  font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
+  	font-weight: bold;
+  	font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
 	display: block;
 	bottom: 10px;
-  font-size: 20px;
-}
+  	font-size: 20px;
+	width: 65%;
+	margin-top: -6%;
+	left: 5%;
+	right: 5%;
+	position: relative;
 
-@media (max-width: $navbar-split-point) {
-	.navbar-header {
-		width: 90%;
-		margin: auto 5%;
-		top: 0%;
+	.navbar-toggle {
+		margin-left: 3%;
+	}
+
+	.navbar-collapse {
+		border: 0px;
+		margin-top: -0.01%; // setting this to 0% defaults to above -6%
 		position: relative;
+	}
+	.nav > li > a:hover, .nav > li > a:focus {
+		background-color: none;
 	}
 }
 
-@media (min-width: $navbar-split-point) {
-	.navbar-header {
-		width: 65%;
-		margin-top: -6%;
-		left: 5%;
-		right: 5%;
-		position: relative;
-	}
-}
 
-.navbar-toggle {
-	margin-left: 3%;
-}
 
 /* Site header */
 .site-header {
