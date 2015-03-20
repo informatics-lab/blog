@@ -51,7 +51,7 @@ $grey-dark: $mo-dark-grey;
 	bottom: 10px;
   	font-size: 20px;
 	width: 65%;
-	margin-top: -6%;
+	margin-top: -7%;
 	left: 5%;
 	right: 5%;
 	position: relative;
@@ -60,17 +60,15 @@ $grey-dark: $mo-dark-grey;
 		margin-left: 3%;
 	}
 
-	.navbar-collapse {
-		border: 0px;
-		margin-top: -0.01%; // setting this to 0% defaults to above -6%
-		position: relative;
-	}
 	.nav > li > a:hover, .nav > li > a:focus {
 		background-color: none;
 	}
 }
 
-
+.hex-border {
+	border: 13px solid transparent;
+	border-image: url(../images/hexagon_hollow.png) 50 80 stretch;
+}
 
 /* Site header */
 .site-header {
