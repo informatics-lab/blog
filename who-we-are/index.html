@@ -17,17 +17,17 @@ permalink: /who-we-are/
 			<div class="col-md-1">
 			{% if profile.mugshot %}
 				<a href="{{ profile.url }}" class="thumbnail">
-					<img src={{ profile.mugshot }}>
+					<img src={{ profile.mugshot }} alt="No image">
 				</a>
 
 			{% elsif profile.email %}
 				<a href="{{ profile.url }}" class="thumbnail">
-					<img src={{ profile.email | to_gravatar }}>
+					<img src={{ profile.email | to_gravatar }}  alt="No image">
 				</a>
 
 			{% else %}
 				<a href="{{ profile.url }}" class="thumbnail">
-					<img src="../images/mini-hexagon.png">
+					<img src="../images/mini-hexagon.png"  alt="No image">
 				</a>
 			{% endif %}
 			</div>
