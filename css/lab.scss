@@ -123,6 +123,7 @@ ul, ol {
 .profile-mugshot {
 	float: left;
 	border: 5px black;
+	max-width: 30%;
 	margin: 0 $padding-base-horizontal $padding-base-vertical 0;
 }
 
@@ -164,6 +165,51 @@ footer:after {
   content: "";
   display: block;
 }
+
+/* Carousel */
+.carousel {
+	max-width: 100%;
+	padding-bottom: 0;
+	margin-bottom: 30px;
+	height: 400px;
+}
+
+.carousel-indicators{
+	bottom: 3%;
+}
+
+.carousel-inner{
+ background-image: url("http://127.0.0.1:4000/images/hero-jumbotron.jpg");
+  background-position: left left;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  height:400px;
+}
+
+.carousel-item{
+	padding: 30px;
+	max-width: 1000px;
+	vertical-align: middle;
+	overflow: hidden;
+}	
+
+.carousel-item h1, .carousel-item h2, .carousel-item h3,
+.carousel-item h4, .carousel-item h5, .carousel-item p {
+	color: white;
+	text-shadow: 1px 1px $mo-grey;
+	font-weight: bold;
+}
+/*
+.carousel .row {
+	display: flex;
+	align-items: center;
+	align-content: center
+	;
+}*/
+/*.carousel-embedded-video{
+	@extend .
+
+}*/
 
 /* general */
 img {

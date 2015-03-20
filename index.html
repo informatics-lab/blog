@@ -1,9 +1,10 @@
 ---
 layout: default
+carousel-tag: 'home'
 ---
 
+{% include carousel.html %}
 <div class="home">
-
   <div class="posts">
     {% for post in paginator.posts %}
       <div class="post">
