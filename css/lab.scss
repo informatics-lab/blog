@@ -60,6 +60,10 @@ $grey-dark: $mo-dark-grey;
 		margin-left: 3%;
 	}
 
+	.navbar-toggle:hover {
+		background-color: transparent;
+	}
+
 	.nav > li > a:hover, .nav > li > a:focus {
 		background-color: none;
 	}
@@ -68,6 +72,9 @@ $grey-dark: $mo-dark-grey;
 .hex-border {
 	border: 13px solid transparent;
 	border-image: url(/images/hexagon_hollow.png) 50 80 stretch;
+}
+.hex-border:hover {
+	border-image: url(/images/hexagon_hollow_highlight.png) 50 80 stretch;
 }
 
 /* Site header */
