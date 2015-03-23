@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-1">
+        <a href="{{ profile.url }}" class="thumbnail">
+            {% if profile.mugshot %}
+                <img src={{ profile.mugshot }} alt="No image">
+            {% elsif profile.email %}
+                <img src={{ profile.email | to_gravatar }}  alt="No image">
+            {% else %}
+                <img src="../images/mini-hexagon.png"  alt="No image">
+            {% endif %}
+        </a>
+    </div>
+    <div class="col-md-11" style="padding-left:20px;">
+        <h4><a href={{ profile.url }}>{{ profile.name }}</a></h4>
+        <p>{{ profile.summary }}</p>
+    </div>
+</div>

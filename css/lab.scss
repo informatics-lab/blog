@@ -55,6 +55,16 @@ ul, ol {
   }
 }
 
+.thumbnail {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    border-radius: 30px;
+    width: 60px;
+    img {
+        border-radius: 30px;
+    }
+}
+
 /* Navbar */
 .navbar-header {
 	text-align: center; /* this doesn't work */
@@ -167,7 +177,7 @@ footer {
   text-align: center;
 }
 
-.stream { 
+.stream {
     overflow: auto;
     padding-bottom:20px;
 }

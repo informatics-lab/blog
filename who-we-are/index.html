@@ -13,10 +13,7 @@ permalink: /who-we-are/
 
 {% for profile in site.profiles %}
 	{% if profile.affiliation == 'core' %}
-		<ul>
-			<h4><a href={{ profile.url }}>{{ profile.name }}</a></h4>
-			<p>{{ profile.summary }}</p>
-		</ul>
+		{% include mugshot.html %}
 	{% endif %}
 {% endfor %}
 
@@ -25,9 +22,6 @@ permalink: /who-we-are/
 
 {% for profile in site.profiles %}
 	{% if profile.affiliation == 'associate' %}
-		<ul>
-			<h4><a href={{ profile.url }}>{{ profile.name }}</a></h4>
-			<p>{{ profile.summary }}</p>
-		</ul>
+		{% include mugshot.html %}
 	{% endif %}
 {% endfor %}
