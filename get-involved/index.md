@@ -3,7 +3,10 @@ layout: page
 author: Niall Robinson
 ---
 
-<h1>Say hello here:&emsp;{% include site_social_media.html %}</h1>
+<h1>Say hello here</h1>
+<div class="social-icons-lg">
+	{% include site_social_media.html %}
+</div>
 
 <h1>Or just get stuck in</h1>
 <p>Follow the link below which you think best suits what you would like to do. We love people who are interesting in doing at the things below, so don't feel like you can only be involved in one capacity.</p>
