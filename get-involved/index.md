@@ -7,7 +7,7 @@ author: Niall Robinson
 
 <h1>Or just get stuck in</h1>
 <p>Follow the link below which you think best suits what you would like to do. We love people who are interesting in doing at the things below, so don't feel like you can only be involved in one capacity.</p>
-<div class="container-fluid">
+<div class="container">
 		<div class="row">
 			<div class="col-xs-6">
 				<div class="stream">
