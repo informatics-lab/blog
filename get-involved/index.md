@@ -15,7 +15,7 @@ author: Niall Robinson
 			<div class="col-xs-6">
 				<div class="stream">
 					<a href="coder/">
-						<img src="/images/coder.svg" alt="coder">
+						{% include coder.svg %}
 						<div class="caption">
 							<h3>Coder</h3>
 							<p class="hidden-xs">If you want to help with writing code</p>
@@ -26,7 +26,7 @@ author: Niall Robinson
 			<div class="col-xs-6">
 				<div class="stream">
 					<a href="scientist/">
-						<img src="/images/scientist.svg" alt="scientist">
+						{% include scientist.svg %}
 						<div class="caption">
 							<h3>Scientist</h3>
 							<p class="hidden-xs">If you've got an interest in how the atmosphere works</p>
@@ -39,7 +39,7 @@ author: Niall Robinson
 			<div class="col-xs-6">
 				<div class="stream">
 					<a href="designer/">
-						<img src="/images/designer.svg" alt="designer">
+						{% include designer.svg %}
 						<div class="caption">
 							<h3>Designer</h3>
 							<p class="hidden-xs">If you can help us merging design with science</p>
@@ -50,7 +50,7 @@ author: Niall Robinson
 			<div class="col-xs-6">
 				<div class="stream">
 					<a href="user/">
-						<img src="/images/user.svg" alt="user">
+						{% include user.svg %}
 						<div class="caption">
 							<h3>User</h3>
 							<p class="hidden-xs">If you want to help us as a test user</p>
