@@ -7,7 +7,7 @@ twitter-url: http://www.twitter.com/metolab
 github-url: https://github.com/alberto-arribas
 email: arribas.alberto@gmail.com
 
-mugshot: ../../images/alberto-arribas.jpg
+mugshot: alberto-arribas.jpg
 ---
 
 Hola! I am a lucky chap, I like what I do for a living.

@@ -6,5 +6,5 @@ layout: default
 		{% include social_links.html %}
 	</h1>
 </header>
-{% if page.mugshot %}<img src={{ page.mugshot }} alt={{ page.name }} class="profile-mugshot"></img>{% endif %}
+{% if page.mugshot %}<img src="{{ site.image-bin }}{{ page.mugshot }}" alt={{ page.name }} class="profile-mugshot"></img>{% endif %}
 {{ content }}
