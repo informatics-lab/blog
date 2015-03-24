@@ -23,14 +23,14 @@ They're often used for rendering 3D environments such as you might see in comput
 Our weather forecast data is made up of lots of values spread across a regular 3D grid. Imagine a bunch of boxes stacked up - the datasets we are trying to visualise are values of, say, air temperature in each box.
 
 <div style="text-align:center">
-	<img src="http://lebarba.com/blog/wp-content/uploads/2014/11/voxels.jpg" alt="the back face of the cube"/>
+	<img src="{{ site.image-bin }}voxels.jpg" alt="the back face of the cube"/>
 	<p><cite>The <a href=http://lebarba.com/blog/>Lebara Blog</a> (who I've nicked these images from!) is a great introduction to volume rendering.</cite></p>
 </div>
 
 Fortunately, rendering a continuous block of data like this has been done before, and is known as *volume rendering*. However, there aren't standard libraries for this approach, so it involves writing your own 3D rendering routines which run on the [GPU](http://en.wikipedia.org/wiki/Graphics_processing_unit), using a language called [GLSL](http://en.wikipedia.org/wiki/OpenGL_Shading_Language). These routines sample the data along lots of straight lines starting at the camera, and moving out in all directions. These lines are analogous to rays of light, and this approach is known as *ray tracing* for that reason.
 
 <div style="text-align:center">
-	<img src="http://lebarba.com/blog/wp-content/uploads/2014/11/rays.jpg" height="250" width="250" alt="a block with rays cast through it"/>
+	<img src="{{ site.image-bin }}rays.jpg" height="250" width="250" alt="a block with rays cast through it"/>
 	<p><cite>Another handy image from <a href=http://lebarba.com/blog/>Lebara</a> (thanks!). This shows some example rays travelling from the viewer's eye, through the screen and through the grid of data, represented here as the square (although really its a 3D cube). I know that in reality light travels towards the viewer's eye, but, y'know, just go with it.</cite></p>
 </div>
 
@@ -55,7 +55,7 @@ A ray starts with an intensity of one and a color of nothing. We begin at the be
 Prepare yourself, this is my favorite part. The cool thing is, because we are running this on the GPU, we can do this FOR ALL RAYS AT THE SAME TIME!!! \***brain explodes**\*, which is known (rather excellently I think) as *ray marching*.
 
 <div style="text-align:center">
-	<img src="/images/guard-480845_1280.jpg" height="250" width="250"/ alt="Ray, marching">
+	<img src="{{ site.image-bin }}guard.jpg" height="250" width="250"/ alt="Ray, marching">
 	<p><cite>This wasn't what Ray signed up for when he joined the Lab.</cite></p>
 </div>
 
@@ -70,7 +70,7 @@ The back position $I$ is a little more complicated, however. It involves renderi
 We start by rendering the x, y, z coordinate of the back face of our volume as an RBG colour - if you think this isn't an obvious first step, don't worry - you're right, but keep reading and all will become clear.
 
 <div style="text-align:center">
-	<img src="http://lebarba.com/blog/wp-content/uploads/2014/11/BackFrontFaces.png" height="250" width="250"/>
+	<img src="{{ site.image-bin }}backface.png" height="250" width="250"/>
 	<p><cite>This rainbowy thing is what you get when you render the back face of the cube using the x,&nbsp;y,&nbsp;z coordinates to set the r,&nbsp;g,&nbsp;b values respectively.</cite></p>
 </div>
 
@@ -95,7 +95,5 @@ Ideally we want a 3D data object which you can index using a position in the 3D 
 
 I've managed to get the tile encoding working using png files, which you can see on the [main branch]
 (https://github.com/met-office-lab/volume-rendering/tree/master). However, we've got a lot of data to push around, so we need to explore different ways of encoding/decoding the data. If you are interesting in this then you should get in contact with fellow Lab Rat [Michael Saunby](http://www.informaticslab.co.uk/people/michael-saunby/)
-
-
 
 ####Hopefully we're going to be making progress with this project over the next few months, so keep checking GitHub to see what the current issues are
