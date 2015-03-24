@@ -6,7 +6,7 @@ affiliation: core
 github-url: http://github.com/tpowellmeto
 email: t.powell.meto@gmail.com
 
-mugshot: /images/tom-powell.png
+mugshot: tom-powell.png
 ---
 Hello! I'm Tom.
 

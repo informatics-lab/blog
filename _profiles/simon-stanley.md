@@ -6,7 +6,7 @@ affiliation: core
 github-url: http://github.com/simonstanley
 email: simon.stanley87@gmail.com
 
-mugshot: ../../images/simon-stanley.jpg
+mugshot: simon-stanley.jpg
 ---
 
 I joined the Met Office in 2012, spent two (and a bit) years in the climate applications team where I pondered probabilities, visualised verification and danced with data!
