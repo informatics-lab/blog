@@ -16,7 +16,7 @@ var addIssues = function(data){
 			<a href='"+issue.html_url+"' target=_blank class='post-link'>\
 			<p class='post-meta'>"+moment(issue.created_at).format('MMM Do, YYYY')+"</p>\
 			<h4 class='post-title'>"+issue.title+"</h3>\
-			<p class='post-summary'>"+issue.body+"</p>\
+			<p class=post-summary>"+issue.body.substring(0, 100)+"...</p>\
 			</a>\
 			</div>"
 			);
