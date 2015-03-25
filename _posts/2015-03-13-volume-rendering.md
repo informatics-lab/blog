@@ -94,6 +94,6 @@ Unfortunately, I haven't been able to get this kind of thing running with out sy
 Ideally we want a 3D data object which you can index using a position in the 3D environment. Unfortunately, WebGL (unlike OpenGL) only supports 2D data objects (called *textures*). This means we have to slice our 3D data array along one dimension, and tile the 2D slices next to each other in a 2D object. We then need a routine on the GPU to index this 2D object using 3D environment positions.
 
 I've managed to get the tile encoding working using png files, which you can see on the [main branch]
-(https://github.com/met-office-lab/volume-rendering/tree/master). However, we've got a lot of data to push around, so we need to explore different ways of encoding/decoding the data. If you are interesting in this then you should get in contact with fellow Lab Rat [Michael Saunby](http://www.informaticslab.co.uk/people/michael-saunby/)
+(https://github.com/met-office-lab/volume-rendering/tree/master). However, we've got a lot of data to push around, so we need to explore different ways of encoding/decoding the data. If you are interesting in this then you should get in contact with fellow Lab Rat Michael Saunby.
 
 ####Hopefully we're going to be making progress with this project over the next few months, so keep checking GitHub to see what the current issues are
