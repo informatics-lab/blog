@@ -1,10 +1,9 @@
 ---
-layout:     post
+layout:     page
 title:      How to contribute to the blog
-author:     Niall Robinson
 summary:    Guidelines on how to easily contribute blog posts.
 categories: [getting-started]
-tags:		[how-to, jekyll, blog, post]
+tags:		[how-to]
 ---
 
 <img src="https://c1.staticflickr.com/3/2719/4219650384_5a1d70397c.jpg" style="width:300px" align="right" alt="Remember - blogging will make you sophisticated."></img>
@@ -18,11 +17,11 @@ This page will tell you how to write a blog post, add a personal profile, and ad
 
 1. `Git clone` [this repo](https://github.com/met-office-lab/met-office-lab.github.io.git).
 1. Write a Markdown page:
-	1. If its a **blog post** put it in the `_posts` directory with a filename starting `yyyy-mm-dd-<name>`
-	1. If its a **personal profile** then put in the the `_profiles` directory.
-	1. If its a **project page** then put it in the `_projects` directory.
+	* If its a **blog post** put it in the `_posts` directory with a filename starting `yyyy-mm-dd-<name>`
+	* If its a **personal profile** then put in the the `_profiles` directory.
+	* If its a **project page** then put it in the `_projects` directory.
 
-	Don't forget the [front matter](http://jekyllrb.com/docs/frontmatter/) (look at other similar pages on the blog for an idea). You can view your local changes with `jekyll serve`.
+	Don't forget the [front matter](http://jekyllrb.com/docs/frontmatter/) (look at other similar pages on the blog for an idea). You can view your local changes with `rake serve`.
 1. Push the branch and submit it as a pull-request.
 1. One everyone agrees on a final version, get someone else to merge it to the master branch (you may need to update a blog post date).
 
@@ -50,11 +49,13 @@ This page will tell you how to write a blog post, add a personal profile, and ad
 
 1. Open the file you just created and write your post using the dazzlingly simple [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) language.
 
+1. Any images you want to add to your post should be hosted in our [image bin]({{ site.image-bin }}) and linked to by prepending the image name with `{% raw %}{{ site.image-bin }}{% endraw %}`. 
+
 1. You can view your post by doing
 
-		jekyll serve
+		rake serve
 
-	in the blog directory, and viewing the *server address* (probably [127.0.0.1:4000](http://127.0.0.1:4000/)) in a web browser.
+	in the blog directory, and viewing the *server address* (probably [localhost:4000](http://localhost:4000/)) in a web browser.
 
 1. After you have finished working on you post you need to
 
