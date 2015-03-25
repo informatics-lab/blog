@@ -48,9 +48,9 @@ p {
 }
 
 ul, ol {
-  padding-left: 0px;
+  padding-left: 20px;
 
-  @media(min-width: $screen-sm-min){
+  @media(min-width: $screen-xs-min){
     padding-left: 45px;
   }
 }
