@@ -9,7 +9,9 @@ author: Niall Robinson
 </div>
 
 <h1>Or just get stuck in</h1>
-<p>Follow the link below which you think best suits what you would like to do. We love people who are interesting in doing at the things below, so don't feel like you can only be involved in one capacity.</p>
+<p>The aim of the Informatics Lab is to make data useful to human beings by using emerging technologies.</p>
+
+<p>If you'd like to help, just follow the link below which you think best suits what you would like to do. We love people who are interesting in doing all the things below, so don't feel like you can only be involved in only one capacity.</p>
 <div class="container">
 		<div class="row">
 			<div class="col-xs-6">
