@@ -12,19 +12,35 @@ Follow these instructions to set up your computer for working in the Lab. It's p
 1. Let the hard drive encrypt: this will happen automatically when the laptop gets connected to power, and will take around 30 mins.
 	* Don't interrupt this by shutting down or turning off the power
 	* You can check the progress by opening `System Preferences > Security and Privacy > Filevault`
-1. Add your account to the decryption users list in `System Preferences > Security and Privacy > Filevault`
 1. Reboot and login as own user.
 1. Open a terminal and run `git`. This will prompt you to install the XCode command line tools.
 1.
 
-        sudo mkdir -p /opt/boxen
-        sudo chown ${USER}:staff/opt/boxen
-1. Clone the Lab Boxen repository into
-    
-        /opt/boxen/repo
-        git clone git@github.com:met-office-lab/our-boxen.git /opt/boxen/repo
-1. Navigate to the Boxen directory and run Boxen to install all manner of goodies
+        sudo mkdir -p /opt/boxen/repo
+        sudo chown -R ${USER}:staff /opt
+1. Clone the Lab Boxen repository
 
-        cd /opt/boxen/repo
-        ./script/boxen
-   This will take up to an hour so hold tight 
+        git clone https://github.com/met-office-lab/met-office-lab.github.io.git /opt/boxen/repo
+1. Run Boxen to install all manner of goodies
+
+        ./opt/boxen/repo/script/boxen
+   This will take up to an hour so hold tight
+
+Following this other things to install/set up:
+
+###Slack
+
+1. install from the appstore native application
+1. join the group `met-office-lab`
+
+###Calendars
+
+1. enable the calendars feature within your google profile
+1. ask Niall for an invite to the calendar
+
+###Git
+
+Set up your Git credentials by doing
+
+    git config --global user.name "<your name>"
+    git config --global user.email "<your email>"
