@@ -5,6 +5,8 @@ layout: page
 Coders - join us!
 =================
 
+<img src="/images/coder.svg" style="float:right" alt="coder">
+
 If you want to work with us, there are several ways you can go about it:
 
 1. Feel free to just start contributing to our code on [GitHub]({{site.github-url}}).
