@@ -5,6 +5,8 @@ layout: page
 Scientists - Join Us!
 =====================
 
+<img src="/images/scientist.svg" style="float:right" alt="scientist">
+
 If you've got scientific expertise then we'd be really keen to work with you.
 
 Firstly, the primary aim of the Lab is to give people access to information (as opposed to data), and scientists are the experts in getting information from data. We want you to help us minimise the amount of work we need to do with technology by using innovative scientific solutions where possible. We think this is best the way to get the most from our data.
