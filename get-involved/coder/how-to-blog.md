@@ -15,7 +15,7 @@ This page will tell you how to write a blog post, add a personal profile, and ad
 ### In a nutshell
 *Just hurry up and tell me what to do!*
 
-1. `Git clone` [this repo](https://github.com/met-office-lab/met-office-lab.github.io.git).
+1. `Git clone` [this repo](https://github.com/met-office-lab/met-office-lab.github.io.git) and make a working branch.
 1. Write a Markdown page:
 	* If its a **blog post** put it in the `_posts` directory with a filename starting `yyyy-mm-dd-<name>`
 	* If its a **personal profile** then put in the the `_profiles` directory.
@@ -32,11 +32,16 @@ This page will tell you how to write a blog post, add a personal profile, and ad
 
 		git clone https://github.com/met-office-lab/met-office-lab.github.io.git
 
+1. `cd` into the directory that has just been created.
 
 1. Make a new branch so you can spread the latest news, for instance, our impending discovery of perpetual motion...
 
-		git branch --track perpetual_motion_blog_post upstream/origin
-	Note that there's no need to fork the repository and push from there.
+		git branch perpetual_motion_blog_post origin/master
+		git checkout perpetual_motion_blog_post
+	Note that there's no need to fork the repository and push from there. You can also combine both the commands above like this
+	    
+	    git checkout -b perpetual_motion_blog_post origin/master
+	if you so prefer.
 
 1. You need to make a file to write your blog page in. 
 	1. If it's a **blog post**, the file name should start `yyyy-mm-dd-` and, as its written in [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), end with `.md`. Put it in the `_posts` directory.
@@ -57,6 +62,7 @@ This page will tell you how to write a blog post, add a personal profile, and ad
 
 	in the blog directory, and viewing the *server address* (probably [localhost:4000](http://localhost:4000/)) in a web browser.
 
+1. If you've introduced any new files then you need to add them with a `git add my_new_file.md`
 1. After you have finished working on you post you need to
 
     	git commit -am "New post on perpetual motion"
