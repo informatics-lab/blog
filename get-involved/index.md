@@ -9,9 +9,10 @@ author: Niall Robinson
 </div>
 
 <h1>Or just get stuck in</h1>
-<p>The aim of the Informatics Lab is to make data useful to human beings by using emerging technologies.</p>
+<p>The aim of the Informatics Lab is to make environmental science and data useful to human beings by using emerging technologies.</p>
 
-<p>If you'd like to help, just follow the link below which you think best suits what you would like to do. We love people who are interesting in doing all the things below, so don't feel like you can only be involved in only one capacity.</p>
+<p>If you'd like to help, just follow the link below which you think best suits what you would like to do. We love people who are interested in doing all the things below, so feel free to
+get involved in as many aspects as you wish.</p>
 <div class="container">
 		<div class="row">
 			<div class="col-xs-6">
@@ -20,7 +21,7 @@ author: Niall Robinson
 						<img src="/images/coder.svg" alt="coder">
 						<div class="caption">
 							<h3>Coder</h3>
-							<p class="hidden-xs">If you want to help with writing code</p>
+							<p class="hidden-xs">If you can help writing code</p>
 						</div>
 					</a>
 				</div>
@@ -31,7 +32,8 @@ author: Niall Robinson
 						<img src="/images/scientist.svg" alt="scientist">
 						<div class="caption">
 							<h3>Scientist</h3>
-							<p class="hidden-xs">If you've got an interest in how the atmosphere works</p>
+							<p class="hidden-xs">If you can help solving
+							science puzzles</p>
 						</div>
 					</a>
 				</div>
@@ -44,7 +46,7 @@ author: Niall Robinson
 						<img src="/images/designer.svg" alt="designer">
 						<div class="caption">
 							<h3>Designer</h3>
-							<p class="hidden-xs">If you can help us merging design with science</p>
+							<p class="hidden-xs">If you can help merging design with science</p>
 						</div>
 					</a>
 				</div>
@@ -55,7 +57,7 @@ author: Niall Robinson
 						<img src="/images/user.svg" alt="user">
 						<div class="caption">
 							<h3>User</h3>
-							<p class="hidden-xs">If you want to help us as a test user</p>
+							<p class="hidden-xs">If you can help testing prototypes</p>
 						</div>
 					</a>
 				</div>
