@@ -9,7 +9,7 @@ github-url: http://github.com/tpowellmeto
 email: t.powell.meto@gmail.com
 stackoverflow-url:
 
-mugshot:
+mugshot: tom-powell.png
 ---
 Hello! I'm Tom.
 
