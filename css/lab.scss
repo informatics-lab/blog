@@ -120,7 +120,18 @@ ul, ol {
 .post-link .post-title {
   margin-top: 0;
   font-weight: 600;
-  color: $mo-blue;
+  color: $mo-medium-grey;
+}
+
+.post-summary {
+  color: $mo-grey;
+}
+
+.post-link:hover .post-title{
+    color: $mo-dark-grey;
+}
+.post-link:hover .post-summary {
+  color: $mo-dark-grey;
 }
 
 .post-meta {
