@@ -21,7 +21,7 @@ This page will tell you how to write a blog post, add a personal profile, and ad
 	* If its a **personal profile** then put in the the `_profiles` directory.
 	* If its a **project page** then put it in the `_projects` directory.
 
-	Don't forget the [front matter](http://jekyllrb.com/docs/frontmatter/) (look at other similar pages on the blog for an idea). You can view your local changes with `rake serve`.
+	Don't forget the [front matter](http://jekyllrb.com/docs/frontmatter/) (look at other similar pages on the blog for an idea). Run `bundle install` to get the blog dependencies. You can view your local changes with `rake serve`.
 1. Push the branch and submit it as a pull-request.
 1. One everyone agrees on a final version, get someone else to merge it to the master branch (you may need to update a blog post date).
 
@@ -33,6 +33,10 @@ This page will tell you how to write a blog post, add a personal profile, and ad
 		git clone https://github.com/met-office-lab/met-office-lab.github.io.git
 
 1. `cd` into the directory that has just been created.
+
+1. In order to serve the website locally, you need to download all the dependencies. You can do this with
+
+        bundle install
 
 1. Make a new branch so you can spread the latest news, for instance, our impending discovery of perpetual motion...
 
