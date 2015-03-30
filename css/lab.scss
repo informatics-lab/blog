@@ -123,7 +123,14 @@ ul, ol {
   color: $mo-medium-grey;
 }
 
-.post-title:hover {
+.post-summary {
+  color: $mo-grey;
+}
+
+.post-link:hover .post-title{
+    color: $mo-dark-grey;
+}
+.post-link:hover .post-summary {
   color: $mo-dark-grey;
 }
 
