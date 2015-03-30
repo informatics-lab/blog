@@ -8,9 +8,8 @@ author: 	Alberto Arribas
 
 ---
 
-Hello.
+Hello,
 
-This is the Met Office Lab blog. This will be used to write about our adventures in the
-lab and announce any things we think are worth sharing!
+This is the blog of the Met Office Informatics Lab. We will write here about our adventures in the lab and announce anything we think is worth sharing.
 
 So just hang tight and we'll get some excellent content up soon!
