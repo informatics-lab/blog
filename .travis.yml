@@ -18,8 +18,5 @@ deploy:
   acl: public_read
   skip_cleanup: true
   region: eu-west-1
-#
-#  Commented out for testing
-#  on:
-#    repo: met-office-lab/met-office-lab.github.io
-#    branch: master
+  on:
+    tags: true
