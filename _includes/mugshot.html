@@ -2,7 +2,7 @@
     <div class="col-md-1">
         <a href="{{ profile.url }}" class="thumbnail">
             {% if profile.mugshot %}
-                <img src={{ profile.mugshot }} alt="No image">
+                <img src={{ site.image-bin }}{{ profile.mugshot }} alt="No image">
             {% elsif profile.email %}
                 <img src={{ profile.email | to_gravatar }}  alt="No image">
             {% else %}
