@@ -8,3 +8,18 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 notifications:
   email: false
+deploy:
+  provider: s3
+  access_key_id: AKIAJK5VH3XKJ34424UQ
+  secret_access_key:
+    secure: "A1MCsCzHkUeNu3d5W34/SynecBT5iaIEaZmgJN93oLCKm/kvx3moCE1rZCz5XOCKVZU0SL4ckJeR9irNh4eqNGhzyeBg/7RCv30Crhi3hF6h8Hdt5krBmjl4Bf/uNlRRJhWjdrW46qggmjughwYXW3hTE6vg9tAbFBhzq/0r2MA="
+  bucket: www.informaticslab.co.uk
+  local-dir: _site
+  acl: public_read
+  skip_cleanup: true
+  region: eu-west-1
+#
+#  Commented out for testing
+#  on:
+#    repo: met-office-lab/met-office-lab.github.io
+#    branch: master
