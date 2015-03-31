@@ -20,10 +20,10 @@ Follow these instructions to set up your computer for working in the Lab. It's p
         sudo chown -R ${USER}:staff /opt
 1. Clone the Lab Boxen repository
 
-        git clone https://github.com/met-office-lab/met-office-lab.github.io.git /opt/boxen/repo
+        git clone https://github.com/met-office-lab/our-boxen/ /opt/boxen/repo
 1. Run Boxen to install all manner of goodies
 
-        ./opt/boxen/repo/script/boxen
+        /opt/boxen/repo/script/boxen
    This will take up to an hour so hold tight
 
 Following this other things to install/set up:
