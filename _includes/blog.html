@@ -1,0 +1,31 @@
+<!-- Blog Section -->
+<section id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Blog</h2>
+                <h3 class="section-subheading text-muted">Keep up-to-date with whats happening in the Lab.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+
+                    {% for post in paginator.posts %}
+                        {% include blog-post-snippet.html %}
+                    {% endfor %}
+
+                    {% if paginator.next_page %}
+                        <li class="timeline-inverted">
+                            <a href="{{ site.url }}blog"><div class="timeline-image">
+                                <h4>See
+                                    <br>All Our
+                                    <br>Blogs!</h4>
+                            </div></a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

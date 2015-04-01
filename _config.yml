@@ -1,43 +1,43 @@
+#--------------
 # Site settings
-title:         Met Office Lab
+#--------------
+
+title:         Met Office Informatics Lab
 email:         met-office-lab@gmail.com
 author:        Met Office Lab
 description:   "A lab at the Met Office for creating things!"
 baseurl:       ""
-url:           http://www.informaticslab.co.uk
+url:           "http://www.informaticslab.co.uk/"
 github-url:    "http://github.com/met-office-lab/"
 twitter-url:   "http://twitter.com/metolab/"
-image-bin:     "http://s3-eu-west-1.amazonaws.com/informatics-webimages/"
 instagram-url: "http://instagram.com/informaticslab/"
+image-bin:     "http://s3-eu-west-1.amazonaws.com/informatics-webimages/"
 
 
 # Google analytics
 google_analytics: 'UA-60337429-1'
 
-# Optional features
-animated:           false
-show_related_posts: false
 
-# Disqus post comments
-# (leave blank to disable Disqus)
-disqus_shortname:
+#-----------
+#Build stuff
+#-----------
 
-# Build settings
-markdown:     redcarpet
-redcarpet:
-  extensions: ['smart', 'tables', 'with_toc_data']
-permalink:    pretty
-paginate:     3
+#build output dir
+destination: _site
+
+#exclude from build
+exclude: ["/less"]
+
+#sass config
 sass:
-  sass_dir: _bootstrap-sass/assets/stylesheets
+  sass_dir: _sass
+  style: compressed
+
+#pagination
+paginate: 2
 
 collections:
     profiles:
         output: true
-        permalink: /people/:path/
-    projects:
+    posts:
         output: true
-        permalink: /projects/:path/
-    concept-notes:
-        output: true
-        permalink: /concept-notes/:path/
