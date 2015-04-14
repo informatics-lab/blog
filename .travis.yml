@@ -19,4 +19,4 @@ deploy:
   skip_cleanup: true
   region: eu-west-1
   on:
-    tags: true
+    branch: master
