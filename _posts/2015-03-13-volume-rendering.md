@@ -88,7 +88,7 @@ We can make a big improvement to this volume rendering by using light sources to
 <iframe width="320" height="195" src="https://www.youtube.com/embed/VPhnwOpmUqY" frameborder="0" allowfullscreen></iframe>
 </div>
 
-Unfortunately, I haven't been able to get this kind of thing running with out synthetic data yet. If you're interested, then have a look at [this branch](https://github.com/met-office-lab/volume-rendering/tree/light_source_ray_casting).
+Unfortunately, I haven't been able to get this kind of thing running with out synthetic data yet. If you're interested, then have a look at ~~this branch~~ (Editor - sorry branch no longer exists).
 
 ####How do we transfer data to the GPU?
 Ideally we want a 3D data object which you can index using a position in the 3D environment. Unfortunately, WebGL (unlike OpenGL) only supports 2D data objects (called *textures*). This means we have to slice our 3D data array along one dimension, and tile the 2D slices next to each other in a 2D object. We then need a routine on the GPU to index this 2D object using 3D environment positions.
