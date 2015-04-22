@@ -7,6 +7,7 @@ author: Niall Robinson
 <div class="social-icons-lg">
 	{% include site_social_media.html %}
 </div>
+Check our [calendar](/get-involved/calendar/) to find out what’s going on.
 
 <h1>Or just get stuck in</h1>
 <p>The aim of the Informatics Lab is to make environmental science and data useful to human beings by using emerging technologies.</p>
