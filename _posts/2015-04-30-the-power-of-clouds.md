@@ -19,6 +19,8 @@ OK, this is still a pretty high level view but, bear with us, we will be talking
 
 Also, I have left out of this list the most important step the design process to make the prototype useful to human beings ... which is the main criteria behind the decisions for each link of the chain not just a bit of colour or placing icons in the interface! Talking about that, we had a fantastic meeting in London’s [MozSpace][4] to look at design and UX.
 
+ ![3d vis diagram](https://pbs.twimg.com/media/CD6RoadXIAEuLWM.jpg:large)
+
 [1]: http://www.metoffice.gov.uk/datapoint/
 [2]: http://hortonworks.com/
 [3]: https://get.webgl.org/
