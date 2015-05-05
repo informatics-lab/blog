@@ -24,14 +24,14 @@ Our weather forecast data is made up of lots of values spread across a regular 3
 
 <div style="text-align:center">
 	<img src="{{ site.image-bin }}voxels.jpg" alt="the back face of the cube"/>
-	<cite><p>The <a href=http://lebarba.com/blog/>Lebara Blog</a> (who I've nicked these images from!) is a great introduction to volume rendering.</p></cite>
+	<cite><p>The <a href=http://lebarba.com/blog/>Lebarba Blog</a> (who I've nicked these images from!) is a great introduction to volume rendering.</p></cite>
 </div>
 
 Fortunately, rendering a continuous block of data like this has been done before, and is known as *volume rendering*. However, there aren't standard libraries for this approach, so it involves writing your own 3D rendering routines which run on the [GPU](http://en.wikipedia.org/wiki/Graphics_processing_unit), using a language called [GLSL](http://en.wikipedia.org/wiki/OpenGL_Shading_Language). These routines sample the data along lots of straight lines starting at the camera, and moving out in all directions. These lines are analogous to rays of light, and this approach is known as *ray tracing* for that reason.
 
 <div style="text-align:center">
 	<img src="{{ site.image-bin }}rays.jpg" height="250" width="250" alt="a block with rays cast through it"/>
-	<cite><p>Another handy image from <a href=http://lebarba.com/blog/>Lebara</a> (thanks!). This shows some example rays travelling from the viewer's eye, through the screen and through the grid of data, represented here as the square (although really its a 3D cube). I know that in reality light travels towards the viewer's eye, but, y'know, just go with it.</p></cite>
+	<cite><p>Another handy image from <a href=http://lebarba.com/blog/>Lebarba</a> (thanks!). This shows some example rays travelling from the viewer's eye, through the screen and through the grid of data, represented here as the square (although really its a 3D cube). I know that in reality light travels towards the viewer's eye, but, y'know, just go with it.</p></cite>
 </div>
 
 ###Ray Tracing
@@ -88,7 +88,7 @@ We can make a big improvement to this volume rendering by using light sources to
 <iframe width="320" height="195" src="https://www.youtube.com/embed/VPhnwOpmUqY" frameborder="0" allowfullscreen></iframe>
 </div>
 
-Unfortunately, I haven't been able to get this kind of thing running with out synthetic data yet. If you're interested, then have a look at [this branch](https://github.com/met-office-lab/volume-rendering/tree/light_source_ray_casting).
+Unfortunately, I haven't been able to get this kind of thing running with out synthetic data yet. If you're interested, then have a look at ~~this branch~~ (Editor - sorry branch no longer exists).
 
 ####How do we transfer data to the GPU?
 Ideally we want a 3D data object which you can index using a position in the 3D environment. Unfortunately, WebGL (unlike OpenGL) only supports 2D data objects (called *textures*). This means we have to slice our 3D data array along one dimension, and tile the 2D slices next to each other in a 2D object. We then need a routine on the GPU to index this 2D object using 3D environment positions.
