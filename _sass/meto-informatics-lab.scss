@@ -508,6 +508,8 @@ section {
   img {
     margin: 0 auto;
     border: 7px solid white;
+    max-height: 200px;
+    max-width: 200px;
   }
   h4 {
     margin-top: 25px;
@@ -725,4 +727,4 @@ img::-moz-selection {
 
 body {
   webkit-tap-highlight-color: $brand-primary;
-} 
+}
