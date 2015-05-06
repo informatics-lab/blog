@@ -26,7 +26,13 @@ google_analytics: 'UA-60337429-1'
 destination: _site
 
 #exclude from build
-exclude: ["/less"]
+exclude: ["bower.json", 
+          "Gemfile*",
+          "package.json",
+          "README.md",
+          "LICENSE.md",
+          "Gruntfile.js",
+          "node_modules"]
 
 #sass config
 sass:
