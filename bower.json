@@ -2,6 +2,7 @@
   "name": "www.informaticslab.co.uk",
   "dependencies": {
     "font-awesome": "~4.3.0",
-    "bootstrap": "~3.3.4"
+    "bootstrap": "~3.3.4",
+    "classie": "~1.0.1"
   }
 }
