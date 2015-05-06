@@ -1,0 +1,19 @@
+{
+  "name": "www.informaticslab.co.uk",
+  "version": "2.0.0",
+  "description": "The website for the Met Office Informatics Lab",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/met-office-lab/met-office-lab.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/met-office-lab/met-office-lab.github.io/issues"
+  },
+  "homepage": "http://www.informaticslab.co.uk",
+  "dependencies": {
+    "bower": "^1.4.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-jekyll": "^0.4.2"
+  }
+}
