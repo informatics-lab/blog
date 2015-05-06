@@ -1,26 +1,51 @@
 module.exports = function(grunt) {
+
+  require('load-grunt-tasks')(grunt);
+
   grunt.initConfig({
-    jekyll: {
+
+    "jekyll": {
       options: {
         bundleExec: true,
         src : '<%= app %>'
       },
-      test: {
-        options: {
-          dest: '<%= dist %>',
-          config: '_config.yml'
-        }
+      "build": {
       },
-      serve: {
+      "serve": {
         options: {
           drafts: true,
-          serve: true
+          serve: true,
+          watch: true
         }
       }
+    },
+
+    "bower-install-simple": {
+        options: {
+            color: true,
+            directory: "lib"
+        },
+        "install": {
+        }
+    },
+
+    "shell": {
+        bundleInstall: {
+          command: "bundle install"
+        },
+        jekyllTest: {
+            command: "bundle exec htmlproof ./_site --only-4xx"
+        }
     }
   });
 
-  grunt.loadNpmTasks('grunt-jekyll');
+  // Prep tasks
+  grunt.registerTask("installDeps", ["shell:bundleInstall", "bower-install-simple"]);
 
-  grunt.registerTask('serve', [ 'jekyll:serve']);
+  // Public tasks
+  grunt.registerTask("serve", ["installDeps", "jekyll:serve" ]);
+  grunt.registerTask("deploy", ["installDeps", "jekyll:build", "shell:jekyllTest" ]);
+
+  // Default task
+  grunt.registerTask("default", [ "serve" ]);
 };

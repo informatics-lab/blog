@@ -1,20 +1,5 @@
 {
   "name": "www.informaticslab.co.uk",
-  "version": "2.0.0",
-  "homepage": "http://www.informaticslab.co.uk",
-  "authors": [
-    "Jacob Tomlinson <jacob@jacobtomlinson.co.uk>"
-  ],
-  "description": "The website for the Met Office Informatics Lab",
-  "main": "index.html",
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
   "dependencies": {
     "font-awesome": "~4.3.0",
     "bootstrap": "~3.3.4"

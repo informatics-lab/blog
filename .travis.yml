@@ -2,7 +2,8 @@ language: ruby
 rvm:
 - 2.1
 script:
-- rake test
+- npm install
+- grunt deploy
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
