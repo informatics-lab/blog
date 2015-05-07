@@ -16,5 +16,8 @@
         <div class="timeline-body">
             {{ post.summary }}
         </div>
+        {% if post.categories contains 'sticky' %}
+        <div><span class="label label-warning">Sticky</span></div>
+        {% endif %}
     </div>
 </li>

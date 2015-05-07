@@ -162,7 +162,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-  background-image: url('../img/header-bg.jpg');
   background-repeat: none;
   background-attachment: scroll;
   background-position: center center;
@@ -188,12 +187,22 @@ header {
     }
   }
 }
+.front-header {
+  background-image: url($header-front);
+  .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
+.blog-header {
+  background-image: url($header-blog);
+}
 
 @media(min-width:768px) {
   header {
     .intro-text {
-      padding-top: 300px;
-      padding-bottom: 200px;
+      padding-top: 100px;
+      padding-bottom: 50px;
       .intro-lead-in {
         @include serif-font;
         font-style: italic;
@@ -206,8 +215,17 @@ header {
         font-weight: 700;
         font-size: 75px;
         line-height: 75px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
       }
+    }
+  }
+  .front-header {
+    .intro-text {
+      padding-top: 300px;
+      padding-bottom: 200px;
+    }
+    .intro-heading {
+      margin-bottom: 50px;
     }
   }
 }
@@ -319,6 +337,7 @@ section {
 
 // Timeline
 
+
 .timeline {
   list-style: none;
   padding: 0;
@@ -329,7 +348,7 @@ section {
     position: absolute;
     content: "";
     width: 2px;
-    background-color: #f1f1f1;
+    background-color: $timeline-border-color;
     left: 40px;
     margin-left: -1.5px;
   }
@@ -374,7 +393,7 @@ section {
       background-color: $brand-primary;
       color: white;
       border-radius: 100%;
-      border: 7px solid #f1f1f1;
+      border: 7px solid $timeline-border-color;
       text-align: center;
       h4 {
         font-size: 10px;
