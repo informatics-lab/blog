@@ -47,5 +47,7 @@ default_blog_thumbnail: "/img/about/2.jpg"
 collections:
     profiles:
         output: true
+    projects:
+        output: true
     posts:
         output: true

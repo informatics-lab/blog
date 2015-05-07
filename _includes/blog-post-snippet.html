@@ -11,7 +11,7 @@
     <div class="timeline-panel">
         <div class="timeline-heading">
             <h4>{{ post.date | date: "%b %-d, %Y" }}</h4>
-            <h4 class="subheading"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
+            <h4 class="subheading"><span><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span></h4>
         </div>
         <div class="timeline-body">
             {{ post.summary }}

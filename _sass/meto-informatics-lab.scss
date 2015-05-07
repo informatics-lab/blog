@@ -1,5 +1,7 @@
 @import "meto-informatics-lab/variables";
 @import "meto-informatics-lab/mixins";
+@import url(http://fonts.googleapis.com/css?family=Rokkitt);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 // Global Components
 
@@ -63,13 +65,13 @@ h1, h2, h3, h4, h5, h6 {
 
 //custom button styling
 .btn-primary {
-  @include button-variant(white, $brand-primary, $brand-primary);
+  @include button-variant($gray-darkest, $brand-primary, $brand-primary);
   @include heading-font;
   font-weight: 700;
 }
 
 .btn-xl {
-  @include button-variant(white, $brand-primary, $brand-primary);
+  @include button-variant($gray-darkest, $brand-primary, $brand-primary);
   @include heading-font;
   font-weight: 700;
   border-radius: 3px;
@@ -123,26 +125,31 @@ h1, h2, h3, h4, h5, h6 {
   }
   .navbar-nav>.active>a {
     border-radius: 0;
-    color: white;
+    color: $gray-darkest;
     background-color: $brand-primary;
   }
   .navbar-nav>.active>a:hover,
   .navbar-nav>.active>a:focus {
-    color: white;
+    color: $gray-darkest;
     background-color: darken($brand-primary, 10%);
   }
+}
+
+.navbar-logo {
+  height: 50px;
 }
 
 
 @media(min-width:768px) {
   .navbar-default {
-    background-color: transparent;
-    padding: 25px 0;
+    background-color: $gray-darkest;
+    padding: 10px 0 10px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
     border: none;
     .navbar-brand {
+      padding: 0;
       font-size: 2em;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
@@ -154,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .navbar-default.navbar-shrink {
     background-color: $gray-darkest;
-    padding: 10px 0;
+    padding: 10px 0 10px 0;
     .navbar-brand {
       font-size: 1.5em;
     }
@@ -176,22 +183,29 @@ header {
       font-style: italic;
       font-size: 22px;
       line-height: 22px;
-      margin-bottom: 25px;
     }
     .intro-heading {
       @include heading-font;
       font-weight: 700;
-      font-size: 50px;
-      line-height: 50px;
-      margin-bottom: 25px;
+      font-size: 30px;
+      line-height: 30px;
+    }
+    .btn {
+      text-transform: uppercase;
     }
   }
 }
 .front-header {
   background-image: url($header-front);
-  .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
+  .intro-heading {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    color: $gray-darkest;
+
+    span {
+      background-color: white;
+      padding: 0 10px;
+    }
   }
 }
 .blog-header {
@@ -202,7 +216,7 @@ header {
   header {
     .intro-text {
       padding-top: 100px;
-      padding-bottom: 50px;
+      padding-bottom: 300px;
       .intro-lead-in {
         @include serif-font;
         font-style: italic;
@@ -212,20 +226,16 @@ header {
       }
       .intro-heading {
         @include heading-font;
-        font-weight: 700;
-        font-size: 75px;
+        font-weight: 200;
+        font-size: 55px;
         line-height: 75px;
-        margin-bottom: 10px;
+        margin-bottom: 50px;
       }
     }
   }
   .front-header {
-    .intro-text {
-      padding-top: 300px;
-      padding-bottom: 200px;
-    }
     .intro-heading {
-      margin-bottom: 50px;
+      margin-top: 100px;
     }
   }
 }
@@ -264,7 +274,7 @@ section {
 
 // Portfolio Section
 
-#portfolio {
+#projects {
   .portfolio-item {
     margin: 0 0 15px;
     right: 0;
@@ -428,6 +438,10 @@ section {
       color: inherit;
       &.subheading {
         text-transform: none;
+        span {
+          background-color: $gray-darkest;
+          padding: 0 5px;
+        }
       }
     }
   }
@@ -462,6 +476,7 @@ section {
           font-size: 13px;
           margin-top: 16px;
           line-height: 18px;
+          color: $gray-darkest;
         }
       }
       &.timeline-inverted > .timeline-panel {
@@ -552,11 +567,18 @@ aside.clients {
 
 section#contact {
   background-color: $gray-darkest;
-  background-image: url('../img/map-image.png');
+  background-image: url($contact-image);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
   .section-heading {
-    color: white;
+    color: $gray-darkest;
+    margin-bottom: 100px;
+    span {
+      background-color: white;
+      padding: 0 10px;
+    }
   }
   .form-group {
     margin-bottom: 25px;

@@ -8,7 +8,7 @@ $mo-light-grey: #babcbe;
 $mo-medium-grey: #6c6d6f;
 $mo-dark-grey: #414042;
 
-$brand-primary: $mo-blue;
+$brand-primary: $mo-green;
 $brand-danger: #e74c3c;
 $gray-darkest: #222;
 $gray: #777;
@@ -21,5 +21,7 @@ $timeline-border-color: #ffffff;
 
 // Header images
 
+$header-front: '/img/home-main-header.jpg';
 $header-blog: '../img/header-bg.jpg';
-$header-front: '../img/header-bg.jpg';
+
+$contact-image: '/img/contact-us.jpg';
