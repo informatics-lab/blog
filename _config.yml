@@ -42,6 +42,7 @@ sass:
 #pagination
 #paginate: 2
 post_limit: 3
+default_blog_thumbnail: "/img/about/2.jpg"
 
 collections:
     profiles:

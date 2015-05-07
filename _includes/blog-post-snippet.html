@@ -1,6 +1,12 @@
+{% if post.thumbnail %}
+{% assign image_url = post.thumbnail %}
+{% else %}
+{% assign image_url = site.default_blog_thumbnail %}
+{% endif %}
+
 <li class="{% cycle '','timeline-inverted' %}">
     <div class="timeline-image">
-        <a href="#"><img class="img-circle img-responsive" src="img/about/2.jpg" alt="{{ post.title }}"></a>
+        <a href="{{ post.url | prepend: site.baseurl }}"><img class="img-circle img-responsive" src="{{ image_url }}" alt="{{ post.title }}"></a>
     </div>
     <div class="timeline-panel">
         <div class="timeline-heading">

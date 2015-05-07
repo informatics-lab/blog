@@ -18,6 +18,7 @@
                 <li class="hidden">
                     <a href="#page-top"></a>
                 </li>
+                {% if page.layout == "front" %}
                 <li>
                     <a class="page-scroll" href="#get-involved">Get Involved</a>
                 </li>
@@ -33,6 +34,11 @@
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
                 </li>
+                {% else %}
+                <li>
+                    <a class="page-scroll" href="/">Home</a>
+                </li>
+                {% endif %}
             </ul>
         </div>
         <!-- /.navbar-collapse -->
