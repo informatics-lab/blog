@@ -1,11 +1,11 @@
 <li class="{% cycle '','timeline-inverted' %}">
     <div class="timeline-image">
-        <a href="#"><img class="img-circle img-responsive" src="img/about/2.jpg" alt=""></a>
+        <a href="#"><img class="img-circle img-responsive" src="img/about/2.jpg" alt="{{ post.title }}"></a>
     </div>
     <div class="timeline-panel">
         <div class="timeline-heading">
             <h4>{{ post.date | date: "%b %-d, %Y" }}</h4>
-            <h4 class="subheading"><a href="#">{{ post.title }}</a></h4>
+            <h4 class="subheading"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
         </div>
         <div class="timeline-body">
             {{ post.summary }}

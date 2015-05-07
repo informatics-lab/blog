@@ -26,7 +26,7 @@ google_analytics: 'UA-60337429-1'
 destination: _site
 
 #exclude from build
-exclude: ["bower.json", 
+exclude: ["bower.json",
           "Gemfile*",
           "package.json",
           "README.md",
@@ -40,7 +40,8 @@ sass:
   style: compressed
 
 #pagination
-paginate: 2
+#paginate: 2
+post_limit: 3
 
 collections:
     profiles:
