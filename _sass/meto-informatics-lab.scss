@@ -29,24 +29,7 @@ p.large {
   font-size: 16px;
 }
 
-a,
-a:hover,
-a:focus,
-a:active,
-a.active {
-  outline: none;
-}
-
-a {
-  color: $brand-primary;
-}
-
-a:hover,
-a:focus,
-a:active,
-a.active {
-  color: darken($brand-primary, 10%);
-}
+@include a-variant($brand-primary);
 
 h1, h2, h3, h4, h5, h6 {
    @include heading-font;
@@ -113,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
   .nav {
     li {
       a {
-        @include heading-font;
+        @include body-font;
         font-weight: 400;
         letter-spacing: 1px;
         color: white;
@@ -192,13 +175,13 @@ header {
       font-size: 30px;
       line-height: 30px;
       color: $gray-darkest;
-
-      span {
-        background-color: white;
-        padding: 0 10px;
-      }
+      display: inline-block;
+      background-color: white;
+      padding: 0 10px;
     }
+    .intro-heading::after { content:"\A"; display:block; }
     .btn {
+      @include body-font;
       text-transform: uppercase;
     }
   }
@@ -251,6 +234,10 @@ header {
 section {
   padding: 100px 0;
   h2.section-heading {
+    display: inline-block;
+    color: white;
+    background-color: $mo-medium-grey;
+    padding: 0 0.3em;
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 15px;
@@ -284,6 +271,7 @@ footer {
     text-transform: none;
   }
   ul.quicklinks {
+    @include a-variant($gray-darkest);
     margin-bottom: 0;
     line-height: 40px;
     @include heading-font;

@@ -19,6 +19,27 @@
   }
 }
 
+@mixin a-variant($color) {
+  a,
+  a:hover,
+  a:focus,
+  a:active,
+  a.active {
+    outline: none;
+  }
+
+  a {
+    color: $color;
+  }
+
+  a:hover,
+  a:focus,
+  a:active,
+  a.active {
+    color: darken($color, 10%);
+  }
+}
+
 // Background Features
 @mixin background-cover() {
   -webkit-background-size: cover;
@@ -29,12 +50,12 @@
 
 // Font Selections
 @mixin serif-font() {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Rokkitt", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @mixin script-font() {
   //font-family: "Merriweather", "PT Serif";
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 
 @mixin body-font() {

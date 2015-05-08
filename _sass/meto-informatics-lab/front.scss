@@ -133,8 +133,8 @@
       height: 80px;
       position: absolute;
       z-index: 100;
-      background-color: $brand-primary;
-      color: white;
+      background-color: $mo-light-grey;
+      color: $mo-dark-grey;
       border-radius: 100%;
       border: 7px solid $timeline-border-color;
       text-align: center;
@@ -173,7 +173,7 @@
         text-transform: none;
         span {
           background-color: $gray-darkest;
-          padding: 0 5px;
+          padding: 0 0.5em;
         }
       }
     }
@@ -209,7 +209,6 @@
           font-size: 13px;
           margin-top: 16px;
           line-height: 18px;
-          color: $gray-darkest;
         }
       }
       &.timeline-inverted > .timeline-panel {
@@ -274,7 +273,7 @@
   margin-bottom: 50px;
   img {
     margin: 0 auto;
-    border: 7px solid white;
+    border: 7px solid $mo-light-grey;
     max-height: 200px;
     max-width: 200px;
   }
@@ -308,10 +307,7 @@ section#contact {
   .section-heading {
     color: $gray-darkest;
     margin-bottom: 100px;
-    span {
-      background-color: white;
-      padding: 0 10px;
-    }
+    background-color: white;
   }
   .form-group {
     margin-bottom: 25px;
