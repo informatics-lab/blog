@@ -34,7 +34,7 @@ module.exports = function(grunt) {
           command: "bundle install"
         },
         jekyllTest: {
-            command: "bundle exec htmlproof ./_site --only-4xx --file-ignore='./_site/lib.*'"
+            command: "bundle exec htmlproof ./_site --only-4xx --file-ignore ./_site/lib.*"
         }
     }
   });
