@@ -1,0 +1,33 @@
+.post-content {
+  width: 70%;
+  margin: 50px auto;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.post-header {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  span {
+    margin: 0 20px;
+    padding: 2px 5px;
+    background: $mo-dark-grey;
+    color: $brand-primary;
+  }
+}
+
+.written-by-footer {
+  text-align: center;
+  .heading {
+    a {
+      padding: 2px 5px;
+      background: $mo-dark-grey;
+      color: $brand-primary;
+    }
+  }
+  .summary {
+    font-style: italic;
+  }
+}
