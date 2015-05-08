@@ -19,14 +19,13 @@ module.exports = function(grunt) {
         }
       }
     },
-
-    "bower-install-simple": {
+    bower: {
+      install: {
         options: {
-            color: true,
-            directory: "lib"
-        },
-        "install": {
+          targetDir: './lib',
+          layout: 'byComponent'
         }
+      }
     },
 
     "shell": {
@@ -35,15 +34,12 @@ module.exports = function(grunt) {
         },
         jekyllTest: {
             command: "bundle exec htmlproof ./_site --only-4xx"
-        },
-        deleteDepTests: {
-          command: "rm -f ./_site/lib/*test* --only-4xx"
         }
     }
   });
 
   // Prep tasks
-  grunt.registerTask("installDeps", ["shell:bundleInstall", "bower-install-simple"]);
+  grunt.registerTask("installDeps", ["shell:bundleInstall", "bower"]);
 
   // Public tasks
   grunt.registerTask("serve", ["installDeps", "jekyll:serve" ]);

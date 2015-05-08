@@ -7,4 +7,5 @@ _config.gh-pages.yml
 Gemfile.lock
 
 node_modules
+bower_components
 lib

@@ -32,7 +32,8 @@ exclude: ["bower.json",
           "README.md",
           "LICENSE.md",
           "Gruntfile.js",
-          "node_modules"]
+          "node_modules",
+          "bower_components"]
 
 #sass config
 sass:
