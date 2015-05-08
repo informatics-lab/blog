@@ -3,6 +3,7 @@
 .get-involved-heading {
   margin: 15px 0;
   text-transform: none;
+  font-size: 28px;
 }
 
 // Portfolio Section
@@ -170,11 +171,11 @@
       margin-top: 0;
       color: inherit;
       &.subheading {
+        display: inline-block;
+        font-size: 24px;
         text-transform: none;
-        span {
-          background-color: $gray-darkest;
-          padding: 0 0.5em;
-        }
+        background-color: $gray-darkest;
+        padding: 0.1em 0.5em;
       }
     }
   }
@@ -284,6 +285,7 @@
     margin-top: 25px;
     margin-bottom: 0;
     text-transform: none;
+    font-size: 24px;
   }
   p {
     margin-top: 0;
