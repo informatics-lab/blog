@@ -191,6 +191,21 @@ header {
   background-image: url($header-blog);
 }
 
+.post-header {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  span {
+    margin: 0 20px;
+    padding: 2px 0px;
+    background: $mo-dark-grey;
+    color: $brand-primary;
+    box-shadow: 5px 0 0 $mo-dark-grey, -5px 0 0 $mo-dark-grey;
+  }
+}
+
 @media(min-width:768px) {
   header {
     .intro-text {

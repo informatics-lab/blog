@@ -174,11 +174,15 @@
       margin-top: 0;
       color: inherit;
       &.subheading {
-        display: inline-block;
+        @include a-variant(white);
+        span {
+          a {
+            background-color: $mo-dark-grey;
+            box-shadow: 5px 0 0 $mo-dark-grey, -5px 0 0 $mo-dark-grey;
+          }
+        }
         font-size: 24px;
         text-transform: none;
-        background-color: $gray-darkest;
-        padding: 0.1em 0.5em;
       }
     }
   }
