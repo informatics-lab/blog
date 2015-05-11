@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
   .navbar-default.navbar-shrink {
     background-color: $gray-darkest;
     padding: 10px 0 10px 0;
-    height: 70px;
+    height: 80px;
     .navbar-logo {
       height: 50px;
     }
@@ -150,7 +150,7 @@ header {
   background-repeat: none;
   background-attachment: scroll;
   background-position: center center;
-  margin-top: 70px;
+  margin-top: 80px;
   @include background-cover;
   text-align: center;
   color: white;
