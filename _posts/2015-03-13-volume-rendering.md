@@ -85,9 +85,7 @@ I thought you'd never ask! I've cobbled together a [proof-of-concept 3D front en
 ####What about light sources?
 We can make a big improvement to this volume rendering by using light sources to illuminate the field. In short, this means that at every step of the ray march, we need to march a ray from the light source to the current position to see what the contribution is. This should automatically create shading on our object, making the 3D effect much more effective. Here's a nice example using bunnies!
 
-<div style="text-align:center">
-<iframe width="320" height="195" src="https://www.youtube.com/embed/VPhnwOpmUqY" frameborder="0" allowfullscreen></iframe>
-</div>
+{% youtube VPhnwOpmUqY %}
 
 Unfortunately, I haven't been able to get this kind of thing running with out synthetic data yet. If you're interested, then have a look at ~~this branch~~ (Editor - sorry branch no longer exists).
 
