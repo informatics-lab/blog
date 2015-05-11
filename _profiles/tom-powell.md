@@ -1,7 +1,7 @@
 ---
 layout:     profile
 name:       Tom Powell
-summary:    Tom is a programmer who loves to play with new technologies, he is particularly interested in how the Lab can expose and present data in a richer, more immersive and  innovative way.
+summary:    Tom is a developer who loves dogs.
 affiliation: core
 twitter-url:
 linkedin-url:

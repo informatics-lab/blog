@@ -9,7 +9,7 @@
         <div class="mugshot img-responsive img-circle" style="background-image: url({{ mugshot }});" onclick="location.href='{{ profile.url | prepend: site.baseurl }}';">
         </div>
         <a href="{{ profile.url | prepend: site.baseurl }}"><h4>{{ profile.name }}</h4></a>
-        <p class="text-muted">{{ profile.summary }}</p>
+        <p class="text-muted summary">{{ profile.summary | truncatewords: 13 }}</p>
         {% include team-social-links.html %}
     </div>
 </div>
