@@ -5,6 +5,7 @@ title:      The power of clouds
 date:       2015-04-30
 summary:    An overview of our 3D browser visualisation of high resolution weather forecast data.
 categories: News
+thumbnail: https://pbs.twimg.com/media/CD6RoadXIAEuLWM.jpg:large
 ---
 
 I have mentioned before that our first prototype is a 3D browser visualisation of high resolution weather forecast data ... but I haven’t said much about how we are doing it so, here it is:

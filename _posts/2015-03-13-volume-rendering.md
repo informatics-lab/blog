@@ -6,12 +6,13 @@ summary:    Find out about our first go at volume rendering using WebGL ray trac
 categories: ['technical', 'perspiration']
 author: 	Niall Robinson
 project:    threedvis
+thumbnail: http://s3-eu-west-1.amazonaws.com/informatics-webimages/rays.jpg
 
----	
+---
 
 ####Weeee I'm a light beam...we'll sort of. Read on and you'll see what I mean.
 
-We've been making our first baby steps with our project to do [3D visualisation of weather data in the browser](http://www.informaticslab.co.uk/projects/three-d-vis/). It looks like these two libraries are going to be really important for what we want to do: 
+We've been making our first baby steps with our project to do [3D visualisation of weather data in the browser](http://www.informaticslab.co.uk/projects/three-d-vis/). It looks like these two libraries are going to be really important for what we want to do:
 
 * [WebGL](https://www.khronos.org/webgl/), a 3D vis library which allows you to use much of the 3D whizzyness of [OpenGL](https://www.opengl.org/) but in the browser
 * and [threejs](http://www.threejs.org) which wraps WebGL, making it easier to set up 3D environments.
@@ -46,7 +47,7 @@ Light travels in straight lines (which is lucky - it would be hard to do this it
 2. Where that ray exits our volume of data ($I$ on the diagram)
 3. How many times we want to sample the data field on our journey though the data (this isn't marked on the diagram, but lets call it...um...$n$, yeh $n$.)
 
-If we know this stuff then we can do some [vector maths](http://en.wikipedia.org/wiki/Vector_space) to work out that, to get from one sample point to the next sample point, the ray moves 
+If we know this stuff then we can do some [vector maths](http://en.wikipedia.org/wiki/Vector_space) to work out that, to get from one sample point to the next sample point, the ray moves
 $$\mathbf{d} = \frac{\mathbf{I} - \mathbf{f}}{n}$$
 (by the way, those bold, non-italic symbols mean we're talking about vectors).
 
@@ -74,7 +75,7 @@ We start by rendering the x, y, z coordinate of the back face of our volume as a
 	<cite><p>This rainbowy thing is what you get when you render the back face of the cube using the x,&nbsp;y,&nbsp;z coordinates to set the r,&nbsp;g,&nbsp;b values respectively.</p></cite>
 </div>
 
-We then take this rendered rainbow image, and pass it into the next rendering pass. For a given start point, the corresponding end point x, y, z values are the RGB values of this rainbow image indexed at that start point. 
+We then take this rendered rainbow image, and pass it into the next rendering pass. For a given start point, the corresponding end point x, y, z values are the RGB values of this rainbow image indexed at that start point.
 
 That might take a bit of digesting, but what it means is this: combining the two rendering passes means we are using the 3D environment to calculate what the corresponding start and end points are by taking into account the field orientation.
 
