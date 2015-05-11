@@ -83,10 +83,12 @@ h1, h2, h3, h4, h5, h6 {
         font-weight: 400;
         letter-spacing: 1px;
         color: white;
-        &:hover,
-        &:focus {
+        &:hover {
           color: $brand-primary;
           outline: none;
+        }
+        &:focus {
+          color: white;
         }
       }
     }
@@ -192,7 +194,7 @@ header {
 @media(min-width:768px) {
   header {
     .intro-text {
-      padding-top: 50px;
+      padding-top: 0px;
       padding-bottom: 0px;
       .intro-lead-in {
         @include serif-font;
