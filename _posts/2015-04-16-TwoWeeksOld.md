@@ -4,7 +4,7 @@ layout:     post
 title:      Only two weeks in ...
 date:       2015-04-17
 summary:    but a lot of things are happening
-categories: [Announcements, sticky]
+categories: [Announcements]
 thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/tHD9RgYn.jpg
 ---
 
