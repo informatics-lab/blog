@@ -70,16 +70,6 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-default {
   background-color: $gray-darkest;
   border-color: transparent;
-  .navbar-brand {
-    color: $brand-primary;
-    @include script-font;
-    &:hover,
-    &:focus,
-    &:active,
-    &.active {
-      color: darken($brand-primary, 10%);
-    }
-  }
   .navbar-collapse {
     border-color: fade(white, 2%);
   }
@@ -121,10 +111,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.navbar-logo {
-  height: 50px;
-}
-
 
 @media(min-width:768px) {
   .navbar-default {
@@ -134,12 +120,20 @@ h1, h2, h3, h4, h5, h6 {
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
     border: none;
-    .navbar-brand {
-      padding: 0;
-      font-size: 2em;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
+    height: 120px;
+    @include navbar-animate();
+    .navbar-logo {
+      @include navbar-animate();
+      height: 90px;
+    }
+    .navbar-nav {
+      @include navbar-animate();
+      margin-top: 53px;
+      li {
+        a {
+          line-height: 5px;
+        }
+      }
     }
     .navbar-nav>.active>a {
       border-radius: 3px;
@@ -148,8 +142,12 @@ h1, h2, h3, h4, h5, h6 {
   .navbar-default.navbar-shrink {
     background-color: $gray-darkest;
     padding: 10px 0 10px 0;
-    .navbar-brand {
-      font-size: 1.5em;
+    height: 70px;
+    .navbar-logo {
+      height: 50px;
+    }
+    .navbar-nav {
+      margin-top: 20px;
     }
   }
 }
@@ -158,6 +156,7 @@ header {
   background-repeat: none;
   background-attachment: scroll;
   background-position: center center;
+  margin-top: 70px;
   @include background-cover;
   text-align: center;
   color: white;
@@ -201,7 +200,7 @@ header {
 @media(min-width:768px) {
   header {
     .intro-text {
-      padding-top: 100px;
+      padding-top: 50px;
       padding-bottom: 0px;
       .intro-lead-in {
         @include serif-font;

@@ -40,6 +40,12 @@
   }
 }
 
+@mixin navbar-animate() {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
 // Background Features
 @mixin background-cover() {
   -webkit-background-size: cover;

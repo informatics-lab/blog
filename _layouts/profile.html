@@ -8,7 +8,6 @@ layout: default
 
 	<header class="post-header">
 		<h1 class="h2">{{ page.name }}
-			{% include social_links.html %}
 		</h1>
 	</header>
 
@@ -29,6 +28,7 @@ layout: default
 		{% assign user_posts = site.posts | where: "author", page.name %}
 		{% if user_posts.size > 0 %}
 		<h3>Articles by {{ page.name }}</h3>
+		{% include social_links.html %}
 		{% for post in user_posts %}
 		<div class="post">
 			<span>{{ post.date | date: "%b %-d, %Y" }}</span> -
@@ -38,6 +38,7 @@ layout: default
 		</div>
 		{% endfor %}
 		{% endif %}
+
 	</article>
 
 	{% include footer.html %}
