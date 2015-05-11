@@ -1,10 +1,44 @@
 ---
 layout: default
 ---
-<header class="post-header">
-	<h1 class="h2">{{ page.name }}
-		{% include social_links.html %}
-	</h1>
-</header>
-{% if page.mugshot %}<img src="{{ site.image-bin }}{{ page.mugshot }}" alt={{ page.name }} class="profile-mugshot"></img>{% endif %}
-{{ content }}
+<body>
+
+
+	{% include navigation.html %}
+
+	<header class="post-header">
+		<h1 class="h2">{{ page.name }}
+			{% include social_links.html %}
+		</h1>
+	</header>
+
+
+	<article class="post-content profile">
+
+		{% if page.mugshot %}
+		  <div class="team-member">
+				<div class="mugshot img-responsive img-circle" style="background-image: url({{ site.image-bin }}{{ page.mugshot }});">
+				</div>
+			</div>
+		{% endif %}
+
+		<h2>{{ page.name }}</h2>
+		{{ content }}
+
+
+		{% assign user_posts = site.posts | where: "author", page.name %}
+		{% if user_posts.size > 0 %}
+		<h3>Articles by {{ page.name }}</h3>
+		{% for post in user_posts %}
+		<div class="post">
+			<span>{{ post.date | date: "%b %-d, %Y" }}</span> -
+			<a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
+				<span class="post-title">{{ post.title }}</span>
+			</a>
+		</div>
+		{% endfor %}
+		{% endif %}
+	</article>
+
+	{% include footer.html %}
+</body>

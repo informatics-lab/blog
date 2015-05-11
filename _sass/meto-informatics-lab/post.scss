@@ -19,9 +19,10 @@
   margin-right: auto;
   span {
     margin: 0 20px;
-    padding: 2px 5px;
+    padding: 2px 0px;
     background: $mo-dark-grey;
     color: $brand-primary;
+    box-shadow: 5px 0 0 $mo-dark-grey, -5px 0 0 $mo-dark-grey;
   }
 }
 

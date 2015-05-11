@@ -9,6 +9,8 @@ layout: default
   {% if minutes == 0 %}{% assign minutes = 1 %}{% endif %}
 {% endif %}
 
+{% assign profile = ((site.profiles | where: "name", page.author) | first ) %}
+
 
 {% include navigation.html %}
 
@@ -25,7 +27,11 @@ layout: default
           {% endif %}
           <span class="post-meta small">{{ minutes }} minute read</span>
           {% if page.author %}
-            <span class="post-meta small">by {{ page.author }}</span><br>
+            {% if profile %}
+              <span class="post-meta small">by <a href="{{ profile.url }}">{{ page.author }}</a></span><br>
+            {% else %}
+              <span class="post-meta small">by {{ page.author }}</span><br>
+            {% endif %}
           {% endif %}
         </div>
     </div>
@@ -37,7 +43,6 @@ layout: default
   {{ content }}
 </article>
 
-{% assign profile = ((site.profiles | where: "name", page.author) | first ) %}
 {% if profile %}
 <div class="written-by-footer">
   <div class="heading">written by <a href={{ profile.url }}>{{ profile.name }}</a></div>

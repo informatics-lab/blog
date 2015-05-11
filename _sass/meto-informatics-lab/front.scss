@@ -280,10 +280,14 @@
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
+    cursor: pointer;
   }
   h4 {
+    display: inline-block;
+    background-color: $mo-dark-grey;
+    padding: 0.1em 0.5em;
     margin-top: 25px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     text-transform: none;
     font-size: 24px;
   }
