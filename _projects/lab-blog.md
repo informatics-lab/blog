@@ -1,6 +1,6 @@
 ---
 layout:     project-overview
-title:      An awsome site blog
+title:      An awesome site blog
 author:     Niall Robinson
 summary:    Every good organisation needs a blog, don't they? We'll we thought we'd better set about making one!
 completed:  true
