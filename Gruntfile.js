@@ -34,6 +34,9 @@ module.exports = function(grunt) {
         },
         jekyllTest: {
             command: "bundle exec htmlproof ./_site --only-4xx"
+        },
+        runTests: {
+          command: "for SCRIPT in tests/*; do if [ -f $SCRIPT -a -x $SCRIPT ]; then $SCRIPT; fi; done"
         }
     }
   });
@@ -43,7 +46,7 @@ module.exports = function(grunt) {
 
   // Public tasks
   grunt.registerTask("serve", ["installDeps", "jekyll:serve" ]);
-  grunt.registerTask("deploy", ["installDeps", "jekyll:build", "shell:jekyllTest" ]);
+  grunt.registerTask("deploy", ["installDeps", "jekyll:build", "shell:jekyllTest", "shell:runTests" ]);
 
   // Default task
   grunt.registerTask("default", [ "serve" ]);
