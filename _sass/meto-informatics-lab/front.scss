@@ -1,9 +1,12 @@
 // Get Involved Section
 
-.get-involved-heading {
-  margin: 15px 0;
-  text-transform: none;
-  font-size: 28px;
+#get-involved {
+  .get-involved-heading {
+    margin: 15px 0;
+    text-transform: none;
+    font-size: 28px;
+    @include a-variant($mo-dark-grey);
+  }
 }
 
 // Portfolio Section
