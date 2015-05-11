@@ -275,6 +275,7 @@
 .team-member {
   text-align: center;
   margin-bottom: 50px;
+  @include a-variant($gray-darkest);
   .mugshot {
     margin: 0 auto;
     border: 7px solid $mo-light-grey;
@@ -286,8 +287,6 @@
     cursor: pointer;
   }
   h4 {
-    display: inline-block;
-    background-color: $mo-dark-grey;
     padding: 0.1em 0.5em;
     margin-top: 25px;
     margin-bottom: 10px;
