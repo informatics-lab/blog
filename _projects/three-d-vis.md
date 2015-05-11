@@ -6,6 +6,7 @@ summary:     Weather and climate models create entire versions of the atmosphere
 github-link: https://github.com/met-office-lab/volume-rendering
 completed:   false
 project:     threedvis
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-05-11+at+15.00.00.png
 
 ---
 ![Just a normal day at the lab](http://2.bp.blogspot.com/_GY9imUnSKCw/TRKtpqELS5I/AAAAAAAABp4/TMohzh9_Pm8/s1600/recognizer.jpg)
