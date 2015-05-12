@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+<body>
 {% if page.minutes %}
   {% assign minutes = page.minutes %}
 {% else %}
@@ -9,27 +9,44 @@ layout: default
   {% if minutes == 0 %}{% assign minutes = 1 %}{% endif %}
 {% endif %}
 
-<div class="post-header">
-  <h1>{{ page.title }}</h1>
-  <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}, </span>
-  {% if page.update_date %}
-    <span class="post-meta">Updated: {{ page.update_date | date: "%b %-d, %Y" }}</span><br>
-  {% endif %}  
-  <span class="post-meta small">{{ minutes }} minute read</span><br>
-  {% if page.author %}
-    <span class="post-meta small">by {{ page.author }}</span><br>
-  {% endif %}
-</div>
+{% assign profile = ((site.profiles | where: "name", page.author) | first ) %}
+
+
+{% include navigation.html %}
+
+<!-- Header image -->
+<header style="background-image: url(/img/home-main-header.jpg);">
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-heading"><span>{{ page.title }}</span></div>
+        </div>
+        <div class="post-header">
+          <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</span>
+          {% if page.update_date %}
+            <span class="post-meta">Updated: {{ page.update_date | date: "%b %-d, %Y" }}</span><br>
+          {% endif %}
+          <span class="post-meta small">{{ minutes }} minute read</span>
+          {% if page.author %}
+            {% if profile %}
+              <span class="post-meta small">by <a href="{{ profile.url }}">{{ page.author }}</a></span><br>
+            {% else %}
+              <span class="post-meta small">by {{ page.author }}</span><br>
+            {% endif %}
+          {% endif %}
+        </div>
+    </div>
+</header>
+
+
 
 <article class="post-content">
   {{ content }}
 </article>
 
-{% assign profile = ((site.profiles | where: "name", page.author) | first ) %}
 {% if profile %}
 <div class="written-by-footer">
   <div class="heading">written by <a href={{ profile.url }}>{{ profile.name }}</a></div>
-  <p>{{ profile.summary }}</p>
+  <p class="summary">{{ profile.summary }}</p>
 </div>
 {% endif %}
 
@@ -60,3 +77,6 @@ layout: default
     </div>
   {% endfor %}
 {% endif %}
+
+    {% include footer.html %}
+</body>

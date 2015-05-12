@@ -1,0 +1,9 @@
+<ul class="list-inline social-buttons">
+	{% if profile.email %}<li><a href="mailto:{{ profile.email }}" target="_new"><i class="fa fa-envelope"></i></a></li>{% endif %}
+	{% if profile.twitter-url %}<li><a href="{{ profile.twitter-url }}" target="_new"><i class="fa fa-twitter"></i></a></li>{% endif %}
+	{% if profile.googleplus-url %}<li><a href="{{ profile.googleplus-url }}" target="_new"><i class="fa fa-google-plus"></i></a></li>{% endif %}
+	{% if profile.linkedin-url %}<li><a href="{{ profile.linkedin-url }}" target="_new"><i class="fa fa-linkedin"></i></a></li>{% endif %}
+	{% if profile.github-url %}<li><a href="{{ profile.github-url }}" target="_new"><i class="fa fa-github"></i></a></li>{% endif %}
+	{% if profile.stackoverflow-url %}<li><a href="{{ profile.stackoverflow-url }}" target="_new"><i class="fa fa-stack-overflow"></i></a></li>{% endif %}
+	{% if profile.instagram-url %}<li><a href="{{ profile.instagram-url }}" target="_new"><i class="fa fa-instagram"></i></a></li>{% endif %}
+</ul>

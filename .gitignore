@@ -5,3 +5,7 @@ _site
 # Ignore the config file that's used for gh-pages.
 _config.gh-pages.yml
 Gemfile.lock
+
+node_modules
+bower_components
+lib

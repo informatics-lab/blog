@@ -1,17 +1,63 @@
-<nav class="navbar navbar-default navbar-header" role="navigation">
+<!-- Navigation -->
 
-	<div class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-	</div>
+{% if page.layout == "front" %}
+<nav class="navbar navbar-default navbar-fixed-top">
+{% else %}
+<nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+{% endif %}
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="page-scroll" href="/">
+              <img class="navbar-logo" src="/img/header.svg" alt="Met Office Logo" />
+            </a>
+        </div>
 
-	<div class="navbar-collapse collapse">
-		<ul class="nav nav-justified">
-			<li role="presentation active" style="border-radius:10px;"><a href="/">Blog</a></li>
-			<li role="presentation"><a href="/projects/">Projects</a></li>
-			<li role="presentation"><a href="/who-we-are/">Who&nbsp;We&nbsp;Are</a></li>
-			<li role="presentation"><a href="/get-involved/">Get&nbsp;involved</a></li>
-		</ul>
-	</div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                {% if page.layout == "front" %}
+                <li>
+                    <a class="page-scroll" href="#get-involved">Get Involved</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#blog">Blog</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#team">Team</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+                {% else %}
+                <li>
+                    <a class="page-scroll" href="/#get-involved">Get Involved</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#blog">Blog</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#projects">Projects</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#team">Team</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#contact">Contact</a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
 </nav>

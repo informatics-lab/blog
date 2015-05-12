@@ -1,37 +1,60 @@
 ---
 layout: default
 ---
+<body>
 
-{{ content }}
+{% include navigation.html %}
 
-{% assign project_concept_notes = site.concept-notes | where: "project", page.project %}
-{% assign project_posts = site.posts | where: "project", page.project %}
-{% if project_concept_notes.size > 0 or project_posts.size > 0 %}
-<h2>Related links</h2>
-{% endif %}
 
-{% if project_concept_notes.size > 0 %}
-<h3>Concept Notes</h3>
-Concept notes are more technical specifications of aspects of a project.	
-{% for concept_note in project_concept_notes %}
-<div class="post">
-	<a href="{{ concept_note.url | prepend: site.baseurl }}" class="post-link">
-		<h4 class="post-title">{{ concept_note.title }}</h4>
-		<p class="post-summary">{{ concept_note.summary | strip_html }}</p>
-	</a>
-</div>
-{% endfor %}
-{% endif %}
+<!-- Header image -->
+<header style="background-image: url(/img/home-main-header.jpg);">
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-heading"><span>{{ page.title }}</span></div>
+        </div>
+        <div class="post-header">
+          <span class="post-meta">{{ page.summary }}</span>
+        </div>
+    </div>
+</header>
 
-{% if project_posts.size > 0 %}
-<h3>Related blog posts</h3>
-News items related to this project
-{% for project_post in project_posts %}
-<div class="post">
-	<a href="{{ project_post.url | prepend: site.baseurl }}" class="post-link">
-		<h4 class="post-title">{{ project_post.title }}</h4>
-		<p class="post-summary">{{ project_post.summary | strip_html }}</p>
-	</a>
-</div>
-{% endfor %}
-{% endif %}	
+<article class="post-content">
+	{{ content }}
+
+	{% assign project_concept_notes = site.concept-notes | where: "project", page.project %}
+	{% assign project_posts = site.posts | where: "project", page.project %}
+	{% if project_concept_notes.size > 0 or project_posts.size > 0 %}
+	<h3>Related links</h3>
+	{% endif %}
+
+	{% if project_concept_notes.size > 0 %}
+	<h3>Concept Notes</h3>
+	Concept notes are more technical specifications of aspects of a project.
+	{% for concept_note in project_concept_notes %}
+	<div class="post">
+
+			<h4 class="post-title">
+				<a href="{{ concept_note.url | prepend: site.baseurl }}" class="post-link">{{ concept_note.title }}</a>
+			</h4>
+			<p class="post-summary">{{ concept_note.summary | strip_html }}</p>
+
+	</div>
+	{% endfor %}
+	{% endif %}
+
+	{% if project_posts.size > 0 %}
+	<h3>Related blog posts</h3>
+	{% for project_post in project_posts %}
+	<div class="post">
+		<span>{{ project_post.date | date: "%b %-d, %Y" }}</span> -
+		<a href="{{ project_post.url | prepend: site.baseurl }}" class="post-link">
+			<span class="post-title">{{ project_post.title }}</span>
+		</a>
+	</div>
+	{% endfor %}
+	{% endif %}
+
+</article>
+
+{% include footer.html %}
+</body>

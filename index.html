@@ -1,38 +1,30 @@
 ---
-layout: default
+layout: front
 ---
+<body id="page-top" class="index">
 
-<div class="home">
+    {% include navigation.html %}
 
-  <div class="posts">
-    {% for post in site.categories.sticky %}
-      <div class="post">
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-          <p class="post-meta">
-            {{ post.date | date: "%b %-d, %Y"}}{% if post.author %}, by {{ post.author }}{% endif %}
-          </p>
-          <h3 class="h2 post-title">{{ post.title }}</h3>
-          <p class="post-summary">{{ post.summary }}</p>
-        </a>
-      </div>
-    {% endfor %}
-
-    {% for post in paginator.posts %}
-      {% if post.categories contains 'sticky' %}
-          <!-- do nothing -->
-      {% else %}
-        <div class="post">
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-            <p class="post-meta">
-              {{ post.date | date: "%b %-d, %Y"}}{% if post.author %}, by {{ post.author }}{% endif %}
-            </p>
-            <h3 class="h2 post-title">{{ post.title }}</h3>
-            <p class="post-summary">{{ post.summary }}</p>
-          </a>
+    <!-- Header image -->
+    <header class="front-header">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading">Useful. Beautiful. Data.</div><br />
+                <a href="#get-involved" class="page-scroll btn btn-xl">Get Involved</a>
+            </div>
         </div>
-      {% endif %}
-    {% endfor %}
-  </div>
+    </header>
 
-  {% include pagination.html %}
-</div>
+    {% include get-involved.html %}
+
+    {% include blog.html %}
+
+    {% include projects.html %}
+
+    {% include team.html %}
+
+    {% include contact-form.html %}
+
+    {% include footer.html %}
+
+</body>

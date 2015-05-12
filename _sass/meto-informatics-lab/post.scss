@@ -1,0 +1,26 @@
+.post-content {
+  width: 70%;
+  margin: 50px auto;
+
+  @include a-variant($mo-blue);
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.written-by-footer {
+  text-align: center;
+  .heading {
+    a {
+      padding: 2px 5px;
+      background: $mo-dark-grey;
+      color: $brand-primary;
+    }
+  }
+  .summary {
+    font-style: italic;
+  }
+}

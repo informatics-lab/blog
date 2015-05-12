@@ -15,10 +15,11 @@ If you want to work with us, there are several ways you can go about it:
 
 ###Featured Issues
 These are the things that we are particularly looking for help with right now.
-{% include featured-issues.html %}
+
+> Coming soon
 
 ###Getting set-up
 If you are working closely with the Lab, you'll need some information to get set up.
 
-* [How to set up your laptop](/get-involved/get-set-up/)
-* [How to contribute to the blog](./how-to-blog)
+* [How to set up your laptop](/get-involved/get-set-up.html)
+* [How to contribute to the blog](/get-involved/coder/how-to-blog.html)

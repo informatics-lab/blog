@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<body id="page-top" class="index">
+
+    {% include navigation.html %}
+
+    <!-- Header image -->
+    <header class="blog-header">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading"><span>Blog</span></div>
+            </div>
+        </div>
+    </header>
+
+<!-- Blog Section -->
+<section id="blog" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+
+                    {% for post in site.categories.sticky %}
+                      {% include blog-post-snippet.html %}
+                    {% endfor %}
+
+                    {% for post in site.posts %}
+                      {% if post.categories contains 'sticky' %}
+                        <!-- do nothing -->
+                      {% else %}
+                        {% include blog-post-snippet.html %}
+                      {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    {% include footer.html %}
+
+</body>
