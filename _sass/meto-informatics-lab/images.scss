@@ -1,0 +1,132 @@
+// Scientist
+svg#get-involved-scientist-image:hover {
+  .bubble {
+    -webkit-animation: scientist-fade 2s infinite;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-timing-function: linear;
+  }
+  .bubble:nth-of-type(1n) {
+    -webkit-animation-delay: 0s, 4ms;
+  }
+  .bubble:nth-of-type(2n) {
+    -webkit-animation-delay: 0.25s, 4ms;
+  }
+  .bubble:nth-of-type(3n) {
+    -webkit-animation-delay: 0.5s, 4ms;
+  }
+  .bubble:nth-of-type(4n) {
+    -webkit-animation-delay: 0.75s, 4ms;
+  }
+  .bubble:nth-of-type(5n) {
+    -webkit-animation-delay: 1s, 4ms;
+  }
+  .bubble:nth-of-type(6n) {
+    -webkit-animation-delay: 1.25s, 4ms;
+  }
+  .bubble:nth-of-type(7n) {
+    -webkit-animation-delay: 1.5s, 4ms;
+  }
+  .bubble:nth-of-type(8n) {
+    -webkit-animation-delay: 1.75s, 4ms;
+  }
+  .bubble:nth-of-type(9n) {
+    -webkit-animation-delay: 2s, 4ms;
+  }
+}
+
+@-webkit-keyframes scientist-fade {
+  0%   {
+    opacity: 0;
+  }
+  50%   {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+}
+
+// Coder
+
+svg#get-involved-coder-image:hover {
+  .code {
+    -webkit-animation: coder-fade 4s infinite;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-timing-function: linear;
+  }
+  .code-1 {
+    -webkit-animation-delay: 0s, 4ms;
+  }
+  .code-2 {
+    -webkit-animation-delay: 0.5s, 4ms;
+  }
+  .code-3 {
+    -webkit-animation-delay: 1s, 4ms;
+  }
+  .code-4 {
+    -webkit-animation-delay: 1.5s, 4ms;
+  }
+  .code-5 {
+    -webkit-animation-delay: 2s, 4ms;
+  }
+  .code-6 {
+    -webkit-animation-delay: 2.5s, 4ms;
+  }
+  .code-7 {
+    -webkit-animation-delay: 3s, 4ms;
+  }
+  .code-8 {
+    -webkit-animation-delay: 3.5s, 4ms;
+  }
+  .code-9 {
+    -webkit-animation-delay: 4s, 4ms;
+  }
+}
+@-webkit-keyframes coder-fade {
+  0%   {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Coder
+
+svg#get-involved-designer-image:hover {
+  .circles {
+    -webkit-animation: designer-rotate 4s infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-transform-origin: 50% 45%;
+  }
+}
+@-webkit-keyframes designer-rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+// User
+
+svg#get-involved-user-image:hover {
+  .moustache {
+    -webkit-animation: user-wiggle 2s infinite;
+    -webkit-transform-origin: 50% 45%;
+    -webkit-animation-timing-function: linear;
+  }
+}
+@-webkit-keyframes user-wiggle {
+  10% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+}
