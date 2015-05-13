@@ -97,15 +97,63 @@ svg#get-involved-coder-image:hover {
 
 // Designer
 svg#get-involved-designer-image:hover {
-  .circles {
-    animation: designer-rotate 4s infinite;
+  .circle {
+    animation: designer-shift-circle 4s infinite;
     animation-timing-function: linear;
-    transform-origin: 50% 45%;
+  }
+  .segment {
+    animation: designer-shift-segment 4s infinite;
+    animation-timing-function: linear;
+  }
+
+  // Circles
+  #circle-red {
+    animation-delay: 1s, 4ms;
+  }
+  #circle-yellow {
+    animation-delay: -1s, 4ms;
+  }
+  #circle-blue {
+    animation-delay: 0s, 4ms;
+  }
+
+  // Segments
+  #segment-red-blue {
+    animation-delay: 0.5s, 4ms;
+  }
+  #segment-yellow-red {
+    animation-delay: -0.5s, 4ms;
+  }
+  #segment-yellow-blue {
+    animation-delay: 0s, 4ms;
   }
 }
-@keyframes designer-rotate {
+@keyframes designer-shift-circle {
+  0% {
+    fill: #14B0BF; //blue
+  }
+  33% {
+    fill: #FDC00F; //yellow
+  }
+  66% {
+    fill: #E74037; //red
+  }
   100% {
-    transform: rotate(1turn);
+    fill: #14B0BF; //blue
+  }
+}
+@keyframes designer-shift-segment {
+  0% {
+    fill: #669933; //yellow-blue
+  }
+  33% {
+    fill: #E1AE15; //yellow-red
+  }
+  66% {
+    fill: #5A3445; //red-blue
+  }
+  100% {
+    fill: #669933; //yellow-blue
   }
 }
 
@@ -115,7 +163,6 @@ svg#get-involved-user-image:hover {
   .moustache {
     animation: user-wiggle 2s infinite;
     transform-origin: 50% 45%;
-    -moz-transform-origin: 50% 45%;
     animation-timing-function: linear;
   }
 }

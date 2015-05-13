@@ -8,12 +8,14 @@
 
   <!-- Circles -->
 	<g class="circles">
-		<circle class="circle" fill-rule="evenodd" clip-rule="evenodd" fill="#E74037" cx="399.635" cy="285.421" r="26.002"/>
-		<path class="circle" fill-rule="evenodd" clip-rule="evenodd" fill="#14B0BF" d="M439.179,259.419c14.357,0,26,11.644,26,26.002 c0,14.358-11.643,26.002-26,26.002c-14.363,0-26.001-11.645-26.001-26.002C413.178,271.062,424.816,259.419,439.179,259.419z"/>
-		<path class="circle" fill-rule="evenodd" clip-rule="evenodd" fill="#5A3445" d="M419.406,302.304c-3.883-4.542-6.229-10.438-6.229-16.883 s2.346-12.342,6.229-16.884c3.882,4.542,6.228,10.438,6.228,16.884S423.289,297.762,419.406,302.304z"/>
-		<ellipse class="circle" fill-rule="evenodd" clip-rule="evenodd" fill="#FDC00F" cx="419.406" cy="319.525" rx="26" ry="25.437"/>
-		<path class="circle" fill-rule="evenodd" clip-rule="evenodd" fill="#E1AE15" d="M419.406,294.089c1.572,0,3.109,0.137,4.603,0.397 c-3.679,9.89-13.203,16.937-24.375,16.937c-1.615,0-3.195-0.148-4.729-0.43C398.492,301.142,408.106,294.089,419.406,294.089z"/>
-		<path class="circle" fill-rule="evenodd" clip-rule="evenodd" fill="#669933" d="M419.406,294.089c11.3,0,20.914,7.053,24.5,16.905 c-1.535,0.281-3.113,0.43-4.727,0.43c-11.174,0-20.697-7.047-24.376-16.937C416.297,294.225,417.836,294.089,419.406,294.089z"/>
-		<path class="circle" fill-rule="evenodd" clip-rule="evenodd" fill="#402431" d="M414.803,294.489c2.994-0.597,6.338-0.568,9.207-0.003 c-0.939,2.729-2.537,5.279-4.603,7.818C417.428,300.072,415.914,297.443,414.803,294.489z"/>
+		<circle id="circle-red" class="circle" fill-rule="evenodd" clip-rule="evenodd" fill="#E74037" cx="399.635" cy="285.421" r="26.002"/>
+		<path id="circle-blue" class="circle" fill-rule="evenodd" clip-rule="evenodd" fill="#14B0BF" d="M439.179,259.419c14.357,0,26,11.644,26,26.002 c0,14.358-11.643,26.002-26,26.002c-14.363,0-26.001-11.645-26.001-26.002C413.178,271.062,424.816,259.419,439.179,259.419z"/>
+    <ellipse id="circle-yellow" class="circle" fill-rule="evenodd" clip-rule="evenodd" fill="#FDC00F" cx="419.406" cy="319.525" rx="26" ry="25.437"/>
+
+    <path id="segment-red-blue" class="segment" fill-rule="evenodd" clip-rule="evenodd" fill="#5A3445" d="M419.406,302.304c-3.883-4.542-6.229-10.438-6.229-16.883 s2.346-12.342,6.229-16.884c3.882,4.542,6.228,10.438,6.228,16.884S423.289,297.762,419.406,302.304z"/>
+		<path id="segment-yellow-red" class="segment" fill-rule="evenodd" clip-rule="evenodd" fill="#E1AE15" d="M419.406,294.089c1.572,0,3.109,0.137,4.603,0.397 c-3.679,9.89-13.203,16.937-24.375,16.937c-1.615,0-3.195-0.148-4.729-0.43C398.492,301.142,408.106,294.089,419.406,294.089z"/>
+		<path id="segment-yellow-blue" class="segment" fill-rule="evenodd" clip-rule="evenodd" fill="#669933" d="M419.406,294.089c11.3,0,20.914,7.053,24.5,16.905 c-1.535,0.281-3.113,0.43-4.727,0.43c-11.174,0-20.697-7.047-24.376-16.937C416.297,294.225,417.836,294.089,419.406,294.089z"/>
+
+    <path id="circle-black" class="center" fill-rule="evenodd" clip-rule="evenodd" fill="#402431" d="M414.803,294.489c2.994-0.597,6.338-0.568,9.207-0.003 c-0.939,2.729-2.537,5.279-4.603,7.818C417.428,300.072,415.914,297.443,414.803,294.489z"/>
 	</g>
 </svg>
