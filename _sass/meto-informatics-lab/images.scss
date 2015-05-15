@@ -1,0 +1,179 @@
+// Scientist
+svg#get-involved-scientist-image:hover {
+  .bubble {
+    animation: scientist-fade 2s infinite;
+    transform-origin: 50% 50%;
+    animation-timing-function: linear;
+  }
+  .bubble:nth-of-type(1n) {
+    animation-delay: 0s, 4ms;
+  }
+  .bubble:nth-of-type(2n) {
+    animation-delay: 0.25s, 4ms;
+  }
+  .bubble:nth-of-type(3n) {
+    animation-delay: 0.5s, 4ms;
+  }
+  .bubble:nth-of-type(4n) {
+    animation-delay: 0.75s, 4ms;
+  }
+  .bubble:nth-of-type(5n) {
+    animation-delay: 1s, 4ms;
+  }
+  .bubble:nth-of-type(6n) {
+    animation-delay: 1.25s, 4ms;
+  }
+  .bubble:nth-of-type(7n) {
+    animation-delay: 1.5s, 4ms;
+  }
+  .bubble:nth-of-type(8n) {
+    animation-delay: 1.75s, 4ms;
+  }
+  .bubble:nth-of-type(9n) {
+    animation-delay: 2s, 4ms;
+  }
+}
+
+@keyframes scientist-fade {
+  0%   {
+    opacity: 0;
+  }
+  50%   {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+}
+
+// Coder
+
+svg#get-involved-coder-image:hover {
+  .code {
+    animation: coder-fade 4s infinite;
+    transform-origin: 50% 50%;
+    animation-timing-function: linear;
+  }
+  .code-1 {
+    animation-delay: 0s, 4ms;
+  }
+  .code-2 {
+    animation-delay: 0.5s, 4ms;
+  }
+  .code-3 {
+    animation-delay: 1s, 4ms;
+  }
+  .code-4 {
+    animation-delay: 1.5s, 4ms;
+  }
+  .code-5 {
+    animation-delay: 2s, 4ms;
+  }
+  .code-6 {
+    animation-delay: 2.5s, 4ms;
+  }
+  .code-7 {
+    animation-delay: 3s, 4ms;
+  }
+  .code-8 {
+    animation-delay: 3.5s, 4ms;
+  }
+  .code-9 {
+    animation-delay: 4s, 4ms;
+  }
+}
+@keyframes coder-fade {
+  0%   {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Designer
+svg#get-involved-designer-image:hover {
+  .circle {
+    animation: designer-shift-circle 4s infinite;
+    animation-timing-function: linear;
+  }
+  .segment {
+    animation: designer-shift-segment 4s infinite;
+    animation-timing-function: linear;
+  }
+
+  // Circles
+  #circle-red {
+    animation-delay: 1s, 4ms;
+  }
+  #circle-yellow {
+    animation-delay: -1s, 4ms;
+  }
+  #circle-blue {
+    animation-delay: 0s, 4ms;
+  }
+
+  // Segments
+  #segment-red-blue {
+    animation-delay: 0.5s, 4ms;
+  }
+  #segment-yellow-red {
+    animation-delay: -0.5s, 4ms;
+  }
+  #segment-yellow-blue {
+    animation-delay: 0s, 4ms;
+  }
+}
+@keyframes designer-shift-circle {
+  0% {
+    fill: #14B0BF; //blue
+  }
+  33% {
+    fill: #FDC00F; //yellow
+  }
+  66% {
+    fill: #E74037; //red
+  }
+  100% {
+    fill: #14B0BF; //blue
+  }
+}
+@keyframes designer-shift-segment {
+  0% {
+    fill: #669933; //yellow-blue
+  }
+  33% {
+    fill: #E1AE15; //yellow-red
+  }
+  66% {
+    fill: #5A3445; //red-blue
+  }
+  100% {
+    fill: #669933; //yellow-blue
+  }
+}
+
+// User
+
+svg#get-involved-user-image:hover {
+  .moustache {
+    animation: user-wiggle 2s infinite;
+    transform-origin: 50% 45%;
+    animation-timing-function: linear;
+  }
+}
+@keyframes user-wiggle {
+  10% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+}
