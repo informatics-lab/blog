@@ -4,6 +4,11 @@ This is the blog for the Met Office Lab.
 
 ### Build the site locally
 
+#### Requirements
+ * npm
+ * grunt
+   * `sudo npm install grunt -g`
+
 ```bash
 # Clone the repository
 git clone https://github.com/met-office-lab/met-office-lab.github.io.git
