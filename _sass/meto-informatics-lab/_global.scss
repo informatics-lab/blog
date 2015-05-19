@@ -181,6 +181,15 @@ header {
       @include body-font;
       text-transform: uppercase;
     }
+    q {
+      max-width: 70%;
+      font-size: 18px;
+      color: white;
+      display: inline-block;
+      background-color: $gray-darkest;
+      padding: 0 10px;
+      margin-bottom: 10px;
+    }
   }
 }
 .front-header {
