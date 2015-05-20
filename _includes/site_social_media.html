@@ -1,7 +1,7 @@
-{% if site.email %}<a href="mailto:{{ site.email }}" target="_new"><i class="fa fa-envelope"></i></a>{% endif %}
-{% if site.twitter-url %}<a href="{{ site.twitter-url }}" target="_new"><i class="fa fa-twitter"></i></a>{% endif %}
-{% if site.googleplus-url %}<a href="{{ site.googleplus-url }}" target="_new"><i class="fa fa-google-plus"></i></a>{% endif %}
-{% if site.linkedin-url %}<a href="{{ site.linkedin-url }}" target="_new"><i class="fa fa-linkedin"></i></a>{% endif %}
-{% if site.github-url %}<a href="{{ site.github-url }}" target="_new"><i class="fa fa-github"></i></a>{% endif %}
-{% if site.stackoverflow-url %}<a href="{{ site.stackoverflow-url }}" target="_new"><i class="fa fa-stack-overflow"></i></a>{% endif %}
-{% if site.instagram-url %}<a href="{{ site.instagram-url }}" target="_new"><i class="fa fa-instagram"></i></a>{% endif %}
+<ul class="list-inline social-buttons">
+    {% if site.twitter-url %}<li><a href="mailto:{{ site.email }}" target="_new"><i class="fa fa-envelope"></i></a></li>{% endif %}
+    {% if site.twitter-url %}<li><a href="{{ site.twitter-url }}"><i class="fa fa-twitter"></i></a></li>{% endif %}
+    {% if site.github-url %}<li><a href="{{ site.github-url }}"><i class="fa fa-github"></i></a></li>{% endif %}
+    {% if site.instagram-url %}<li><a href="{{ site.instagram-url }}"><i class="fa fa-instagram"></i></a></li>{% endif %}
+    {% if site.calendar-url %}<li><a href="{{ site.calendar-url }}"><i class="fa fa-calendar"></i></a></li>{% endif %}
+</ul>
