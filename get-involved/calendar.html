@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<body>
+	{% include navigation.html %}
+
+  <header style="background-image: url(/img/home-main-header.jpg);">
+      <div class="container">
+          <div class="intro-text">
+              <div class="intro-heading"><span>Our Calendar</span></div>
+          </div>
+      </div>
+  </header>
+
+  <div id='calendar'></div>
+
+  {% include footer.html %}
+
+  <script type='text/javascript' src='/lib/moment/moment.js'></script>
+  <script type='text/javascript' src='/lib/fullcalendar/js/fullcalendar.min.js'></script>
+  <script type='text/javascript' src='/lib/fullcalendar/js/gcal.js'></script>
+  <script>
+  $(document).ready(function() {
+
+      // FACT: Putting API keys in code on GitHub is bad.
+      //
+      // But fear not, this is a client side read only API key which is restricted
+      // to our domain (and localhost). It's pretty much just a rate-limiting key for
+      // public calendars.
+
+      $('#calendar').fullCalendar({
+          googleCalendarApiKey: 'AIzaSyA_VcYYVme7EYm3vE15f-50hSZttGy3lfY',
+          events: {
+              googleCalendarId: 'informaticslab.co.uk_ncg2ien0gdsccpp82oahu1f5co@group.calendar.google.com'
+          }
+      })
+
+  });
+  </script>
+
+
+</body>
