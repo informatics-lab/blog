@@ -16,4 +16,4 @@ v0.1 Basic 2D weather map
 
 We'd really like some feedback on the interface for this one. Is it obvious how to navigate using the mouse? We are planning on sprucing up the controls on the left hand side of the screen, but are there other improvements we might not have thought of yet?
 
-You can give your feedback via the [contact links](/get-involved/) or via the project [Github](https://github.com/msaunby/uk-weather-3d) page.
+You can give your feedback via the [contact form](/#contact) or via the project [Github](https://github.com/msaunby/uk-weather-3d) page.
