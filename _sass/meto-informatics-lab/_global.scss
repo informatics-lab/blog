@@ -181,8 +181,19 @@ header {
       @include body-font;
       text-transform: uppercase;
     }
+    .intro-para {
+      color: white;
+      background-color: $gray;
+      padding: 10px;
+      max-width: 69%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0px;
+      margin-bottom: 50px;
+      opacity: 0.8;
+      @include body-font();
+    }
     q {
-      max-width: 70%;
       font-size: 18px;
       color: white;
       display: inline-block;
@@ -241,7 +252,7 @@ header {
   }
   .front-header {
     .intro-text{
-      padding-bottom: 300px;
+      padding-bottom: 150px;
 
       .intro-heading {
         margin-top: 100px;
