@@ -5,7 +5,7 @@
 {% endif %}
 
 <li class="{% cycle '','timeline-inverted' %}">
-    <div class="timeline-image img-circle img-responsive" style="background-image: url({{ image_url }});" onclick="location.href='{{ post.url | prepend: site.baseurl }}';">
+    <div class="timeline-image img-circle img-responsive lazyload" data-original="{{ image_url }}" style="background-image: url(/img/grey.gif);" onclick="location.href='{{ post.url | prepend: site.baseurl }}';">
     </div>
     <div class="timeline-panel">
         <div class="timeline-heading">
