@@ -376,14 +376,3 @@ section#contact {
     color: $brand-danger;
   }
 }
-
-.intro-para {
-
-  p {
-    @include body-font();
-  }
-  margin-top: 0px !important;
-  margin-bottom: 50px;
-  opacity: 0.8;
-
-}
