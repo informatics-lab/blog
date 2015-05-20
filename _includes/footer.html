@@ -35,6 +35,15 @@
 <!-- Plugin JavaScript -->
 <script src="/lib/jquery-easing/jquery.easing.min.js"></script>
 <script src="/lib/classie/classie.js"></script>
+<script src="/lib/jquery.lazyload/jquery.lazyload.js"></script>
+<script type="text/javascript">
+$( document ).ready(function() {
+    $(".lazyload").lazyload({
+      effect : "fadeIn",
+      threshold : 200
+    });
+});
+</script>
 
 {% if page.layout == "front" %}
 <script src="/js/cbpAnimatedHeader.js"></script>
