@@ -32,7 +32,7 @@ Fortunately, rendering a continuous block of data like this has been done before
 
 <div style="text-align:center">
 	<img src="{{ site.image-bin }}rays.jpg" height="250" width="250" alt="a block with rays cast through it"/>
-	<cite><p>Another handy image from <a href=http://lebarba.com/blog/>Lebarba</a> (thanks!). This shows some example rays travelling from the viewer's eye, through the screen and through the grid of data, represented here as the square (although really its a 3D cube). I know that in reality light travels towards the viewer's eye, but, y'know, just go with it.</p></cite>
+	<cite><p>Another handy image from <a href="http://lebarba.com/blog/">Lebarba</a> (thanks!). This shows some example rays travelling from the viewer's eye, through the screen and through the grid of data, represented here as the square (although really its a 3D cube). I know that in reality light travels towards the viewer's eye, but, y'know, just go with it.</p></cite>
 </div>
 
 ###Ray Tracing
