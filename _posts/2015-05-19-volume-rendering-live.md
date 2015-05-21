@@ -17,4 +17,4 @@ Just a really quick post to say that we now [have a demo](https://met-office-lab
 
 ![Volume Rendering](https://dl.dropboxusercontent.com/u/2665124/blogimages/vol-rend-screenshot.png)
 
-This is using some synthetic data, its not to scale and its a bit clunky but its a start! To be clear - this is far from finished in its current state. It has controls like a flight sim/first person game i.e. mouse looks and the arrows/WASD move the camera.
+This is using some synthetic data, its not to scale and its a bit clunky but it's a start! To be clear - this is far from finished in its current state. It has controls like a flight sim/first person game i.e. mouse looks and the arrows/WASD move the camera.
