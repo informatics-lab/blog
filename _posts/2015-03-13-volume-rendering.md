@@ -25,7 +25,7 @@ Our weather forecast data is made up of lots of values spread across a regular 3
 
 <div style="text-align:center">
 	<img src="{{ site.image-bin }}voxels.jpg" alt="the back face of the cube"/>
-	<cite><p>The <a href=http://lebarba.com/blog/>Lebarba Blog</a> (who I've nicked these images from!) is a great introduction to volume rendering.</p></cite>
+	<cite><p>The <a href="http://lebarba.com/blog/">Lebarba Blog</a> (who I've nicked these images from!) is a great introduction to volume rendering.</p></cite>
 </div>
 
 Fortunately, rendering a continuous block of data like this has been done before, and is known as *volume rendering*. However, there aren't standard libraries for this approach, so it involves writing your own 3D rendering routines which run on the [GPU](http://en.wikipedia.org/wiki/Graphics_processing_unit), using a language called [GLSL](http://en.wikipedia.org/wiki/OpenGL_Shading_Language). These routines sample the data along lots of straight lines starting at the camera, and moving out in all directions. These lines are analogous to rays of light, and this approach is known as *ray tracing* for that reason.
