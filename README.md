@@ -1,4 +1,4 @@
-# Met Office Lab Jekyll Blog [![Build Status](https://travis-ci.org/met-office-lab/met-office-lab.github.io.svg)](https://travis-ci.org/met-office-lab/met-office-lab.github.io)
+# Met Office Lab Jekyll Blog [![Build Status](https://travis-ci.org/met-office-lab/blog.svg)](https://travis-ci.org/met-office-lab/blog)
 
 This is the blog for the Met Office Lab.
 
