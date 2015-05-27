@@ -11,7 +11,7 @@ notifications:
   email: false
 deploy:
   provider: s3
-  access_key_id: AKIAJK5VH3XKJ34424UQ
+  access_key_id: AKIAJZQ3D6IQ27SQJVYA
   secret_access_key:
     secure: "ftk6/CkME/AQ9LWO7EE+6SmOheeizCN9zTIxjXcPYdvFAGF6P7Oy1ho6OIOUcn5GavNg4Yes+idAwKJrs7ktjSw6b0vNFG9iHL/W9HBOXOC9V0DkPJHvA7PtNHVzE2xaKNSg4/NTEsPw6HlH/L5tG4Rjzr5i0Sx6BAwlRzAjswk="
   bucket: informatics-blog
