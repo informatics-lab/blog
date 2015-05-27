@@ -11,7 +11,7 @@ thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+
 ---
 ![Just a normal day at the lab](http://2.bp.blogspot.com/_GY9imUnSKCw/TRKtpqELS5I/AAAAAAAABp4/TMohzh9_Pm8/s1600/recognizer.jpg)
 
-Ever wonder what it like to be inside a computer model? Well we did, so we're working hard to visualise our model data as a 3D environment, so you can fly through the atmosphere created by the models, and explore it more intuitively.
+Ever wonder what it's like to be inside a computer model? Well we did, so we're working hard to visualise our model data as a 3D environment, so you can fly through the atmosphere created by the models, and explore it more intuitively.
 
 Imagine being able to hover high in the sky and watch blobs of hot air rise from the ground like a lava lamp and see them grow into raging thunder clouds. Or imagine watching air slosh around the earth, creating wind. We have data that simulates this. Lots of it. Now we want to be able to *really* see it.
 

@@ -59,7 +59,7 @@ We've also changed some of the behind the scenes tools, including a switch from 
 
 ## Feedback
 
-We hope you like the new site, why not [contact us][8] and let us know yours thoughts!
+We hope you like the new site, why not [contact us][8] and let us know your thoughts!
 
 [1]: https://twitter.com/rossymids
 [2]: http://gruntjs.com/

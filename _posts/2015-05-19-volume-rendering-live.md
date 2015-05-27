@@ -19,4 +19,4 @@ Just a really quick post to say that we now [have a demo](https://met-office-lab
 
 We know that this page works (albeit slowly) in Chrome on a 2014 Mac Book Pro with an Intel Iris 1536 MB GPU. Currently, Firefox and Safari can't stream the data, but hopefuly we will support them at some point in the future.
 
-This is using some synthetic data, its not to scale and its a bit clunky but its a start! To be clear - this is far from finished in its current state. It has controls like a flight sim/first person game i.e. mouse looks and the arrows/WSAD move the camera.
+This is using some synthetic data, its not to scale and its a bit clunky but its a start! To be clear - this is far from finished in its current state. It has controls like a flight sim/first person game i.e. mouse looks and the arrows/WASD move the camera.
