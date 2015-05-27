@@ -13,8 +13,8 @@ deploy:
   provider: s3
   access_key_id: AKIAJK5VH3XKJ34424UQ
   secret_access_key:
-    secure: "A1MCsCzHkUeNu3d5W34/SynecBT5iaIEaZmgJN93oLCKm/kvx3moCE1rZCz5XOCKVZU0SL4ckJeR9irNh4eqNGhzyeBg/7RCv30Crhi3hF6h8Hdt5krBmjl4Bf/uNlRRJhWjdrW46qggmjughwYXW3hTE6vg9tAbFBhzq/0r2MA="
-  bucket: www.informaticslab.co.uk
+    secure: "ftk6/CkME/AQ9LWO7EE+6SmOheeizCN9zTIxjXcPYdvFAGF6P7Oy1ho6OIOUcn5GavNg4Yes+idAwKJrs7ktjSw6b0vNFG9iHL/W9HBOXOC9V0DkPJHvA7PtNHVzE2xaKNSg4/NTEsPw6HlH/L5tG4Rjzr5i0Sx6BAwlRzAjswk="
+  bucket: informatics-blog
   local-dir: _site
   acl: public_read
   skip_cleanup: true
