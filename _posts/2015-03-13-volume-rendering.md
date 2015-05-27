@@ -12,7 +12,7 @@ thumbnail: http://s3-eu-west-1.amazonaws.com/informatics-webimages/rays.jpg
 
 ####Weeee I'm a light beam...we'll sort of. Read on and you'll see what I mean.
 
-We've been making our first baby steps with our project to do [3D visualisation of weather data in the browser](http://www.informaticslab.co.uk/projects/three-d-vis/). It looks like these two libraries are going to be really important for what we want to do:
+We've been making our first baby steps with our project to do [3D visualisation of weather data in the browser](/projects/three-d-vis.html). It looks like these two libraries are going to be really important for what we want to do:
 
 * [WebGL](https://www.khronos.org/webgl/), a 3D vis library which allows you to use much of the 3D whizzyness of [OpenGL](https://www.opengl.org/) but in the browser
 * and [threejs](http://www.threejs.org) which wraps WebGL, making it easier to set up 3D environments.
