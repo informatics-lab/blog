@@ -3,7 +3,7 @@ rvm:
 - 2.1
 script:
 - npm install
-- grunt deploy
+- grunt test
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
@@ -11,9 +11,8 @@ notifications:
   email: false
 deploy:
   provider: s3
-  access_key_id: AKIAJZQ3D6IQ27SQJVYA
-  secret_access_key:
-    secure: "ftk6/CkME/AQ9LWO7EE+6SmOheeizCN9zTIxjXcPYdvFAGF6P7Oy1ho6OIOUcn5GavNg4Yes+idAwKJrs7ktjSw6b0vNFG9iHL/W9HBOXOC9V0DkPJHvA7PtNHVzE2xaKNSg4/NTEsPw6HlH/L5tG4Rjzr5i0Sx6BAwlRzAjswk="
+  access_key_id: $AWS_KEY
+  secret_access_key: $AWS_SECRET
   bucket: informatics-blog
   local-dir: _site
   acl: public_read
@@ -21,3 +20,5 @@ deploy:
   region: eu-west-1
   on:
     branch: master
+after_deploy:
+- grunt purge

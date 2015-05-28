@@ -29,15 +29,32 @@ module.exports = function(grunt) {
     },
 
     "shell": {
-        bundleInstall: {
-          command: "bundle install"
-        },
-        jekyllTest: {
-            command: "bundle exec htmlproof ./_site --only-4xx"
-        },
-        runTests: {
-          command: "for SCRIPT in tests/*; do if [ -f $SCRIPT -a -x $SCRIPT ]; then $SCRIPT; fi; done"
-        }
+      bundleInstall: {
+        command: "bundle install"
+      },
+      jekyllTest: {
+        command: "bundle exec htmlproof ./_site --only-4xx"
+      },
+      runTests: {
+        command: "for SCRIPT in tests/*; do if [ -f $SCRIPT -a -x $SCRIPT ]; then $SCRIPT; fi; done"
+      }
+    },
+
+    invalidate_cloudfront: {
+      options: {
+        key: process.env.AWS_KEY,
+        secret: process.env.AWS_SECRET,
+        distribution: 'E3IDIFQ6VR6DB8'
+      },
+      production: {
+        files: [{
+          expand: true,
+          cwd: './_site/',
+          src: ['**/*'],
+          filter: 'isFile',
+          dest: ''
+        }]
+      }
     }
   });
 
@@ -45,9 +62,11 @@ module.exports = function(grunt) {
   grunt.registerTask("installDeps", ["shell:bundleInstall", "bower"]);
 
   // Public tasks
-  grunt.registerTask("serve", ["installDeps", "jekyll:serve" ]);
-  grunt.registerTask("deploy", ["installDeps", "jekyll:build", "shell:jekyllTest", "shell:runTests" ]);
+  grunt.registerTask("serve", ["installDeps", "jekyll:serve"]);
+  grunt.registerTask("build", ["installDeps", "jekyll:build"]);
+  grunt.registerTask("test", ["build", "shell:jekyllTest", "shell:runTests"]);
+  grunt.registerTask("purge", ["invalidate_cloudfront:production"]);
 
   // Default task
-  grunt.registerTask("default", [ "serve" ]);
+  grunt.registerTask("default", ["serve"]);
 };
