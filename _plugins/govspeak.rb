@@ -13,7 +13,7 @@ class Jekyll::Converters::Markdown::Govspeak
 
   def convert(content)
     if @config['kramdown']['input']
-      input = {:input => 'GFM'}
+      input = {:input => @config['kramdown']['input']}
     else
       input = {}
     end
