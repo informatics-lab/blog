@@ -24,3 +24,43 @@
     font-style: italic;
   }
 }
+
+/* Side notes for calling out things
+-------------------------------------------------- */
+
+/* Base styles (regardless of theme) */
+.callout {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Themes for different contexts */
+.callout-danger {
+  border-left-color: #ce4844;
+  h4 {
+    color: #ce4844;
+  }
+}
+.callout-warning {
+  border-left-color: #aa6708;
+  h4 {
+    color: #aa6708;
+  }
+}
+.callout-info {
+  border-left-color: #1b809e;
+  h4 {
+    color: #1b809e;
+  }
+}

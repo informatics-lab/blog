@@ -25,7 +25,7 @@ google_analytics: 'UA-60337429-1'
 #-----------
 
 #markdown options
-markdown: redcarpet
+markdown: labredcarpet
 redcarpet:
   extensions: ["fenced_code_blocks"]
 
