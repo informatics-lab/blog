@@ -29,7 +29,7 @@
 -------------------------------------------------- */
 
 /* Base styles (regardless of theme) */
-.application-notice {
+.application-notice, .advisory {
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #eee;
@@ -56,5 +56,11 @@
   border-left-color: #1b809e;
   h4 {
     color: #1b809e;
+  }
+}
+.advisory {
+  border-left-color: #ce4844;
+  h4 {
+    color: #ce4844;
   }
 }
