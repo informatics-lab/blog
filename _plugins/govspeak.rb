@@ -12,6 +12,11 @@ class Jekyll::Converters::Markdown::Govspeak
   end
 
   def convert(content)
-    Govspeak::Document.new(content, :input => 'GFM')
+    if @config['kramdown']['input']
+      input = {:input => 'GFM'}
+    else
+      input = {}
+    end
+    Govspeak::Document.new(content, input)
   end
 end
