@@ -24,6 +24,11 @@ google_analytics: 'UA-60337429-1'
 #Build stuff
 #-----------
 
+#markdown options
+markdown: redcarpet
+redcarpet:
+  extensions: ["fenced_code_blocks"]
+
 #build output dir
 destination: _site
 
