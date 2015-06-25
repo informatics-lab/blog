@@ -10,7 +10,7 @@ thumbnail: http://s3-eu-west-1.amazonaws.com/informatics-webimages/rays.jpg
 
 ---
 
-####Weeee I'm a light beam...we'll sort of. Read on and you'll see what I mean.
+#### Weeee I'm a light beam...we'll sort of. Read on and you'll see what I mean.
 
 We've been making our first baby steps with our project to do [3D visualisation of weather data in the browser](/projects/three-d-vis.html). It looks like these two libraries are going to be really important for what we want to do:
 
@@ -19,7 +19,7 @@ We've been making our first baby steps with our project to do [3D visualisation 
 
 They're often used for rendering 3D environments such as you might see in computer games or animations.
 
-###Our data's a bit different
+### Our data's a bit different
 
 Our weather forecast data is made up of lots of values spread across a regular 3D grid. Imagine a bunch of boxes stacked up - the datasets we are trying to visualise are values of, say, air temperature in each box.
 
@@ -35,7 +35,7 @@ Fortunately, rendering a continuous block of data like this has been done before
 	<cite><p>Another handy image from <a href="http://lebarba.com/blog/">Lebarba</a> (thanks!). This shows some example rays travelling from the viewer's eye, through the screen and through the grid of data, represented here as the square (although really its a 3D cube). I know that in reality light travels towards the viewer's eye, but, y'know, just go with it.</p></cite>
 </div>
 
-###Ray Tracing
+### Ray Tracing
 
 This is is where it gets interesting/boring - depending on how into the nitty gritty you are.
 
@@ -60,7 +60,7 @@ Prepare yourself, this is my favorite part. The cool thing is, because we are ru
 	<cite><p>This wasn't what Ray signed up for when he joined the Lab.</p></cite>
 </div>
 
-###Some Practicalities
+### Some Practicalities
 
 This is all very well in principle, but how do we actually do it?
 
@@ -79,20 +79,20 @@ We then take this rendered rainbow image, and pass it into the next rendering pa
 
 That might take a bit of digesting, but what it means is this: combining the two rendering passes means we are using the 3D environment to calculate what the corresponding start and end points are by taking into account the field orientation.
 
-#Sounds good - what can I do??
+# Sounds good - what can I do??
 I thought you'd never ask! I've cobbled together a [proof-of-concept 3D front end](https://github.com/met-office-lab/volume-rendering) which uses synthetic data. Here's some stuff I've been trying.
 
-####What about light sources?
+#### What about light sources?
 We can make a big improvement to this volume rendering by using light sources to illuminate the field. In short, this means that at every step of the ray march, we need to march a ray from the light source to the current position to see what the contribution is. This should automatically create shading on our object, making the 3D effect much more effective. Here's a nice example using bunnies!
 
 {% youtube VPhnwOpmUqY %}
 
 Unfortunately, I haven't been able to get this kind of thing running with out synthetic data yet. If you're interested, then have a look at ~~this branch~~ (Editor - sorry branch no longer exists).
 
-####How do we transfer data to the GPU?
+#### How do we transfer data to the GPU?
 Ideally we want a 3D data object which you can index using a position in the 3D environment. Unfortunately, WebGL (unlike OpenGL) only supports 2D data objects (called *textures*). This means we have to slice our 3D data array along one dimension, and tile the 2D slices next to each other in a 2D object. We then need a routine on the GPU to index this 2D object using 3D environment positions.
 
 I've managed to get the tile encoding working using png files, which you can see on the [main branch]
 (https://github.com/met-office-lab/volume-rendering/tree/master). However, we've got a lot of data to push around, so we need to explore different ways of encoding/decoding the data. If you are interested in this then you should get in contact with fellow Lab Rat Michael Saunby.
 
-####Hopefully we're going to be making progress with this project over the next few months, so keep checking GitHub to see what the current issues are
+#### Hopefully we're going to be making progress with this project over the next few months, so keep checking GitHub to see what the current issues are
