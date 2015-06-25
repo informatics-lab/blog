@@ -25,9 +25,9 @@ google_analytics: 'UA-60337429-1'
 #-----------
 
 #markdown options
-markdown: labredcarpet
-redcarpet:
-  extensions: ["fenced_code_blocks"]
+markdown: Govspeak
+kramdown:
+  input: GFM
 
 #build output dir
 destination: _site
