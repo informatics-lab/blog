@@ -7,6 +7,7 @@ twitter-url: http://www.twitter.com/msaunby
 linkedin-url: https://www.linkedin.com/in/michaelsaunby
 github-url: http://github.com/msaunby
 email: mike.saunby@gmail.com
+mugshot: mugshots/michael-saunby.jpg
 ---
 
 Michael is a software engineer and intrapreneur. He has degrees and diplomas in electronic engineering, land management, and an MBA from the Open University. His working life has been spent alongside weather and climate scientists helping to realise some of their more ambitious undertakings.
