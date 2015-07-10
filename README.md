@@ -7,7 +7,8 @@ This is the blog for the Met Office Lab.
 #### Requirements
  * npm
  * grunt
-   * `sudo npm install grunt -g`
+   * `sudo npm install -g grunt`
+   * `sudo npm install -g grunt-cli`
 
 ```bash
 # Clone the repository
