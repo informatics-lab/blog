@@ -2,7 +2,7 @@
 layout:     profile
 name:       Simon Stanley
 summary:    Simon is a maths man by trade and Python programmer by occupation.
-affiliation: core
+affiliation: past-member
 github-url: http://github.com/simonstanley
 email: simon.stanley87@gmail.com
 
