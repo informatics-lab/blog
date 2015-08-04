@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "A sandbox environment with a difference..."
-date:       2015-08-03
+date:       2015-08-04
 summary:    Find out about the augmented reality sandpit we are building in the lab.
 categories: ['technical','stem','inspiration']
 author: 	Tom Powell
