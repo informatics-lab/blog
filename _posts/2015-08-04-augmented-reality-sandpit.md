@@ -7,13 +7,14 @@ categories: ['technical','stem','inspiration']
 author: 	Tom Powell
 project:    molab-sandpit
 thumbnail:  "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-08-04-augmented-reality-sandpit/coloured-terrain.png"
-
+header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-08-04-augmented-reality-sandpit/coloured-terrain.png"
 ---
 
 ## WHAT ... is it??
 
 Inspired by the project seen in the youtube link below, we have decided to build our own version of the
 augmented reality sandpit here in the Met Office's Informatics Lab.
+
 The idea initially is to replicate the functionality of the existing application, then hack away to add
 additional weather and ground conditions to further enhance the augmented reality experience and overall
 fun of the learning environment.
@@ -27,10 +28,8 @@ Cool Huh!?
 Our plan is to station the sandpit in a public area within the Office allowing visitors and staff alike to enjoy
 and learn through the unique interface.
 
-We also aim to link up with the Met Office's STEM ambassadors and allow them to use the environment to enhance
+We also aim to link up with the [Met Office's STEM Ambassadors][STEM] and allow them to use the environment to enhance
 presentations and engagement with children and at outreach events.
-
-Find out more about [STEM at the Met Office][STEM]... 
 
 ## HOW ... will you make something like that??
 
@@ -42,13 +41,13 @@ Find out more about [STEM at the Met Office][STEM]...
 
 #### Let's get to work...
 This project is being developed as a 'side project' from the main Lab project; the 3D visualisation of weather data.
-So far the effort has mainly been put in by myself and another developer from the Office Rich Burrow, who is an associate to the Lab.
+So far the effort has mainly been put in by myself and another developer from the office Rich Burrow, who is an associate to the Lab.
 
 With skills primarily in Java we have chosen to use the [J Monkey Game Engine][JMonkeyEngine].
 We've focused initially on capturing the depth data from the camera and plotting it as a solid surface within the game scene.
 
-First step was to convert the raw data coming out of the 3D camera into something meaningful. This meant initially remapping
-the depth values for each pixel down to a value within the greyscale colour-range creating a depth-map from the raw data. Then
+The first step was to convert the raw data coming out of the 3D camera into something meaningful. This meant initially remapping
+the depth values for each pixel down to a value within the greyscale colour-range, creating a depth-map from the raw data. Then
 each value must then be reversed to make nearer objects appear lighter and further away objects appear darker, you then
 have made yourself a pretty standard height-map.
 
@@ -64,7 +63,7 @@ we may want to put into the scene.
 ![normals calculated](https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-08-04-augmented-reality-sandpit/normals.png)
 ![scene with light and shadows](https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-08-04-augmented-reality-sandpit/normals.png)
 
-Our most recent work has been to crib a set of [height-related colours][color map] 
+Our most recent work has been to crib a set of [height-related colours][color map]
 We have used a custom Material within our application to sample the colour gradient based on the vertex's z value.
 
 ![terrain height colour gradient](https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-08-04-augmented-reality-sandpit/terrain-colour-map.png)
