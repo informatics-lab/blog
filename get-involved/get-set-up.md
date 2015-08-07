@@ -28,17 +28,17 @@ Follow these instructions to set up your computer for working in the Lab. It's p
 
 Following this other things to install/set up:
 
-###Slack
+### Slack
 
 1. install from the appstore native application
 1. join the group `met-office-lab`
 
-###Calendars
+### Calendars
 
 1. enable the calendars feature within your google profile
 1. ask Niall for an invite to the calendar
 
-###Git
+### Git
 
 Set up your Git credentials by doing
 

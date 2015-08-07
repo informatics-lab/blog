@@ -22,4 +22,4 @@ These are the things that we are particularly looking for help with right now.
 If you are working closely with the Lab, you'll need some information to get set up.
 
 * [How to set up your laptop](/get-involved/get-set-up.html)
-* [How to contribute to the blog](/get-involved/coder/how-to-blog.html)
+* [How to contribute to the blog](/get-involved/how-to-blog.html)
