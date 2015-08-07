@@ -6,7 +6,7 @@ affiliation: core
 twitter-url: http://www.twitter.com/niallhrobinson
 linkedin-url: http://www.linkedin.com/in/niallhrobinson
 github-url: http://github.com/niallrobinson
-email: niall.h.robinson@gmail.com
+email: niall.robinson@informaticslab.co.uk
 stackoverflow-url: http://stackoverflow.com/users/1862785/nrob
 
 mugshot: niall-robinson.png

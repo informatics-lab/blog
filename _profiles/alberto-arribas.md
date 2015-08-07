@@ -5,7 +5,7 @@ summary:    Head of Informatics Lab
 affiliation: core
 twitter-url: http://www.twitter.com/metolab
 github-url: https://github.com/alberto-arribas
-email: arribas.alberto@gmail.com
+email: arribas.alberto@informaticslab.co.uk
 
 mugshot: AlbertoPhoto_BW.jpg
 ---
