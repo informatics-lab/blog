@@ -8,4 +8,4 @@ thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+
 
 ---
 
-We'll, you're reading it, aren't you??
+We want you to enjoy using our website. If you have any feedback, then just contact us on the links at the bottom of this page and let us know.

@@ -4,7 +4,8 @@ layout:     post
 title:      Experience the weather without getting wet!
 date:       2015-04-14
 summary:    Help to test our new weather visualisation application.
-categories: [Announcements]
+categories: Announcements
+project:    threedvis
 thumbnail: http://s3-eu-west-1.amazonaws.com/informatics-webimages/screenshot-2015-03-25.jpg
 ---
 

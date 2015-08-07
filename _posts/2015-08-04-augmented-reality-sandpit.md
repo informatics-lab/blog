@@ -5,7 +5,7 @@ date:       2015-08-04
 summary:    Find out about the augmented reality sandpit we are building in the lab.
 categories: ['technical','stem','inspiration']
 author: 	Tom Powell
-project:    molab-sandpit
+project:    sandpit
 thumbnail:  "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-08-04-augmented-reality-sandpit/coloured-terrain.png"
 header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-08-04-augmented-reality-sandpit/coloured-terrain.png"
 ---
