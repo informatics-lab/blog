@@ -6,7 +6,7 @@ affiliation: core
 twitter-url:
 linkedin-url:
 github-url: http://github.com/tpowellmeto
-email: tom.powell@informaticslab.co.uk
+email: thomas.powell@informaticslab.co.uk
 stackoverflow-url:
 
 mugshot: tom-powell.png
