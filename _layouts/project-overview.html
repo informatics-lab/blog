@@ -19,7 +19,25 @@ layout: default
 </header>
 
 <article class="post-content">
+
 	{{ content }}
+
+  {% if page.demos %}
+  <div class="demos">
+    <h2>Demos</h2>
+    {% for demo in page.demos %}
+    <div class="col-md-4 demo">
+      <a href="{{ demo.url }}">
+        <img src="{{ demo.thumb }}" alt="{{ demo.name }} Screenshot" title="{{ demo.description }}" /><br />
+        {{ demo.name }}
+      </a>
+      <span class="date"> - {{ demo.date }}</span><br />
+      <span class="description">{{ demo.description }}</span>
+    </div>
+  	{% endfor %}
+    <div class="clearfix"></div>
+  </div>
+	{% endif %}
 
 	{% assign project_concept_notes = site.concept-notes | where: "project", page.project %}
 	{% assign project_posts = site.posts | where: "project", page.project %}

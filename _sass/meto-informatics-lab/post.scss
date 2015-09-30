@@ -9,6 +9,31 @@
     height: auto;
     margin: 0 auto;
   }
+
+  .demos {
+
+    margin-bottom: 30px;
+
+    .demo {
+      text-align: center;
+      margin-bottom: 20px;
+
+      img {
+        margin-bottom: 10px;
+        height: 130px;
+      }
+
+      .date {
+        color: #777;
+        font-style: italic;
+      }
+      .description {
+        display: none;
+        height: 2em;
+      }
+    }
+
+  }
 }
 
 .written-by-footer {

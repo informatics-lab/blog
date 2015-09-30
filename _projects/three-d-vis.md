@@ -7,10 +7,34 @@ github-link: https://github.com/met-office-lab/volume-rendering
 completed:   false
 project:     threedvis
 thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-05-11+at+15.00.00.png
+demos:
+  - name: "Desktop App"
+    date: "September 2015"
+    url:  http://demo.3dvis.informaticslab.co.uk/ng-3d-vis/apps/desktop/
+    thumb: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-09-30+at+11.44.41.png
+    description: "Newer version of the volume rendering."
+  - name: "Mobile App"
+    date: "September 2015"
+    url:  http://demo.3dvis.informaticslab.co.uk/ng-3d-vis/apps/mobile/
+    thumb: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-09-30+at+11.47.16.png
+    description: "Mobile controller for the September volume rendering."
+  - name: "iPad Fly"
+    date: "July 2015"
+    url:  http://demo.3dvis.informaticslab.co.uk/ipad-fly/
+    thumb: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-09-30+at+11.53.23.png
+    description: "Fly around with your iPad."
+  - name: "60 levels"
+    date: "July 2015"
+    url:  http://demo.3dvis.informaticslab.co.uk/uk-weather-3d/view3d/
+    thumb: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-09-30+at+11.55.09.png
+    description: "Displaying 60 flat levels instead of volume rendering."
+  - name: "Volume rendering"
+    date: "July 2015"
+    url:  http://demo.3dvis.informaticslab.co.uk/volume-rendering/viewer.html
+    thumb: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-09-30+at+11.55.57.png
+    description: "First version of the volume rendering."
 
 ---
-## Demos
-* [July Demos](http://julydemo.3dvis.informaticslab.co.uk/volume-rendering/viewer.html): These are some of the initial demos we came up with after a couple of months. The should work in most computer browsers (apart from Internet Explorer.)
 
 ## Project Description
 <!-- ![Just a normal day at the lab](http://2.bp.blogspot.com/_GY9imUnSKCw/TRKtpqELS5I/AAAAAAAABp4/TMohzh9_Pm8/s1600/recognizer.jpg)
