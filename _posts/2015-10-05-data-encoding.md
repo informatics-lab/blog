@@ -36,7 +36,7 @@ We ended up doing this by tiling each altitude layer adjacently to make a large 
 # Compression
 A lot of time, effort and money has been invested in creating efficient video [codecs](https://en.wikipedia.org/wiki/Codec). Companies like YouTube and Netflix rely on efficient video compression to allow them to stream high definition video to consumers.
 
-### What (data) have we got to lose?
+### What (data) have we got to lose? 
 Broadly speaking, we had a choice between two types of compression: [lossy](https://en.wikipedia.org/wiki/Lossy_compression) and [lossless](https://en.wikipedia.org/wiki/Lossless_compression). Lossy compression, generally, results in smaller files than lossless compression, but in the process it sacrifices some of the information. In other words, lossless compression is completely reversible and lossy compression isn't. This presents us with a interesting question: do we want to keep the data that is lost by lossy compression or not? The answer is that it depends what we are using it for.
 
 A scientist who is calculating a highly quantitative number as part of an experiment probably can't tolerate much data-loss (although we already store data at a finite precision, meaning some data-loss is inevitable). This question of lossy compression of scientific data is increasingly up for debate due to the vast amounts of data involved in modern science; can scientists perform new science by reducing data precision for the pay-off of increasing the number of analysed data points, for instance?
