@@ -45,6 +45,4 @@ Imagine being able to hover high in the sky and watch blobs of hot air rise from
 
 The Met Office runs weather and climate models every day on its super computer, generating vast quantities of data. A model like this is in essence just a computer program which solves a set of physics equations ([like this one](http://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations)).
 
-When these fundamental equations are included in the model, they naturally start to *create* weather. That's a really important point - the model isn't told what "a storm" is or what "clouds" look like, they just happen in a model that knows about basic physics. It creates another version of the world. Here, let Gavin Schmidt give you the low down in his awesome TED talk.
-
-{% youtube JrJJxn-gCdo %}
+When these fundamental equations are included in the model, they naturally start to *create* weather. That's a really important point - the model isn't told what "a storm" is or what "clouds" look like, they just happen in a model that knows about basic physics. It creates another version of the world.
