@@ -11,7 +11,7 @@ thumbnail: "https://dl.dropboxusercontent.com/u/2665124/blogimages/july-demos/ic
 
 We've got some paid, 12 week [summer student placements](http://emea3.mrted.ly/ugo6) for 2016 to allow you to work with us here in the Informatics Lab (widely regarded as the coolest place in the Met Office<-N.B. *this is outrageous bias*).
 
-Here's the official job description, but with the poor English from the original corrected...
+Here's the official job description, but with my extremely poor English from the original corrected...
     
 > The informatics lab has two purposes: to make environmental science and data useful and to help improve working practices at the Met Office. For instance, with the Informatics Lab you could be working to develop interactive web browser visualisations. All the projects we embark on are opportunities to investigate, to experiment and to learn new things (technical, scientific, social) that can be applied to the way the Met Office is organised or the way environmental science an data can be transformed. For more information see: http://www.informaticslab.co.uk/ 
 
