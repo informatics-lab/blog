@@ -1,7 +1,7 @@
 ---
 layout:     profile
 name:       Niall Robinson
-summary:    Niall's is interested in what information is hidden in data.
+summary:    Niall is interested in what information is hidden in data.
 affiliation: core
 twitter-url: http://www.twitter.com/niallhrobinson
 linkedin-url: http://www.linkedin.com/in/niallhrobinson
