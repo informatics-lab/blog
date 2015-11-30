@@ -27,11 +27,12 @@ layout: default
     <h2>Demos</h2>
     {% for demo in page.demos %}
     <div class="col-md-4 demo">
-      <a href="{{ demo.url }}">
+      <a href="{{ demo.demo-url }}">
         <img src="{{ demo.thumb }}" alt="{{ demo.name }} Screenshot" title="{{ demo.description }}" /><br />
         {{ demo.name }}
-      </a>
-      <span class="date"> - {{ demo.date }}</span><br />
+      </a><br />
+      <a href="{{ demo.git-url }}">Code repo</a><br />
+      <span class="date">{{ demo.date }}</span><br />
       <span class="description">{{ demo.description }}</span>
     </div>
   	{% endfor %}
