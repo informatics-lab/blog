@@ -4,7 +4,7 @@ title:       Fly through model fields
 author:      Niall Robinson
 summary:     Weather and climate models create entire versions of the atmosphere, complete with clouds, rain, and wind. We wondered what it would be like to see the model run from the inside. Our ode to <a href=http://en.wikipedia.org/wiki/Tron>Tron</a>, if you will.
 github-link: https://github.com/met-office-lab/volume-rendering
-completed:   false
+completed:   true
 project:     threedvis
 thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-05-11+at+15.00.00.png
 demos:
