@@ -19,9 +19,6 @@ layout: default
 </header>
 
 <article class="post-content">
-
-	{{ content }}
-
   {% if page.demos %}
   <div class="demos">
     <h2>Demos</h2>
@@ -40,6 +37,8 @@ layout: default
   </div>
 	{% endif %}
 
+    {{ content }}
+    
 	{% assign project_concept_notes = site.concept-notes | where: "project", page.project %}
 	{% assign project_posts = site.posts | where: "project", page.project %}
 	{% if project_concept_notes.size > 0 or project_posts.size > 0 %}
