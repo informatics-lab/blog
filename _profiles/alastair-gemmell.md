@@ -5,7 +5,7 @@ summary:    Alastair is a developer interested in data analysis and visualisatio
 affiliation: core
 twitter-url:
 linkedin-url:
-github-url: http://github.com/alastair-gemmell-informatics-lab
+github-url: http://github.com/alastair-gemmell-lab
 email: alastair.gemmell@informaticslab.co.uk
 stackoverflow-url:
 
