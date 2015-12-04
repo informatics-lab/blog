@@ -28,7 +28,7 @@ layout: default
         <img src="{{ demo.thumb }}" alt="{{ demo.name }} Screenshot" title="{{ demo.description }}" /><br />
         {{ demo.name }}
       </a><br />
-      <a href="{{ demo.git-url }}">Code repo</a><br />
+      <a href="{{ demo.git-url }}"><i class="fa fa-github"></i> source code</a><br />
       <span class="date">{{ demo.date }}</span><br />
       <span class="description">{{ demo.description }}</span>
     </div>
@@ -38,7 +38,7 @@ layout: default
 	{% endif %}
 
     {{ content }}
-    
+
 	{% assign project_concept_notes = site.concept-notes | where: "project", page.project %}
 	{% assign project_posts = site.posts | where: "project", page.project %}
 	{% if project_concept_notes.size > 0 or project_posts.size > 0 %}
