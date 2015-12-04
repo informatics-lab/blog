@@ -10,6 +10,7 @@
         <div class="row">
 
           {% for project in site.projects %}
+            {% if project.completed == false %}
             <div class="col-md-4 col-sm-6 portfolio-item">
                 <a href="{{ project.url | prepend: site.baseurl }}" class="portfolio-link">
                     <div class="portfolio-hover">
@@ -21,17 +22,29 @@
                 </a>
                 <div class="portfolio-caption">
                     <h4>{{ project.title }}</h4>
-                    <p class="text-muted">
-                    {% if project.completed == "true" %}
-                      Completed
-                    {% else %}
-                      In progress
-                    {% endif %}
-                    </p>
+                    <p class="text-muted">In progress</p>
                 </div>
             </div>
-            {% endfor %}
-
+            {% endif %}
+          {% endfor %}
+          {% for project in site.projects %}
+            {% if project.completed == true %}
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="{{ project.url | prepend: site.baseurl }}" class="portfolio-link">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img data-original="{{ project.thumbnail }}" src="/img/grey.gif" class="img-responsive lazyload" alt="{{project.title}}">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>{{ project.title }}</h4>
+                    <p class="text-muted">Completed</p>
+                </div>
+            </div>
+            {% endif %}
+          {% endfor %}
         </div>
     </div>
 </section>
