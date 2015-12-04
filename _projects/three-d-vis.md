@@ -10,8 +10,8 @@ thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+
 demos:
   - name: "Desktop App"
     date: "September 2015"
-    demo-url: http://demo.3dvis.informaticslab.co.uk/ng-3d-vis/apps/desktop/
-    git-url: https://github.com/met-office-lab/volume-rendering
+    demo-url: http://demo.3dvis.informaticslab.co.uk/ng-3d-vis/apps/redirect/
+    git-url: https://github.com/met-office-lab/ng-3d-vis
     thumb: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-09-30+at+11.44.41.png
     description: "Newer version of the volume rendering."
   - name: "iPad Fly"
@@ -34,7 +34,7 @@ demos:
     description: "First version of the volume rendering."
   - name: "Stereoscopic (google cardboard)"
     date: "August 2015"
-    demo-url: http://met-office-lab.github.io/ipad-fly
+    demo-url: http://demo.3dvis.informaticslab.co.uk/google-cardboard
     git-url: https://github.com/met-office-lab/ipad-fly/tree/gh-pages
     thumb: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-11-30+at+15.49.36.png
     description: "First version of the volume rendering."
