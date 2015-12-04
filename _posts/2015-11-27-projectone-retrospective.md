@@ -10,7 +10,9 @@ thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/20
 header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-10-05-videocodec/matrix-356024_1280.jpg"
 ---
 
-In the Informatics Lab, we're wrapping up our first ever project: [real time 3D animated web visualisations of Met Office weather forecasts](http://www.informaticslab.co.uk/projects/three-d-vis.html). We thought now would be a good time to take a quick look back on what we've done, and perhaps more importantly, what we've learned. This will just be a whistle stop tour, but we'll try and link back to previous posts as we go, so you can read in more depth if you want to.
+In the Informatics Lab, we're wrapping up our first ever project: [real time 3D animated web visualisations of Met Office weather forecasts](http://www.informaticslab.co.uk/projects/three-d-vis.html). We thought now would be a good time to take a quick look back on what we've done, and perhaps more importantly, what we've learned. This will just be a whistle stop tour, but we'll try and link back to previous posts as we go, so you can read in more depth if you want to. You can get a quick idea from this video:
+
+<iframe width="427" height="240" src="https://www.youtube.com/embed/pzvk1ZNMvFY" frameborder="0" allowfullscreen></iframe>
 
 The Lab was set up with the expressed aim of finding new ways to make data useful. We wanted to start by tackling a fundamental issue: how should we deal with big, multidimensional datasets?
 
