@@ -32,7 +32,7 @@ We needed to get the data from the secure Met Office network to somewhere we cou
 ### Bits and pieces: Lab &hearts; Docker
 Once the data was on our Amazon machine, we needed to turn it into something we could look at. All this processing made extensive use of a technology called [Docker](http://www.informaticslab.co.uk/lab-school/2015/06/24/lab-school-docker.html). In a nutshell (or...Docker container??) this lets you wrap up your code up with all the things it relies on. You then have a portable nugget that you can move, start, and stop easily and reliably. This means all the processing we've written is in nice modular pieces.
 
-<h3>MASSIVE DATA...<sub>in a tiny space</sub></h3>
+<h3>MASSIVE DATA...<small>in a tiny space</small></h3>
 
 We somehow needed to get all this data to the web browser. We ended up encoding our [data as a video](http://www.informaticslab.co.uk/technical/2015/10/05/data-encoding.html). To be clear, we didn't store the visualization in a video and transmit this. We stored each data point as a pixel in a video. This allowed us to take advantage of the amazing compression algorithms that let you stream YouTube, Netflix etc. And as web browsers are used to videos, it also made getting the data into our web page much easier. We don't think this has been done before, and without this leap, 3D Met Office data in a browser probably wouldn't have been possible.
 
