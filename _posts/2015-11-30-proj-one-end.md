@@ -22,6 +22,6 @@ And it’s not all about the prototypes, we have learnt a few things too while d
 * [WebGL](http://www.webgl.com/), [d3.js](http://d3js.org/), [three.js](http://threejs.org/) ([Lab now a contributor!](https://github.com/mrdoob/three.js/pull/7527))
 * [UX Design](http://www.informaticslab.co.uk/lab-school/2015/07/30/lab-school-design.html)
 
-You can find a longer write-up looking back at Project One [here]().
+You can find a longer write-up looking back at Project One [here](http://www.informaticslab.co.uk/technical/2015/11/27/projectone-retrospective.html).
 
 Give it a go and play with the different prototypes, we would like to hear what you think.
