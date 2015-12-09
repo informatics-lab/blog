@@ -6,7 +6,7 @@ summary:    What's the point of the lab
 categories: ['vision']
 author:     Alberto Arribas
 project:    None
-thumbnail:  "https://photos-3.dropbox.com/t/2/AACMYoMcYU6AbhXa7mOKaTw9gn6ScBMyY1mZW47MD10d7Q/12/2665124/jpeg/32x32/1/1439478000/0/2/qmcloud.jpg/CKTVogEgASACIAMgBCAFIAYgBygCKAc/MffMFElwO2N0sj5dwyZUIsjdxkuF7KMjYBKJqrX2Phk?size=1024x768&size_mode=2"
+thumbnail:  "https://s3-eu-west-1.amazonaws.com/informatics-webimages/qmcloud.jpg"
 ---
 
 The Lab has two purposes:
