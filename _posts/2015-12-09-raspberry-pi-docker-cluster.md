@@ -13,15 +13,15 @@ header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-
 
 We are fortunate in the Lab to have a small stash of Raspberry Pis in our cupboard which are used at hackathons and other events. As there are no events using them currently I thought I'd take the opportunity to make a nice demonstration piece to show off clustering containers.
 
-I was particularly interested in trying out the new overlay networking features introduced in version 1.9 of Docker. In the past we have made use of Kubernetes which does it's own clustering of containers and manages the networking with [Flannel][flannel]. Now that these features are built into Docker I wanted to try them out.
+I was particularly interested in trying out the new overlay networking features introduced in version 1.9 of Docker. In the past we have made use of Kubernetes which does it's own clustering of containers and manages the networking with [Flannel][flannel]. Now that these features are built into Docker I wanted to try them out and see what clustering is like without Kubernetes.
 
 I've talked to many people recently about Docker and Kubernetes and feel that I'm spewing lots of abstract concepts at them. Everything we've built so far has been based in AWS which, unless you're familiar with it, can be hard to picture in your head. Building a physical cluster which people can see helps with explaining the concepts, and being able to demonstrate nodes failing by physically pulling cables out makes the whole thing feel more real.
 
-We only had original Raspberry Pi model Bs in the cupboard, which are perfectly suitable for this but will create the most underpowered cluster ever. Good thing it's only a demo.
+We only had original Raspberry Pi model Bs in the cupboard, which are perfectly suitable for this but created the most underpowered cluster ever. Good thing it's only a demo.
 
 # Hardware configuration
 
-I decided I wanted to build a cluster of five Pis, but also wanted a sixth to run as the master and control machine. We have a 3D printer in the Lab so I went and found a [nice modular rack][pi-rack] to print to hold them in place.
+I decided I wanted to build a cluster of five Pis, but also decided on a sixth to run as the master and control machine. We have a 3D printer in the Lab so I went and found a [nice modular rack][pi-rack] to print to hold them in place.
 
 ![Pi Rack](https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-12-09-raspberry-pi-docker-cluster/image1.JPG)
 
@@ -84,7 +84,7 @@ swarm:
 
 The master IP was set the same on each node but the join address had to be changed for each node, this could probably have been written differently to allow the same config to be used on each node. Then again I ran `docker-compose up -d` on each node.
 
-To run the swarm master I added the following to our `master/docker-compose.yml` file from Before
+To run the swarm master I added the following to our `master/docker-compose.yml` file from before
 
 ```
 swarm:
@@ -138,7 +138,7 @@ Excellent so I now had my cluster up and running. I can execute commands on my s
 
 ![More cluster](https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-12-09-raspberry-pi-docker-cluster/image2.JPG)
 
-This gives us one problem however, networking. If I create two containers on my swarm and link them together I cannot be sure that they will both be created on the same node, which would break the link. This is because each node creates a network bridge for its own containers, it assigns them IP addresses and manages the routing in and out. Until recently when multiple containers are spread across nodes and need to talk to each other the only way to connect them between the bridges was by exposing ports out to the node and connecting to the nodes IP from the other containers. This is not ideal as containers should be able to move between nodes and shouldn't have to expose their services outside unless we really need to.
+This gives us one problem however ... networking. If I create two containers on my swarm and link them together I cannot be sure that they will both be created on the same node, which would break the link. This is because each node creates a network bridge for its own containers. It assigns them IP addresses and manages the routing in and out. Until recently when multiple containers are spread across nodes and need to talk to each other the only way to connect them between the bridges was by exposing ports out to the node and connecting to the nodes IP from the other containers. This is not ideal as containers should be independent of the nodes they are running on and shouldn't have to expose their services outside unless we really need to.
 
 As of Docker 1.9 I can solve this with an [overlay network][overlay-network].
 
@@ -146,7 +146,7 @@ As of Docker 1.9 I can solve this with an [overlay network][overlay-network].
 
 You can think of an [overlay network][overlay-network] a little bit like a VPN. It is an additional network which is created and spans the whole cluster. Each container is given an additional interface and therefore IP address but they are all in the same subnet. The traffic between these interfaces is tunneled between the nodes and therefore each container appears to be on the same container network despite being on different hosts. The only requirement is that the nodes are able to access each other and have the tunneling port open in their firewalls.
 
-Containers can then simply communicate between nodes by simply specifying the other containers name and that will be DNS resolved to the correct container IP which can be accessed directly. No need to expose ports outside of the container environment.
+Containers can then simply communicate between nodes by specifying the other container's name and that will be DNS resolved to the correct container IP which can be accessed directly. No need to expose ports outside of the container environment.
 
 A little additional work was required to get the overlay network running, but luckily the configuration for the network is stored in a key value store and we already have one of those. I had to add some more options to the `DOCKER_OPTS` in `/etc/default/docker` on each node to tell them to use the consul instance for network clustering.
 
@@ -193,9 +193,19 @@ Once I have this configured I can create DNS entries for my different services a
 
 If I were to do this build again I would definitely use some Raspberry Pi 2s. I used what was available to me at no cost at the time, but it would be much speedier and useful to have more powerful chips running underneath.
 
-I would also look into doing away with the master node and distribute the master duties (consul, swarm master, etc) across the cluster. This introduces some interesting chicken and egg problems about how you create a cluster using a key value store which is running on said cluster, but that's part of the fun.
+I am planning on adding the capability to automatically scale the cluster size using a service like AWS. This requires a little more thinking as the remote cluster would need to be able to access the master Pi, but would be a good demonstration of a multi-master setup if I added another master service in the cloud.
 
-Finally there are some fundamental features which we I experienced while using Kubernetes that are missing from this setup. The most important is the rescheduling of stopped containers using replication controllers. If I create a container on my cluster and then remove the node form the cluster the container disappears, the swarm master should notice this and start the container again on a different node. This looks like it is coming in [swarm #1488][swarm-issue-1488] but itsn't ready yet. Kubernetes also handles the proxying and routing for you in a neater way that I've managed here with nginx.
+I would also look into doing away with the dedicated master node and distribute the master duties (consul, swarm master, etc) across the cluster. This introduces some interesting chicken and egg problems about how you create a cluster using a key value store which is running on said cluster, but that's part of the fun.
+
+A dashboard would also be useful to visualise how many containers were running on nodes in the cluster, this is something I miss from using Kubernetes.
+
+There are some other fundamental features from Kubernetes that are missing from this setup. The most important is the rescheduling of stopped containers using replication controllers. If I create a container on my cluster and then remove the node it is running on from the cluster the container disappears with it. Ideally the swarm master would notice this and start the container again on a different node. It looks like it is coming in [swarm #1488][swarm-issue-1488] but hasn't been implemented yet.
+
+Kubernetes also handles the proxying and routing for you in a neater way that I've managed here with nginx. Sadly the nginx reverse proxy container I used doesn't have support for overlay networking. I did manage to get it working by hacking around in the config files but it broke backward compatability with non-clustered Docker.
+
+# Conclusion
+
+This project has been very useful for improving my understanding of clustering containers. It is also very useful for visually demonstrating to others how clustering containers, and more specifically Docker, works in practice.
 
 ![Lovely lights](https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-12-09-raspberry-pi-docker-cluster/image3.JPG)
 
