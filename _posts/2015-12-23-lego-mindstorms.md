@@ -20,7 +20,7 @@ Each element should be customisable dependent on a persons skills or interests, 
 something tangible during their time in the Lab. Most of all the project must be 'cool', people must enjoy and have an
 interest in what they are doing.
 
-The [Lego Mindstorms][Lego Mindstorms] series of kits contain software and hardware to create customizable, programmable
+The [Lego Mindstorms][Lego Mindstorms] series of kits contain software and hardware to create customisable, programmable
 robots. They include an intelligent brick computer that controls the system, a set of modular sensors and motors, 
 and Lego parts from the Technic line to create the mechanical systems. 
 
