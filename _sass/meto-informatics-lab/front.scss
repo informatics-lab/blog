@@ -20,6 +20,10 @@
       position: relative;
       max-width: 400px;
       margin: 0 auto;
+      .img-responsive {
+        height: 220px;
+        margin: 0 auto;
+      }
       .portfolio-hover {
         background: fade($brand-primary, 90%);
         position: absolute;
@@ -60,6 +64,7 @@
       h4 {
         text-transform: none;
         margin: 0;
+        height: 2em;
       }
       p {
         @include serif-font;
