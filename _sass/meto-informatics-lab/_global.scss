@@ -3,6 +3,7 @@
 body {
   overflow-x: hidden;
   @include body-font;
+  font-size: 16px;
 }
 
 .text-muted {
@@ -14,12 +15,12 @@ body {
 }
 
 p {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.75;
 }
 
 p.large {
-  font-size: 16px;
+  font-size: 22px;
 }
 
 @include a-variant($brand-primary);
@@ -195,7 +196,7 @@ header {
       @include body-font();
     }
     q {
-      font-size: 18px;
+      font-size: 20px;
       color: white;
       display: inline-block;
       background-color: $gray-darkest;
@@ -290,7 +291,7 @@ section {
     margin-bottom: 15px;
   }
   h3.section-subheading {
-    font-size: 16px;
+    font-size: 18px;
     @include serif-font;
     text-transform: none;
     font-style: italic;
