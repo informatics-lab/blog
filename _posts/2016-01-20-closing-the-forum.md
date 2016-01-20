@@ -11,8 +11,9 @@ thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/20
 
 We are announcing the decommissioning of our forum. The forum was one of a few experiments to see which tools would best foster a collaborative environment.
 
-After running it for eight months we have come to the conclusion that our forum is not an important platform for our communication. For our inter-team communications we enjoy using [Slack][slack] and for external communications we have found [Twitter][twitter] and our [website][lab-website] cover all bases.
+After running it for eight months we have come to the conclusion that our forum is not an important platform for our communication. For our inter-team communications we enjoy using [Slack][slack], for project discussions we use [GitHub Issues][github] and for external communications we have found [Twitter][twitter] and our [website][lab-website] cover all bases.
 
+[github]: https://github.com/met-office-lab
 [lab-website]: http://www.informaticslab.co.uk
 [slack]: https://slack.com/
 [twitter]: https://twitter.com/labbytherat
