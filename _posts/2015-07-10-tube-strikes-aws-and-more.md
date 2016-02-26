@@ -10,7 +10,7 @@ thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/20
 header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-07-10-tube-strikes-aws-docker-and-more/header.jpg"
 ---
 
-This week I took a trip to London to attend Amazon's [AWSomeDay][awsomeday]. I took the opportunity to meet with some interesting people and find out about how they make use of technologies we're interested in such as [AWS][aws] and [Docker][docker]. Despite having to walk miles on foot around the city thanks to a strike on the London Underground I managed to learn a lot.
+This week I took a trip to London to attend Amazon's AWSomeDay. I took the opportunity to meet with some interesting people and find out about how they make use of technologies we're interested in such as [AWS][aws] and [Docker][docker]. Despite having to walk miles on foot around the city thanks to a strike on the London Underground I managed to learn a lot.
 
 ## GoSquared
 
@@ -30,7 +30,7 @@ Many of the things Simon told me verified the half-baked ideas I've had about ma
 
 ## AWSomeDay
 
-Attending Amazon's [AWSomeDay][awsomeday] was very beneficial. The event was a talk based training session held at King's Place in London. Sadly I could only stay for half of the sessions due to the rail disruptions.
+Attending Amazon's AWSomeDay was very beneficial. The event was a talk based training session held at King's Place in London. Sadly I could only stay for half of the sessions due to the rail disruptions.
 
 The session opened with a talk on the origin of AWS and some background about Amazon itself. Then we progressed onto a series of talks ([slides available][awsomeday-slides]) covering the main services provided in AWS. Much of this I knew about, such as what each of the services does, but I definitely picked up some useful additional information.
 
@@ -72,7 +72,6 @@ As always getting out and speaking to people has taught me a lot and given me so
 [aws-elasticbeanstalk]: http://aws.amazon.com/elasticbeanstalk/
 [aws-ami]: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html
 [aws-summit-london]: http://aws.amazon.com/summits/london/
-[awsomeday]: http://aws.amazon.com/events/awsome-day/london-july-9/
 [awsomeday-slides]: https://www.slideshare.net/secret/aboOJRKd21HEsg
 [chef]: https://www.chef.io/chef/
 [circleci]: https://circleci.com/
