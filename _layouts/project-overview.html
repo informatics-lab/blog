@@ -42,7 +42,7 @@ layout: default
 	{% assign project_concept_notes = site.concept-notes | where: "project", page.project %}
 	{% assign project_posts = site.posts | where: "project", page.project %}
 	{% if project_concept_notes.size > 0 or project_posts.size > 0 %}
-	<h3>Related links</h3>
+	<!-- <h3>Related links</h3> -->
 	{% endif %}
 
 	{% if project_concept_notes.size > 0 %}
