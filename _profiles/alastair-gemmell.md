@@ -15,4 +15,4 @@ I joined the Met Office in 2012 having previously been based at the University o
 
 I'm fascinated by the ways in which data analysis and visualisation can reveal so much useful information from large datasets, and make them much more relevant and accessible to the public and scientists alike. In the field of software development I love writing interactive websites and it is a constant challenge to stay up-to-date in the rapidly evolving field of JavaScript frameworks and toolsets
 
-Outside work I enjoy spending time with my family and pretending that it's my daughter and not me who wants to play with Lego. I'm also working on improving my half marathon time - next challenge is to beat 1h 45 in the Bath Half in March!
+Outside work I enjoy spending time with my family and pretending that it's my daughter and not me who wants to play with Lego. I'm also working on improving my half marathon time - next challenge is to beat 1h 40 in the Great West Run in October!
