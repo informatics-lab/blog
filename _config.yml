@@ -41,7 +41,9 @@ exclude: ["bower.json",
           "Gruntfile.js",
           "node_modules",
           "bower_components",
-          "tests"]
+          "tests",
+          "vendor",
+          "tmp"]
 
 #sass config
 sass:
