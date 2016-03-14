@@ -59,7 +59,7 @@ That being said, in my eyes Kubernetes is the start of the next generation of IT
 [data-encoding]: http://www.informaticslab.co.uk/technical/2015/10/05/data-encoding.html
 [fail-fast-fail-cheap]: http://blog.flux7.com/3-strategies-to-fail-fast-fail-cheap-get-agile
 [kubernetes]: http://kubernetes.io/
-[kube-getting-started]: http://kubernetes.io/gettingstarted/
+[kube-getting-started]: http://kubernetes.io/docs/user-guide/walkthrough/
 [lab-school-docker]: http://www.informaticslab.co.uk/lab-school/2015/06/24/lab-school-docker.html
 [mesosphere]: https://mesosphere.com/
 [openshift-origin]: http://www.openshift.org/
