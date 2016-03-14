@@ -2,7 +2,7 @@
 author:     Jacob Tomlinson
 layout:     post
 title:      "Space Apps 2016 is coming!"
-date:       2016-01-18
+date:       2016-03-12
 summary:    "We are excited to announce the Exeter event for NASA's Space Apps Challenge on the 23rd and 24th of April 2016."
 categories: ['events']
 project:    none
