@@ -30,7 +30,7 @@ module.exports = function(grunt) {
 
     "shell": {
       bundleInstall: {
-        command: "bundle install"
+        command: "bundle install --path vendor/bundle"
       },
       jekyllTest: {
         command: "bundle exec htmlproof ./_site --only-4xx"
