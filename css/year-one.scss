@@ -1,2 +1,158 @@
 ---
 ---
+
+article.year-one {
+  font-family: 'Emeric';
+
+  #logo {
+    position: fixed;
+    top: 20px;
+    left: 100px;
+    height: 20px;
+  }
+
+  .background {
+    content: ' ';
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.1;
+    transition: opacity 0.5s;
+    background-image: url(https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/CB5A1046.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  #background_two {
+    opacity: 0;
+  }
+
+  h1 {
+    font-family: 'Emeric';
+    font-weight: normal;
+    height: 100vh;
+    width: 100%;
+    padding-top: 30vh;
+    margin-top: 0;
+    font-size: 100px;
+    text-align: center;
+
+    small {
+      font-size: 60px;
+      display: block;
+      text-transform: lowercase;
+      font-weight: lighter;
+    }
+  }
+
+  h2 {
+    font-family: 'Emeric';
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+    width: 50%;
+    margin-top: 0;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: -40px;
+    padding: 50px;
+    padding-bottom: 0;
+    background-color: white;
+    color: black;
+    z-index: 10;
+  }
+
+  h4 {
+    font-size: 16px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: -40px;
+    padding: 50px;
+    padding-bottom: 0;
+    background-color: black;
+    color: white;
+    z-index: 10;
+
+    &:before {
+      content: ' ';
+      background: url(https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/infoicon.svg);
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+      margin-left: -20px;
+      padding-right: 20px;
+    }
+  }
+
+  p {
+    position: relative;
+    font-size: 14px;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 200px;
+    padding: 50px;
+    background-color: white;
+    color: black;
+    z-index: -1;
+
+    img {
+      width: 100%;
+    }
+
+    &.image {
+      padding: 0;
+      margin-bottom: 0;
+    }
+
+    &:first-of-type::before {
+      /* this is the timeline top */
+      content: '';
+      background: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/timeline_line-03.svg');
+      position: absolute;
+      margin-top: -60px;
+      margin-left: -20px;
+      top: 0px;
+      left: 50%;
+      height: 80px;
+      width: 40px;
+    }
+
+    &:not(:last-of-type):not(.image)::after {
+      /* this is the timeline joiner */
+      content: '';
+      background: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/timeline_line-02.svg');
+      position: absolute;
+      margin-left: -20px;
+      top: 100%;
+      left: 50%;
+      height: 200px;
+      width: 40px;
+    }
+  }
+
+  h4 + p {
+    background-color: black;
+    color: white;
+    text-align: left;
+  }
+
+
+
+}
+
+footer {
+  font-size: 12px;
+}
