@@ -59,6 +59,7 @@ irrelevant. Take a look at the pictures below which should help you to know whic
 
 ![arduino pins](https://s3-eu-west-1.amazonaws.com/informatics-webimages/ms-arduino.JPG)
 ![brickpi pins](https://s3-eu-west-1.amazonaws.com/informatics-webimages/ms-brickpi-ports.jpg)
+<cite>Original image courtesy of [learn.sparkfun.com](https://learn.sparkfun.com/tutorials/getting-started-with-the-brickpi)</cite>
 
 ### Gotchas
 We found that occasionally the OS would get corrupted - re-flashing the SD card with the original image seemed to solve this.
@@ -66,7 +67,9 @@ We also realised that sensors on the BrickPi only work under certain power confi
 more detail on that.
 
 ![brickpi power1](https://s3-eu-west-1.amazonaws.com/informatics-webimages/ms-power1.jpg)
+<cite>Image courtesy of [dexterindustries.com](http://www.dexterindustries.com)</cite>
 ![brickpi power2](https://s3-eu-west-1.amazonaws.com/informatics-webimages/ms-power2.jpg)
+<cite>Image courtesy of [dexterindustries.com](http://www.dexterindustries.com)</cite>
 
 ### Let the fun begin
 
