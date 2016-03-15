@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-
+</head>
+<body>
 {{ content }}
 
 {% assign project_overviews = site.projects | where: "project", page.project %}
@@ -33,4 +34,5 @@ News items related to this project
 	</a>
 </div>
 {% endfor %}
-{% endif %}	
+{% endif %}
+</body>
