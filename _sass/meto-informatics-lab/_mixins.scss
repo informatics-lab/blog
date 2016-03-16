@@ -56,19 +56,19 @@
 
 // Font Selections
 @mixin serif-font() {
-  font-family: "Rokkitt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Emeric", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @mixin script-font() {
   //font-family: "Merriweather", "PT Serif";
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-family: "Emeric", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 
 @mixin body-font() {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Emeric", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @mixin heading-font() {
   //font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-family: "Rokkitt", 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: "Emeric", 'Helvetica Neue', Helvetica, sans-serif;
 }
