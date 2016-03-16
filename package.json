@@ -19,5 +19,8 @@
     "grunt-jekyll": "^0.4.2",
     "grunt-shell": "^1.1.2",
     "load-grunt-tasks": "^3.1.0"
+  },
+  "devDependencies": {
+    "grunt-jekyll": "^0.4.4"
   }
 }
