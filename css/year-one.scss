@@ -59,7 +59,8 @@ article.year-one {
     position: relative;
     font-size: 20px;
     text-align: center;
-    text-decoration: underline;
+    line-height: 2em;
+    text-transform: uppercase;
     width: 50%;
     margin-top: 0;
     margin-left: 25%;
@@ -70,6 +71,16 @@ article.year-one {
     background-color: white;
     color: black;
     z-index: 10;
+
+    &::before {
+      content : "";
+      position: absolute;
+      left    : 45%;
+      bottom  : 0;
+      height  : 10px;
+      width   : 10%;  /* or 100px */
+      border-bottom:1px solid black;
+    }
   }
 
   h4 {
@@ -122,7 +133,7 @@ article.year-one {
       content: '';
       background: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/timeline_line-03.svg');
       position: absolute;
-      margin-top: -60px;
+      margin-top: -76px;
       margin-left: -20px;
       top: 0px;
       left: 50%;
