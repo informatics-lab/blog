@@ -10,6 +10,17 @@
     margin: 0 auto;
   }
 
+  code {
+    /* inline codeblocks should be smaller */
+    font-size: 0.8em;
+  }
+
+  pre {
+    code {
+      font-size: 1em;
+    }
+  }
+
   blockquote {
     p {
       cite {
