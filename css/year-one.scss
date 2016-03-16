@@ -11,6 +11,10 @@ article.year-one {
     height: 20px;
   }
 
+  /*
+    The two background elements overlap and are alternated in opacity by JavaScript
+    to allow new images to load off screen and then fade in.
+  */
   .background {
     content: ' ';
     display: block;
@@ -31,7 +35,6 @@ article.year-one {
     -webkit-background-size: cover;
     background-size: cover;
   }
-
   #background_two {
     opacity: 0;
   }
@@ -52,6 +55,18 @@ article.year-one {
       text-transform: lowercase;
       font-weight: lighter;
     }
+
+    &::before {
+      content: 'Keep those fingers scrolling';
+      font-size: 10px;
+      text-transform: uppercase;
+      opacity: 0.8;
+      position: absolute;
+      text-align: center;
+      bottom: 90px;
+      left: 0;
+      width: 100%;
+    }
   }
 
   h2 {
@@ -65,7 +80,7 @@ article.year-one {
     margin-top: 0;
     margin-left: 25%;
     margin-right: 25%;
-    margin-bottom: -40px;
+    margin-bottom: -40px; /* negative margin so it overlaps the following paragraph box */
     padding: 50px;
     padding-bottom: 0;
     background-color: white;
@@ -73,22 +88,24 @@ article.year-one {
     z-index: 10;
 
     &::before {
+      /* a short underline */
       content : "";
       position: absolute;
       left    : 45%;
       bottom  : 0;
       height  : 10px;
-      width   : 10%;  /* or 100px */
+      width   : 10%;
       border-bottom:1px solid black;
     }
   }
 
   h4 {
+    /* h4 is reserved for the "did you know?" sections */
     font-size: 16px;
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
-    margin-bottom: -40px;
+    margin-bottom: -40px; /* negative margin so it overlaps the following paragraph box */
     padding: 50px;
     padding-bottom: 0;
     background-color: black;
@@ -96,6 +113,7 @@ article.year-one {
     z-index: 10;
 
     &:before {
+      /* add infoicon to the did you know headings */
       content: ' ';
       background: url(https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/infoicon.svg);
       background-repeat: no-repeat;
@@ -124,8 +142,9 @@ article.year-one {
     }
 
     &.image {
+      /* don't pad paraghraphs containing images, this class is added automatically by JavaScript */
       padding: 0;
-      margin-bottom: 0;
+      margin-bottom: 0; /* remove bottom margin so images stick to the following paragraph */
     }
 
     &:first-of-type::before {
@@ -155,6 +174,7 @@ article.year-one {
   }
 
   h4 + p {
+    /* make paragraphs which follow an h4 match the style of the h4 */
     background-color: black;
     color: white;
     text-align: left;
