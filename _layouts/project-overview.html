@@ -7,16 +7,19 @@ layout: default
 
 
 <!-- Header image -->
-<header style="background-image: url(/img/home-main-header.jpg);">
-    <div class="container">
-        <div class="intro-text">
-            <div class="intro-heading"><span>{{ page.title }}</span></div>
-        </div>
-        <div class="post-header">
-          <span class="post-meta">{{ page.summary }}</span>
-        </div>
-    </div>
-</header>
+<figure class="tint">
+	<headerbkg style="background-image: url(/img/home-main-header.jpg);"></headerbkg>
+	<header class="blog-top-header">
+	    <div class="container">
+	        <div class="intro-text">
+	            <div class="intro-heading"><span>{{ page.title }}</span></div>
+	        </div>
+	        <div class="post-header">
+	          <span class="post-meta">{{ page.summary }}</span>
+	        </div>
+	    </div>
+	</header>
+</figure>
 
 <article class="post-content">
   {% if page.demos %}
