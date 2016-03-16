@@ -283,19 +283,16 @@ section {
   padding: 100px 0;
   h2.section-heading {
     display: inline-block;
-    color: white;
-    background-color: $mo-medium-grey;
+    color: $mo-dark-grey;
     padding: 0 0.3em;
-    font-size: 40px;
+    font-size: 52px;
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   h3.section-subheading {
     font-size: 18px;
-    @include serif-font;
     text-transform: none;
-    font-style: italic;
-    font-weight: 400;
+    margin-top: 0px;
     margin-bottom: 75px;
   }
 }
