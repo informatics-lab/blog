@@ -11,15 +11,9 @@
 
 // Blog Section
 
-section#blog {
+#blog {
 
   @include a-variant(black);
-
-  h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
-  }
 
   #date {
     font-weight: lighter;
@@ -46,6 +40,11 @@ section#blog {
     overflow: hidden;
     background-color: white;
 
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
   }
 
   .blog-more {

@@ -210,8 +210,10 @@ header {
     margin-bottom: 100px;
   }
 }
+
 .blog-header {
-  background-image: url($header-blog);
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .post-header {
