@@ -4,22 +4,14 @@
 {% assign image_url = site.default_blog_thumbnail %}
 {% endif %}
 
-<li class="{% cycle '','timeline-inverted' %}">
-    <div class="timeline-image img-circle img-responsive lazyload" data-original="{{ image_url }}" style="background-image: url(/img/grey.gif);" onclick="location.href='{{ post.url | prepend: site.baseurl }}';">
-    </div>
-    <div class="timeline-panel">
-        <div class="timeline-heading">
-            {% if post.categories contains 'sticky' %}
-            <h4><span class="label sticky">Featured Post</span></h4>
-            {% else %}
-            <h4>{{ post.date | date: "%b %-d, %Y" }}</h4>
-            {% endif %}
-            <h4 class="subheading"><span><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span></h4>
-        </div>
-        <div class="timeline-body">
-            {{ post.summary }}
-        </div>
-        {% if post.categories contains 'sticky' %}
-        {% endif %}
-    </div>
-</li>
+<div class="blog-entry-wrapper col-lg-4">
+  <div class="blog-image img-responsive lazyload" data-original="{{ image_url }}" style="background-image: url(/img/grey.gif);" onclick="location.href='{{ post.url | prepend: site.baseurl }}';">
+  </div>
+  <div class="blog-entry">
+    <h4 id="date">{{ post.date | date: "%-d %B %Y" }}</h4>
+    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
+    <p class="blog-body">
+        {{ post.summary }}
+    </p>
+  </div>
+</div>
