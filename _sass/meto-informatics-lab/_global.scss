@@ -62,16 +62,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-default {
 
+  border: none;
+
   $navbar-height: 50px;
 
   background-color: $mo-dark-grey;
   height: $navbar-height;
 
   .navbar-header {
-    width: 50%;
+
     a {
       height: $navbar-height;
-      line-height: $navbar-height;
+      line-height: 45px;
       text-decoration: none;
       color: white;
       span {
@@ -89,9 +91,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 
-//.navbar-collapse {
-//  border-color: fade(white, 2%);
-//}
+.navbar-collapse {
+ background-color: $mo-dark-grey;
+}
 
 //.navbar-toggle {
 //  background-color: $brand-primary;
@@ -125,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 }
 
-.navbar-nav li.active {
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   background-color: $mo-dark-grey;
   color: $brand-primary;
 }
@@ -216,7 +218,7 @@ header {
 
 @media(min-width: 768px) {
   header {
-    margin-top: 80px;
+    margin-top: 45px;
     .intro-text {
       padding-top: 0px;
       padding-bottom: 0px;
