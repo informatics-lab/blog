@@ -1,43 +1,60 @@
 @font-face {
     font-family: 'Emeric';
-    src: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/fonts/emeric/FS-Emeric-Web-Medium.ttf') format('truetype');
-    font-weight: normal;
+    src: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/fonts/emeric/FS-Emeric-Web-Thin.ttf') format('truetype');
+    font-weight: 200;
     font-style: normal;
 }
 @font-face {
     font-family: 'Emeric';
-    src: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/fonts/emeric/FS-Emeric-Web-Medium-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Emeric';
-    src: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/fonts/emeric/FS-Emeric-Web-SemiBold.ttf
-') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Emeric';
-    src: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/fonts/emeric/FS-Emeric-Web-SemiBold-Italic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Emeric';
-    src: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/fonts/emeric/FS-Emeric-Web-Heavy.ttf') format('truetype');
-    font-weight: bolder;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Emeric';
-    src: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/fonts/emeric/FS-Emeric-Web-Heavy-Italic.ttf') format('truetype');
-    font-weight: bolder;
+    src: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/fonts/emeric/FS-Emeric-Web-Thin-Italic.ttf') format('truetype');
+    font-weight: 200;
     font-style: italic;
 }
 @font-face {
     font-family: 'Emeric';
     src: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/fonts/emeric/FS-Emeric-Web-Light.ttf') format('truetype');
-    font-weight: lighter;
+    font-weight: 400;
     font-style: normal;
+}
+@font-face {
+    font-family: 'Emeric';
+    src: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/fonts/emeric/FS-Emeric-Web-Light-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Emeric';
+    src: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/fonts/emeric/FS-Emeric-Web-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Emeric';
+    src: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/fonts/emeric/FS-Emeric-Web-Medium-Italic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Emeric';
+    src: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/fonts/emeric/FS-Emeric-Web-SemiBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Emeric';
+    src: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/fonts/emeric/FS-Emeric-Web-SemiBold-Italic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Emeric';
+    src: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/fonts/emeric/FS-Emeric-Web-Heavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Emeric';
+    src: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/fonts/emeric/FS-Emeric-Web-Heavy-Italic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
 }
