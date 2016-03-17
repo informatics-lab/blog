@@ -52,11 +52,22 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-.btn-xl {
-  @include button-variant($gray-darkest, $brand-primary, $brand-primary);
+.btn-dark {
+  @include button-variant(white, $gray-darkest, $gray-darkest);
   @include heading-font;
-  font-weight: 700;
-  border-radius: 3px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  border-radius: 0;
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+.btn-xl {
+  @include button-variant(white, transparent, white);
+  @include heading-font;
+  font-weight: lighter;
+  text-transform: uppercase;
+  border-radius: 0;
   font-size: 18px;
   padding: 20px 40px;
 }
@@ -171,7 +182,7 @@ header {
       font-weight: 700;
       font-size: 30px;
       line-height: 30px;
-      color: black;
+      color: white;
       display: inline-block;
       padding: 0 10px;
       opacity: 1;
@@ -186,7 +197,6 @@ header {
     }
     .intro-para {
       color: white;
-      background-color: $gray;
       padding: 10px;
       max-width: 69%;
       margin-left: auto;
@@ -204,15 +214,6 @@ header {
       padding: 0 10px;
       margin-bottom: 10px;
     }
-  }
-}
-
-.front-header {
-  background-image: url($header-front);
-  .intro-heading {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    background-color: white;
   }
 }
 
