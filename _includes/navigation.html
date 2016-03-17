@@ -11,7 +11,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="page-scroll" href="/">
-              <img class="navbar-logo" src="/img/mo-logo.svg" alt="Met Office Logo" title="Home" />
+              <img class="navbar-logo hidden-xs" src="/img/mo-logo.svg" alt="Met Office Logo" title="Home" />
               <span>Informatics Lab</span>
             </a>
         </div>
@@ -19,6 +19,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
+                {% if page.layout == 'front' %}
                 <li>
                     <a class="page-scroll" href="#projects">Projects</a>
                 </li>
@@ -28,6 +29,17 @@
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
                 </li>
+                {% else %}
+                <li>
+                    <a class="page-scroll" href="/#projects">Projects</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/blog">Blog</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#contact">Contact</a>
+                </li>
+                {% endif %}
             </ul>
         </div>
         <!-- /.navbar-collapse -->
