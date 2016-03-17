@@ -8,7 +8,12 @@ layout: default
 
 <!-- Header image -->
 <figure class="tint">
-	<headerbkg style="background-image: url(/img/home-main-header.jpg);"></headerbkg>
+	{% if page.header %}
+	  <div class="headerbkg" style="background-image: url({{ page.header }});">
+	{% else %}
+	  <div class="headerbkg" style="background-image: url(/img/home-main-header.jpg);">
+	{% endif %}
+	  </div>
 	<header class="blog-top-header">
 	    <div class="container">
 	        <div class="intro-text">
