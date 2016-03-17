@@ -45,7 +45,7 @@ It worked out easier for me to see what Ross thought the blog would look like to
 
 ![Contact Us Mock](https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-05-13-informatics-lab-blog-version-two/contact-us-mock.jpg)
 
-The colours throughout the site mirror those used in the four [get involved][10] icons. We’re toying with the idea of introducing these colours to the team photos. The border colour could mirror the persons area of expertise. This could be too subtle … but it is often the subtleties that make a good design great! Let us know what you think!
+The colours throughout the site mirror those used in the four get involved icons. We’re toying with the idea of introducing these colours to the team photos. The border colour could mirror the persons area of expertise. This could be too subtle … but it is often the subtleties that make a good design great! Let us know what you think!
 
 ## Tech choices
 
@@ -70,4 +70,3 @@ We hope you like the new site, why not [contact us][8] and let us know your thou
 [7]: https://github.com/met-office-lab/met-office-lab.github.io/pull/140
 [8]: /#contact
 [9]: https://disqus.com/
-[10]: /#get-involved

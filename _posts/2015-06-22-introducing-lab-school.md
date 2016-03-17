@@ -26,8 +26,6 @@ Running a session is open to all Lab members (core and associates) and must be d
   * The exercises should require **minimal additional software**, if more advanced tools are required then AWS instances (or similar) should be provided for the duration of the session.
     * To be inclusive of people following the exercises in the future a **detailed description** (**or** even better a **machine image**) of the provided instance should be included on the web page to allow it to be recreated.
 
-Sessions will be advertised on the [public calendar][website-calendar], MetNet, by email to the associate mailing list and will be open to all (not just associates).
+Sessions will be advertised on the <del>public calendar</del>, MetNet, by email to the associate mailing list and will be open to all (not just associates).
 
 This format allows the most flexibility for attendees. You can participate in as much or as little of the session as you like, fit it around meetings and other duties (even if they are in the middle of a session), or even just follow the exercises at home afterwards. You will be able to follow along at your own speed to get the most out of the session.
-
-[website-calendar]: /get-involved/calendar.html
