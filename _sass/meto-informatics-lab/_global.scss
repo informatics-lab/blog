@@ -320,6 +320,12 @@ footer {
   }
 }
 
+footer.sticky {
+  position: absolute;
+  bottom: 0px;
+  width: 100%
+}
+
 // Social Buttons
 
 ul.social-buttons {
