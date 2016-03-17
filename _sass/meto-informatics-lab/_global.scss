@@ -322,15 +322,15 @@ footer {
 // Social Buttons
 
 ul.social-buttons {
-  margin-bottom: 0;
+  margin: 0;
   li {
+    padding: 0;
     a {
       display: block;
       background-color: $gray-darkest;
       height: 40px;
       width: 40px;
-      border-radius: 100%;
-      font-size: 20px;
+      font-size: 30px;
       line-height: 40px;
       color: white;
       outline: none;
@@ -342,8 +342,29 @@ ul.social-buttons {
       &:active {
         background-color: $brand-primary;
         color: $gray-darkest;
+        text-decoration: none;
       }
     }
+  }
+
+  .twitter a {
+    background-color: #55acee;
+  }
+
+  .instagram a {
+    background-color: #125688;
+  }
+
+  .github a {
+    background-color: black;
+  }
+
+  .email a {
+    background-color: #ea4335;
+  }
+
+  .rss a {
+    background-color: #f26522;
   }
 }
 

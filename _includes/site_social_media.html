@@ -1,6 +1,31 @@
 <ul class="list-inline social-buttons">
-    {% if site.twitter-url %}<li><a href="mailto:{{ site.email }}" target="_new"><i class="fa fa-envelope"></i></a></li>{% endif %}
-    {% if site.twitter-url %}<li><a href="{{ site.twitter-url }}"><i class="fa fa-twitter"></i></a></li>{% endif %}
-    {% if site.github-url %}<li><a href="{{ site.github-url }}"><i class="fa fa-github"></i></a></li>{% endif %}
-    {% if site.instagram-url %}<li><a href="{{ site.instagram-url }}"><i class="fa fa-instagram"></i></a></li>{% endif %}
+
+    {% if site.email %}
+      <li class="email"><a href="mailto:{{ site.email }}" target="_new">
+        <i class="fa fa-envelope"></i>
+      </a></li>
+    {% endif %}
+
+    {% if site.twitter-url %}
+      <li class="twitter"><a href="{{ site.twitter-url }}">
+        <i class="fa fa-twitter"></i>
+      </a></li>
+    {% endif %}
+
+    {% if site.github-url %}
+      <li class="github"><a href="{{ site.github-url }}">
+        <i class="fa fa-github"></i>
+      </a></li>
+    {% endif %}
+
+    {% if site.instagram-url %}
+      <li class="instagram"><a href="{{ site.instagram-url }}">
+        <i class="fa fa-instagram"></i>
+      </a></li>
+    {% endif %}
+
+    <li class="rss"><a href="/feed.xml">
+      <i class="fa fa-rss"></i>
+    </a></li>
+
 </ul>
