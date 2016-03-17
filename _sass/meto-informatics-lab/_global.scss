@@ -26,7 +26,7 @@ p.large {
 @include a-variant($brand-primary);
 
 h1, h2, h3, h4, h5, h6 {
-   @include heading-font;
+  @include heading-font;
   //font-weight: 700;
 }
 
@@ -61,98 +61,77 @@ h1, h2, h3, h4, h5, h6 {
 // Custom Navigation Bar
 
 .navbar-default {
-  background-color: $gray-darkest;
-  border-color: transparent;
-  .navbar-logo {
-    height: 40px;
-  }
-  .navbar-collapse {
-    border-color: fade(white, 2%);
-  }
-  .navbar-toggle {
-    background-color: $brand-primary;
-    border-color: $brand-primary;
-    .icon-bar {
-      background-color: white;
-    }
-    &:hover,
-    &:focus {
-      background-color: $brand-primary;
-    }
-  }
-  .nav {
-    li {
-      a {
-        @include body-font;
-        font-weight: 400;
-        letter-spacing: 1px;
-        color: white;
-        padding: 10px 10px;
-        &:hover {
-          color: $brand-primary;
-          outline: none;
-        }
-        &:focus {
-          color: white;
-        }
+
+  $navbar-height: 50px;
+
+  background-color: $mo-dark-grey;
+  height: $navbar-height;
+
+  .navbar-header {
+    width: 50%;
+    a {
+      height: $navbar-height;
+      line-height: $navbar-height;
+      text-decoration: none;
+      color: white;
+      span {
+        vertical-align: -5px;
+        font-size:24px;
+        padding-top:50px;
+        padding-left:30px;
+      }
+      .navbar-logo {
+        height: $navbar-height - 16px;
+        padding-left: 0;
+        margin-left: 0;
       }
     }
   }
-  .navbar-nav>.active>a {
-    border-radius: 0;
-    color: $gray-darkest;
-    background-color: $brand-primary;
-  }
-  .navbar-nav>.active>a:hover,
-  .navbar-nav>.active>a:focus {
-    color: $gray-darkest;
-    background-color: darken($brand-primary, 10%);
+
+
+//.navbar-collapse {
+//  border-color: fade(white, 2%);
+//}
+
+//.navbar-toggle {
+//  background-color: $brand-primary;
+//  border-color: $brand-primary;
+//  .icon-bar {
+//    background-color: white;
+//  }
+//  &:hover,
+//  &:focus {
+//    background-color: $brand-primary;
+//  }
+//}
+
+.navbar-nav {
+  li {
+    .active{
+      background-color: $mo-dark-grey;
+      color: $brand-primary;
+    }
+    a {
+      @include body-font;
+      color: white;
+      &:hover {
+        color: $brand-primary;
+      }
+      &:focus {
+        color: $brand-primary;
+      }
+    }
   }
 }
+}
 
-
-@media(min-width:768px) {
-  .navbar-default {
-    background-color: $gray-darkest;
-    padding: 10px 0 10px 0;
-    -webkit-transition: padding 0.3s;
-    -moz-transition: padding 0.3s;
-    transition: padding 0.3s;
-    border: none;
-    height: 120px;
-    @include navbar-animate();
-    .navbar-logo {
-      @include navbar-animate();
-      height: 90px;
-    }
-    .navbar-nav {
-      @include navbar-animate();
-      margin-top: 53px;
-      li {
-        a {
-          line-height: 5px;
-        }
-      }
-    }
-    .navbar-nav>.active>a {
-      border-radius: 3px;
-    }
-  }
-  .navbar-default.navbar-shrink {
-    background-color: $gray-darkest;
-    padding: 10px 0 10px 0;
-    height: 80px;
-    .navbar-logo {
-      height: 50px;
-    }
-    .navbar-nav {
-      margin-top: 20px;
-    }
-  }
+.navbar-nav li.active {
+  background-color: $mo-dark-grey;
+  color: $brand-primary;
 }
 
 header {
-  background-repeat: none;
+  //background-repeat: none;
   background-attachment: scroll;
   background-position: center center;
   margin-top: 10px;
@@ -178,7 +157,10 @@ header {
       background-color: white;
       padding: 0 10px;
     }
-    .intro-heading::after { content:"\A"; display:block; }
+    .intro-heading::after {
+      content: "\A";
+      display: block;
+    }
     .btn {
       @include body-font;
       text-transform: uppercase;
@@ -205,6 +187,7 @@ header {
     }
   }
 }
+
 .front-header {
   background-image: url($header-front);
   .intro-heading {
@@ -212,6 +195,7 @@ header {
     margin-bottom: 100px;
   }
 }
+
 .blog-header {
   background-image: url($header-blog);
 }
@@ -230,7 +214,7 @@ header {
   }
 }
 
-@media(min-width:768px) {
+@media(min-width: 768px) {
   header {
     margin-top: 80px;
     .intro-text {
@@ -253,7 +237,7 @@ header {
     }
   }
   .front-header {
-    .intro-text{
+    .intro-text {
       padding-bottom: 150px;
 
       .intro-heading {
@@ -300,13 +284,11 @@ section {
   }
 }
 
-@media(min-width:768px) {
+@media(min-width: 768px) {
   section {
     padding: 150px 0;
   }
 }
-
-
 
 // Footer
 
