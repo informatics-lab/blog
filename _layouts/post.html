@@ -15,11 +15,14 @@ layout: default
 {% include navigation.html %}
 
 <!-- Header image -->
+<figure class="tint">
 {% if page.header %}
-  <header style="background-image: url({{ page.header }});">
+  <div class="headerbkg" style="background-image: url({{ page.header }});">
 {% else %}
-  <header style="background-image: url(/img/home-main-header.jpg);">
+  <div class="headerbkg" style="background-image: url(/img/home-main-header.jpg);">
 {% endif %}
+  </div>
+  <header class="blog-top-header">
     <div class="container">
         <div class="intro-text">
             <div class="intro-heading"><span>{{ page.title }}</span></div>
@@ -39,7 +42,8 @@ layout: default
           {% endif %}
         </div>
     </div>
-</header>
+  </header>
+</figure>
 
 
 

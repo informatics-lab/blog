@@ -1,8 +1,45 @@
+.blog-top-header {
+  position: absolute;
+  padding-top: 100px;
+  margin-top: 0;
+  .intro-text {
+    .intro-heading {
+      color: white;
+    }
+  }
+}
+.blog-header {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.post-header {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  span {
+    margin: 0 20px;
+    padding: 2px 0px;
+    color: white;
+  }
+  a {
+    color: white;
+  }
+}
+
 .post-content {
-  width: 70%;
+  width: 90%;
   margin: 50px auto;
 
   @include a-variant($mo-blue);
+
+  a {
+    color: $mo-lilac;
+    &:hover {
+      color: $mo-lilac;
+    }
+  }
 
   img {
     max-width: 100%;
@@ -28,6 +65,7 @@
         color: $gray;
       }
     }
+    border-left-color: $mo-medium-grey;
   }
 
   .demos {
@@ -56,13 +94,21 @@
   }
 }
 
+@media(min-width:768px) {
+  .post-content {
+    width: 70%;
+  }
+  .blog-top-header {
+    padding-top: 100px;
+  }
+}
+
 .written-by-footer {
   text-align: center;
   .heading {
     a {
       padding: 2px 5px;
-      background: $mo-dark-grey;
-      color: $brand-primary;
+      color: black;
     }
   }
   .summary {
