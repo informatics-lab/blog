@@ -17,11 +17,11 @@ layout: default
 <!-- Header image -->
 <figure class="tint">
 {% if page.header %}
-  <headerbkg style="background-image: url({{ page.header }});">
+  <div class="headerbkg" style="background-image: url({{ page.header }});">
 {% else %}
-  <headerbkg style="background-image: url(/img/home-main-header.jpg);">
+  <div class="headerbkg" style="background-image: url(/img/home-main-header.jpg);">
 {% endif %}
-  </headerbkg>
+  </div>
   <header class="blog-top-header">
     <div class="container">
         <div class="intro-text">
