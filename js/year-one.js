@@ -6,36 +6,29 @@ var h = document.documentElement,
     b = document.body,
     st = 'scrollTop',
     sh = 'scrollHeight'
-    index = 0;
+    index = 0,
+    percent = 0;
+
+var images = new Array()
+function preload(preload_images) {
+  for (i = 0; i < preload_images; i++) {
+    images[i] = new Image()
+    images[i].src = preload_images[i]
+  }
+}
 
 var backgrounds = [
-  "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/CB5A1046.jpg",
-  "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/CB5A1055.jpg",
-  "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/CB5A1057.jpg"
+  "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/backg-1.jpg",
+  "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/backg-2.jpg",
+  "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/backg-3.jpg",
+  "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/backg-4.jpg",
+  "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/backg-5.jpg"
 ]
 
+preload(backgrounds);
+
 window.addEventListener("scroll", function(){
-    var percent = h[st]||b[st] / ((h[sh]||b[sh]) - h.clientHeight);
-    old_index = index;
+    percent = h[st]||b[st] / ((h[sh]||b[sh]) - h.clientHeight);
     index = Math.floor(backgrounds.length * Math.min(percent, 0.99));
-    if (old_index != index){
-      if (index % 2 == 1){
-        $('#background_one').css('opacity','0.1');
-        $('#background_two').css('opacity','0');
-
-        setTimeout(function() {
-          $('#background_one').css('background-image','url(' + backgrounds[index] + ')');
-          $('#background_two').css('background-image','url(' + backgrounds[index + 1] + ')');
-        }, 1000);
-      } else {
-        $('#background_one').css('opacity','0');
-        $('#background_two').css('opacity','0.1');
-
-        setTimeout(function() {
-          $('#background_one').css('background-image','url(' + backgrounds[index + 1] + ')');
-          $('#background_two').css('background-image','url(' + backgrounds[index] + ')');
-        }, 1000);
-      }
-    }
-
+    $('.background').css('background-image','url(' + backgrounds[index] + ')');
 });
