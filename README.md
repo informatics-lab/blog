@@ -1,6 +1,10 @@
-# Met Office Lab Jekyll Blog [![Build Status](https://travis-ci.org/met-office-lab/blog.svg)](https://travis-ci.org/met-office-lab/blog)
+# Met Office Lab Jekyll Blog [![Build Status](https://img.shields.io/travis/met-office-lab/blog/master.svg)](https://travis-ci.org/met-office-lab/blog)
 
 This is the blog for the Met Office Lab.
+
+## Contributing
+
+For instructions on writing blog posts, updating projects or updating the site see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### Build the site locally
 
