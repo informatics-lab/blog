@@ -1,11 +1,55 @@
-// Get Involved Section
+.front-header {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 
-#get-involved {
-  .get-involved-heading {
-    margin: 15px 0;
-    text-transform: none;
-    font-size: 28px;
-    @include a-variant($mo-dark-grey);
+  .background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url($header-front);
+  }
+
+  .darken {
+    background-color: black;
+    opacity: 0.8;
+  }
+
+  .background, .darken {
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .intro-text {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .hexagons {
+    position: absolute;
+    content: ' ';
+    width: 80%;
+    height: 100%;
+    background-image: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/hexforweb-04.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #hex-1 {
+    left: 0;
+    top: 0;
+    margin-left: -700px;
+  }
+
+  #hex-2 {
+    right: 0;
+    top: 0;
+    margin-right: -900px;
   }
 }
 
@@ -185,29 +229,42 @@ aside.clients {
 // Contact Section
 
 section#contact {
-  background-color: $gray-darkest;
-  background-image: url($contact-image);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 100px 0;
-  .section-heading {
-    margin-bottom: 100px;
+  position: relative;
+  height: 100%;
+
+  .background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url($contact-image);
   }
-  .contact-us-social {
-    margin-top: -80px;
+
+  .darken {
+    background-color: white;
+    opacity: 0.8;
   }
+
+  .background, .darken {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
   .form-group {
     margin-bottom: 25px;
     input,
     textarea {
       padding: 20px;
+      border-radius: 0;
+      border: none;
     }
     input.form-control {
       height: auto;
     }
     textarea.form-control {
-      height: 236px;
+      height: 230px;
     }
   }
   .form-control:focus {
