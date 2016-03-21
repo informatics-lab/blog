@@ -10,6 +10,10 @@ article.year-one {
     height: 20px;
   }
 
+  span.nobr {
+    white-space: nowrap;
+  }
+
   /*
     The two background elements overlap and are alternated in opacity by JavaScript
     to allow new images to load off screen and then fade in.
@@ -23,9 +27,8 @@ article.year-one {
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.1;
-    transition: opacity 0.5s;
-    background-image: url(https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/CB5A1046.jpg);
+    opacity: 1;
+    background-image: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/backg-1.jpg');
     background-size: cover;
     background-attachment: fixed;
     -ms-background-size: cover;
@@ -34,13 +37,11 @@ article.year-one {
     -webkit-background-size: cover;
     background-size: cover;
   }
-  #background_two {
-    opacity: 0;
-  }
 
   h1 {
     font-family: 'Emeric';
     font-weight: normal;
+    color: #50B9A4;
     height: 100vh;
     width: 100%;
     padding-top: 30vh;
@@ -58,6 +59,7 @@ article.year-one {
     &::before {
       content: 'Keep those fingers scrolling';
       font-size: 10px;
+      color: #777;
       text-transform: uppercase;
       opacity: 0.8;
       position: absolute;
@@ -98,7 +100,88 @@ article.year-one {
     }
   }
 
+  h3 {
+    font-family: 'Emeric';
+    font-weight: 200;
+    position: relative;
+    font-size: 60px;
+    text-align: center;
+    line-height: 2em;
+    text-transform: uppercase;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 0px;
+    margin-bottom: 200px;
+    margin-top: 0px;
+    color: #2A2A2A;
+    z-index: 10;
+    background: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/timeline_line-02.svg');
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 40px auto;
+    border: #2A2A2A solid 2px;
+
+    &::after {
+      /* this is the timeline joiner */
+      content: '';
+      background: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/timeline_line-02.svg');
+      position: absolute;
+      margin-left: -20px;
+      top: 100%;
+      left: 50%;
+      height: 200px;
+      width: 40px;
+    }
+  }
+
   h4 {
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 200px;
+    padding: 50px;
+    color: #2A2A2A;
+    z-index: -1;
+    background: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/timeline_line-02.svg');
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 40px auto;
+
+    img {
+      width: 100%;
+    }
+
+    &:first-of-type::before {
+      /* this is the timeline top */
+      content: '';
+      background: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/timeline_line-03.svg');
+      position: absolute;
+      margin-top: -76px;
+      margin-left: -20px;
+      top: 0px;
+      left: 50%;
+      height: 80px;
+      width: 40px;
+    }
+
+    &::after {
+      /* this is the timeline joiner */
+      content: '';
+      background: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/timeline_line-02.svg');
+      position: absolute;
+      margin-left: -20px;
+      top: 100%;
+      left: 50%;
+      height: 200px;
+      width: 40px;
+    }
+  }
+
+  h5 {
     /* h4 is reserved for the "did you know?" sections */
     font-size: 16px;
     width: 50%;
@@ -146,19 +229,6 @@ article.year-one {
       margin-bottom: 0; /* remove bottom margin so images stick to the following paragraph */
     }
 
-    &:first-of-type::before {
-      /* this is the timeline top */
-      content: '';
-      background: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/timeline_line-03.svg');
-      position: absolute;
-      margin-top: -76px;
-      margin-left: -20px;
-      top: 0px;
-      left: 50%;
-      height: 80px;
-      width: 40px;
-    }
-
     &:not(:last-of-type):not(.image)::after {
       /* this is the timeline joiner */
       content: '';
@@ -172,7 +242,7 @@ article.year-one {
     }
   }
 
-  h4 + p {
+  h5 + p {
     /* make paragraphs which follow an h4 match the style of the h4 */
     background-color: black;
     color: white;
