@@ -1,0 +1,48 @@
+// Team Section
+
+.team-member {
+  text-align: center;
+  margin-bottom: 50px;
+  @include a-variant($gray-darkest);
+
+  // Mugshot
+  .mugshot {
+    margin: 0 auto;
+    border: none;
+    height: 300px;
+    width: 100%;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+  }
+
+  // All text (h4 and p)
+  .text {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+  }
+
+  // Name
+  h4 {
+    padding-top: 25px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-transform: none;
+    font-size: 24px;
+  }
+
+  // Summary
+  p {
+    height: 5em;
+    overflow: none;
+    padding: 5px;
+    margin: 0;
+  }
+
+  // Social links
+  ul {
+    background-color: $gray-darkest;
+  }
+}

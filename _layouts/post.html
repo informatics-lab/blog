@@ -34,11 +34,7 @@ layout: default
           {% endif %}
           <span class="post-meta small">{{ minutes }} minute read</span>
           {% if page.author %}
-            {% if profile %}
-              <span class="post-meta small">by <a href="{{ profile.url }}">{{ page.author }}</a></span><br>
-            {% else %}
               <span class="post-meta small">by {{ page.author }}</span><br>
-            {% endif %}
           {% endif %}
         </div>
     </div>
@@ -53,7 +49,7 @@ layout: default
 
 {% if profile %}
 <div class="written-by-footer">
-  <div class="heading">written by <a href={{ profile.url }}>{{ profile.name }}</a></div>
+  <div class="heading">written by {{ profile.name }}</div>
   <p class="summary">{{ profile.summary }}</p>
 </div>
 {% endif %}
