@@ -35,7 +35,7 @@
 
   // Summary
   p {
-    height: 5em;
+    height: 4em;
     overflow: none;
     padding: 5px;
     margin: 0;
@@ -43,6 +43,26 @@
 
   // Social links
   ul {
-    background-color: $gray-darkest;
+    background-color: white;
+
+    li {
+
+      a {
+        background-color: white;
+        color: $mo-dark-grey;
+        font-size: 18px;
+        width: 1.5em;
+        height: 1.5em;
+        margin-bottom: 1em;
+      }
+
+      a:hover {
+        color: $mo-light-grey;
+        background-color: transparent;
+      }
+
+    }
+
+
   }
 }

@@ -101,8 +101,6 @@
 
   @media(min-width:768px) {
     .container {
-      padding-left: 10%;
-      padding-right: 10%;
     }
   }
 
@@ -113,11 +111,11 @@
 
 #projects {
 
+  padding-bottom: 0px;
+
   @include a-variant(black);
 
   .container {
-    padding-left: 10%;
-    padding-right: 10%;
   }
 
   .project-item {
@@ -184,6 +182,11 @@ section#contact {
   padding: 100px 0;
   position: relative;
   height: 100%;
+
+
+  h3.section-subheading {
+    border-bottom: none;
+  }
 
   .background {
     background-position: center;
