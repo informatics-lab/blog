@@ -2,7 +2,7 @@
 layout:     post
 title:      "Kubernetes in pictures"
 date:       2016-03-30
-summary:    A symposium on interactive documentary.
+summary:    Container management on the cloud.
 categories: ['technical','infrastructure']
 author: 	Rachel Prudden
 project:    none
