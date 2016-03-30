@@ -44,17 +44,27 @@
   img {
     max-width: 100%;
     height: auto;
-    margin: 0 auto;
+    margin: 30px auto;
   }
 
   code {
     /* inline codeblocks should be smaller */
     font-size: 0.8em;
+    border-radius: 0;
+    color: black;
+    background-color: transparent;
+    font-weight: bold;
   }
 
   pre {
+    margin: 30px auto;
+    background-color: $mo-dark-grey;
+    border-radius: 0;
+    border: none;
     code {
       font-size: 1em;
+      color: white;
+      font-weight: normal;
     }
   }
 
