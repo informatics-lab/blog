@@ -6,6 +6,10 @@ $oy-green-secondary: #50B9A4;
 
 article.year-one {
 
+  /**
+    Navigation
+  */
+
   #logo {
     position: fixed;
     top: 20px;
@@ -13,15 +17,30 @@ article.year-one {
     height: 20px;
   }
 
+  #menu {
+    position: fixed;
+    top: 20px;
+    right: 100px;
+    height: 20px;
+
+    a {
+      color: black;
+      font-weight: bold;
+    }
+  }
+
+  /**
+    Helper classes
+  */
+
   span.nobr {
     white-space: nowrap;
   }
 
-  /*
-    The two background elements overlap and are alternated in opacity by JavaScript
-    to allow new images to load off screen and then fade in.
+  /**
+    Background elements
   */
-  .background {
+  .main-background {
     content: ' ';
     display: block;
     position: fixed;
@@ -41,21 +60,99 @@ article.year-one {
     background-size: cover;
   }
 
+  .background {
+    z-index: -1;
+    overflow: auto;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .background-1 {
+    background-image: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/backg-intro.jpg');
+  }
+
+  .background-2 {
+    background-image: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/backg-1-1.jpg');
+  }
+
+  .background-3 {
+    background-image: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/backg-2-1.jpg');
+  }
+
+  .background-4 {
+    background-image: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/backg-3-1.jpg');
+  }
+
+  .background-5 {
+    background-image: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/backg-4-1.jpg');
+  }
+
+  .background-6 {
+    background-image: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/backg-5-1.jpg');
+  }
+
+  /**
+    Timeline
+  */
+
+  .timeline-top::after {
+    /* this is the timeline top */
+    content: '';
+    background: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/timeline_line-03.svg');
+    position: absolute;
+    margin-left: -18px;
+    bottom: -4px;
+    left: 50%;
+    height: 76px;
+    width: 40px;
+  }
+
+  .timeline-before::before {
+    /* this is the timeline joiner */
+    content: '';
+    background: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/timeline_line-02.svg');
+    position: absolute;
+    margin-top: -200px;
+    margin-left: -20px;
+    top: 0px;
+    left: 50%;
+    height: 200px;
+    width: 40px;
+  }
+  .timeline-after {
+    margin-bottom: 200px;
+  }
+  .timeline-after::after {
+    /* this is the timeline joiner */
+    content: '';
+    background: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/timeline_line-02.svg');
+    position: absolute;
+    margin-left: -20px;
+    top: 100%;
+    left: 50%;
+    height: 200px;
+    width: 40px;
+  }
+
+  /**
+    Page Elements
+  */
+
   h1 {
     font-family: 'Emeric';
     font-weight: normal;
     color: $oy-green-secondary;
     height: 100vh;
     width: 100%;
-    padding-top: 30vh;
+    padding-top: 40vh;
     margin-top: 0;
+    margin-bottom: 0;
     font-size: 100px;
     text-align: center;
 
     small {
       font-size: 60px;
       display: block;
-      text-transform: lowercase;
       font-weight: lighter;
     }
 
@@ -71,6 +168,7 @@ article.year-one {
       left: 0;
       width: 100%;
     }
+
   }
 
   h2 {
@@ -91,7 +189,7 @@ article.year-one {
     color: black;
     z-index: 10;
 
-    &::before {
+    &:not(.what-next)::before {
       /* a short underline */
       content : "";
       position: absolute;
@@ -115,8 +213,8 @@ article.year-one {
     margin-left: 30%;
     margin-right: 30%;
     padding: 0px;
+    margin-top: 200px;
     margin-bottom: 200px;
-    margin-top: 0px;
     color: #2A2A2A;
     z-index: 10;
     background: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/timeline_line-02.svg');
@@ -124,65 +222,6 @@ article.year-one {
     background-position: center;
     background-size: 40px auto;
     border: #2A2A2A solid 2px;
-
-    &::after {
-      /* this is the timeline joiner */
-      content: '';
-      background: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/timeline_line-02.svg');
-      position: absolute;
-      margin-left: -20px;
-      top: 100%;
-      left: 50%;
-      height: 200px;
-      width: 40px;
-    }
-  }
-
-  h4 {
-    position: relative;
-    font-size: 40px;
-    font-weight: normal;
-    text-align: center;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-bottom: 200px;
-    padding: 50px;
-    color: #2A2A2A;
-    z-index: -1;
-    background: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/timeline_line-02.svg');
-    background-repeat: repeat-y;
-    background-position: center;
-    background-size: 40px auto;
-
-    img {
-      width: 100%;
-    }
-
-    &:first-of-type::before {
-      /* this is the timeline top */
-      content: '';
-      background: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/timeline_line-03.svg');
-      position: absolute;
-      margin-top: -76px;
-      margin-left: -20px;
-      top: 0px;
-      left: 50%;
-      height: 80px;
-      width: 40px;
-    }
-
-    &::after {
-      /* this is the timeline joiner */
-      content: '';
-      background: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/timeline_line-02.svg');
-      position: absolute;
-      margin-left: -20px;
-      top: 100%;
-      left: 50%;
-      height: 200px;
-      width: 40px;
-    }
   }
 
   h5 {
@@ -196,6 +235,7 @@ article.year-one {
     padding-bottom: 0;
     background-color: black;
     color: white;
+    position: relative;
     z-index: 10;
 
     &:before {
@@ -217,11 +257,11 @@ article.year-one {
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
-    margin-bottom: 200px;
+    margin-bottom: 0px;
     padding: 50px;
     background-color: white;
     color: black;
-    z-index: -1;
+    z-index: 9;
 
     img {
       width: 100%;
@@ -232,28 +272,44 @@ article.year-one {
       padding: 0;
       margin-bottom: 0; /* remove bottom margin so images stick to the following paragraph */
     }
+  }
 
-    &:not(:last-of-type):not(.image)::after {
-      /* this is the timeline joiner */
-      content: '';
-      background: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/timeline_line-02.svg');
-      position: absolute;
-      margin-left: -20px;
-      top: 100%;
-      left: 50%;
-      height: 200px;
-      width: 40px;
+  p.what-next {
+    margin-bottom: 200px;
+  }
+
+  p.no-box {
+    position: relative;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding: 50px;
+    color: #2A2A2A;
+    z-index: 10;
+    background: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/timeline_line-02.svg');
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 40px auto;
+
+    img {
+      width: 100%;
     }
+  }
+
+  h2.what-next {
+    margin-top: 200px;
   }
 
   ul {
     margin: 0;
     padding: 0;
-    margin-bottom: 200px;
-    margin-top: -200px;
 
     li {
-      position: relative;
       font-size: 14px;
       text-align: center;
       width: 50%;
