@@ -6,10 +6,10 @@
         {% else %}
             {% assign mugshot = "http://www.gravatar.com/avatar/00000000000000000000000000000000?s=500&d=mm" %}
         {% endif %}
-        <div class="mugshot img-responsive lazyload" data-original="{{ mugshot }}" style="background-image: url(/img/grey.gif);">
+        <div class="mugshot img-responsive lazyload" data-original="{{ mugshot }}" style="background-image: url(/img/grey.gif);" onclick="location.href='{{ profile.url | prepend: site.baseurl }}';">
         </div>
         <div class="text">
-          <h4>{{ profile.name }}</h4>
+          <a href="{{ profile.url | prepend: site.baseurl }}"><h4>{{ profile.name }}</h4></a>
           <p class="text-muted summary">{{ profile.summary | truncatewords: 13 }}</p>
         </div>
         {% include team-social-links.html %}
