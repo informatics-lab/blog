@@ -1,11 +1,29 @@
-header {
+article.profile {
   padding-top: 50px;
+
   h2 {
     color: $mo-dark-grey;
     text-align: center;
     width: 100%;
   }
-  .team-member {
-    margin-bottom: 10px;
+
+  .mugshot {
+    width: 300px;
+    height: 350px;
   }
+
+  .social-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+
+    li {
+      a {
+        background-color: transparent;
+        color: $mo-dark-grey;
+        font-size: 20px;
+      }
+    }
+  }
+
+
 }
