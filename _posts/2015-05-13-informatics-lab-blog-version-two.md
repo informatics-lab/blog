@@ -5,16 +5,16 @@ title:      Version 2.0 of the blog
 date:       2015-05-13
 summary:    We've reskinned the blog.
 categories: News
-thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-05-11+at+14.58.21.png
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-05-13-informatics-lab-blog-version-two/Screen+Shot+2015-05-11+at+14.58.21.png
 ---
 
 When we started the Lab at the beginning of April we launched our website and filled it full of information, however we focused on the functionality and content rather than the design.
 
-![Informatics Lab blog v1.0](https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-05-13+at+10.54.03.png)
+![Informatics Lab blog v1.0](https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-05-13-informatics-lab-blog-version-two/Screen+Shot+2015-05-13+at+10.54.03.png)
 
 Six weeks in we've decided to spend a little time making the site look lovely, and with the help of our designer [Ross][1] this is now a reality.
 
-![Informatics Lab blog v2.0](https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-05-13+at+11.14.51.png)
+![Informatics Lab blog v2.0](https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-05-13-informatics-lab-blog-version-two/Screen+Shot+2015-05-13+at+11.14.51.png)
 
 ## Changes
 

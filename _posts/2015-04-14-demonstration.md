@@ -6,7 +6,7 @@ date:       2015-04-14
 summary:    Help to test our new weather visualisation application.
 categories: Announcements
 project:    threedvis
-thumbnail: http://s3-eu-west-1.amazonaws.com/informatics-webimages/screenshot-2015-03-25.jpg
+thumbnail: http://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-04-14-demonstration/screenshot-2015-03-25.jpg
 ---
 
 The Met Office Informatics Lab is investigating new techniques for visualising the weather forecast in 3D and we're developing an exciting interactive web application that will take you inside a weather forecast model.
