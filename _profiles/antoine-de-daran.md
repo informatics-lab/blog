@@ -1,7 +1,7 @@
 ---
 layout:     profile
 name:       Antoine de Daran
-summary:    Antoine is a very curious french trainee who studies applied mathematics.
+summary:    Antoine is a curious French trainee who studies applied mathematics.
 affiliation: core
 linkedin-url: https://fr.linkedin.com/in/antoine-de-daran-a2a671a9
 github-url: https://github.com/AntoinedDMO
@@ -15,6 +15,6 @@ I am a forth year student from "Ecole Centrale de Nantes", a french engineering 
 
 Last summer, in 2015, I went to Brazil for a humanitarian mission in Lagoa Encantada. With others students of my school, we have improved the living conditions of this small village from the state of Bahia.
 
-I have been sales Manager of the Junior Enterprise "[Centrale Nantes Etudes](http://en.centralenantesetudes.fr)". This students association gives contract from companies to the students of my school. For further informations, you can visit my linkedin profil [here](https://fr.linkedin.com/in/antoine-de-daran-a2a671a9)!
+I have been sales Manager of the Junior Enterprise "[Centrale Nantes Etudes](http://en.centralenantesetudes.fr)". This students association gives contracts from companies to the students of my school. For further information, you can visit my linkedin profile [here](https://fr.linkedin.com/in/antoine-de-daran-a2a671a9)!
 
-I also liked to do some sports and to travel around the world.
+I also like to do some sports and to travel around the world.
