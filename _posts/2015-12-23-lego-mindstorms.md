@@ -6,8 +6,8 @@ summary:    A fun project introducing key concepts of science, technology and de
 categories: ['technical','inspiration']
 author: 	Tom Powell
 project:    mindstorms
-thumbnail:  "https://s3-eu-west-1.amazonaws.com/informatics-webimages/ms-labbot.JPG"
-header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/ms-header.JPG"
+thumbnail:  "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-12-23-lego-mindstorms/ms-labbot.JPG"
+header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-12-23-lego-mindstorms/ms-header.JPG"
 ---
 
 # Introduction
@@ -57,8 +57,8 @@ discovered the fifth wire is also unnecessary hence why 4 jumper cables was suff
 Also some of the directory structures within our OS were different which made some of the early moving of files operations
 irrelevant. Take a look at the pictures below which should help you to know which pins to connect to which.
 
-![arduino pins](https://s3-eu-west-1.amazonaws.com/informatics-webimages/ms-arduino.JPG)
-![brickpi pins](https://s3-eu-west-1.amazonaws.com/informatics-webimages/ms-brickpi-ports.jpg)
+![arduino pins](https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-12-23-lego-mindstorms/ms-arduino.JPG)
+![brickpi pins](https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-12-23-lego-mindstorms/ms-brickpi-ports.jpg)
 <cite>Original image courtesy of [learn.sparkfun.com](https://learn.sparkfun.com/tutorials/getting-started-with-the-brickpi)</cite>
 
 ### Gotchas
@@ -66,9 +66,9 @@ We found that occasionally the OS would get corrupted - re-flashing the SD card 
 We also realised that sensors on the BrickPi only work under certain power configurations - see the images below for 
 more detail on that.
 
-![brickpi power1](https://s3-eu-west-1.amazonaws.com/informatics-webimages/ms-power1.jpg)
+![brickpi power1](https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-12-23-lego-mindstorms/ms-power1.jpg)
 <cite>Image courtesy of [dexterindustries.com](http://www.dexterindustries.com)</cite>
-![brickpi power2](https://s3-eu-west-1.amazonaws.com/informatics-webimages/ms-power2.jpg)
+![brickpi power2](https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-12-23-lego-mindstorms/ms-power2.jpg)
 <cite>Image courtesy of [dexterindustries.com](http://www.dexterindustries.com)</cite>
 
 ### Let the fun begin
@@ -76,7 +76,7 @@ more detail on that.
 Once these steps are done you can start programming the robot to perform your given task.
 Stay tuned to see what our guests come up with...
 
-![lab bot](https://s3-eu-west-1.amazonaws.com/informatics-webimages/ms-labbot.JPG)
+![lab bot](https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-12-23-lego-mindstorms/ms-labbot.JPG)
 
 
 [Arduino]: https://www.arduino.cc/
