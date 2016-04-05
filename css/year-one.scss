@@ -174,7 +174,7 @@ article.year-one {
   h2 {
     font-family: 'Emeric';
     position: relative;
-    font-size: 20px;
+    font-size: 28px;
     text-align: center;
     line-height: 2em;
     text-transform: uppercase;
@@ -205,9 +205,9 @@ article.year-one {
     font-family: 'Emeric';
     font-weight: 200;
     position: relative;
-    font-size: 60px;
+    font-size: 120px;
     text-align: center;
-    line-height: 2em;
+    line-height: 1.5em;
     text-transform: uppercase;
     width: 40%;
     margin-left: 30%;
@@ -215,13 +215,13 @@ article.year-one {
     padding: 0px;
     margin-top: 200px;
     margin-bottom: 200px;
-    color: #2A2A2A;
+    color: white;
     z-index: 10;
     background: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/timeline_line-02.svg');
     background-repeat: repeat-y;
     background-position: center;
     background-size: 40px auto;
-    border: #2A2A2A solid 2px;
+    border: white solid 2px;
   }
 
   h5 {
@@ -252,7 +252,7 @@ article.year-one {
 
   p {
     position: relative;
-    font-size: 14px;
+    font-size: 24px;
     text-align: center;
     width: 50%;
     margin-left: 25%;
@@ -272,6 +272,17 @@ article.year-one {
       padding: 0;
       margin-bottom: 0; /* remove bottom margin so images stick to the following paragraph */
     }
+
+    a,
+    a:hover,
+    a:focus,
+    a:active,
+    a.active {
+    }
+
+    a {
+      color: #8f8dcb;
+    }
   }
 
   p.what-next {
@@ -280,7 +291,8 @@ article.year-one {
 
   p.no-box {
     position: relative;
-    font-size: 40px;
+    font-size: 28px;
+    border: 1px solid white;
     font-weight: normal;
     text-align: center;
     width: 50%;
@@ -289,7 +301,8 @@ article.year-one {
     margin-top: 200px;
     margin-bottom: 200px;
     padding: 50px;
-    color: #2A2A2A;
+    color: white;
+    text-shadow: 0px 0px 7px black;
     z-index: 10;
     background: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/timeline_line-02.svg');
     background-repeat: repeat-y;
