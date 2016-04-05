@@ -7,7 +7,7 @@ categories: ['technical','infrastructure']
 author: 	Rachel Prudden
 project:    none
 thumbnail:  "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-kubernetes-in-pics/cluster.jpg"
-header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-03-15-i-docs/vr.jpg"
+header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-15-i-docs/vr.jpg"
 ---
 
 **_Kubernetes is useful for running containers on the cloud._**
