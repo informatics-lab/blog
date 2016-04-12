@@ -6,8 +6,8 @@ summary:    We need to have a conversation about how we handle big spatial data.
 categories: ['report']
 author: 	Niall Robinson
 project:    'threedvis'
-thumbnail:  'https://s3-eu-west-1.amazonaws.com/informatics-webimages/echo.jpg'
-    
+thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-10-05-videocodec/exampledata_sm.png"
+header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-10-05-videocodec/matrix-356024_1280.jpg"
 ---
 
 Here's a paper that we never got round to publishing which details some of our thoughts on data compression.
@@ -35,16 +35,24 @@ We limited the precision of all the data to 8-bit integers, that is all values a
 {%youtube FKv_1zTcjB8 %}
 Fig 1. 3D atmospheric data of cloud fraction encoded as pixels in an image.
 
-We tested several widely available video compression algorithms which give different levels of data compression and information loss, assessed as file volume and Mean Absolute Error respectively (MAE; Table 1.). A test data set of forecast cloud fraction (i.e. 0.0 < x < 1.0) for the 27th November 2015 was used. It is worth noting that, in this case, values of MAE are significantly smaller than the dynamic range of the data. It is likely, that in many cases, the precision of the physical model is less than the precision lost through the data compression.
+It should be noted that the colour space normally used to encode static images is different from that used to encode videos, and conversion between these spaces is lossy. Videos make widespread use of [YUV colour space](https://en.wikipedia.org/wiki/YUV), which is designed to allow compatibility with black and white displays, and make visual compression optimal. Our data is initially written to RGB values which are lossily converted to YUV during video encoding, before being converted back to RGB space on the graphics card. To be clear, this information loss is only necessary to allow the streaming video to a web browser, but is, in principle unnecessary to encode the data.
 
-|                                 |  GRIB2   |  8-bit  | Theora Ogg Vorbis (q2) | MP4 x264 |
-|:-------------------------------:|:--------:|:-------:|:----------------------:|:--------:|
-| **Total data volume**           |  5.0 Gb  | 1.25 Gb |        17 Mb           | 274 Mb   |
-| **M.A.E. w.r.t GRIB2**  |    n/a   | 8.09e-4 |       1.66e-1          | 1.63e-1  |
+We tested several widely available video compression algorithms which give different levels of data compression and information loss, assessed as file volume and Mean Absolute Error respectively (Table 1). A test data set of forecast cloud fraction (i.e. 0.0 < x < 1.0) for the 27th November 2015 was used. Note that the major loss of information occurs from the zlib compression during png encoding. The various video compressions then have a negligable effect on infomation quality, whilst drastically reducing the data volume. It is worth noting that, in this case, values of MAE are significantly smaller than the dynamic range of the data (~16%). It is likely, that in many cases, the precision of the physical model is less than the precision lost through the data compression.
+
+|                   | data volume   | M.A.E. w.r.t GRIB2    |
+|------------------ |:-----------:  |:------------------:   |
+| **GRIB2**             | 5.0 Gb        | n/a                   |
+| **8-bit GRIB2**       | 1.25 Gb       | 8.09e-4               |
+| **8-bit pngs (zlib 6)**| 344 Mb       | 0.162                 |
+| **MP4 x264**          | 274 Mb        | 0.163                 |
+| **Ogg Vorbis (q10)**  | 128 Mb        | 0.163                 |
+| **Ogg Vorbis (q2)**   | 17 Mb         | 0.166                 |
+
+Table 1. Data volume and information loss under different encodings.
 
 We then endeavoured to visualise these fields at a location remote to the data via a web browser. A system was implemented to automatically convert the forecast data to video. The process was resolved into several microservices, written in Python. These microservices were deployed using Docker Containers<sup>[12](www.docker.com)</sup>, making them robust and portable. The whole process is automatically orchestrated and executed on the cloud using Amazon Web Services. 
 
-For our prototype system, we chose to use the Theora Ogg Vorbis (q2) codec<sup>[13](https://www.theora.org/)</sup>, as it provides a good compromise between compression ratio and the speed. We also chose Theora as it is open source, meaning is has the potential to be extended to natively support 3D data in the future. The video compressed version of the data is 10-20MB, which is a compression ratio of over 400 when compared to the original GRIB2 file.
+For our prototype system, we chose to use the Theora Ogg Vorbis (q2) codec<sup>[13](https://www.theora.org/)</sup>, as it provides a good compromise between compression ratio and the speed. We also chose Theora as it is open source, meaning is has the potential to be extended to natively support 3D data in the future. The video compressed version of the data is 10-20MB, which is a compression ratio of over 400:1 when compared to the original GRIB2 file.
 
 ![The web application rendering the video encoded data as a 3D field](https://s3-eu-west-1.amazonaws.com/informatics-webimages/threedvisscreen.png)
 Figure 2. The web application rendering the video encoded data as a 3D field.
@@ -52,11 +60,11 @@ Figure 2. The web application rendering the video encoded data as a 3D field.
 This video of atmospheric data is then served up to our web application for rendering (Figure 2.). We created an [interactive 3D animation](http://demo.3dvis.informaticslab.co.uk/ng-3d-vis/apps/desktop/) of the data using [WebGL](https://www.khronos.org/webgl/) and bespoke [GL Shader Language](https://www.opengl.org/documentation/glsl/) graphics card routines which simulated the passage of light rays through the data (a technique known as volume rendering or ray tracing). This application allows the users to interact with the animated 3D data field over a standard internet connection, without installing specialist software or hardware.
 
 ## Discussion
-We set ourselves the task of representing weather forecasts in a way that reflects all the generated data. This data is richly spatiotemporal, however it is routinely communicated to the public as a 2D map, and scientists are largely limited to visualising data via static 2D maps or 1D scatter plots. We wanted to implement our animated 3D visualisation in the web browser, both to make it widely accessible, and to explore technologies which may eventually be of use to scientists on browser based thin clients. Encoding the data using video codecs was central to successfully achieving this.
+We set ourselves the task of representing weather forecasts in a way that reflects all the generated data. This data is richly spatiotemporal, however it is routinely communicated to the public as a 2D map, and scientists are largely limited to visualising data via static 2D maps or 1D scatter plots. We wanted to implement our animated 3D visualisation in the web browser, both to make it widely accessible, and to explore technologies which may eventually be of use to scientists on web browser based thin clients. Encoding the data using video codecs was central to successfully achieving this.
 
-Firstly, the use of video compression allowed us to significantly reduce the data load. The 400:1 reduction in data volume is due to the loss of data, both from the initial reduction in precision and subsequent video compression. Crucially though, the relevant information is retained: the salient features of the data field are still present in the final visualisation. Visual codecs are optimised to lose data which cannot be seen, a feature which is not just optimal for traditional 2D visualisation, but also largely suitable for such 3D rendering.
+Firstly, the use of video compression allowed us to significantly reduce the data load. The 400:1 reduction in data volume is due to the loss of data. Crucially though, the relevant information is retained: the salient features of the data field are still present in the final visualisation. Visual codecs are optimised to lose data which cannot be seen, a feature which is not just optimal for traditional 2D visualisation, but also largely suitable for such 3D rendering.
 
-Employing video encoding is particularly useful in the context of delivery to web browsers. They natively support the decoding of video data, as opposed to esoteric atmospheric data formats. The video can be easily streamed into the browser, meaning client memory is used efficiently. As the data data represented graphically they can easy be transferred to the graphics card, where it can be rendered on the fly as the user interacts with it. Other video functionality is also useful, such playback controls and on-the-fly scaling.
+Employing video encoding is particularly useful in the context of delivery to web browsers. They natively support the decoding of video data, as opposed to esoteric atmospheric data formats. The video can be easily streamed into the browser, meaning client memory is used efficiently. As the data are represented graphically they can easy be transferred to the graphics card, where it can be rendered on the fly as the user interacts with the visualisation. Other video functionality is also useful, such playback controls and on-the-fly scaling.
 
 ## Conclusions
 
