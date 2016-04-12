@@ -6,11 +6,11 @@ summary:    We need to have a conversation about how we handle big spatial data.
 categories: ['report']
 author: 	Niall Robinson
 project:    'threedvis'
-thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-10-05-videocodec/exampledata_sm.png"
-header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-10-05-videocodec/matrix-356024_1280.jpg"
+thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/threedvisscreen.png"
+header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/threedvisscreen.png"
 ---
 
-Here's a paper that we never got round to publishing which details some of our thoughts on data compression.
+Here's a paper that we never got round to publishing which details some of our thoughts on data compression. If you know somewhere that you think might want to publish it then please let us know!
 
 ## Abstract
 Many modern datasets are becoming ever more unwieldy as data volumes grow. They are often routinely stored at a spurious precision which is greater than the real accuracy of the original model or measurement. In an effort to facilitate analysis of these data sets, computationally intensive calculations are increasingly being performed on specialised remote servers, before the reduced data are transferred to the consumer. Due to bandwidth limitations, this often means data are displayed as simple 2D data visualisations, such as scatter or image plots. We present here a novel way to efficiently encode and transmit 4D data fields on-demand so that they can be locally visualised and interrogated. This nascent “4D video” format allows us to more flexibly move the boundary between data server and consumer client. However, it has applications beyond purely scientific visualisation, in the transmission of data to virtual and augmented reality.
@@ -39,7 +39,7 @@ It should be noted that the colour space normally used to encode static images i
 
 We tested several widely available video compression algorithms which give different levels of data compression and information loss, assessed as file volume and Mean Absolute Error respectively (Table 1). A test data set of forecast cloud fraction (i.e. 0.0 < x < 1.0) for the 27th November 2015 was used. Note that the major loss of information occurs from the zlib compression during PNG encoding. The various video compressions then have a negligible effect on infomation quality, whilst drastically reducing the data volume. It is worth noting that, in this case, values of MAE are significantly smaller than the dynamic range of the data (~16%). It is likely that in many cases the precision of the physical model is less than the precision lost through the data compression.
 
-|                   | data volume   | M.A.E. w.r.t GRIB2    |
+|                   |&nbsp;&nbsp;&nbsp;data volume&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;M.A.E. w.r.t GRIB2&nbsp;&nbsp;&nbsp;|
 |------------------ |:-----------:  |:------------------:   |
 | **GRIB2**             | 5.0 Gb        | n/a                   |
 | **8-bit GRIB2**       | 1.25 Gb       | 8.09e-4               |
