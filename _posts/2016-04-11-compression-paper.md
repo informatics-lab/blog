@@ -50,7 +50,7 @@ We tested several widely available video compression algorithms which give diffe
 
 Table 1. Data volume and information loss under different encodings.
 
-We then endeavoured to visualise these fields at a location remote to the data via a web browser. A system was implemented to automatically convert the forecast data to video. The process was resolved into several microservices, written in Python. These microservices were deployed using Docker Containers<sup>[13](www.docker.com)</sup>, making them robust and portable. The whole process is automatically orchestrated and executed on the cloud using Amazon Web Services. 
+We then endeavoured to visualise these fields at a location remote to the data via a web browser. A system was implemented to automatically convert the forecast data to video. The process was resolved into several microservices, written in Python. These microservices were deployed using Docker Containers<sup>[13](http://www.docker.com)</sup>, making them robust and portable. The whole process is automatically orchestrated and executed on the cloud using Amazon Web Services. 
 
 For our prototype system, we chose to use the Theora Ogg Vorbis (q2) codec<sup>[14](https://www.theora.org/)</sup>, as it provides a good compromise between compression ratio and compression speed. We also chose Theora as it is open source, meaning is has the potential to be extended to natively support 3D data in the future. The video compressed version of the data is 10-20MB, which is a compression ratio of over 400:1 when compared to the original GRIB2 file.
 
