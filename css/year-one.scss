@@ -1,0 +1,322 @@
+---
+---
+
+$oy-green: #B9DC0C;
+$oy-green-secondary: #50B9A4;
+
+article.year-one {
+
+  /**
+    Navigation
+  */
+
+  #logo {
+    position: fixed;
+    top: 20px;
+    left: 100px;
+    height: 20px;
+  }
+
+  #menu {
+    position: fixed;
+    top: 20px;
+    right: 100px;
+    height: 20px;
+
+    a {
+      color: black;
+      font-weight: bold;
+    }
+  }
+
+  /**
+    Helper classes
+  */
+
+  span.nobr {
+    white-space: nowrap;
+  }
+
+  /**
+    Background elements
+  */
+  .main-background {
+    content: ' ';
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+    background-image: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/backg-1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  .background {
+    z-index: -1;
+    overflow: auto;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .background-1 {
+    background-image: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/backg-intro.jpg');
+  }
+
+  .background-2 {
+    background-image: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/backg-1-1.jpg');
+  }
+
+  .background-3 {
+    background-image: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/backg-2-1.jpg');
+  }
+
+  .background-4 {
+    background-image: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/backg-3-1.jpg');
+  }
+
+  .background-5 {
+    background-image: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/backg-4-1.jpg');
+  }
+
+  .background-6 {
+    background-image: url('https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/backg-5-1.jpg');
+  }
+
+  /**
+    Timeline
+  */
+
+  .timeline-before::before {
+    /* this is the timeline joiner */
+    content: '';
+    position: absolute;
+    margin-top: -202px;
+    margin-left: -2px;
+    top: 0px;
+    left: 50%;
+    height: 202px;
+    width: 1px;
+    border-left: dotted 2px white;
+  }
+  .timeline-after {
+    margin-bottom: 200px;
+  }
+  .timeline-after::after {
+    /* this is the timeline joiner */
+    content: '';
+    position: absolute;
+    margin-left: -2px;
+    top: 100%;
+    left: 50%;
+    height: 202px;
+    width: 1px;
+    border-left: dotted 2px white;
+  }
+
+  /**
+    Page Elements
+  */
+
+  h1 {
+    font-family: 'Emeric';
+    font-weight: normal;
+    color: $oy-green-secondary;
+    height: 100vh;
+    width: 100%;
+    padding-top: 40vh;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 100px;
+    text-align: center;
+
+    small {
+      font-size: 60px;
+      display: block;
+      font-weight: lighter;
+    }
+
+    &::before {
+      content: 'Keep those fingers scrolling';
+      font-size: 10px;
+      color: #777;
+      text-transform: uppercase;
+      opacity: 0.8;
+      position: absolute;
+      text-align: center;
+      bottom: 90px;
+      left: 0;
+      width: 100%;
+    }
+
+  }
+
+  h2 {
+    font-family: 'Emeric';
+    position: relative;
+    font-size: 28px;
+    text-align: center;
+    line-height: 2em;
+    text-transform: uppercase;
+    width: 50%;
+    margin-top: 0;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: -40px; /* negative margin so it overlaps the following paragraph box */
+    padding: 50px;
+    padding-bottom: 0;
+    background-color: white;
+    color: black;
+    z-index: 10;
+
+    &:not(.what-next)::before {
+      /* a short underline */
+      content : "";
+      position: absolute;
+      left    : 45%;
+      bottom  : 0;
+      height  : 10px;
+      width   : 10%;
+      border-bottom:1px solid black;
+    }
+  }
+
+  h3 {
+    font-family: 'Emeric';
+    font-weight: 200;
+    position: relative;
+    font-size: 120px;
+    text-align: center;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 0px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    color: white;
+    z-index: 10;
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 40px auto;
+    border: white solid 2px;
+  }
+
+  h5 {
+    /* h4 is reserved for the "did you know?" sections */
+    font-size: 16px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: -40px; /* negative margin so it overlaps the following paragraph box */
+    padding: 50px;
+    padding-bottom: 0;
+    background-color: black;
+    color: white;
+    position: relative;
+    z-index: 10;
+
+    &:before {
+      /* add infoicon to the did you know headings */
+      content: ' ';
+      background: url(https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-year-one/infoicon.svg);
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+      margin-left: -20px;
+      padding-right: 20px;
+    }
+  }
+
+  p {
+    position: relative;
+    font-size: 24px;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 0px;
+    padding: 50px;
+    background-color: white;
+    color: black;
+    z-index: 9;
+
+    img {
+      width: 100%;
+    }
+
+    &.image {
+      /* don't pad paraghraphs containing images, this class is added automatically by JavaScript */
+      padding: 0;
+      margin-bottom: 0; /* remove bottom margin so images stick to the following paragraph */
+    }
+
+    a,
+    a:hover,
+    a:focus,
+    a:active,
+    a.active {
+    }
+
+    a {
+      color: #8f8dcb;
+    }
+  }
+
+  p.what-next {
+    margin-bottom: 200px;
+  }
+
+  p.no-box {
+    position: relative;
+    font-size: 28px;
+    border: 2px solid white;
+    font-weight: normal;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding: 50px;
+    color: white;
+    // text-shadow: 0px 0px 7px black;
+    z-index: 10;
+    background: none;
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 40px auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  h2.what-next {
+    margin-top: 200px;
+  }
+
+  h5 + p {
+    /* make paragraphs which follow an h4 match the style of the h4 */
+    background-color: black;
+    color: white;
+    text-align: left;
+  }
+
+
+
+}
+
+footer {
+  font-size: 12px;
+  background-color: transparent;
+}
