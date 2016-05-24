@@ -30,7 +30,7 @@ Follow the Talk link at [2016.GraphicalWeb.org](http://2016.graphicalweb.org/)
 
 ### Who else will be there?
 
-We've already received some great proposals from regulars and some new faces.  For example we've reached out to scientists working in climate science. From Philip Brohan - Met Office Hadley Centre and [OldWeather.org](http://www.oldweather.org) we'll be learning about visualizing changes and uncertainties in historical weather data, and from Ed Hawkins we'll discover more about his work leading to the [Spiraling Global Temperatures](http://www.climate-lab-book.ac.uk/2016/spiralling-global-temperatures/) plot that recently went viral on social media.
+We've already received some great proposals from regulars and some new faces. From Philip Brohan - Met Office Hadley Centre and [OldWeather.org](http://www.oldweather.org) we'll be learning about visualizing changes and uncertainties in historical weather data, and from Ed Hawkins we'll discover more about his work leading to the [Spiraling Global Temperatures](http://www.climate-lab-book.ac.uk/2016/spiralling-global-temperatures/) plot that recently went viral on social media.
 
 ### Some recordings from Graphical Web 2014
 
