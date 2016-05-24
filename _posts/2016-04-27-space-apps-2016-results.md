@@ -10,13 +10,11 @@ thumbnail: "https://s3.amazonaws.com/files.open.nasa.gov/spaceapps/media/3a2d54d
 header: "http://i0.wp.com/www.engineeringafuture.com/wp-content/uploads/2015/09/Sky-Contrails.png"
 ---
 
-As we announced in a [previous post](http://www.informaticslab.co.uk/events/2016/03/12/space-apps-2016-is-coming.html), the Met Office hosted the [2016 NASA Space Apps Challenge](https://2016.spaceappschallenge.org/). This year, more than **1 200 projects** have been created around the world.
-One challenge was about [Clouds and Contrails](https://2016.spaceappschallenge.org/challenges/aero/clouds-or-contrails) and how to tell the difference between the two.
+As we announced in a [previous post](http://www.informaticslab.co.uk/events/2016/03/12/space-apps-2016-is-coming.html), the Met Office hosted the [2016 NASA Space Apps Challenge](https://2016.spaceappschallenge.org/). This year, more than **1,200 projects** have been created around the world.
 
 ## Results
-[Rachel Prudden](http://www.informaticslab.co.uk/profiles/rachel-prudden.html), member of the Lab, has been the **team leader** of a project: [Contrailers-Exeter](https://2016.spaceappschallenge.org/challenges/aero/clouds-or-contrails/projects/contrailers-exeter).
-This project has been shortlisted!
-It is part of the **2016 global finalist nominees**, with four other international project, for the [Galactic Impact](https://2016.spaceappschallenge.org/awards/global-finalists) award.
+[Rachel Prudden](http://www.informaticslab.co.uk/profiles/rachel-prudden.html), member of the Lab, has been the **team leader** of one of the projects from the Met Office Hackathon: [Clouds and Contrails](https://2016.spaceappschallenge.org/challenges/aero/clouds-or-contrails/projects/contrailers-exeter) which tackles how to tell the difference between the two.
+This project has been shortlisted and is part of the **2016 global finalist nominees**, along with four other international projects, for the [Galactic Impact award](https://2016.spaceappschallenge.org/awards/global-finalists).
 
 Using the FlightAware API, they manage to assess the probability that a person is seeing a contrail instead of a cloud. For more information, watch the video below.
 
