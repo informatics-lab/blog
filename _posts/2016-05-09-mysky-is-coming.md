@@ -6,8 +6,8 @@ summary:    The Informatics Lab’s app is coming
 categories: ['report']
 author: 	Antoine de Daran
 project:    none
-thumbnail: "https://files.slack.com/files-pri/T03DG4WQM-F19PP1N11/my-sky.jpg"
-header: "https://files.slack.com/files-pri/T03DG4WQM-F19R479MM/my-sky-header.jpg"
+thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/Antoine%27s+image/my-sky.jpg"
+header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/Antoine%27s+image/my-sky-header.jpg"
 ---
 
 ## Is the sky the same for everybody?
