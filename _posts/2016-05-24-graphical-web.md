@@ -12,11 +12,13 @@ thumbnail:  'https://s3-eu-west-1.amazonaws.com/informatics-webimages/graphical-
 
 ### An invitation to share your knowledge at the Graphical Web 2016
 
-The Met Office Informatics Team will be hosting this year's Graphical Web Conference at our corporate headquarters and conference facility in Exeter, UK.  The conference runs from 1st to 4th November 2016.
+Graphical Web is an annual, global conference that showcases open source technologies for presenting visual information on the web and the wonderful things created with them. The conference runs from 1st to 4th November 2016.
 
-We're extending our call for session proposals for another month - to 1st July.
+The Met Office Informatics Team are a recently formed inter-disciplinary group who create prototypes to expand and improve the use of environmental data. They will be hosting this year's Graphical Web Conference at the Met Office's corporate headquarters and conference facility in Exeter, UK.  
 
-As well as 20 minute and 40 minute talks we are also keen to see proposals for other formats, for example -
+We are inviting proposals for contributions in the following formats -
+
+* 20 and 40 minute talks
 
 * Small group breakout discussions
 
@@ -24,7 +26,29 @@ As well as 20 minute and 40 minute talks we are also keen to see proposals for o
 
 * Roundtable discussion
 
+Topics of particular interest include -
+
+* 3D/WebGL
+
+* Apps (web and mobile)
+
+* Art and Design
+
+* Browser and Viewer Implementations, Comparisons, Benchmarks
+
+* Data/Scientific Visualization
+
+* Gaming and animation
+
+* GIS, Mapping and Location-based services
+
+* Publishing and Printing with Web based Tools
+
+* Standards Improvement (e.g. SVG, CSS, HTML5, Canvas, WebGL, declarative 3D)
+
 Please contact us and share your ideas; we really do want to make this the best event we can.
+
+Closing date is 1st July 2016.
 
 Follow the Talk link at [2016.GraphicalWeb.org](http://2016.graphicalweb.org/)
 
