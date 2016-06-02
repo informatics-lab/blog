@@ -75,5 +75,5 @@ That's the whole story so far, stay tuned for more...
 
 [STEM]: http://www.metoffice.gov.uk/about-us/who/sustainability/community/schools
 [JMonkeyEngine]: http://jmonkeyengine.org/
-[JMonkeyEngine custom meshes]: http://wiki.jmonkeyengine.org/
+[JMonkeyEngine custom meshes]: https://hub.jmonkeyengine.org/
 [color map]: http://www.kgs.ku.edu/General/elevatMap.html
