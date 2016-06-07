@@ -10,7 +10,7 @@ description:   "The Met Office Informatics Lab combines scientists, engineers, t
 baseurl:       ""
 url:           "http://www.informaticslab.co.uk"
 github-url:    "http://github.com/met-office-lab/"
-twitter-url:   "http://twitter.com/informaticslab/"
+twitter-url:   "https://twitter.com/informatics_lab"
 instagram-url: "http://instagram.com/informaticslab/"
 calendar-url:  "/get-involved/calendar.html"
 image-bin:     "http://s3-eu-west-1.amazonaws.com/informatics-webimages/"
