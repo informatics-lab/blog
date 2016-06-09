@@ -13,7 +13,7 @@ header:     'https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2
 
 ## Working with Plymouth University
 
-Following the success of Design Storm last year we’ve been continuing to build links with Universities and Colleges. We’ve helped to mentor and inspire students, sharing our knowledge and showcasing creativity from across the office, as well as helping to inspire staff by showcasing the students creativity.
+Following the success of Design Storm last year we’ve been continuing to build links with Universities and Colleges. We’ve helped to mentor and inspire students, sharing our knowledge and showcasing exciting projects from across the office, as well as helping to inspire staff by showcasing the students creativity.
 
 We’ve led talks at the V&A as part of Digital Design Weekend, hosted sessions at MozFest, been involved in portfolio feedback sessions and given talks at Universities.
 
@@ -35,7 +35,7 @@ The global temperature in 2015 was notably higher than the previous warmest year
 
 ![Uni display](https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-09-bright-outlook/uni-display.jpg)
 
-We’re displaying the students work at the Met Office during the start of June and will be committing some of the responses into a pinterest board, to be released soon.
+We’re displaying the students work at the Met Office during the start of June and will be collating some of the responses into a pinterest board, to be released soon.
 
 ## Looking ahead
 
