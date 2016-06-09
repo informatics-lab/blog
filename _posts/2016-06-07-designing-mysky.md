@@ -6,7 +6,7 @@ date:       2016-06-07
 summary:    "Combining UX and survey design"
 categories: ['reports', 'design']
 project:    'mysky'
-thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-07-designing-mysky/phone.jpg"
+thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-07-designing-mysky/thumbnail.jpg"
 header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/Antoine%27s+image/my-sky-header.jpg"
 ---
 A while back, we posted an [introduction][mysky] to the mobile app we've been building. With the project drawing to a close, this post will go a little deeper into how the app was designed, and the choices we made.
@@ -33,9 +33,9 @@ __Delivering personalised weather forecasts__
 It should be possible to learn a person's preferences, and use present forecasts in accordance with these. If someone consistently reported heavy rain as drizzle, that's what it would report to them.
 
 __Testing out different sets of symbols__
-This could be alternative sets of weather symbols, or more esoteric things like colours or emojis.
+This could be alternative sets of weather symbols, or more esoteric things like colours or [emojis][emoji].
 
-__Feeding information into WOW (Weather Observations Website)__
+__Feeding information into [WOW][wow] (Weather Observations Website)__
 Since it's fundamentally just observation data.
 
 __Using the data for model initialization / verification__
@@ -77,3 +77,5 @@ We're currently working on getting MySky into the Android store. Watch this spac
 <img src="https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-07-designing-mysky/phone.jpg" alt="app on phone" width="50%" align="middle">
 
 [mysky]: http://www.informaticslab.co.uk/report/2016/05/09/mysky-is-coming.html
+[emoji]: https://en.wikipedia.org/wiki/Emoji
+[wow]: http://wow.metoffice.gov.uk/

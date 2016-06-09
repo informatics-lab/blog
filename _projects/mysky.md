@@ -13,4 +13,4 @@ thumbnail:   "https://s3-eu-west-1.amazonaws.com/informatics-webimages/Antoine%2
 
 However detailed and accurate our forecasts, for most people it all comes down to a single symbol. We assume these symbols make sense, but does everyone interpret them in the same way?
 
-To find out, we've been building an app called MySky. Users can report the weather as they see it, by choosing an icon representing the sky above them. From this, we hope to learn more about how people interpret our forecasts, and to start experimenting with weather information tailored to a particular user.
+To find out, we've been building an app called __MySky__. Users can report the weather as they see it, by choosing an icon representing the sky above them. From this, we hope to learn more about how people interpret our forecasts, and to start experimenting with weather information tailored to a particular user.
