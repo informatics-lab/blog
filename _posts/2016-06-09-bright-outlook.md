@@ -7,7 +7,7 @@ categories: ['design']
 author: 	  Ross Middleham
 project:    none
 thumbnail:  'https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-09-bright-outlook/uni-post.png'
-header:     'https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-09-bright-outlook/uni-header.png'
+header:     'https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-09-bright-outlook/uni-header.png.jpeg'
 
 ---
 
