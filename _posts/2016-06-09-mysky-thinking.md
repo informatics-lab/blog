@@ -25,7 +25,7 @@ Our main aims:
 * Explore how the data could be used to analyse people’s perception of the weather
 * Create a noise
 
-##So why should I use this app?
+## So why should I use this app?
 
 We initially explored gamification as a great hook to get people to use the app – looking at popular, addictive games and sketching up ways that we could create something playful yet useful.
 
