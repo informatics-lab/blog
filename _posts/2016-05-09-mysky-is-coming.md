@@ -5,7 +5,7 @@ date:       2016-05-09
 summary:    The Informatics Lab’s app is coming
 categories: ['report']
 author: 	Antoine de Daran
-project:    none
+project:    mysky
 thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/Antoine%27s+image/my-sky.jpg"
 header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/Antoine%27s+image/my-sky-header.jpg"
 ---
