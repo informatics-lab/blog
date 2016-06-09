@@ -7,6 +7,7 @@ github-link: https://github.com/met-office-lab/mysky
 completed:   false
 project:     mysky
 thumbnail:   "https://s3-eu-west-1.amazonaws.com/informatics-webimages/Antoine%27s+image/my-sky-header.jpg"
+header:   "https://s3-eu-west-1.amazonaws.com/informatics-webimages/Antoine%27s+image/my-sky-header.jpg"
 ---
 
 ## Project Description
