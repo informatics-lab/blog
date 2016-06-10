@@ -2,7 +2,7 @@
 layout:     profile
 name:       Alastair Gemmell
 summary:    Alastair is a developer interested in data analysis and visualisation.
-affiliation: core
+affiliation: past-member
 twitter-url:
 linkedin-url:
 github-url: http://github.com/alastair-gemmell-lab
