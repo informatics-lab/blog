@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "A game on the perception of symbols"
-date:       2016-06-09
+date:       2016-06-24
 summary:    With some friends look out the window and each choose a weather symbol which represents what you see. Do you all agree?
 category:   Design
 author:     Jacob Tomlinson
