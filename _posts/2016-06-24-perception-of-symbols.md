@@ -20,13 +20,13 @@ This game is similar to a written/drawn version of [Chinese whispers][telephone-
 
 To play this game you need a group of people, a notepad and a pen or pencil.
 
-You start by drawing a symbol on the first page of the notepad. You then hand the pad to the next person and ask them to look at the symbol. They turn the page and write the word they think the symbol represents.
+You start by drawing a symbol on the first page of the notepad. You then hand the pad to the next person and ask them to look at the symbol. They turn the page and write the words they think the symbol represents.
 
-Then they pass the notepad to the next person who reads the word, turns the page, and draws a symbol to represent the word.
+Then they pass the notepad to the next person who reads the words, turns the page, and draws a symbol to represent them.
 
-It is handed to the next person who writes a word, and so on, and so on.
+It is handed to the next person who writes a phrase, and so on, and so on.
 
-The interesting part of the game is to watch how quickly the symbol changes and becomes something totally unrecognisable from the original meaning.
+The interesting part of the game is to watch how quickly the symbol changes and becomes something totally unrecognisable from the original intent.
 
 ## Mozfest 2015
 
