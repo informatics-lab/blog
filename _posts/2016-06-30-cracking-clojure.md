@@ -2,42 +2,46 @@
 author:     Niall Robinson
 layout:     post
 title:      "Cracking Clojure with Enigma"
-date:       2016-06-02
+date:       2016-06-30
 summary:    "Through the looking glass into functional programming"
 categories: ['learning']
 project:    none
-thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-02-go-enigma/Enigma.jpg"
+thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/clojure-logo10%5B1%5D.png"
 header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-02-go-enigma/Enigma.jpg"
 ---
 
 ## Introduction
-A few weeks ago, fellow Lab Rat Jacob Tomlinson wrote a great post about [craking Engima with Go](http://www.informaticslab.co.uk/learning/2016/06/02/go-enigma.html). In short, he wrote an emulator of the [Enigma Machine](https://en.wikipedia.org/wiki/Enigma_machine) used to encode messages by the Nazis in WWII, and cracked the [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing) and co at Bletchly Park. This feat has gone done as a seminal moment in computing and one of the crucial reasons the Allies won the war.
+A few weeks ago, fellow Lab Rat Jacob Tomlinson wrote a great post about [craking Engima with Go](http://www.informaticslab.co.uk/learning/2016/06/02/go-enigma.html). In short, he wrote an emulator of the [Enigma Machine](https://en.wikipedia.org/wiki/Enigma_machine) used to encode messages by the Nazis in WWII. This machine was famously cracked by [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing) and co at Bletchly Park in a feat that has gone done as a seminal moment in computing and one of the crucial reasons the Allies won the war.
 
-While Jacob used this as hack to learn hot new language [Go](https://golang.org/), I've used it as an excuse to jump into [Clojure][clojure], and in general [functional programming][functional-programming].
+![Enigma Machine](https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-02-go-enigma/Enigma_M3.jpg)
 
-## You've learned some language? Big deal.
-*But wait, this is different.*
+While Jacob used this as hack to learn hot new language [Go](https://golang.org/), I've used it as an excuse to jump into [Clojure][clojure], and [functional programming][functional-programming] in general. You can see my [Clojure Engima Cracker on Github](https://github.com/niallrobinson/enigma-clojure). Before we get started a quick disclaimer: Clojure is very foreign to me still, and I don't profess to be an expert (yet) - if I screwed something up, please let me know!
 
-Functional programming is a style of coding which has turned a lot of what I thought I new about writing software and turned it on its head. I found lots of [misty eyed blog posts](http://clojure.org/about/rationale) on-line talking about how learning functional programming help you write expressive, efficient, parallelisable code. People also seem to have a semi-religious zeal for how it helps you "think about all coding differently", "attain software enlightenment", generally build character, solve world hunger etc.
+## You've learned some new language? Big deal.
+*But wait, this time it's different.*
 
-To good to miss, right? So with this in mind, and red-eye flight back from the US, I cracked my knuckles and took the jump.
+Functional programming is a style of coding which has turned a lot of what I thought I new about writing software on its head. I found lots of [misty](http://www.itworld.com/article/2693998/big-data/clojure-developers-are-the-happiest-developers.html) [eyed](https://teamgaslight.com/blog/why-were-learning-clojure) [blog](http://www.gigamonkeys.com/book/introduction-why-lisp.html) [posts](http://clojure.org/about/rationale) about how learning functional languages like Clojure helps you write [expressive](https://www.infoq.com/news/2013/03/Language-Expressiveness), [highly parallelisable](https://speakerdeck.com/chris_betz/spark-way), [portable](http://clojure.org/about/jvm_hosted) code. People also seem to have a semi-religious zeal for how it helps you "[think about all coding differently](http://owenrh.me.uk/blog/2015/08/24/)", "[attain software enlightenment](http://occamsoftware.blogspot.co.uk/2007/04/anyone-who-knows-how-to-program-in-lisp.html)", and generally build character, solve world hunger etc.
+
+To good to miss, right? So with this in mind, and red-eye flight back from the US to fill, I cracked my knuckles and took the jump.
 
 ## Functional programming?...So what, I can already write functions.
-I'm sure. My programming education has gone something like this:
+I know, let me explain. My programming education has gone something like this:
 
-1. DOS/BASH: "Oooh, I can type something and the computer does it"
-2. Scripts: "Nice! I can just stick all those commands on after another in lists"
-3. Procedural programming: "This script is too long. I need to chop it up in to functions"
-4. Object oriented programming: "I can't brain this problem as procedures. But I can if I can make a thing that does stuff!"
+1. **DOS/BASH:** "Oooh, I can type something and the computer does it"
+2. **Scripts:** "Nice! I can just stick all those commands on after another in lists"
+3. **Procedural programming:** "This script is too long. I need to chop it up in to functions"
+4. **Object oriented programming:** "I can't brain this problem as functions. But I can if I can make a thing that does stuff!"
 
-Functional programming is different. What if I told you that you couldn't really have:
+Functional programming is different from all of these. What if I told you that you couldn't really use:
 
-1. Variables
-1. For loops
-1. Lines of code that follow on from each other
-1. Objects/classes
+* Variables
+* For loops
+* Lines of code that follow on from each other
+* Objects/classes
 
-...mainstays of any "proper" language I've learned. And because of this it's...better? (DISCLAIMER: You *can* do some of the things on this list, but essentially the language doesn't really want you to.)
+Mainstays of any "proper" language, I'm sure you'll agree...
+
+And because you don't use these things it's...better? (DISCLAIMER: You *can* do some of the things on this list, but essentially the language doesn't really want you to.)
 
 ## 60 second intoduction to Clojure
 Just to make this less abstract, let's compare Clojure code to my procedural/object-oriented language of choice, Python.
@@ -54,7 +58,7 @@ Just to make this less abstract, let's compare Clojure code to my procedural/obj
     3
 
 
-wot?
+wat?
 
 That's right, in functional programming the function come first, metaphorically and literally. The general syntax for a function call is `(my_func arg1 arg2...argn)`. In this case, `+` is our function and `1` and `2` are our arguments.
 
@@ -100,11 +104,18 @@ Here's a simple function to sum all the numbers in a list.
                     (+ (first xs) acc))   ; pass accumulation
                 acc)))                    ; or return
 
-Right - stay with me here. If you consider this for a bit, you can see that we achieve `for` loop functionality by recursively calling a function. This is known as *tail end recursion*. Each time the loop goes round, it recalls itself, passing the `rest` of the values, that is the bits you'll be looking at in future iterations, and the `first` of the rest, that is the value you want to inspect on this iteration. You do this until there are no `rest` values, which means you've finished looping.
+Right - stay with me here. If you consider this for a bit, you can see that we achieve `for` loop functionality by recursively calling a function. This is known as *tail end recursion*. Each time the loop goes round, it recalls itself, passing:
+
+* the `rest` of the values, that is the bits you'll be looking at in future iterations
+* the running total
+
+You then pluck off the `first` of the rest, that is the value you want to inspect on this iteration. You do this until there are no `rest` values, which means you've finished looping.
 
 Because data objects don't exist outside of each recursive function call, this can be more efficient than a traditional for loop. That is, there are no spare data objects floating around between function calls, so this loop can scale infinitely without danger of stack overflows etc.
 
 ### Mutable state + concurrency = non-determinism (i.e. pain)
+In this example we're going to have a lot of objects which we get to do stuff in parallel by using a `pool` of processing nodes. We've made some dogs. They're happy when they bark. We want to count the total amount of doggy joy in our `happyness_index` (just go with it, okay?). (This is psudo-code - imagine we've instantiated a bunch of `Dog`s)
+
 **Python**
 
     happiness_index = 0
@@ -121,6 +132,8 @@ Because data objects don't exist outside of each recursive function call, this c
 
     pool.apply([dog.bark() for dog in dogs])
 
+In Python, if we distribute this task across nodes to execute at the same time, we need some way to make sure that `happyness_index` isn't changed by two dogs at once. This is knows as a *race condition* and it means pain: flags, locks and general housekeeping that has nothing to do with the actual problem we're trying to solve. Even thought we don't normally have to do this as a high level coder, it's being done somewhere, meaning inefficiency and potential for cock-ups.
+
 **Clojure**
 
     (def aDog {:name Jeff :barking false :happy false})
@@ -130,18 +143,15 @@ Because data objects don't exist outside of each recursive function call, this c
 
     (+ (map :happy (map bark dogs)))
 
-In the Python code we've made some dogs. They're happy when they bark. We want to count the total amount of doggy joy in our `happyness_index` (just go with it, okay?). If we distribute this task across nodes to execute at the same time, then we need some way to make sure that `happyness_index` isn't changed by two dogs at once. This is knows as a *race condition* and it means pain: flags, locks and general housekeeping that has nothing to do with the actual problem we're trying to solve.
-
-Have a look at the Clojure code. You can now see one of my white lies: we make a data object - Jeff the Dog. The methods of our class now become lambda functions which take dogs such as Jeff When He's Sad, and then return a different dog - Jeff When He's Happy. NB: This is not a different version of Jeff - IT'S A COMPLETELY NEW JEFF!
+You can now see one of my white lies: we *do* make a data object in this example - Jeff the Dog. The methods of our Python class now become lambda functions which take dogs such as Jeff When He's Sad, and then return a different dog - Jeff When He's Happy. The point is, this is not a different version of Jeff - IT'S A COMPLETELY NEW JEFF!
 
 Also, the final line gets rid of our race condition to a mutable shared variable.
 
 ## What? Who's Jeff? What happened to Enigma?
-Ah yes, Enigma. Consider this code.
+Ah yes, Enigma. Consider this code where we are testing a bunch of different Enigma Machine set-ups to see which one successfully decodes the code.
 
 **Python**
 
-    all_enigma_setups = [<THIS IS A BUNCH OF DIFFERENT ENIGMA MACHINE SETUPS>]
     for enigma_setup in enigma_setups:
         if isSolution(enigma_setup):
             return enigma_setup
@@ -150,17 +160,29 @@ Ah yes, Enigma. Consider this code.
 
     (first (filter solution? enigma_setups))
 
-Clojure is extremely lazy, something I can identify with. (This means it only does things when it really has to). The above code filters out all the elements of `enigma_setups` which return true when `solution?` is applied to it, and then takes the first one. The crucial thing is that Clojure doesn't do this inside bracket and *then* the outside - its clever enough to evaluate until it finds one solution.
+Clojure is extremely lazy, something I can identify with. (This means it only does things when it really has to). The above code filters out all the elements of `enigma_setups` which return true when `solution?` is applied to it, and then takes the first one.
 
-## What's the advantage
-"It can be made to run faster than other code." [Moor's Law](https://en.wikipedia.org/wiki/Moore%27s_law) is broken, and data volumes are getting bigger. At the [Met Office](http://www.metoffice.gov.uk/) we generate hundreds of terabytes of data a day. You can run from parallelisation but not for much longer. Due to the immutability of data and the lack of rack conditions in functional programming, this approach to coding gives you a logical flow which can be readily parallelised.
+The crucial thing is that Clojure doesn't do this inside bracket and *then* the outside - it's clever enough to evaluate until it finds one solution.
 
-"It's easier to write than other code." Mutable data objects in classes have been called the "new spaghetti code", there easy to screw up and hard to fix. Getting rid of mutability and, frankly, traditional variables, eradicates this risk - something which could be especially useful when working with lots of data.
+## What's the advantage?
 
+### It can be made to run faster than other code
+[Moor's Law](https://en.wikipedia.org/wiki/Moore%27s_law) is broken, and data volumes are getting bigger. At the [Met Office](http://www.metoffice.gov.uk/) we generate hundreds of terabytes of data a day. You can run from parallelisation but not for much longer. Due to the immutability of data and the lack of rack conditions in functional programming, this approach to coding gives you a logical flow which can be readily parallelised.
+
+### It's harder to make mistakes than other code
+Mutable data objects in classes have been called the "new spaghetti code", there easy to screw up and hard to fix. Getting rid of mutability and, frankly, traditional variables, eradicates this risk - something which could be especially useful when working with lots of data.
+
+Given that you have to write functional units, it's also, unsurprisingly, really easy to unit test.
+
+### It builds character
+Apart from anything else it's really interesting to turn coding on its head for a while. Clojure's already changed the way I think about designing other code by adding new tools to my arsenal - for instance the use of lambda function "lenses" comes more readily when writing Python.
 
 ## So is it any good then?
-...honestly, I don't know yet. I found it hard but interesting to write. It's already changed the way I think about designing other code by adding new tools to my arsenal - for instance the use of lambda function "lenses" comes more readily.
+Honestly, I don't know yet. I found it hard but really interesting to write. I haven't got the expressive nature of Clojure yet, but I'm willing to believe I could. 
 
-[functional-programming](https://en.wikipedia.org/wiki/Functional_programming)
-[LISP](https://en.wikipedia.org/wiki/Lisp_(programming_language))
-[clojure](https://en.wikipedia.org/wiki/Clojure)
+I don't feel like I've attained enlightenment yet, but I'm definitely going keep going. Hopefully one day see a golden lambda emerge from the sky and I'll evaporate in a puff of enlightened Clojure inflected smoke.
+
+<p style="text-align:center"><img src="https://s3-eu-west-1.amazonaws.com/informatics-webimages/clojure-logo10%5B1%5D.png" alt="Om Mane Padme Om" width="30%" height="30%"></p>
+
+[functional-programming]: https://en.wikipedia.org/wiki/Functional_programming
+[clojure]: https://en.wikipedia.org/wiki/Clojureg
