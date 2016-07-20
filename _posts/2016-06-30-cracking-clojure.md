@@ -22,13 +22,13 @@ While Jacob used this as hack to learn hot new language [Go](https://golang.org/
 
 Functional programming is a style of coding which has turned a lot of what I thought I new about writing software on its head. I found lots of [misty](http://www.itworld.com/article/2693998/big-data/clojure-developers-are-the-happiest-developers.html) [eyed](https://teamgaslight.com/blog/why-were-learning-clojure) [blog](http://www.gigamonkeys.com/book/introduction-why-lisp.html) [posts](http://clojure.org/about/rationale) about how learning functional languages like Clojure helps you write [expressive](https://www.infoq.com/news/2013/03/Language-Expressiveness), [highly parallelisable](https://speakerdeck.com/chris_betz/spark-way), [portable](http://clojure.org/about/jvm_hosted) code. People also seem to have a semi-religious zeal for how it helps you "[think about all coding differently](http://owenrh.me.uk/blog/2015/08/24/)", "[attain software enlightenment](http://occamsoftware.blogspot.co.uk/2007/04/anyone-who-knows-how-to-program-in-lisp.html)", and generally build character, solve world hunger etc.
 
-To good to miss, right? So with this in mind, and red-eye flight back from the US to fill, I cracked my knuckles and took the jump.
+Too good to miss, right? So with this in mind, and red-eye flight back from the US to fill, I cracked my knuckles and took the jump.
 
 ## Functional programming?...So what, I can already write functions.
 I know, let me explain. My programming education has gone something like this:
 
 1. **DOS/BASH:** "Oooh, I can type something and the computer does it"
-2. **Scripts:** "Nice! I can just stick all those commands on after another in lists"
+2. **Scripts:** "Nice! I can just stick all those commands one after another in lists"
 3. **Procedural programming:** "This script is too long. I need to chop it up in to functions"
 4. **Object oriented programming:** "I can't brain this problem as functions. But I can if I can make a thing that does stuff!"
 
@@ -114,7 +114,7 @@ You then pluck off the `first` of the rest, that is the value you want to inspec
 Because data objects don't exist outside of each recursive function call, this can be more efficient than a traditional for loop. That is, there are no spare data objects floating around between function calls, so this loop can scale infinitely without danger of stack overflows etc.
 
 ### Mutable state + concurrency = non-determinism (i.e. pain)
-In this example we're going to have a lot of objects which we get to do stuff in parallel by using a `pool` of processing nodes. We've made some dogs. They're happy when they bark. We want to count the total amount of doggy joy in our `happyness_index` (just go with it, okay?). (This is psudo-code - imagine we've instantiated a bunch of `Dog`s)
+In this example we're going to have a lot of objects which we get to do stuff in parallel by using a `pool` of processing nodes. We've made some dogs. They're happy when they bark. We want to count the total amount of doggy joy in our `happyness_index` (just go with it, okay?). (This is psudo-code - imagine we've instantiated a bunch of `Dog`s, and we have a `pool` of parallel workers).
 
 **Python**
 
