@@ -118,7 +118,7 @@ You then pluck off the `first` of the rest, that is the value you want to inspec
 Because data objects don't exist outside of each recursive function call, this can be more efficient than a traditional for loop. That is, there are no spare data objects floating around between function calls, so this loop can scale infinitely without danger of stack overflows etc.
 
 ### Mutable state + concurrency = non-determinism (i.e. pain)
-In this example we're going to have a lot of objects which we get to do stuff in parallel by using a `pool` of processing nodes. We've made some dogs. They're happy when they bark. We want to count the total amount of doggy joy in our `happyness_index` (just go with it, okay?). (This is psudo-code - imagine we've instantiated a bunch of `Dog`s, and we have a `pool` of parallel workers).
+In this example we're going to have a lot of objects which we get to do stuff in parallel by using a `pool` of processing nodes. We've made some dogs. They're happy when they bark. We want to count the total amount of doggy joy in our `happiness_index` (just go with it, okay?). (This is psudo-code - imagine we've instantiated a bunch of `Dog`s, and we have a `pool` of parallel workers).
 
 **Python**
 
@@ -136,7 +136,7 @@ In this example we're going to have a lot of objects which we get to do stuff in
 
     pool.apply([dog.bark() for dog in dogs])
 
-In Python, if we distribute this task across nodes to execute at the same time, we need some way to make sure that `happyness_index` isn't changed by two dogs at once. This is knows as a *race condition* and it means pain: flags, locks and general housekeeping that has nothing to do with the actual problem we're trying to solve. Even thought we don't normally have to do this as a high level coder, it's being done somewhere, meaning inefficiency and potential for cock-ups.
+In Python, if we distribute this task across nodes to execute at the same time, we need some way to make sure that `happiness_index` isn't changed by two dogs at once. This is knows as a *race condition* and it means pain: flags, locks and general housekeeping that has nothing to do with the actual problem we're trying to solve. Even thought we don't normally have to do this as a high level coder, it's being done somewhere, meaning inefficiency and potential for cock-ups.
 
 **Clojure**
 
