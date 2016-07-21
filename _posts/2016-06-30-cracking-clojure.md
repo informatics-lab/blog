@@ -86,7 +86,7 @@ Instead, you create a new data object by doing something to the old one. I think
 In the Clojure example you can see that, instead of multiple lines, we've got multiple sets of brackets instead.
 
 ### Loops
-Here's a simple function to sum all the numbers in a list.
+Here's a simple function to sum all the numbers in a list. (Obviously there is are better ways to sum in both languages, but just look at the logic flow.)
 
 **Python**
 
@@ -192,4 +192,4 @@ Honestly, I don't know yet. I found it hard but interesting to write. I haven't 
 <p style="text-align:center"><img src="https://s3-eu-west-1.amazonaws.com/informatics-webimages/clojure-logo10%5B1%5D.png" alt="Om Mane Padme Om" width="30%" height="30%"></p>
 
 [functional-programming]: https://en.wikipedia.org/wiki/Functional_programming
-[clojure]: https://en.wikipedia.org/wiki/Clojureg
+[clojure]: https://en.wikipedia.org/wiki/Clojure
