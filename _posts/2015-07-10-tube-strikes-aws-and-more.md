@@ -1,13 +1,15 @@
 ---
-author:     Jacob Tomlinson
-layout:     post
-title:      "Tube strikes, AWS, GoSquared and more..."
-date:       2015-07-10
-summary:    Jacob has spent the last two days in London learning about how others use Amazon Web Services.
-categories: ['learning']
-project:    blog
-thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-07-10-tube-strikes-aws-docker-and-more/thumbnail.jpg"
-header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-07-10-tube-strikes-aws-docker-and-more/header.jpg"
+title: Tube strikes, AWS, GoSquared and more...
+date: 2015-07-10 00:00:00 Z
+categories:
+- learning
+author: Jacob Tomlinson
+layout: post
+summary: Jacob has spent the last two days in London learning about how others use
+  Amazon Web Services.
+project: blog
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-07-10-tube-strikes-aws-docker-and-more/thumbnail.jpg
+header: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-07-10-tube-strikes-aws-docker-and-more/header.jpg
 ---
 
 This week I took a trip to London to attend Amazon's AWSomeDay. I took the opportunity to meet with some interesting people and find out about how they make use of technologies we're interested in such as [AWS][aws] and [Docker][docker]. Despite having to walk miles on foot around the city thanks to a strike on the London Underground I managed to learn a lot.

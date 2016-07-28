@@ -1,13 +1,14 @@
 ---
-layout:     post
-title:      "I've spent all week pretending to be a beam of light"
-date:       2015-03-24
-summary:    Find out about our first go at volume rendering using WebGL ray tracing.
-categories: ['technical', 'perspiration']
-author: 	Niall Robinson
-project:    threedvis
+title: I've spent all week pretending to be a beam of light
+date: 2015-03-24 00:00:00 Z
+categories:
+- technical
+- perspiration
+layout: post
+summary: Find out about our first go at volume rendering using WebGL ray tracing.
+author: Niall Robinson
+project: threedvis
 thumbnail: http://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-03-13-volume-rendering/rays.jpg
-
 ---
 
 #### Weeee I'm a light beam...we'll sort of. Read on and you'll see what I mean.

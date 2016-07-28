@@ -1,12 +1,12 @@
 ---
-layout:      project-overview
-title:       A weather forecast you can talk to
-author:      Niall Robinson
-summary:     Alexa, when should I have a barbeque
+title: A weather forecast you can talk to
+layout: project-overview
+author: Niall Robinson
+summary: Alexa, when should I have a barbeque
 github-link: https://github.com/met-office-lab/dre-dev
-completed:   false
-project:     nlp
-thumbnail:   https://s3-eu-west-1.amazonaws.com/informatics-webimages/echo.jpg
+completed: false
+project: nlp
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/echo.jpg
 ---
 
 ## Project Description

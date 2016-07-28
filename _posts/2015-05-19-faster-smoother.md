@@ -1,13 +1,14 @@
 ---
-author:     Rachel Prudden
-layout:     post
-title:      "Faster, smoother, set in motion"
-date:       2015-05-19
-summary:    What we're working on for the front end
-categories: ['technical', 'perspiration']
-project:    threedvis
+title: Faster, smoother, set in motion
+date: 2015-05-19 00:00:00 Z
+categories:
+- technical
+- perspiration
+author: Rachel Prudden
+layout: post
+summary: What we're working on for the front end
+project: threedvis
 thumbnail: https://dl.dropboxusercontent.com/u/2665124/blogimages/cloud_after.jpg
-
 ---
 
 Our WebGL based front-end is on the verge of being usable, thanks to a couple of recent improvements.

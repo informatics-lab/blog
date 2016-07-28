@@ -1,13 +1,14 @@
 ---
-author:     Jacob Tomlinson
-layout:     post
-title:      "govspeak: An open source markup language"
-date:       2015-07-22
-summary:    We're now using the same markup language as GOV.UK.
-categories: ['collaboration']
-project:    blog
-thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-07-22-govspeak-an-open-source-markup-language/thumbnail.png"
-header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-07-22-govspeak-an-open-source-markup-language/banner.png"
+title: 'govspeak: An open source markup language'
+date: 2015-07-22 00:00:00 Z
+categories:
+- collaboration
+author: Jacob Tomlinson
+layout: post
+summary: We're now using the same markup language as GOV.UK.
+project: blog
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-07-22-govspeak-an-open-source-markup-language/thumbnail.png
+header: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-07-22-govspeak-an-open-source-markup-language/banner.png
 ---
 
 The Informatics Lab website is created with an application called [Jekyll][jekyll]. Recently I made an enhancement to it which I'm very excited about. It allows us to write our articles in a markup language called [Govspeak][govspeak], which is an extension to the excellent [markdown][markdown].

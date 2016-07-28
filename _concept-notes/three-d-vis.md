@@ -1,10 +1,9 @@
 ---
-layout:     concept-note
-title:      3D Visualisation Concept Note
-date:       2015-02-16
-summary:    Technical notes for the 3D visulisation project
-project:    threedvis
-
+title: 3D Visualisation Concept Note
+date: 2015-02-16 00:00:00 Z
+layout: concept-note
+summary: Technical notes for the 3D visulisation project
+project: threedvis
 ---
 
 3D visualisation of NWP high-res and ensemble data

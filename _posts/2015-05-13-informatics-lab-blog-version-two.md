@@ -1,10 +1,11 @@
 ---
-author:     Jacob Tomlinson
-layout:     post
-title:      Version 2.0 of the blog
-date:       2015-05-13
-summary:    We've reskinned the blog.
-categories: News
+title: Version 2.0 of the blog
+date: 2015-05-13 00:00:00 Z
+categories:
+- News
+author: Jacob Tomlinson
+layout: post
+summary: We've reskinned the blog.
 thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-05-13-informatics-lab-blog-version-two/Screen+Shot+2015-05-11+at+14.58.21.png
 ---
 

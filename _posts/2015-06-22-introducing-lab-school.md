@@ -1,14 +1,15 @@
 ---
-author:     Jacob Tomlinson
-layout:     post
-title:      "Introducing Lab School"
-date:       2015-06-22
-summary:    The last Thursday of each month will have Lab School. A hands on training session on the technologies we're working with.
-categories: ['announcements']
-project:    lab-school
-thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-06-22-introducing-lab-school/lab-school.png"
-header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-06-22-introducing-lab-school/school-header.jpg"
-
+title: Introducing Lab School
+date: 2015-06-22 00:00:00 Z
+categories:
+- announcements
+author: Jacob Tomlinson
+layout: post
+summary: The last Thursday of each month will have Lab School. A hands on training
+  session on the technologies we're working with.
+project: lab-school
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-06-22-introducing-lab-school/lab-school.png
+header: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-06-22-introducing-lab-school/school-header.jpg
 ---
 
 We are pleased to announce a new Informatics Lab initiative called Lab School. Lab School is a monthly training session which will be held in the lab from **10am-12pm on the last Thursday of each month**.

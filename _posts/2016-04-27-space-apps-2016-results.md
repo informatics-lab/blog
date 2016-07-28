@@ -1,13 +1,14 @@
 ---
-layout:     post
-title:      "Space Apps 2016"
-date:       2016-04-27
-summary:    What happened …
-categories: ['events']
-author: 	Antoine de Daran
-project:    none
-thumbnail: "https://s3.amazonaws.com/files.open.nasa.gov/spaceapps/media/3a2d54db-3f2d-40f3-bb3f-f400605e98f5.png"
-header: "http://i0.wp.com/www.engineeringafuture.com/wp-content/uploads/2015/09/Sky-Contrails.png"
+title: Space Apps 2016
+date: 2016-04-27 00:00:00 Z
+categories:
+- events
+layout: post
+summary: What happened …
+author: Antoine de Daran
+project: none
+thumbnail: https://s3.amazonaws.com/files.open.nasa.gov/spaceapps/media/3a2d54db-3f2d-40f3-bb3f-f400605e98f5.png
+header: http://i0.wp.com/www.engineeringafuture.com/wp-content/uploads/2015/09/Sky-Contrails.png
 ---
 
 As we announced in a [previous post](http://www.informaticslab.co.uk/events/2016/03/12/space-apps-2016-is-coming.html), the Met Office hosted the [2016 NASA Space Apps Challenge](https://2016.spaceappschallenge.org/). This year, more than **1,200 projects** have been created around the world.

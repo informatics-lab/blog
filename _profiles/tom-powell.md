@@ -1,16 +1,17 @@
 ---
-layout:     profile
-name:       Tom Powell
-summary:    Tom is a developer who works across the stack.
+title: Tom Powell
+layout: profile
+name: Tom Powell
+summary: Tom is a developer who works across the stack.
 affiliation: core
-twitter-url:
-linkedin-url:
+twitter-url: 
+linkedin-url: 
 github-url: http://github.com/tpowellmeto
 email: thomas.powell@informaticslab.co.uk
-stackoverflow-url:
-
+stackoverflow-url: 
 mugshot: tom-powell.png
 ---
+
 Hello! I'm Tom.
 
 For me the Informatics Lab presents an exciting opportunity to work closer with the Met Office's world-leading Scientists. I am really hoping to gain an insight into some of the clever stuff they do and help add some magical, cutting-edge technology fairy dust to better convey what's really going on.

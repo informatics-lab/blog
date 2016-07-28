@@ -1,13 +1,15 @@
 ---
-layout:     post
-title:      "Lego Mindstorms Lab-Bot"
-date:       2015-12-23
-summary:    A fun project introducing key concepts of science, technology and design.
-categories: ['technical','inspiration']
-author: 	Tom Powell
-project:    mindstorms
-thumbnail:  "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-12-23-lego-mindstorms/ms-labbot.JPG"
-header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-12-23-lego-mindstorms/ms-header.JPG"
+title: Lego Mindstorms Lab-Bot
+date: 2015-12-23 00:00:00 Z
+categories:
+- technical
+- inspiration
+layout: post
+summary: A fun project introducing key concepts of science, technology and design.
+author: Tom Powell
+project: mindstorms
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-12-23-lego-mindstorms/ms-labbot.JPG
+header: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-12-23-lego-mindstorms/ms-header.JPG
 ---
 
 # Introduction

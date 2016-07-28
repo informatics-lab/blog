@@ -1,13 +1,16 @@
 ---
-layout:     post
-title:      "A sandbox environment with a difference..."
-date:       2015-08-04
-summary:    Find out about the augmented reality sandpit we are building in the lab.
-categories: ['technical','stem','inspiration']
-author: 	Tom Powell
-project:    sandpit
-thumbnail:  "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-08-04-augmented-reality-sandpit/coloured-terrain.png"
-header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-08-04-augmented-reality-sandpit/coloured-terrain.png"
+title: A sandbox environment with a difference...
+date: 2015-08-04 00:00:00 Z
+categories:
+- technical
+- stem
+- inspiration
+layout: post
+summary: Find out about the augmented reality sandpit we are building in the lab.
+author: Tom Powell
+project: sandpit
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-08-04-augmented-reality-sandpit/coloured-terrain.png
+header: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-08-04-augmented-reality-sandpit/coloured-terrain.png
 ---
 
 ## WHAT ... is it??

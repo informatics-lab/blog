@@ -1,65 +1,51 @@
-#--------------
-# Site settings
-#--------------
-
-title:         Met Office Informatics Lab
-email:         hello@informaticslab.co.uk
-author:        Met Office Lab
-short_description: "A lab at the Met Office for creating things!"
-description:   "The Met Office Informatics Lab combines scientists, engineers, technologists, and designers to make environmental science and data useful."
-baseurl:       ""
-url:           "http://www.informaticslab.co.uk"
-github-url:    "http://github.com/met-office-lab/"
-twitter-url:   "https://twitter.com/informatics_lab"
-instagram-url: "http://instagram.com/informaticslab/"
-calendar-url:  "/get-involved/calendar.html"
-image-bin:     "http://s3-eu-west-1.amazonaws.com/informatics-webimages/"
-
-
-# Google analytics
-google_analytics: 'UA-60337429-1'
-
-
-#-----------
-#Build stuff
-#-----------
-
-#markdown options
+---
+title: Met Office Informatics Lab
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  profiles:
+    title: Profiles
+    output: true
+  projects:
+    title: Projects
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+email: hello@informaticslab.co.uk
+author: Met Office Lab
+short_description: A lab at the Met Office for creating things!
+description: The Met Office Informatics Lab combines scientists, engineers, technologists,
+  and designers to make environmental science and data useful.
+baseurl: ''
+url: http://www.informaticslab.co.uk
+github-url: http://github.com/met-office-lab/
+twitter-url: https://twitter.com/informatics_lab
+instagram-url: http://instagram.com/informaticslab/
+calendar-url: "/get-involved/calendar.html"
+image-bin: http://s3-eu-west-1.amazonaws.com/informatics-webimages/
+google_analytics: UA-60337429-1
 markdown: Govspeak
 kramdown:
   input: GFM
-
-#build output dir
 destination: _site
-
-#exclude from build
-exclude: ["bower.json",
-          "Gemfile*",
-          "package.json",
-          "README.md",
-          "LICENSE.md",
-          "CONTRIBUTING.md",
-          "Gruntfile.js",
-          "node_modules",
-          "bower_components",
-          "tests",
-          "vendor",
-          "tmp"]
-
-#sass config
+exclude:
+- bower.json
+- Gemfile*
+- package.json
+- README.md
+- LICENSE.md
+- CONTRIBUTING.md
+- Gruntfile.js
+- node_modules
+- bower_components
+- tests
+- vendor
+- tmp
 sass:
   sass_dir: _sass
   style: compressed
-
-#pagination
-#paginate: 2
 post_limit: 3
 default_blog_thumbnail: "/img/about/2.jpg"
-
-collections:
-    profiles:
-      output: true
-    projects:
-      output: true
-    posts:
-      output: true

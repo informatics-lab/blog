@@ -1,11 +1,12 @@
 ---
-author:     Richard Hogben
-layout:     post
-title:      Experience the weather without getting wet!
-date:       2015-04-14
-summary:    Help to test our new weather visualisation application.
-categories: Announcements
-project:    threedvis
+title: Experience the weather without getting wet!
+date: 2015-04-14 00:00:00 Z
+categories:
+- Announcements
+author: Richard Hogben
+layout: post
+summary: Help to test our new weather visualisation application.
+project: threedvis
 thumbnail: http://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-04-14-demonstration/screenshot-2015-03-25.jpg
 ---
 

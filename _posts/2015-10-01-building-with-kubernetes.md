@@ -1,12 +1,14 @@
 ---
-author:     Jacob Tomlinson
-layout:     post
-title:      "Building with Kubernetes"
-summary:    We built an application stack using Kubernetes, here are our thoughts
-categories: ['infrastructure']
-project:    threedvis
-thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-10-01-building-with-kubernetes/kubernetes-logo.png"
-header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-10-01-building-with-kubernetes/Screen+Shot+2015-10-01+at+09.43.59.png"
+title: Building with Kubernetes
+date: 2015-10-01 00:00:00 Z
+categories:
+- infrastructure
+author: Jacob Tomlinson
+layout: post
+summary: We built an application stack using Kubernetes, here are our thoughts
+project: threedvis
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-10-01-building-with-kubernetes/kubernetes-logo.png
+header: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-10-01-building-with-kubernetes/Screen+Shot+2015-10-01+at+09.43.59.png
 ---
 
 For our 3D visualisation project we wanted to build a data processing service using [Docker containers][lab-school-docker]. We quickly found that once you are running more than a couple of containers you need a way to manage them. After looking into the different tools available we decided to give [Kubernetes][kubernetes] a go, this is what we learned.

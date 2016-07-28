@@ -1,12 +1,12 @@
 ---
-layout:     profile
-name:       Ross Middleham
-summary:    Creative design is what I do.
+title: Ross Middleham
+layout: profile
+name: Ross Middleham
+summary: Creative design is what I do.
 affiliation: core
 twitter-url: http://www.twitter.com/rossymids
 github-url: https://github.com/RossJM
 email: ross.middleham@informaticslab.co.uk
-
 mugshot: RM-sketching.jpg
 ---
 

@@ -1,12 +1,13 @@
 ---
-layout:     post
-title:      "Students: Join Us!"
-date:       2015-10-15
-summary:    Are a student? Can think and code simultaneously? Want to make data useful?
-categories: ['placements']
-author:     Niall Robinson
-project:    None
-thumbnail: "https://dl.dropboxusercontent.com/u/2665124/blogimages/july-demos/icon.png"
+title: 'Students: Join Us!'
+date: 2015-10-15 00:00:00 Z
+categories:
+- placements
+layout: post
+summary: Are a student? Can think and code simultaneously? Want to make data useful?
+author: Niall Robinson
+project: None
+thumbnail: https://dl.dropboxusercontent.com/u/2665124/blogimages/july-demos/icon.png
 ---
 
 We've got some paid, 12 week [summer student placements](http://emea3.mrted.ly/uhhe) for 2016 to allow you to work with us here in the Informatics Lab (widely regarded as the coolest place in the Met Office<-N.B. *this is outrageous bias*).

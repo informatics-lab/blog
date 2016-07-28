@@ -1,13 +1,17 @@
 ---
-layout:     post
-title:      "The Graphical Web Conference 2016"
-date:       2016-05-24
-summary:    Join us in November at this international conference.
-categories: ['svg', 'webgl', 'art', 'css', 'conference']
-author: 	Michael Saunby
-project:    'Graphical Web'
-thumbnail:  'https://s3-eu-west-1.amazonaws.com/informatics-webimages/graphical-web-thumb.jpg'
-
+title: The Graphical Web Conference 2016
+date: 2016-05-24 00:00:00 Z
+categories:
+- svg
+- webgl
+- art
+- css
+- conference
+layout: post
+summary: Join us in November at this international conference.
+author: Michael Saunby
+project: Graphical Web
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/graphical-web-thumb.jpg
 ---
 
 ### An invitation to share your knowledge at the Graphical Web 2016

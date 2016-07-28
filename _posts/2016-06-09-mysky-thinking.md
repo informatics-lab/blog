@@ -1,14 +1,16 @@
 ---
-layout:     post
-title:      "MySky thinking"
-date:       2016-06-09
-summary:    Designing and developing ideas.
-categories: ['design', 'fun', 'funky']
-author:     Ross Middleham
-project:    'mysky'
-thumbnail:  'https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-09-mysky-thinking/blog-main-pic.png'
-header: 'https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-09-mysky-thinking/blog-header.png'
-
+title: MySky thinking
+date: 2016-06-09 00:00:00 Z
+categories:
+- design
+- fun
+- funky
+layout: post
+summary: Designing and developing ideas.
+author: Ross Middleham
+project: mysky
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-09-mysky-thinking/blog-main-pic.png
+header: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-09-mysky-thinking/blog-header.png
 ---
 
 ## Understanding what’s in scope?

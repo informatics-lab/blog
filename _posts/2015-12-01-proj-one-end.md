@@ -1,12 +1,13 @@
 ---
-author:     Alberto Arribas
-layout:     post
-title:      "The end of project one"
-date:       2015-12-01
-summary:    "See what we've learned"
-categories: ['announcements']
-project:    threedvis
-thumbnail: "http://s3-eu-west-1.amazonaws.com/informatics-webimages/interface.jpg"
+title: The end of project one
+date: 2015-12-01 00:00:00 Z
+categories:
+- announcements
+author: Alberto Arribas
+layout: post
+summary: See what we've learned
+project: threedvis
+thumbnail: http://s3-eu-west-1.amazonaws.com/informatics-webimages/interface.jpg
 ---
 
 Oh well, we have now finished our [4D visualisation project](http://www.informaticslab.co.uk/projects/three-d-vis.html). We presented all our prototypes on the 18th of November at the [50th anniversary](http://www.metoffice.gov.uk/research/modelling-systems/unified-model/weather-forecasting/nwpfifty) of the first computer generated weather forecast produced by the Met Office. Good fun.

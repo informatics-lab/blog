@@ -1,13 +1,15 @@
 ---
-layout:     post
-title:      "A game on the perception of symbols"
-date:       2016-06-24
-summary:    With some friends look out the window and each choose a weather symbol which represents what you see. Do you all agree?
-category:   Design
-author:     Jacob Tomlinson
-project:    'none'
-thumbnail:  'https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-24-perception-of-symbols/main.jpg'
-header: 'https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-24-perception-of-symbols/main.jpg'
+title: A game on the perception of symbols
+date: 2016-06-24 00:00:00 Z
+categories:
+- Design
+layout: post
+summary: With some friends look out the window and each choose a weather symbol which
+  represents what you see. Do you all agree?
+author: Jacob Tomlinson
+project: none
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-24-perception-of-symbols/main.jpg
+header: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-24-perception-of-symbols/main.jpg
 ---
 
 With some friends look out the window and each choose a weather symbol which represents what you see. Do you all agree?

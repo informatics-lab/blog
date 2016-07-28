@@ -1,13 +1,13 @@
 ---
-layout:      project-overview
-title:       MySky
-author:      Rachel Prudden
-summary:     We all think we understand weather symbols, but does everyone agree?
+title: MySky
+layout: project-overview
+author: Rachel Prudden
+summary: We all think we understand weather symbols, but does everyone agree?
 github-link: https://github.com/met-office-lab/mysky
-completed:   false
-project:     mysky
-thumbnail:   "https://s3-eu-west-1.amazonaws.com/informatics-webimages/Antoine%27s+image/my-sky-header.jpg"
-header:   "https://s3-eu-west-1.amazonaws.com/informatics-webimages/Antoine%27s+image/my-sky-header.jpg"
+completed: false
+project: mysky
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Antoine%27s+image/my-sky-header.jpg
+header: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Antoine%27s+image/my-sky-header.jpg
 ---
 
 ## Project Description

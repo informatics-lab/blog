@@ -1,14 +1,14 @@
 ---
-layout:     post
-title:      "Bright Outlook"
-date:       2016-06-09
-summary:    Working with Design Students from Plymouth University.
-categories: ['design']
-author: 	  Ross Middleham
-project:    none
-thumbnail:  'https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-09-bright-outlook/uni-post.png'
-header:     'https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-09-bright-outlook/uni-header.png.jpeg'
-
+title: Bright Outlook
+date: 2016-06-09 00:00:00 Z
+categories:
+- design
+layout: post
+summary: Working with Design Students from Plymouth University.
+author: Ross Middleham
+project: none
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-09-bright-outlook/uni-post.png
+header: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-09-bright-outlook/uni-header.png.jpeg
 ---
 
 ## Working with Plymouth University

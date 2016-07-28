@@ -1,13 +1,16 @@
 ---
-author:     Niall Robinson
-layout:     post
-title:      "3D weather: an update"
-date:       2015-07-16
-summary:    "We've hit the half-way stage in our first project, so we thought we'd show you how far we've got."
-categories: ['technical', 'perspiration']
-project:    threedvis
-thumbnail: "https://dl.dropboxusercontent.com/u/2665124/blogimages/july-demos/icon.png"
-header: "https://dl.dropboxusercontent.com/u/2665124/blogimages/july-demos/banner.png"
+title: '3D weather: an update'
+date: 2015-07-16 00:00:00 Z
+categories:
+- technical
+- perspiration
+author: Niall Robinson
+layout: post
+summary: We've hit the half-way stage in our first project, so we thought we'd show
+  you how far we've got.
+project: threedvis
+thumbnail: https://dl.dropboxusercontent.com/u/2665124/blogimages/july-demos/icon.png
+header: https://dl.dropboxusercontent.com/u/2665124/blogimages/july-demos/banner.png
 ---
 
 The Lab is now three months old! We're half way through our first project, which is to create a [3D visualisation of our weather fields](/projects/three-d-vis.html), so we though it might be time to take stock and tell you where we're up to.

@@ -1,13 +1,13 @@
 ---
-layout:     post
-title:      "Going live!"
-date:       2015-05-19
-summary:    We've finally got a development version of 3D weather online
-categories: ['perspiration']
-author: 	Niall Robinson
-project:    threedvis
-thumbnail:  https://dl.dropboxusercontent.com/u/2665124/blogimages/vol-rend-screenshot.png
-
+title: Going live!
+date: 2015-05-19 00:00:00 Z
+categories:
+- perspiration
+layout: post
+summary: We've finally got a development version of 3D weather online
+author: Niall Robinson
+project: threedvis
+thumbnail: https://dl.dropboxusercontent.com/u/2665124/blogimages/vol-rend-screenshot.png
 ---
 
 Going live!

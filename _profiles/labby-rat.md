@@ -1,10 +1,11 @@
 ---
-layout:     profile
-name:       Labby the Rat
-summary:    Labby is the Informatics Lab rat in residence.
+title: Labby Rat
+layout: profile
+name: Labby the Rat
+summary: Labby is the Informatics Lab rat in residence.
 affiliation: core
 twitter-url: http://www.twitter.com/LabbyTheRat
-mugshot:    tHD9RgYn.jpg
+mugshot: tHD9RgYn.jpg
 ---
 
 Following an assignment as mascot for the Visual Weather development team, I have recently taken up the post of rat in residence in the Informatics Lab.

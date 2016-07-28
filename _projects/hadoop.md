@@ -1,12 +1,12 @@
 ---
-layout:      project-overview
-title:       Handling big data
-author:      Niall Robinson
-summary:     Soon we'll have 1EB data archived at the Met Office
+title: Handling big data
+layout: project-overview
+author: Niall Robinson
+summary: Soon we'll have 1EB data archived at the Met Office
 github-link: https://github.com/met-office-lab/docker-hadoop-spark
-completed:   false
-project:     hadoop
-thumbnail:   https://s3-eu-west-1.amazonaws.com/informatics-webimages/projects/hadoop/400x400-elephant.jpg
+completed: false
+project: hadoop
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/projects/hadoop/400x400-elephant.jpg
 ---
 
 ## Project Description

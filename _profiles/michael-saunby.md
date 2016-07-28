@@ -1,7 +1,8 @@
 ---
-layout:     profile
-name:       Michael Saunby
-summary:    Michael uses 100% of his brain.
+title: Michael Saunby
+layout: profile
+name: Michael Saunby
+summary: Michael uses 100% of his brain.
 affiliation: core
 twitter-url: http://www.twitter.com/msaunby
 linkedin-url: https://www.linkedin.com/in/michaelsaunby

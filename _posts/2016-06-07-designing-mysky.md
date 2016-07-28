@@ -1,14 +1,17 @@
 ---
-author:     Rachel Prudden
-layout:     post
-title:      "Designing MySky"
-date:       2016-06-07
-summary:    "Combining UX and survey design"
-categories: ['reports', 'design']
-project:    'mysky'
-thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-07-designing-mysky/thumbnail.jpg"
-header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/Antoine%27s+image/my-sky-header.jpg"
+title: Designing MySky
+date: 2016-06-07 00:00:00 Z
+categories:
+- reports
+- design
+author: Rachel Prudden
+layout: post
+summary: Combining UX and survey design
+project: mysky
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-07-designing-mysky/thumbnail.jpg
+header: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Antoine%27s+image/my-sky-header.jpg
 ---
+
 A while back, we posted an [introduction][mysky] to the mobile app we've been building. With the project drawing to a close, this post will go a little deeper into how the app was designed, and the choices we made.
 
 ## Purpose

@@ -1,13 +1,14 @@
 ---
-author:     Niall Robinson
-layout:     post
-title:      "Project One: A Retrospective"
-date:       2015-11-27
-summary:    "Find out what we've learnt in our first project"
-categories: ['technical']
-project:    threedvis
-thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-10-05-videocodec/exampledata_sm.png"
-header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-10-05-videocodec/matrix-356024_1280.jpg"
+title: 'Project One: A Retrospective'
+date: 2015-11-27 00:00:00 Z
+categories:
+- technical
+author: Niall Robinson
+layout: post
+summary: Find out what we've learnt in our first project
+project: threedvis
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-10-05-videocodec/exampledata_sm.png
+header: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-10-05-videocodec/matrix-356024_1280.jpg
 ---
 
 In the Informatics Lab, we're wrapping up our first ever project: [real time 3D animated web visualisations of Met Office weather forecasts](http://www.informaticslab.co.uk/projects/three-d-vis.html). We thought now would be a good time to take a quick look back on what we've done, and perhaps more importantly, what we've learned. This will just be a whistle stop tour, but we'll try and link back to previous posts as we go, so you can read in more depth if you want to. You can get a quick idea from this video:

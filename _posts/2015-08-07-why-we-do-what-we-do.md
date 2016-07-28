@@ -1,12 +1,13 @@
 ---
-layout:     post
-title:      "Why we do what we do"
-date:       2015-08-07
-summary:    What's the point of the lab
-categories: ['vision']
-author:     Alberto Arribas
-project:    None
-thumbnail:  "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-08-07-why-we-do-what-we-do/qmcloud.jpg"
+title: Why we do what we do
+date: 2015-08-07 00:00:00 Z
+categories:
+- vision
+layout: post
+summary: What's the point of the lab
+author: Alberto Arribas
+project: None
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-08-07-why-we-do-what-we-do/qmcloud.jpg
 ---
 
 The Lab has two purposes:

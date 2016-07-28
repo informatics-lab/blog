@@ -1,13 +1,14 @@
 ---
-author:     Niall Robinson
-layout:     post
-title:      "I'm flying without wings"
-date:       2015-05-21
-summary:    Fly through the weather with your iPad
-categories: ['technical', 'perspiration']
-project:    threedvis
-thumbnail:  https://dl.dropboxusercontent.com/u/2665124/blogimages/UX_hackathon.JPG
-
+title: I'm flying without wings
+date: 2015-05-21 00:00:00 Z
+categories:
+- technical
+- perspiration
+author: Niall Robinson
+layout: post
+summary: Fly through the weather with your iPad
+project: threedvis
+thumbnail: https://dl.dropboxusercontent.com/u/2665124/blogimages/UX_hackathon.JPG
 ---
 
 We've been hacking the user interface for our 3D weather project today with some of the Lab associates. One of the things we came up with today was [this site](http://t.co/ayzUTfnG2p) which lets you navigate through the clouds.

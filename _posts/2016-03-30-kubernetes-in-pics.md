@@ -1,13 +1,15 @@
 ---
-layout:     post
-title:      "Kubernetes in pictures"
-date:       2016-03-30
-summary:    Container management on the cloud.
-categories: ['technical','infrastructure']
-author: 	Rachel Prudden
-project:    none
-thumbnail:  "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-kubernetes-in-pics/cluster.jpg"
-header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-15-i-docs/vr.jpg"
+title: Kubernetes in pictures
+date: 2016-03-30 00:00:00 Z
+categories:
+- technical
+- infrastructure
+layout: post
+summary: Container management on the cloud.
+author: Rachel Prudden
+project: none
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-30-kubernetes-in-pics/cluster.jpg
+header: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-03-15-i-docs/vr.jpg
 ---
 
 **_Kubernetes is useful for running containers on the cloud._**

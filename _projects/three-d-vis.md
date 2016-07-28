@@ -1,44 +1,46 @@
 ---
-layout:      project-overview
-title:       Fly through model fields
-author:      Niall Robinson
-summary:     Weather and climate models create entire versions of the atmosphere, complete with clouds, rain, and wind. We wondered what it would be like to see the model run from the inside. Our ode to <a href=http://en.wikipedia.org/wiki/Tron>Tron</a>, if you will.
+title: Fly through model fields
+layout: project-overview
+author: Niall Robinson
+summary: Weather and climate models create entire versions of the atmosphere, complete
+  with clouds, rain, and wind. We wondered what it would be like to see the model
+  run from the inside. Our ode to <a href=http://en.wikipedia.org/wiki/Tron>Tron</a>,
+  if you will.
 github-link: https://github.com/met-office-lab/volume-rendering
-completed:   true
-project:     threedvis
+completed: true
+project: threedvis
 thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-05-11+at+15.00.00.png
 demos:
-  - name: "Desktop App"
-    date: "September 2015"
-    demo-url: http://demo.3dvis.informaticslab.co.uk/ng-3d-vis/apps/redirect/
-    git-url: https://github.com/met-office-lab/ng-3d-vis
-    thumb: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-09-30+at+11.44.41.png
-    description: "Newer version of the volume rendering."
-  - name: "iPad Fly"
-    date: "July 2015"
-    demo-url:  http://demo.3dvis.informaticslab.co.uk/ipad-fly/
-    git-url: https://github.com/met-office-lab/ipad-fly
-    thumb: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-09-30+at+11.53.23.png
-    description: "Fly around with your iPad."
-  - name: "60 levels"
-    date: "July 2015"
-    demo-url:  http://demo.3dvis.informaticslab.co.uk/uk-weather-3d/view3d/
-    git-url: https://github.com/met-office-lab/uk-weather-3d
-    thumb: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-09-30+at+11.55.09.png
-    description: "Displaying 60 flat levels instead of volume rendering."
-  - name: "Initial volume rendering approach"
-    date: "June 2015"
-    demo-url:  http://demo.3dvis.informaticslab.co.uk/volume-rendering/viewer.html
-    git-url: https://github.com/met-office-lab/volume-rendering
-    thumb: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-09-30+at+11.55.57.png
-    description: "First version of the volume rendering."
-  - name: "Stereoscopic (google cardboard)"
-    date: "August 2015"
-    demo-url: http://demo.3dvis.informaticslab.co.uk/google-cardboard
-    git-url: https://github.com/met-office-lab/ipad-fly/tree/gh-pages
-    thumb: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-11-30+at+15.49.36.png
-    description: "First version of the volume rendering."
-
+- name: Desktop App
+  date: September 2015
+  demo-url: http://demo.3dvis.informaticslab.co.uk/ng-3d-vis/apps/redirect/
+  git-url: https://github.com/met-office-lab/ng-3d-vis
+  thumb: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-09-30+at+11.44.41.png
+  description: Newer version of the volume rendering.
+- name: iPad Fly
+  date: July 2015
+  demo-url: http://demo.3dvis.informaticslab.co.uk/ipad-fly/
+  git-url: https://github.com/met-office-lab/ipad-fly
+  thumb: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-09-30+at+11.53.23.png
+  description: Fly around with your iPad.
+- name: 60 levels
+  date: July 2015
+  demo-url: http://demo.3dvis.informaticslab.co.uk/uk-weather-3d/view3d/
+  git-url: https://github.com/met-office-lab/uk-weather-3d
+  thumb: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-09-30+at+11.55.09.png
+  description: Displaying 60 flat levels instead of volume rendering.
+- name: Initial volume rendering approach
+  date: June 2015
+  demo-url: http://demo.3dvis.informaticslab.co.uk/volume-rendering/viewer.html
+  git-url: https://github.com/met-office-lab/volume-rendering
+  thumb: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-09-30+at+11.55.57.png
+  description: First version of the volume rendering.
+- name: Stereoscopic (google cardboard)
+  date: August 2015
+  demo-url: http://demo.3dvis.informaticslab.co.uk/google-cardboard
+  git-url: https://github.com/met-office-lab/ipad-fly/tree/gh-pages
+  thumb: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Screen+Shot+2015-11-30+at+15.49.36.png
+  description: First version of the volume rendering.
 ---
 
 ## Project Description

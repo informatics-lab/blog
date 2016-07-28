@@ -1,7 +1,8 @@
 ---
-layout:     profile
-name:       Richard Hogben
-summary:    Richard has a variety of skills which he hopes to use in the Lab.
+title: Richard.hogben
+layout: profile
+name: Richard Hogben
+summary: Richard has a variety of skills which he hopes to use in the Lab.
 affiliation: past-member
 email: richard.hogben@informaticslab.co.uk
 ---

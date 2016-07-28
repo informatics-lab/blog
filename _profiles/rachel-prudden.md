@@ -1,12 +1,12 @@
 ---
-layout:     profile
-name:       Rachel Prudden
-summary:    Rachel is a programmer who used to be a mathematician.
+title: Rachel Prudden
+layout: profile
+name: Rachel Prudden
+summary: Rachel is a programmer who used to be a mathematician.
 affiliation: core
 twitter-url: https://twitter.com/RachelPrudden
 github-url: https://github.com/RPrudden
 email: rachel.prudden@informaticslab.co.uk
-
 mugshot: rachel-prudden.jpg
 ---
 

@@ -1,13 +1,14 @@
 ---
-author:     Niall Robinson
-layout:     post
-title:      "Bending video codecs to our will"
-date:       2015-10-05
-summary:    "We use video codecs to efficiently encode our 3D +time data"
-categories: ['technical']
-project:    threedvis
-thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-10-05-videocodec/exampledata_sm.png"
-header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-10-05-videocodec/matrix-356024_1280.jpg"
+title: Bending video codecs to our will
+date: 2015-10-05 00:00:00 Z
+categories:
+- technical
+author: Niall Robinson
+layout: post
+summary: We use video codecs to efficiently encode our 3D +time data
+project: threedvis
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-10-05-videocodec/exampledata_sm.png
+header: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-10-05-videocodec/matrix-356024_1280.jpg
 ---
 
 We've spent quite a bit of time figuring out how to get our atmospheric data from our servers to your computer where it can be rendered and displayed in our [3D visualisation web application](http://demo.3dvis.informaticslab.co.uk/ng-3d-vis/apps/desktop/). When the forecast is run on our supercomputer, it stores the output in a series of files, with each different forecast quantity (e.g. cloud amount) amounting to about 5GB. These files are great for analysis, but they aren't really suitable for visualising in the browser.

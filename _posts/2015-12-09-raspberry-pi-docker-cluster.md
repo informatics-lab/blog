@@ -1,12 +1,14 @@
 ---
-author:     Jacob Tomlinson
-layout:     post
-title:      "A Raspberry Pi Docker Cluster"
-summary:    Demonstrating the capabilities of Docker with affordable components
-categories: ['infrastructure']
-project:    blog
-thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-12-09-raspberry-pi-docker-cluster/image3.JPG"
-header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-12-09-raspberry-pi-docker-cluster/image1.JPG"
+title: A Raspberry Pi Docker Cluster
+date: 2015-12-09 00:00:00 Z
+categories:
+- infrastructure
+author: Jacob Tomlinson
+layout: post
+summary: Demonstrating the capabilities of Docker with affordable components
+project: blog
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-12-09-raspberry-pi-docker-cluster/image3.JPG
+header: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-12-09-raspberry-pi-docker-cluster/image1.JPG
 ---
 
 # Introduction

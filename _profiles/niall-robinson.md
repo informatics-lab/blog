@@ -1,14 +1,14 @@
 ---
-layout:     profile
-name:       Niall Robinson
-summary:    Niall is interested in what information is hidden in data.
+title: Niall Robinson
+layout: profile
+name: Niall Robinson
+summary: Niall is interested in what information is hidden in data.
 affiliation: core
 twitter-url: http://www.twitter.com/niallhrobinson
 linkedin-url: http://www.linkedin.com/in/niallhrobinson
 github-url: http://github.com/niallrobinson
 email: niall.robinson@informaticslab.co.uk
 stackoverflow-url: http://stackoverflow.com/users/1862785/nrob
-
 mugshot: niall-robinson.png
 ---
 

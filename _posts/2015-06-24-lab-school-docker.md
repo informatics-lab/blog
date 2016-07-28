@@ -1,13 +1,15 @@
 ---
-author:     Jacob Tomlinson
-layout:     post
-title:      "Lab School: Docker"
-date:       2015-06-24
-summary:    "Lab School: Docker, held on the 24th of June 2015. A look at what docker is and how we are using it in the lab."
-categories: ['lab-school']
-project:    lab-school
-thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-06-24-lab-school-docker/thumbnail.png"
-header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-06-24-lab-school-docker/header-2.jpg"
+title: 'Lab School: Docker'
+date: 2015-06-24 00:00:00 Z
+categories:
+- lab-school
+author: Jacob Tomlinson
+layout: post
+summary: 'Lab School: Docker, held on the 24th of June 2015. A look at what docker
+  is and how we are using it in the lab.'
+project: lab-school
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-06-24-lab-school-docker/thumbnail.png
+header: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-06-24-lab-school-docker/header-2.jpg
 ---
 
 Welcome to the first ever [Lab School][lab-school] session. This session aims to give you an overview of docker and how we are currently using it in the Lab.

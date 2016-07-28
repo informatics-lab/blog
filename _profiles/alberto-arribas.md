@@ -1,12 +1,12 @@
 ---
-layout:     profile
-name:       Alberto Arribas
-summary:    Head of Informatics Lab
+title: Alberto Arribas
+layout: profile
+name: Alberto Arribas
+summary: Head of Informatics Lab
 affiliation: core
 twitter-url: https://twitter.com/informatics_lab
 github-url: https://github.com/alberto-arribas
 email: alberto.arribas@informaticslab.co.uk
-
 mugshot: AlbertoPhoto_BW.jpg
 ---
 

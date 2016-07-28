@@ -1,13 +1,13 @@
 ---
-author:     Jacob Tomlinson
-layout:     post
-title:      "We have a forum!"
-date:       2015-05-28
-summary:    We can now have discussions about the lab
-categories: ['announcements']
-project:    forum
-thumbnail:  https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-05-28-we-have-a-forum/Screen+Shot+2015-05-28+at+10.17.01.png
-
+title: We have a forum!
+date: 2015-05-28 00:00:00 Z
+categories:
+- announcements
+author: Jacob Tomlinson
+layout: post
+summary: We can now have discussions about the lab
+project: forum
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2015-05-28-we-have-a-forum/Screen+Shot+2015-05-28+at+10.17.01.png
 ---
 
 We now have a forum which you can find at [community.informaticslab.co.uk][forum]!

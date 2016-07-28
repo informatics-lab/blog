@@ -1,11 +1,12 @@
 ---
-layout:     project-overview
-title:      Labby the Slack Bot
-author:     Niall Robinson
-summary:    We felt guilty making Jacob do all our tech odd-jobs, so we made a virtual Bot called Labby instead
-completed:  true
-thumbnail:  https://s3-eu-west-1.amazonaws.com/informatics-webimages/tHD9RgYn.jpg
-project:    labby
+title: Labby the Slack Bot
+layout: project-overview
+author: Niall Robinson
+summary: We felt guilty making Jacob do all our tech odd-jobs, so we made a virtual
+  Bot called Labby instead
+completed: true
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/tHD9RgYn.jpg
+project: labby
 ---
 
 We make extensive use of [Slack](https://slack.com/) Instant Messenger in the Lab. We've made it even more useful by adding our very own [Slackbot](https://api.slack.com/bot-users) called Labby: you can go and have a look at the source code [here](https://github.com/met-office-lab/labby-the-rat). Labby is based on the [Hubot](https://hubot.github.com/) project.
