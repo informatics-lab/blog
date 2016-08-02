@@ -1,13 +1,14 @@
 ---
-author:     Niall Robinson
-layout:     post
-title:      "Cracking Clojure with Enigma"
-date:       2016-06-30
-summary:    "Through the looking glass into functional programming"
-categories: ['learning']
-project:    none
-thumbnail: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/clojure-logo10%5B1%5D.png"
-header: "https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-02-go-enigma/Enigma.jpg"
+title: Cracking Clojure with Enigma
+date: 2016-06-30 00:00:00 Z
+categories:
+- learning
+author: Niall Robinson
+layout: post
+summary: Through the looking glass into functional programming
+project: none
+thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/clojure-logo10%5B1%5D.png
+header: https://s3-eu-west-1.amazonaws.com/informatics-webimages/articles/2016-06-02-go-enigma/Enigma.jpg
 ---
 
 ## Introduction
