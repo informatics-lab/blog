@@ -8,8 +8,10 @@ layout: front
 
     <!-- Header image -->
     <header class="front-header">
-      <div class="background">
-      </div>
+      <video preload="auto" loop="loop" id="pretzel-video" class="video-playing" controls autoplay>
+        <source src="https://images.informaticslab.co.uk/videos/index/sandpit.mp4" type="video/mp4">
+        <source src="https://images.informaticslab.co.uk/videos/index/sandpit.webm" type="video/webm">
+      </video>
       <div class="darken">
       </div>
       <div id="hex-1" class="hexagons">
@@ -17,13 +19,13 @@ layout: front
       <div id="hex-2" class="hexagons">
       </div>
       <div class="container">
-          <div class="intro-text">
-              <div class="intro-heading">Useful. Beautiful. Data.</div><br />
-              <div class="intro-para">
-                  <p>{{ site.description }}</p>
-              </div>
-              <a href="#projects" class="page-scroll btn btn-xl">See our work</a>
-          </div>
+        <div class="intro-text">
+            <div class="intro-heading">Useful. Beautiful. Data.</div><br />
+            <div class="intro-para">
+                <p>{{ site.description }}</p>
+            </div>
+            <a href="#projects" class="page-scroll btn btn-xl">See our work</a>
+        </div>
       </div>
     </header>
 

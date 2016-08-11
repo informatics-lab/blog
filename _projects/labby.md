@@ -2,8 +2,7 @@
 title: Labby the Slack Bot
 layout: project-overview
 author: Niall Robinson
-summary: We felt guilty making Jacob do all our tech odd-jobs, so we made a virtual
-  Bot called Labby instead
+summary: We got bored doing tech odd-jobs, so we made a chat-bot called Labby instead
 completed: true
 thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/tHD9RgYn.jpg
 project: labby
