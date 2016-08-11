@@ -2,7 +2,7 @@
 title: A weather forecast you can talk to
 layout: project-overview
 author: Niall Robinson
-summary: Alexa, when should I have a barbeque
+summary: '"Alexa, when should I have a barbeque?" "Thursday should be great for a barbequeue!"'
 github-link: https://github.com/met-office-lab/dre-dev
 completed: false
 project: nlp

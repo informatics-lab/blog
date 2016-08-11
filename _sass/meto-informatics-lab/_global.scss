@@ -63,7 +63,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-xl {
-  @include button-variant(white, transparent, white);
+  background-color: white;
+  color: $mo-dark-grey;
   @include heading-font;
   font-weight: lighter;
   text-transform: uppercase;
@@ -76,8 +77,7 @@ h1, h2, h3, h4, h5, h6 {
   &:active,
   &.active {
     // color: $mo-green;
-    background-color: white;
-    color: $mo-dark-grey;
+    @include button-variant(white, transparent, white);
   }
 }
 

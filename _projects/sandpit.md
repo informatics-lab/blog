@@ -2,8 +2,7 @@
 title: Augmented reality sandpit
 layout: project-overview
 author: Niall Robinson
-summary: We've seen some great examples on line of interactive, dynamic, sandpit-worlds.
-  We're going to try building our own, complete with weather!
+summary: We've seen some great sandpit-worlds. We're going to build one with weather!
 github-link: https://github.com/met-office-lab/molab-sandpit
 completed: false
 project: sandpit
