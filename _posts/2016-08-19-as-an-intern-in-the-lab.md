@@ -12,9 +12,9 @@ header: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Antoine%27s+ima
 ---
 
 # The Lab, the team, projects
-The Lab is an innovative R&D team part of the [Met Office](http://www.metoffice.gov.uk/). It combines scientists, technologists and designers to make environmental science and data useful. Thanks to this joined-up structure, the mix of skills and the mutualisation of knowledge provide disruptive solutions.
+The Lab is an innovative R&D team part of the [Met Office](http://www.metoffice.gov.uk/). It combines scientists, technologists and designers to make environmental science and data useful. Thanks to this joined-up structure, the mix of skills and the sharing of knowledge provide disruptive solutions.
 
-But let's speak about my personnal experience. If you are expecting to have your own office as I was, it's not going to happen... and that's a good thing!! In the Lab, everybody is working in the same room. There is only one big table as in this kind of office called [hackspace](https://www.google.co.uk/search?q=hackerspace&espv=2&biw=1280&bih=614&source=lnms&tbm=isch&sa=X&ved=0ahUKEwik5JTizs3OAhWHLhoKHQdaBZ0Q_AUIBigB&dpr=2). It will foster more dialogue and ideas sharing.
+But let's speak about my personal experience. If you are expecting to have your own office as I was, it's not going to happen... and that's a good thing!! In the Lab, everybody is working in the same room. There is only one big table as in this kind of office called [hackspace](https://www.google.co.uk/search?q=hackerspace&espv=2&biw=1280&bih=614&source=lnms&tbm=isch&sa=X&ved=0ahUKEwik5JTizs3OAhWHLhoKHQdaBZ0Q_AUIBigB&dpr=2). It will foster more dialogue and ideas sharing.
 
 <p style="text-align:center"><img src="https://s3-eu-west-1.amazonaws.com/informatics-webimages/CB5A1046.jpg" alt="The layout in the Lab" width="70%" height="70%"></p>
 <cite><center><strong>Your shared desk in your shared office.</strong></center></cite>
@@ -42,6 +42,6 @@ Also, because you are part of a bigger organisation, the Met Office, you enjoy o
 
 In a nutshell, in the Lab, you have all the good points of both Startups and Big companies without the drawbacks! What are you waiting for!
 
-<p style="text-align:center"><img src="	
-https://s3-eu-west-1.amazonaws.com/informatics-webimages/Antoine%27s+image/giphy.gif" alt="Don't let your dreams be dreams!" width="50%" height="50%"></p>
+<p style="text-align:center"><img src="
+https://s3-eu-west-1.amazonaws.com/informatics-webimages/Antoine%27s+image/giphy.gif" alt="Don't let your dreams be dreams!" width="50%" height="50%" data-proofer-ignore/></p>
 <cite><center><strong>Listen to this guy!</strong></center></cite>
