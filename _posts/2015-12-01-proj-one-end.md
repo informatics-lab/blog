@@ -10,7 +10,7 @@ project: threedvis
 thumbnail: http://s3-eu-west-1.amazonaws.com/informatics-webimages/interface.jpg
 ---
 
-Oh well, we have now finished our [4D visualisation project](http://www.informaticslab.co.uk/projects/three-d-vis.html). We presented all our prototypes on the 18th of November at the [50th anniversary](http://www.metoffice.gov.uk/research/modelling-systems/unified-model/weather-forecasting/nwpfifty) of the first computer generated weather forecast produced by the Met Office. Good fun.
+Oh well, we have now finished our [4D visualisation project](http://www.informaticslab.co.uk/projects/three-d-vis.html). We presented all our prototypes on the 18th of November at the 50th anniversary of the first computer generated weather forecast produced by the Met Office. Good fun.
 
 You can watch the variety of prototypes we have created in this video (plus you can also access all codes and play with the prototypes by following the links at the end of the video or on the [project page](http://www.informaticslab.co.uk/projects/three-d-vis.html).
 
