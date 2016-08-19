@@ -3,7 +3,7 @@ title: Antoine De Daran
 layout: profile
 name: Antoine de Daran
 summary: Antoine is a curious French trainee who studies applied mathematics.
-affiliation: core
+affiliation: past-member
 twitter-url: https://twitter.com/AntoineDeDaran
 linkedin-url: https://fr.linkedin.com/in/antoine-de-daran-a2a671a9
 github-url: https://github.com/AntoinedDMO
