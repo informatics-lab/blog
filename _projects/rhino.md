@@ -11,12 +11,12 @@ header: https://images.informaticslab.co.uk/articles/2016-08-16-the-story-of-an-
 ## Project description
 This is our rather interesting project revolving around the addition of LEDs to a Paignton Zoo Great Big Rhino.
 
-The project is currently at a stage of publicly displaying the rhino we have produced and this is what most of the information currently produced is about. However this project has also served as way of developing custom LED arrays which can be used to show any kind of information you can think off! We currently have some plans to use the technology produced in the upcoming [Graphical Web Conference](http://2016.graphicalweb.org).
+The project is currently at a stage of publicly displaying the rhino that we've been working on, and this is what most of the information currently shown is about. However, this project has also served as way of developing custom LED arrays which can be used to show any kind of information you can think off! We currently have some plans to use the technology produced in the upcoming [Graphical Web Conference](http://2016.graphicalweb.org).
 
 ![White Rhino](https://images.informaticslab.co.uk/articles/2016-08-16-the-story-of-an-led-rhino/white.jpg)
 
 ## Introduction
-As currently only the rhino has been produced lets start by introducing it! The lab was donated the Rhino from [Paignton Zoo](http://www.paigntonzoo.org.uk) as part of their [Great Big Rhino Project](http://www.greatbigrhinos.org.uk). This project is a mass public art event spread across the English Riviera and Exeter city. Basically this means life-size rhino sculptures have been placed around parts of Devon and you can go and see them for free!
+As currently only the rhino has been produced, let's start by introducing it! The lab was donated the Rhino from [Paignton Zoo](http://www.paigntonzoo.org.uk) as part of their [Great Big Rhino Project](http://www.greatbigrhinos.org.uk). This project is a mass public art event spread across the English Riviera and Exeter city. Basically this means life-sized rhino sculptures have been placed around parts of Devon and you can go and see them for free!
 
 The overall aim of this is to raise awareness of the [critically endangered species of the Javan and Sumatran rhino](http://www.greatbigrhinos.org.uk/supporting-conservation). Our rhino, named [#technorhino][#Technorhino], occupies a special place within this project. [#technorhino][#Technorhino] will be traveling to different locations with the aim of generating a large amount of public interest for the Great Big Rhino Project.
 
