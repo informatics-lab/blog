@@ -53,6 +53,8 @@ The images above show the very first stages of project development - it started 
 ## Hardware timeline
 With all the thinking done, we had to actually get hands on and put the LEDs onto the rhino 🛠 I hope the next table serves as a sort of timeline of the hardware development.
 
+### Part 1
+
 | |      
 --- | ---
 <img style="float: left;" src="https://images.informaticslab.co.uk/articles/2016-08-16-the-story-of-an-led-rhino/white.jpg" width="300" height="200"> <img style="float: left;" src="https://images.informaticslab.co.uk/articles/2016-08-16-the-story-of-an-led-rhino/silver.jpg" width="300" height="200"> | First things first, we needed to paint Ronnie ready for the LEDs. Working out of [Kaleider](http://kaleider.com) gave us the opportunity to get the space required to paint the rhino. We gave it a nice silver base layer, hopefully reflecting all those sparkling LEDs. Another benefit of this was the collaborative space opened up many more opportunities for bouncing ideas around.
@@ -67,6 +69,8 @@ Due to the length of the strips we decided to wire each one up to the power indi
 See this helpful NeoPixel website for some more information: [https://learn.adafruit.com/neopixels-on-raspberry-pi/overview](https://learn.adafruit.com/neopixels-on-raspberry-pi/overview). This helped us connect the LEDs to power and the Raspberry Pi.
 
 <p style="text-align:center;"><img src="https://images.informaticslab.co.uk/articles/2016-08-16-the-story-of-an-led-rhino/wiring.JPG"></p>
+
+### Part 2
 
 Following on from last time, we needed to finish the soldering. With our new found skills this was no problem what so ever...
 
@@ -101,7 +105,7 @@ So the core of this project is the [node.js](https://nodejs.org/en/) server. Thi
 
 <p style="text-align:center;"><img style="text-align:center" src="https://images.informaticslab.co.uk/articles/2016-08-16-the-story-of-an-led-rhino/ipad-slider-page.png" width="200" height="300"><img style="text-align:center" src="https://images.informaticslab.co.uk/articles/2016-08-16-the-story-of-an-led-rhino/ipad-twitter-page.png" width="200" height="300"></p>
 
-#### Interaction development
+### Interaction development
 This was a collaborative approach and as such required working closely with the labs designers, specifically Ross. Together the final design that you see was produced. I'll talk a little about how we got there.
 
 One of the biggest steps was the construction of the [threeJS](http://threejs.org) animated rhino you see below. This is a 3D rendered rhino upon which we could display any pattern we like. From this came the idea to add colour sliders to alter the color of the threeJS rhino. This naturally morphed into a real time way to update the actual rhino, with the colour present on the threeJS rhino also present on [#technorhino][#Technorhino].
@@ -112,20 +116,20 @@ As cool as the spinning interactive 3D render is, it did not make it into the fi
 
 Finally one of the biggest user interaction decisions was the so called last wins approach. This means that the last interaction with the rhino, whether that be tweets or the iPad, will be the one shown on the rhino itself. The idea behind this was to drive as much interaction as possible. Since most things will be happening next to the rhino its most likely your friend who will beat you, and personally this would only encourage me to try again and beat them back!  
 
-#### Web sockets
+### Web sockets
 So now you know what is going on with the user interaction, the client side or front end. I have also mentioned the node server, which is the server side or back end. But for this project to work these two need to talk to each other, which is where [web sockets](http://socket.io) come into play 🔌 These are like cool little pipes which join the two parts together, and just like pipes they let stuff travel between each part. This is really useful for this project as all of the user interactions happen on the client side, but changing the LEDs must be done from the server side, so we need a way to pass the information between each section. So, when you slide the red slider on the iPad an event is triggered and the RGB value is sent along a web socket to the node server which tells to LEDs to display that RGB value.
 
-#### Themes
+### Themes
 If you have made it this far we are getting to the good stuff! With all the pieces in place we can start making those LEDs show some really cool themes.
 
-##### Programmed themes
+#### Programmed themes
 The first type of themes we implemented were programmed themes, which means that each LED had to be addressed by a number from 0-1001 (we have 1002 LEDs on Ronnie 😯). That is all well and good, but where is LED 471 on the actual rhino? This question makes programming anything detailed very hard using this method. Most of the themes produced using this method resulted in big block colour changes and other rough patterns.
 
 <p style="text-align:center;"><img src="https://images.informaticslab.co.uk/articles/2016-08-16-the-story-of-an-led-rhino/block-color.jpeg"></p>
 
 They do have one benefit and that is absolute control over which LEDS are on and what colour they are. It is for this reason that they are still in the project, and if you spent some time rerally digging into this functionality it could be used to make some very interesting things indeed.
 
-##### Mapping = media themes
+#### Mapping = media themes
 Let's step back to that issues of locating LED 471. Wouldn't it be better if instead of using its number we could use a set of (x,y) coordinates to locate it on the rhino? We thought it would, so some of the other team members developed a program to do just that!
 
 The [led-mapper](https://github.com/met-office-lab/led-mapper) is that program. It works by using a camera pointed at the LED array and turning each LED on in turn. As the LED flashes it is assigned an (x,y) coordinate (in rhino space I guess...). The eventual output is an array of the coordinates for each of the LEDs. Using that array a mask was produced, the spotty rhino shaped image below.
@@ -136,7 +140,7 @@ So how does mapping = media themes? A terrible equation I know. Well that mask c
 
 <p style="text-align:center;"><img src="https://images.informaticslab.co.uk/articles/2016-08-16-the-story-of-an-led-rhino/invader.jpg"></p>
 
-##### Twitter and themes
+#### Twitter and themes
 
 Now being able to show videos - as soon as someone saw the rhino, the first thing they asked was whether this could show this youtube video, or that image. This is exactly what we wanted, engagement! The next step was obviously to make this happen and the best way was to build on what we already had: the twitter interaction. If you could tweet an image or youtube link, wouldn't that be awesome?
 
@@ -144,10 +148,10 @@ I thought so, so I did it! Basically it works as you expect, you tweet some sort
 
 This functionality was removed before being shown to the public due to privacy concerns (we wouldn't be able to control what people tweeted, after all) but is available in [*this commit*](https://github.com/met-office-lab/molab-rhino-api/commit/e27ec311dca830c78ff0d7f0ce47e082811f9f9b) for you to make use of.
 
-##### A Touch of Python
+### A Touch of Python
 This project was not entirely JavaScript based. I used my first bit of python as well! This was to make a little [flask server](http://flask.pocoo.org/docs/0.11/quickstart/) that runs on the Raspberry Pi. This flask server uses the [NeoPixel library](https://learn.adafruit.com/neopixels-on-raspberry-pi/overview) to control the LED array from the Pi. Hopefully that link explains some more of it a little bit better. I have to be honest, I didn't do all the coding on this part so my knowledge isn't great, but the long and short is that it mainly works by receiving a http request from the node server, with the colour for each LED attached to the end of this.
 
-##### My experiment
+### My experiment
 The final part of the software development was the deployment server. This was a little bit of a personal project. The idea was to develop an application to run on the Pi that looks for an update to the GitHub repo. Once an update is detected it would automatically update the version on the Pi and restart all the servers. This still doesn't work completely so let's just say it is in beta! I just though it was a cool little trick to be able to do, and hopefully that'll be polished at some point soon.
 
 ## Future of the \#technorhino
