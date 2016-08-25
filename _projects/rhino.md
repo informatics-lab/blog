@@ -2,7 +2,7 @@
 title: '#technorhino'
 layout: project-overview
 author: Todd Burlington
-summary: Our illuminating work on the Paignton Zoo Great Big Rhino Project. <br><br> <a href="https://twitter.com/intent/tweet?button_hashtag=technorhino" class="twitter-hashtag-button" data-show-count="false">Tweet \#technorhino</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+summary: Our illuminating work on the Paignton Zoo Great Big Rhino Project.
 completed: false
 project: '#technorhino'
 thumbnail: https://images.informaticslab.co.uk/articles/2016-08-16-the-story-of-an-led-rhino/rainbow.JPG
@@ -26,7 +26,7 @@ The team decided that adding LEDs to the rhino would be the best way to do this!
 ![LED rhino](https://images.informaticslab.co.uk/articles/2016-08-16-the-story-of-an-led-rhino/disco.gif)
 
 ## Locations and future information
-All the details of this project are specified in the [The Story of An LED Rhino](http://www.informaticslab.co.uk/summer-student/raspberry-pi/outreach/iot/technorhino/2016/08/16/the-story-of-an-led-rhino.html) blog post at the bottom of this page. This gives you all the information needed to make your own LED array. The code required is also all publicly available on [GitHub](https://github.com/met-office-lab/molab-rhino-api), yay!
+All the details of this project are specified in the The Story of An LED Rhino blog post at the bottom of this page. This gives you all the information needed to make your own LED array. The code required is also all publicly available on [GitHub](https://github.com/met-office-lab/molab-rhino-api), yay!
 
 Confirmed locations to see our shiny rhino are currently:
 • [Kaleider](http://kaleider.com) - 19th August
