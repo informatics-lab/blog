@@ -2,7 +2,6 @@
 title: The Story of An LED Rhino
 date: 2016-08-16 09:00:00 Z
 categories:
-- summer-student
 - raspberry-pi
 - outreach
 - IOT
@@ -174,6 +173,6 @@ If coding really isn't for you but you still want to get involved somehow, why n
 ## Keep up-to-date
 Keep up to date by following the informatics lab on twitter, [@informatics_lab](https://twitter.com/informatics_lab), as well as the Great Big Rhino Project, [@GreatBigRhinos](https://twitter.com/greatbigrhinos). Also check out the websites ([lab](http://www.informaticslab.co.uk), [rhinos](http://www.greatbigrhinos.org.uk)) for more information (if you needed more!).
 
-<a href="https://twitter.com/intent/tweet?button_hashtag=technorhino" class="twitter-hashtag-button" data-show-count="false">Tweet #technorhino</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<button><a href="https://twitter.com/intent/tweet?button_hashtag=technorhino">Tweet #technorhino</a></button>
 
 [#Technorhino]: https://twitter.com/search?q=%23technorhino&src=typd

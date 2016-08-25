@@ -42,6 +42,6 @@ Also check out the websites for more information:
 ## Press releases
 • [Paignton Zoo initial press release ](http://www.greatbigrhinos.org.uk/news/detail/message-on-a-rhino)
 
-<a href="https://twitter.com/intent/tweet?button_hashtag=technorhino" class="twitter-hashtag-button" data-show-count="false">Tweet #technorhino</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<button><a href="https://twitter.com/intent/tweet?button_hashtag=technorhino">Tweet #technorhino</a></button>
 
 [#Technorhino]: https://twitter.com/search?q=%23technorhino&src=typd
