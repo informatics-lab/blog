@@ -173,6 +173,6 @@ If coding really isn't for you but you still want to get involved somehow, why n
 ## Keep up-to-date
 Keep up to date by following the informatics lab on twitter, [@informatics_lab](https://twitter.com/informatics_lab), as well as the Great Big Rhino Project, [@GreatBigRhinos](https://twitter.com/greatbigrhinos). Also check out the websites ([lab](http://www.informaticslab.co.uk), [rhinos](http://www.greatbigrhinos.org.uk)) for more information (if you needed more!).
 
-<button><a href="https://twitter.com/intent/tweet?button_hashtag=technorhino">Tweet #technorhino</a></button>
+<a href="https://twitter.com/intent/tweet?button_hashtag=technorhino" style="text-decoration:none; background-color: #4099FF; color: white; text-align: center; padding: 9px 20px;">Tweet #technorhino</a>
 
 [#Technorhino]: https://twitter.com/search?q=%23technorhino&src=typd
