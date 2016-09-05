@@ -30,7 +30,7 @@ All the details of this project are specified in the The Story of An LED Rhino b
 
 Confirmed locations to see our shiny rhino are currently:
 • [Kaleider](http://kaleider.com) - 19th August
-• [RAMM](http://www.rammuseum.org.ukd) - 26th August
+• [RAMM](http://rammuseum.org.uk) - 26th August
 • [Paignton Zoo](http://www.paigntonzoo.org.uk) - 14-16th October
 
 Keep up to date by following the informatics lab on twitter, [@informatics_lab](https://twitter.com/informatics_lab), as well as the Great Big Rhino Project, [@GreatBigRhinos](https://twitter.com/greatbigrhinos).
