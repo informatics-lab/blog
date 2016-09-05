@@ -100,14 +100,14 @@ So the core of this project is the [node.js](https://nodejs.org/en/) server. Thi
   * To serve up a list of historic tweets we use the [`GET search/tweets`](https://dev.twitter.com/rest/reference/get/search/tweets). This collects all the previous tweets containing a given keyword, again [#technorhino][#Technorhino].
   * We also briefly added in some live 'streaming' functionality. This gave the user the ability to tweet a photo or youtube url to display them onto the rhino. This was later removed, but you can get some more info on this below.
 2. **iPad interface**
-  * To increase the interaction with the rhino when on display, we thought we would need a more physical way to change what it could display. We came up with the idea of an iPad controller. This went through many design iterations but the final design is shown below. It includes two pages; the first containing three color sliders which lets the user control the RGB value shown on the rhino in real time. The second page is a list of all the historic tweets.
+  * To increase the interaction with the rhino when on display, we thought we would need a more physical way to change what it could display. We came up with the idea of an iPad controller. This went through many design iterations but the final design is shown below. It includes two pages; the first containing three colour sliders which lets the user control the RGB value shown on the rhino in real time. The second page is a list of all the historic tweets.
 
 <p style="text-align:center;"><img style="text-align:center" src="https://images.informaticslab.co.uk/articles/2016-08-16-the-story-of-an-led-rhino/ipad-slider-page.png" width="200" height="300" alt="iPad slider page"><img style="text-align:center" src="https://images.informaticslab.co.uk/articles/2016-08-16-the-story-of-an-led-rhino/ipad-twitter-page.png" width="200" height="300" alt="iPad twitter page"></p>
 
 ### Interaction development
 This was a collaborative approach and as such required working closely with the labs designers, specifically Ross. Together the final design that you see was produced. I'll talk a little about how we got there.
 
-One of the biggest steps was the construction of the [threeJS](http://threejs.org) animated rhino you see below. This is a 3D rendered rhino upon which we could display any pattern we like. From this came the idea to add colour sliders to alter the color of the threeJS rhino. This naturally morphed into a real time way to update the actual rhino, with the colour present on the threeJS rhino also present on [#technorhino][#Technorhino].
+One of the biggest steps was the construction of the [threeJS](http://threejs.org) animated rhino you see below. This is a 3D rendered rhino upon which we could display any pattern we like. From this came the idea to add colour sliders to alter the colour of the threeJS rhino. This naturally morphed into a real time way to update the actual rhino, with the colour present on the threeJS rhino also present on [#technorhino][#Technorhino].
 
 <p style="text-align:center;"><img src="https://images.informaticslab.co.uk/articles/2016-08-16-the-story-of-an-led-rhino/threeJS.gif" alt="GIF of 3D rhino animation"></p>
 
@@ -126,7 +126,7 @@ The first type of themes we implemented were programmed themes, which means that
 
 <p style="text-align:center;"><img src="https://images.informaticslab.co.uk/articles/2016-08-16-the-story-of-an-led-rhino/block-color.jpeg" alt="Block colours on the rhino"></p>
 
-They do have one benefit and that is absolute control over which LEDS are on and what colour they are. It is for this reason that they are still in the project, and if you spent some time rerally digging into this functionality it could be used to make some very interesting things indeed.
+They do have one benefit and that is absolute control over which LEDS are on and what colour they are. It is for this reason that they are still in the project, and if you spent some time really digging into this functionality it could be used to make some very interesting things indeed.
 
 #### Mapping = media themes
 Let's step back to that issues of locating LED 471. Wouldn't it be better if instead of using its number we could use a set of (x,y) coordinates to locate it on the rhino? We thought it would, so some of the other team members developed a program to do just that!
