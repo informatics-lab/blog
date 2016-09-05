@@ -158,7 +158,7 @@ That is the story of the [#technorhino][#Technorhino] so far, but what is going 
 
 Confirmed venues:
 * [Kaleider](http://kaleider.com) - 19th August
-* [RAMM](http://www.rammuseum.org.ukd) - 26th August
+* [RAMM](http://rammuseum.org.uk) - 26th August
 * [Paignton Zoo](http://www.paigntonzoo.org.uk) - 14-16th October
 
 Eventually [#technorhino][#Technorhino] will be moving back to Paignton Zoo for the finale of the Great Big Rhino Project. This will be from Friday 14th to Sunday 16th October 2016. His long term future is yet to be decided, but all of the rhinos involved are supposed to be auctioned off on Thursday 3rd November 2016, with all funds raised being used to support rhino conservation!
