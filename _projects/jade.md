@@ -46,4 +46,4 @@ We dream of the day the Met Office can replace everyone's powerful data analysis
 [hadoop]: http://hadoop.apache.org/
 [spark]: https://spark.apache.org/
 [jade-git]: https://github.com/met-office-lab/jade
-[jade-blog]: http://www.informaticslab.co.uk/2016/08/25/jade.html
+[jade-blog]: http://www.informaticslab.co.uk/2016/09/06/jade.html
