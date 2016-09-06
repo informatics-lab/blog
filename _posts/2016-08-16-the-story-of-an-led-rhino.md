@@ -9,10 +9,11 @@ categories:
 author: Todd Burlington
 layout: post
 summary: The development of 'Ronnie' the technorhino!
-project: '#technorhino'
+project: "#technorhino"
 thumbnail: https://images.informaticslab.co.uk/articles/2016-08-16-the-story-of-an-led-rhino/techno.gif
 header: https://images.informaticslab.co.uk/articles/2016-08-16-the-story-of-an-led-rhino/header.JPG
 ---
+
 ## Introduction
 So the first thought most people have is why do the Met Office have a rhino and why is it covered in LEDs?
 

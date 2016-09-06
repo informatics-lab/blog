@@ -1,13 +1,14 @@
 ---
-title: '#technorhino'
+title: "#technorhino"
 layout: project-overview
 author: Todd Burlington
 summary: Our illuminating work on the Paignton Zoo Great Big Rhino Project.
 completed: false
-project: '#technorhino'
+project: "#technorhino"
 thumbnail: https://images.informaticslab.co.uk/articles/2016-08-16-the-story-of-an-led-rhino/rainbow.JPG
 header: https://images.informaticslab.co.uk/articles/2016-08-16-the-story-of-an-led-rhino/header.JPG
 ---
+
 ## Project description
 This is our rather interesting project revolving around the addition of LEDs to a Paignton Zoo Great Big Rhino.
 
