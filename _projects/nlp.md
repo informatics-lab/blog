@@ -5,7 +5,7 @@ author: Niall Robinson
 summary: '"Alexa, when should I have a barbeque?" "Thursday should be great for a
   barbequeue!"'
 github-link: https://github.com/met-office-lab/dre-dev
-completed: false
+completed: true
 project: nlp
 thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/echo.jpg
 ---
