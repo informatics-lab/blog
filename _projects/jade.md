@@ -15,7 +15,7 @@ thumbnail: https://images.informaticslab.co.uk/jade-gem.jpg
 We've got some seriously big data at the Met Office. In fact, with the advent of our new supercomputer, our archive will contain as many numbers as there are grains of sand in the world. The data volumes are so big that the status quo - downloading the data to a desktop computer for analysis - is fast becoming impractical.
 
 #### Why we should be worried
-This is not a problem unique to the Met Office, although we have an acute case. In general, a lot of analysts can no longer analyse all the data that is relevant to their problem. They have to make a priori decisions about how to process their data into a manageable form: perhaps they choose to look for a phenomenon in a subset of the data, or maybe they downscale the data.
+This is not a problem unique to the Met Office, although we have an acute case as our data archive is one of the largest environmental datasets in the world. In general, a lot of analysts can no longer analyse all the data that is relevant to their problem. They have to make a priori decisions about how to process their data into a manageable form: perhaps they choose to look for a phenomenon in a subset of the data, or maybe they downscale the data.
 
 But what if they look in the wrong place? And what if they downscale away the important information? This kind of pragmatic approach to managing big data volumes is pernicious. Analysts can be coerced into non-scientific habits, which will ultimately lead to incorrect conclusions and missed opportunities.
 
@@ -46,4 +46,4 @@ We dream of the day the Met Office can replace everyone's powerful data analysis
 [hadoop]: http://hadoop.apache.org/
 [spark]: https://spark.apache.org/
 [jade-git]: https://github.com/met-office-lab/jade
-[jade-blog]: http://localhost:4000/projects/jade.html
+[jade-blog]: http://www.informaticslab.co.uk/2016/08/25/jade.html
