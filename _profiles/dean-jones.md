@@ -2,7 +2,7 @@
 title: Dean Jones
 layout: profile
 name: Dean Jones
-summary: Senior Designer and creative enthusiast 
+summary: Senior Designer and creative enthusiast
 affiliation: core
 linkedin-url: https://www.linkedin.com/in/dean-jones-52b57873?trk=nav_responsive_tab_profile_pic
 github-url: https://github.com/deanjones1989
