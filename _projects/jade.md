@@ -38,7 +38,7 @@ Ultimately we want scientists to do what they do best - apply their expertise to
 If we are to continue to make our data useful in the future, we need a set of radically different tools for our scientists.
 
 ## What's JADE
-[Jade][jade-git], the Jupyter and Dask Environment, is our prototype data analysis platform. It provides a powerful and flexible big data analysis environment which analysts can access through a web browser. You can find more technical details in the associated [blog post][jade-blog].
+[Jade][jade-git], the Jupyter and Dask Environment, is our prototype data analysis platform. It provides a powerful and flexible big data analysis environment which analysts can access through a web browser. You can find more technical details in the associated blog post.
 
 We dream of the day the Met Office can replace everyone's powerful data analysis desktops with Chromebooks!
 
