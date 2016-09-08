@@ -37,7 +37,7 @@ header:   https://images.informaticslab.co.uk/articles/2016-09-02_ar_sandpit/IMG
 
 **Best bits:**
 1. Peeling back the onion layers of web app development.
-2. Seeing Ronnie the Rhino lit up in full glory for the first time.
+2. Seeing [Ronnie the Rhino](http://www.informaticslab.co.uk/projects/rhino.html) lit up in full glory for the first time.
 3. Conversations with the lab on subjects as varied as [bad flags](https://www.youtube.com/watch?v=pnv5iKB2hl4&feature=youtu.be), [drumming robots](https://www.youtube.com/watch?v=SCbBUH9vWV0), the objectivity of art and [good curry](https://www.tripadvisor.co.uk/Restaurant_Review-g187069-d732222-Reviews-This_That-Manchester_Greater_Manchester_England.html).
 
 ### Skills
