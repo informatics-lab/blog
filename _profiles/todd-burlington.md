@@ -7,7 +7,7 @@ affiliation: core
 linkedin-url: https://www.linkedin.com/in/todd-burlington-7b5a481
 github-url: https://github.com/05tb
 email: todd.burlington@informaticslab.co.uk
-mugshot: todd-burlington.jpg
+mugshot: https://images.informaticslab.co.uk/profiles/cropped/todd-burlington.png
 ---
 I am normally an undergraduate physics student at the University of Exeter and come September 2016 I will be entering my fourth and final year. While I wait for that wonderful time I am spending my summer in the Informatics Lab which might be just as good as physics 😏
 
