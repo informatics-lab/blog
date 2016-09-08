@@ -2,12 +2,7 @@
 title: Mike Priestley
 layout: profile
 name: Mike Priestley
-summary:
 affiliation: Intern
-twitter-url:
-linkedin-url:
-github-url:
-email: mike.priestley@informaticslab.co.uk
 mugshot:  https://images.informaticslab.co.uk/profiles/originals/mike-priestley.jpg
 ---
 
