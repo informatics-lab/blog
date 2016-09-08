@@ -5,11 +5,11 @@ name: Tom Powell
 summary: Tom is a developer who works across the stack.
 affiliation: core
 current: true
-twitter-url:
-linkedin-url:
+twitter-url: 
+linkedin-url: 
 github-url: http://github.com/tpowellmeto
 email: thomas.powell@informaticslab.co.uk
-stackoverflow-url:
+stackoverflow-url: 
 mugshot: https://images.informaticslab.co.uk/profiles/cropped/tom-powell.png
 ---
 

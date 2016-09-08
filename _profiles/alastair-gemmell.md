@@ -5,11 +5,11 @@ name: Alastair Gemmell
 summary: Alastair is a developer interested in data analysis and visualisation.
 affiliation: core
 current: false
-twitter-url:
-linkedin-url:
+twitter-url: 
+linkedin-url: 
 github-url: http://github.com/alastair-gemmell-lab
 email: alastair.gemmell@informaticslab.co.uk
-stackoverflow-url:
+stackoverflow-url: 
 mugshot: https://images.informaticslab.co.uk/alastair-gemmell.jpg
 ---
 
