@@ -4,7 +4,7 @@ layout: project-overview
 author: Niall Robinson
 summary: We got bored doing tech odd-jobs, so we made a chat-bot called Labby instead
 completed: true
-thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/tHD9RgYn.jpg
+thumbnail: https://images.informaticslab.co.uk/profiles/cropped/labby-the-rat.jpg
 project: labby
 ---
 
