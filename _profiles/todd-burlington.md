@@ -10,6 +10,7 @@ github-url: https://github.com/05tb
 email: todd.burlington@informaticslab.co.uk
 mugshot: https://images.informaticslab.co.uk/profiles/cropped/todd-burlington.png
 ---
+
 I am normally an undergraduate physics student at the University of Exeter and come September 2016 I will be entering my fourth and final year. While I wait for that wonderful time I am spending my summer in the Informatics Lab which might be just as good as physics 😏
 
 I entered the lab through the Met Office Summer Placement Scheme and I am here for 12 weeks. I wasn't sure what to expect when I started in the lab and that almost hasn't changed too much since being here - there's always a new and unpredictable project going on! The way it should be I'd say.
