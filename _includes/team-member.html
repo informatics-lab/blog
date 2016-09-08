@@ -2,7 +2,7 @@
 <div class="col-sm-6 col-md-3 col-lg-3">
     <div class="team-member">
         {% if profile.mugshot %}
-            {% capture mugshot %}{{ site.image-bin }}{{ profile.mugshot}}{% endcapture %}
+            {% capture mugshot %}{{profile.mugshot}}{% endcapture %}
         {% else %}
             {% assign mugshot = "http://www.gravatar.com/avatar/00000000000000000000000000000000?s=500&d=mm" %}
         {% endif %}

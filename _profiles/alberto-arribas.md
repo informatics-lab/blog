@@ -4,10 +4,11 @@ layout: profile
 name: Alberto Arribas
 summary: Head of Informatics Lab
 affiliation: core
+current: true
 twitter-url: https://twitter.com/informatics_lab
 github-url: https://github.com/alberto-arribas
 email: alberto.arribas@informaticslab.co.uk
-mugshot: AlbertoPhoto_BW.jpg
+mugshot: https://images.informaticslab.co.uk/profiles/cropped/alberto-arribas.png
 ---
 
 Hola! I am a lucky chap, I like what I do for a living.

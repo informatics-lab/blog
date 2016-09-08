@@ -4,12 +4,13 @@ layout: profile
 name: Tom Powell
 summary: Tom is a developer who works across the stack.
 affiliation: core
-twitter-url: 
-linkedin-url: 
+current: true
+twitter-url:
+linkedin-url:
 github-url: http://github.com/tpowellmeto
 email: thomas.powell@informaticslab.co.uk
-stackoverflow-url: 
-mugshot: tom-powell.png
+stackoverflow-url:
+mugshot: https://images.informaticslab.co.uk/profiles/cropped/tom-powell.png
 ---
 
 Hello! I'm Tom.
