@@ -3,6 +3,7 @@ title: Mike Priestley
 layout: profile
 name: Mike Priestley
 affiliation: Intern
+email: mike-priestley@informaticslab.co.uk
 mugshot:  https://images.informaticslab.co.uk/profiles/originals/mike-priestley.jpg
 ---
 
