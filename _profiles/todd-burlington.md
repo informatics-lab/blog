@@ -3,7 +3,8 @@ title: Todd Burlington
 layout: profile
 name: Todd Burlington
 summary: An undergraduate physics student turn summer lab rat.
-affiliation: core
+affiliation: intern
+current: true
 linkedin-url: https://www.linkedin.com/in/todd-burlington-7b5a481
 github-url: https://github.com/05tb
 email: todd.burlington@informaticslab.co.uk
