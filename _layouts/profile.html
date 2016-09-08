@@ -11,14 +11,14 @@ layout: default
 	<article class="post-content profile">
     {% if page.mugshot %}
       <div class="team-member">
-        <div class="mugshot img-responsive" style="background-image: url({{ site.image-bin }}{{ page.mugshot }});">
+        <div class="mugshot img-responsive" style="background-image: url({{ page.mugshot }});">
         </div>
       </div>
     {% endif %}
 
     <h2>{{ page.name }}</h2>
     {% include team-social-links.html %}
-    
+
 		{{ content }}
 
 
