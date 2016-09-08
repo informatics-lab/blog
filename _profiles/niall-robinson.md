@@ -4,12 +4,13 @@ layout: profile
 name: Niall Robinson
 summary: Niall is interested in what information is hidden in data.
 affiliation: core
+current: true
 twitter-url: http://www.twitter.com/niallhrobinson
 linkedin-url: http://www.linkedin.com/in/niallhrobinson
 github-url: http://github.com/niallrobinson
 email: niall.robinson@informaticslab.co.uk
 stackoverflow-url: http://stackoverflow.com/users/1862785/nrob
-mugshot: niall-robinson.png
+mugshot: https://images.informaticslab.co.uk/profiles/cropped/niall-robinson.png
 ---
 
 I'm one of the Met Office Informatics Lab's resident "scientists". Currently, "doing science" involves lots of stuff that isn't science - moving data about in batch jobs, writing thousands of lines of code, reading piles of academic papers. I think Lab can let everyone get closer to what science is really about: understanding what's going on. I've always been passionate about communicating science in a way that makes people want to listen (at least, that's the goal).

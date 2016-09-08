@@ -9,8 +9,10 @@
         </div>
         <div class="row">
             {% for profile in site.profiles %}
-                {% if profile.affiliation == 'core' %}
-                    {% include team-member.html %}
+                {% if profile.affiliation == 'core' or profile.affiliation == 'intern' %}
+                  {% if profile.current == true %}
+                      {% include team-member.html %}
+                  {% endif %}
                 {% endif %}
             {% endfor %}
         </div>

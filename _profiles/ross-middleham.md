@@ -4,10 +4,11 @@ layout: profile
 name: Ross Middleham
 summary: Creative design is what I do.
 affiliation: core
+current: true
 twitter-url: http://www.twitter.com/rossymids
 github-url: https://github.com/RossJM
 email: ross.middleham@informaticslab.co.uk
-mugshot: RM-sketching.jpg
+mugshot: https://images.informaticslab.co.uk/profiles/cropped/ross-middleham.png
 ---
 
 Creative design is what I do. I live and breathe design taking inspiration from everything around me.

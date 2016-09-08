@@ -3,10 +3,11 @@ title: Simon Stanley
 layout: profile
 name: Simon Stanley
 summary: Simon is a maths man by trade and Python programmer by occupation.
-affiliation: past-member
+affiliation: core
+current: false
 github-url: http://github.com/simonstanley
 email: simon.stanley87@gmail.com
-mugshot: simon-stanley.jpg
+mugshot: https://images.informaticslab.co.uk/simon-stanley.jpg
 ---
 
 I joined the Met Office in 2012, spent two (and a bit) years in the climate applications team where I pondered probabilities, visualised verification and danced with data!

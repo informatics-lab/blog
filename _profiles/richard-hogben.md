@@ -3,7 +3,8 @@ title: Richard.hogben
 layout: profile
 name: Richard Hogben
 summary: Richard has a variety of skills which he hopes to use in the Lab.
-affiliation: past-member
+affiliation: core
+current: false
 email: richard.hogben@informaticslab.co.uk
 ---
 

@@ -3,12 +3,13 @@ title: Michael Saunby
 layout: profile
 name: Michael Saunby
 summary: Michael uses 100% of his brain.
-affiliation: past-member
+affiliation: core
+current: false
 twitter-url: http://www.twitter.com/msaunby
 linkedin-url: https://www.linkedin.com/in/michaelsaunby
 github-url: http://github.com/msaunby
 email: michael.saunby@informaticslab.co.uk
-mugshot: michael-saunby.jpg
+mugshot: https://images.informaticslab.co.uk/michael-saunby.jpg
 ---
 
 Michael is a software engineer and intrapreneur. He has degrees and diplomas in electronic engineering, land management, and an MBA from the Open University. His working life has been spent alongside weather and climate scientists helping to realise some of their more ambitious undertakings.

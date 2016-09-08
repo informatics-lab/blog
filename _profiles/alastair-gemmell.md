@@ -3,13 +3,14 @@ title: Alastair Gemmell
 layout: profile
 name: Alastair Gemmell
 summary: Alastair is a developer interested in data analysis and visualisation.
-affiliation: past-member
-twitter-url: 
-linkedin-url: 
+affiliation: core
+current: false
+twitter-url:
+linkedin-url:
 github-url: http://github.com/alastair-gemmell-lab
 email: alastair.gemmell@informaticslab.co.uk
-stackoverflow-url: 
-mugshot: alastair-gemmell.jpg
+stackoverflow-url:
+mugshot: https://images.informaticslab.co.uk/alastair-gemmell.jpg
 ---
 
 I joined the Met Office in 2012 having previously been based at the University of Reading where I worked primarily on visualising large scientific datasets. Before that I gained a degree and PhD in Earth Sciences. I have gradually found myself moving from science to software development, so working at the Met Office is a great place to combine both these interests. In particular the Informatics Lab here is leading the Met Office in bringing scientists, technologists and designers together to collaborate on the same projects.
