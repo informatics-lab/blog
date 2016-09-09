@@ -1,13 +1,14 @@
 ---
-layout:     post
-title:      "Intern at Large"
-date:       2016-09-02
-summary:    Thoughts on life as an intern in the lab a la 'Pass Notes'
-category:   Technology
-author:     Mike
-project:    'Lab Summer Internship'
-thumbnail:  https://images.informaticslab.co.uk/articles/2016-09-02_ar_sandpit/IMG_1420.JPG
-header:   https://images.informaticslab.co.uk/articles/2016-09-02_ar_sandpit/IMG_1420.JPG
+title: Intern at Large
+date: 2016-09-02 00:00:00 Z
+categories:
+- Technology
+layout: post
+summary: Thoughts on life as an intern in the lab a la 'Pass Notes'
+author: Mike
+project: Lab Summer Internship
+thumbnail: https://images.informaticslab.co.uk/articles/2016-09-02_ar_sandpit/IMG_1420.JPG
+header: https://images.informaticslab.co.uk/articles/2016-09-02_ar_sandpit/IMG_1420.JPG
 ---
 
 **Name:** Mike Priestley.
