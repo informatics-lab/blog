@@ -5,7 +5,7 @@ name: Mike Priestley
 affiliation: intern
 current: true
 email: mike-priestley@informaticslab.co.uk
-mugshot:  https://images.informaticslab.co.uk/profiles/originals/mike-priestley.jpg
+mugshot: https://images.informaticslab.co.uk/profiles/originals/mike-priestley.jpg
 ---
 
 Mike has studied chemistry, climate and atmospheric science and now researches atmospheric trace gases at the University of Manchester.
