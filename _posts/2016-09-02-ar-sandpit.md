@@ -1,13 +1,14 @@
 ---
-layout:     post
-title:      "Augmented Reality Sandpit"
-date:       2016-09-02 00:00:00 Z
-summary:    AR sandpit Engagement tool development
-category:   Technology
-author:     Mike
-project:    'AR Sandpit'
-thumbnail:  https://images.informaticslab.co.uk/articles/2016-09-02_ar_sandpit/Screen+Shot+2016-09-07+at+14.33.03.png
-header:  https://images.informaticslab.co.uk/articles/2016-09-02_ar_sandpit/Screen+Shot+2016-09-07+at+14.33.03.png
+title: Augmented Reality Sandpit
+date: 2016-09-02 00:00:00 Z
+categories:
+- Technology
+layout: post
+summary: AR sandpit Engagement tool development
+author: Mike
+project: AR Sandpit
+thumbnail: https://images.informaticslab.co.uk/articles/2016-09-02_ar_sandpit/Screen+Shot+2016-09-07+at+14.33.03.png
+header: https://images.informaticslab.co.uk/articles/2016-09-02_ar_sandpit/Screen+Shot+2016-09-07+at+14.33.03.png
 ---
 
 ### What is the  Augmented Reality sandpit?
