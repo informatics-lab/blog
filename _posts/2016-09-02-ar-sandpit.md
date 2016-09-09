@@ -58,9 +58,7 @@ The UCDavis AR sand *box* makes full use of the Kinects gesture recognition soft
 
 Unfortunately the libfreenect C# library we used for interacting with the Kinect doesn't have any in built gesture recognition, so we would have to write these ourselves.. which could be something that happens in the future.
 
-Take a look by clicking the image below!
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=9qcvXsKrJro"><img src="http://img.youtube.com/vi/9qcvXsKrJro/0.jpg" alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10"/></a>
-
+{% youtube 9qcvXsKrJro %}
 
 Throughout development ideas have been thrown around like:-
 * Introducing simulated wind and snow to add or remove 'material' onto the surface.
