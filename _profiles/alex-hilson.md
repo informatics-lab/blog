@@ -1,8 +1,8 @@
 ---
-title: Alex Hilson 
+title: Alex Hilson
 layout: profile
 name: Alex Hilson
-summary: Alex is a developer who loves building systems. 
+summary: Alex is a developer who loves building systems.
 affiliation: core
 current: true
 github-url: http://github.com/AlexHilson
