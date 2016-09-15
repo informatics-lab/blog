@@ -20,7 +20,7 @@ During the summer I have been working in the Informatics lab on a Summer Placeme
 Why did I pick the lab? I love their fundamental principal of exploring the intersection between science, technology and design. This appeals to me for a few reasons; firstly I am a scientist (well, a scientist in training anyway), and secondly I am passionate about technology. So of course, with the lab being a place that combines these, I knew this was where I had to be! Sign me up I said...
 
 ## My experience in the lab
-Before I got here and on my first day I didn't really know what to expect. The one thing I was expecting was to do a lot of coding and software development, whic was a bit scary! My degree has given me some basic level of coding knowledge, I have done some C and Matlab, but I wasn't sure I would be up to scratch. After being here only a few days, however, I realised that I needn't have been worried, especially with the support from the other guys in the lab. There are some skills you do need though, and I think these are what makes the lab the lab!
+Before I got here and on my first day I didn't really know what to expect. The one thing I was expecting was to do a lot of coding and software development, which was a bit scary! My degree has given me some basic level of coding knowledge, I have done some C and Matlab, but I wasn't sure I would be up to scratch. After being here only a few days, however, I realised that I needn't have been worried, especially with the support from the other guys in the lab. There are some skills you do need though, and I think these are what makes the lab the lab!
 
 So what do you need? Well let's list them:
 
