@@ -9,7 +9,7 @@ categories:
 author: Todd Burlington
 layout: post
 summary: An analysis of \#technorhinos social media impact following the visit to the RAMM.
-project: '#technorhino'
+project: "#technorhino"
 thumbnail: https://images.informaticslab.co.uk/articles/2016-09-14-technorhino-social-media-analysis/thumbnail.png
 header: https://images.informaticslab.co.uk/articles/2016-09-14-technorhino-social-media-analysis/header.png
 ---
