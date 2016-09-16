@@ -1,5 +1,5 @@
 ---
-title: \#technorhinos Impact On Social Media
+title: "#technorhinos" Impact On Social Media
 date: 2016-09-15 09:00:00 Z
 categories:
 - summer-student
@@ -8,7 +8,7 @@ categories:
 - social-media
 author: Todd Burlington
 layout: post
-summary: An analysis of \#technorhinos social media impact following the visit to the RAMM.
+summary: An analysis of "#technorhinos" social media impact following the visit to the RAMM.
 project: "#technorhino"
 thumbnail: https://images.informaticslab.co.uk/articles/2016-09-14-technorhino-social-media-analysis/thumbnail.png
 header: https://images.informaticslab.co.uk/articles/2016-09-14-technorhino-social-media-analysis/header.png
