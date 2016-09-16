@@ -26,7 +26,7 @@ This keyword was used to activate preprogrammed themes. This was achieved by twe
 
 This is how we used social media to our advantage. In order to change the rhino you needed to tweet it, which would in turn generate more interest in the project as a whole.
 
-## Using this generated interest
+## Using this generated interest
 To use this interest we decided to include [@GreatBigRhinos][@GreatBigRhino] in the required keyword. This meant every time someone wanted to change the rhino, traffic would be directed at the Great Big Rhino project as a whole. The idea behind this was to massively increase the social media noise behind the Great Big Rhino project and hopefully as a result get more people to participate in it. Since this is a charitable project, any increase in interest should lead to more funds being raised.
 
 ## The impact #technorhino made towards @GreatBigRhinos
