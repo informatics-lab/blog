@@ -3,7 +3,7 @@ title: Mike Priestley
 layout: profile
 name: Mike Priestley
 affiliation: intern
-current: true
+current: false
 email: mike-priestley@informaticslab.co.uk
 mugshot: https://images.informaticslab.co.uk/profiles/originals/mike-priestley.jpg
 ---
