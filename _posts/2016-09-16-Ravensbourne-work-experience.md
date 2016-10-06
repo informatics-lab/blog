@@ -7,17 +7,20 @@ categories:
 layout: post
 summary: A busy week for the Ravensbourne design students
 author: Ross Middleham
-project: 
+project:
 thumbnail: https://images.informaticslab.co.uk/articles/2016-09-16-Ravensbourne-work-experience/20160909_120306.jpg
 header: https://images.informaticslab.co.uk/articles/2016-09-16-Ravensbourne-work-experience/20160908_091857.jpg
 ---
 
 
-It was another busy week in the Met Office Informatics Lab. The Ravensbourne students, who joined the us through our joint connections with Mozilla, immersed themselves in what we were up to and got stuck in to the challenges we set.
+We recently welcomed three Graphic Design students from Ravensbourne to join the team for the week, as part of our ongoing MozFest partnership with Mozilla.
+
+The placements were awarded as a result of a brief challenging the students to analyse and communicate weather-based datasets in infographic form. We then helped to feedback to the students giving tips and advice on their submissions...of course this feedback was in the form of a handy infographic! With the help of both Mozilla and Ravensbourne the selected students were invited to work with our team, preparing graphics for a MozFest Fringe Event and working as part of our MozFest team to prepare activities for the event.
+
 
 ![Presenting on a big screen](https://images.informaticslab.co.uk/articles/2016-09-16-Ravensbourne-work-experience/20160908_092745.jpg)
 
-We tasked them to work on a live brief, developing promotional material for the international [Graphical Web](http://2016.graphicalweb.org/) conference being organised by the Lab and held at the Met Office in November. This is a high profile, global 4-day conference, attended by over 30 speakers including Google, Mozilla and Amazon.
+We tasked them to work on a live brief, developing promotional material for the international [Graphical Web](http://2016.graphicalweb.org/) conference, a MozFest Fringe Event, being organised by the Informatics Lab and held at the Met Office in November. This is a high profile, global 4-day conference, attended by over 30 speakers including Google, Mozilla and Amazon.
 
 They were briefed by the Head of the Lab, Design Lead and Senior Designer and worked quickly to understand the context and brainstorm ideas of assets to develop. They portioned the work between themselves according to their particular areas of interest – Nathaniel looked at packaging and way finding, Cherin working on animation and social graphics and Natasha developing a booklet, posters and lanyard designs.
 
@@ -31,6 +34,6 @@ We also threw in the odd challenge along the way. They all produced and presente
 
 We also gave them short notice to prepare for a mock interview. Each presented their portfolio for critique and answered a number of questions, similar to how we would conduct an interview to join the team. They each came across as enthusiastic, knowledgable and keen to learn.
 
-It’s been a pleasure having them as part of the team for the week – we really appreciate their hard work and they’ve represented Ravensbourne very well. We wish them all the best for the future and hope to see them at MozFest and [Graphical Web!](http://2016.graphicalweb.org/)
+It was a pleasure having them as part of the team for the week – we really appreciated their hard work and they represented Ravensbourne and in turn Mozilla very well. We wish them all the best for the future and are looking forward to seeing them at MozFest and [Graphical Web!](http://2016.graphicalweb.org/)
 
 ![Working on the Graphical Web schedule](https://images.informaticslab.co.uk/articles/2016-09-16-Ravensbourne-work-experience/20160909_120322.jpg)
