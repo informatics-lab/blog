@@ -15,7 +15,11 @@ header: https://images.informaticslab.co.uk/articles/2016-09-16-Ravensbourne-wor
 
 We recently welcomed three Graphic Design students from Ravensbourne to join the team for the week, as part of our ongoing MozFest partnership with Mozilla.
 
-The placements were awarded as a result of a brief challenging the students to analyse and communicate weather-based datasets in infographic form. We then helped to feedback to the students giving tips and advice on their submissions...of course this feedback was in the form of a handy infographic! With the help of both Mozilla and Ravensbourne the selected students were invited to work with our team, preparing graphics for a MozFest Fringe Event and working as part of our MozFest team to prepare activities for the event.
+The placements were awarded as a result of a brief challenging the students to analyse and communicate weather-based datasets in infographic form. We then helped to feedback to the students giving tips and advice on their submissions...of course this feedback was in the form of a handy infographic!
+
+![Infographic](https://images.informaticslab.co.uk/articles/2016-09-16-Ravensbourne-work-experience/infographic_feedback.png)
+
+With the help of both Mozilla and Ravensbourne the selected students were invited to work with our team, preparing graphics for a MozFest Fringe Event and working as part of our MozFest team to prepare activities for the event.
 
 
 ![Presenting on a big screen](https://images.informaticslab.co.uk/articles/2016-09-16-Ravensbourne-work-experience/20160908_092745.jpg)
