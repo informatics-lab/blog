@@ -7,11 +7,10 @@ categories:
 layout: post
 summary: A busy week for the Ravensbourne design students
 author: Ross Middleham
-project:
+project: 
 thumbnail: https://images.informaticslab.co.uk/articles/2016-09-16-Ravensbourne-work-experience/20160909_120306.jpg
 header: https://images.informaticslab.co.uk/articles/2016-09-16-Ravensbourne-work-experience/20160908_091857.jpg
 ---
-
 
 We recently welcomed three Graphic Design students from Ravensbourne to join the team for the week, as part of our ongoing MozFest partnership with Mozilla.
 
