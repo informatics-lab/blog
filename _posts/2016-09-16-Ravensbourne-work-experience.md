@@ -40,3 +40,37 @@ We also gave them short notice to prepare for a mock interview. Each presented t
 It was a pleasure having them as part of the team for the week – we really appreciated their hard work and they represented Ravensbourne and in turn Mozilla very well. We wish them all the best for the future and are looking forward to seeing them at MozFest and [Graphical Web!](http://2016.graphicalweb.org/)
 
 ![Working on the Graphical Web schedule](https://images.informaticslab.co.uk/articles/2016-09-16-Ravensbourne-work-experience/20160909_120322.jpg)
+
+Here’s what the students thought:
+
+
+#### Cherin Sanih
+
+> My experience at the Met Office as a Design Intern
+>
+> Before coming to the Met Office I was all prepared to make sun and cloud icons and change the red colour indicator to hot pink but it was all different. In a very good way.
+> 
+> Thanks to my university (Ravensbourne) I was chosen to be a design intern at Informatics Lab with 2 of my friends.
+> 
+> Informatics Lab is not your usual design studio nor developer lab. As I entered the lab I found myself looking at a suitcase full of sand, a rhino and data visualisations all over on the wall. An hour later I learned how to use After Effects for the first time. 
+> 
+> I had a chance to work on an upcoming design conference. I was responsible for social media graphics and anything digital. I walked in with very limited knowledge of motion graphics but by the end of the week, I walked out as a motion graphic designer. 
+> 
+> This internship gave me an insight of what’s going on inside of a big company where people work on all kinds of different things. 
+> 
+> During the week I was also challenged to make a logo for an upcoming computer system and had to present it back to the scientists, developers, and designers. This taught me how quickly you can come up with working ideas and how different are developing ideas and getting feedbacks from not students and tutors but people in the industry. 
+> 
+> I really liked working for Met Office - Informatics Lab, I hope I will work with them again in the future.
+> 
+> Ps. As I’m writing this the developers made an automated bell ringerer in like 10 minutes. Amazing.
+
+#### Natasha Dawson 
+
+> From this internship I have learnt about the creative industry and was given an insight to the 
+> Met Office/informatics Lab and the work they do. Before coming I thought that the met office design team only designed data visualisations and made visuals for the weather and climate change. However, since then I have discovered and experienced how diverse the Met Office/ Informatics Lab is. I was unaware that scientists and coders collaborated with graphic designs, but I have learnt how these different areas of expertise work together to create some amazing work. It was interesting to see how much animation and interactive design the team do. Such as a rhino covered in LED lights, an interactive sand pit as well as a speaker that interacted with you. 
+> 
+> As part of the internship we were able to design graphics for a global design conference called graphical web. I have never been involved in a design conference before and was unware at how many different graphics are needed for a design conference from social media gifs, screensavers to lanyards and roller banners.  From this It makes you aware of how important it is to keep your designs consistent because a design conference is one event, the visuals need to match and to relate to each other. It was interesting to start to look into way finding design, as this was an area of design I had never really explored or looked into. As part of this project I was in charge of creating the lanyard design and programme for the conference. The idea of keeping the agenda of each day for graphical web on the lanyard came about from a previous design event I had been to. The idea was to keep the daily agenda attached to the lanyard so that the guests coming to the event can always have a copy of the timetable on them to show them where they need to be at what times. This idea then developed by merging the lanyard and program together. By having a lanyard pouch to keep a fold out program inside so that you would have the entire conference program as one little booklet. I enjoyed the responsibility of being in charge of the page layout design of the conference because this is the area I want to go into in the future, and designing this a professional environment for an actual event was great experience and opportunity. 
+> 
+> As well as working on graphical web we also started on logo design for a new app the informatics lab is working on called Jade. We were given just over an hour to come up with some logo designs. I found this a good way of working because it helped you to come up with lots of new ideas due to the short amount of time, allowing item to try many different ideas to see what could work. It was also useful to pitch back my ideas at such as early stage in the design process. 
+> 
+> Overall I have really enjoyed my time at the met office/ Informatics Lab and experience form this amazing opportunity. It was great to feel so comfortable really quickly in an unfamiliar environment. It was great to have industry look at my portfolio to get a different opinion my my work from an industry point of view, which has given me a lot more confidence in my work. As well as gaining professional experience by pitching my ideas to a team and doing mock interviews for experience to help me in the future. 
