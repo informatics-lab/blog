@@ -11,7 +11,7 @@ header: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Antoine%27s+ima
 ---
 
 # Introduction
-**Machine Learning** is a current buzzword. I'm not going to explain to you what it is. You can find the answer everywhere on the web. What we are interested in here is to do ML on a practical case, from scratch ... and ideally not on [handwritten numbers](https://www.tensorflow.org/versions/r0.7/tutorials/mnist/download/index.html).
+**Machine Learning** is a current buzzword. I'm not going to explain to you what it is. You can find the answer everywhere on the web. What we are interested in here is to do ML on a practical case, from scratch ... and ideally not on [handwritten numbers](https://www.tensorflow.org/versions/r0.11/tutorials/mnist/beginners/index.html).
 
 Yes, we are going to build everything from the beginning: It's the topic of this post.
 
