@@ -2,6 +2,9 @@
 title: Met Office Informatics Lab
 timezone: UTC
 collections:
+  partners:
+    title: Partners
+    output: false
   posts:
     title: Posts
     output: true
