@@ -4,7 +4,7 @@ layout: project-overview
 author: Antoine de Daran
 summary: Scraping, building, analysing
 github-link: https://github.com/met-office-lab/machine-learning-traffic-cams
-completed: false
+completed: true
 project: trafficcam
 thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Antoine%27s+image/thumbnail_using-traffic-cams-to-do-ml.png
 header: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Antoine%27s+image/header_using-traffic-cams-to-do-ml.png
