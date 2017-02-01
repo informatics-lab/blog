@@ -8,5 +8,5 @@ linkedin-url:
 github-url: 
 email:
 stackoverflow-url: 
-logo: https://s3-eu-west-1.amazonaws.com/informatics-webimages/kaleider.png
+logo: http://images.informaticslab.co.uk/partners/kaleider_logo.png
 ---

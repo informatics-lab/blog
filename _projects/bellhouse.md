@@ -5,8 +5,8 @@ author: Niall Robinson
 summary: Working with local artists to re-imagine climate data
 completed: true
 project: bellhouse
-thumbnail: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Bellhouse1.png
-header: https://s3-eu-west-1.amazonaws.com/informatics-webimages/Bellhouse1.png
+thumbnail: http://images.informaticslab.co.uk/projects/bellhouse/Bellhouse1.png
+header: http://images.informaticslab.co.uk/projects/bellhouse/Bellhouse1.png
 ---
 
 ## Project description
