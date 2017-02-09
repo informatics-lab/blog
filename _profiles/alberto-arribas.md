@@ -2,7 +2,7 @@
 title: Alberto Arribas
 layout: profile
 name: Alberto Arribas
-summary: Head of Informatics Lab, Physics PhD, Met Office Research Fellow. 
+summary: Head of Informatics Lab, Physics PhD, Met Office Research Fellow.
 affiliation: core
 current: true
 twitter-url: https://twitter.com/informatics_lab
@@ -10,7 +10,6 @@ github-url: https://github.com/alberto-arribas
 email: alberto.arribas@informaticslab.co.uk
 mugshot: https://images.informaticslab.co.uk/profiles/cropped/alberto-arribas.png
 ---
-
 
 I am a lucky chap, I like what I do for a living.
 
