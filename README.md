@@ -9,9 +9,14 @@ For instructions on writing blog posts, updating projects or updating the site s
 ### Build the site locally
 
 #### Requirements
+ * May require RVM to get correct version of Ruby, this will need homebrew.
+   * Homebrew: `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+   * RVM: `curl -sSL https://get.rvm.io | bash`
+   * `rvm install ruby 2.1.2`
+ * Ruby bundler
+   * `sudo gem install bundler`
  * npm
  * grunt
-   * `sudo npm install -g grunt`
    * `sudo npm install -g grunt-cli`
 
 ```bash
