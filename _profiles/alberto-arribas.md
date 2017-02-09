@@ -2,7 +2,7 @@
 title: Alberto Arribas
 layout: profile
 name: Alberto Arribas
-summary: Head of Informatics Lab
+summary: Head of Informatics Lab, Physics PhD, Met Office Research Fellow. 
 affiliation: core
 current: true
 twitter-url: https://twitter.com/informatics_lab
@@ -11,12 +11,9 @@ email: alberto.arribas@informaticslab.co.uk
 mugshot: https://images.informaticslab.co.uk/profiles/cropped/alberto-arribas.png
 ---
 
-Hola! I am a lucky chap, I like what I do for a living.
 
-During my years in science doing what scientists do
+I am a lucky chap, I like what I do for a living.
 
-... publishing over 60 academic papers, lecturing and being committee member for orgs like the World Meteorological Organisation and the USA National Academy of Science, being part of the editorial team of journals such as QJ of the Royal Met Soc, travelling a bit to attend conferences and other similar things ...
+The Lab is the major innovation department at the UK Met Office, combining scientists, technologists and designers to make environmental science and data useful across multiple sectors. The team works with the likes of NASA, Amazon, Microsoft and UK Government Departments to build prototypes and create new approaches and tools to solve problems and deliver transformation.
 
- my job has taken me, more and more, towards the interface between science and technology, particularly in the last thirteen years while developing forecasting systems at the Met Office.
-
-The latest stop in this journey is the Lab. I cannot think of a better place to make science and data useful.
+Previously, I have led the development of world-leading weather and climate forecasting systems, published over 60 academic papers and been an editor for leading scientific journals, whilst lecturing and being a committee member for organisations such as the World Meteorological Organisation and the USA National Academy of Science.
