@@ -8,6 +8,6 @@ linkedin-url:
 github-url: 
 email: 
 stackoverflow-url: 
-logo: https://images.informaticslab.co.uk/partners/nasa.jpg
+logo: https://images.informaticslab.co.uk/partners/nasa.png
 ---
 
