@@ -6,7 +6,7 @@ categories:
 layout: post
 summary: It's not just for self-driving cars.
 author: Rachel Prudden
-project: none
+project: machinelearning
 thumbnail: https://images.informaticslab.co.uk/fractal.jpg
 header: https://images.informaticslab.co.uk/fractal.jpg
 ---
