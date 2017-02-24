@@ -1,18 +1,34 @@
 ---
-title: Using machine learning to make sense of the weather
+title: Machine Learning
 layout: project-overview
 author: Rachel Prudden
 summary: Weather models contain a wealth of information. How much can be extracted and put to use?
 project: machinelearning
+completed: false
 thumbnail: http://images.informaticslab.co.uk/projects/machinelearning/ensembleimg.png
-header: http://images.informaticslab.co.uk/projects/bellhouse/Bellhouse1.png
+header: http://images.informaticslab.co.uk/projects/machinelearning/ensembleimg.png
 ---
 
-## Project description
-BellHouse is a playful, interactive sound sculpture that translated the non-verbal communication of the delegates presenting at the EUPORIAS General Assembly in October 2016 into the chimes of fifty bells in an opened sided house. I was the idea of local artist [Roop Johnstone](http://www.rampceramics.com/) in response to a commission by [Kaleider](http://kaleider.com/). You can find out more about the project [here](http://kaleider.com/projects/bellhouse/).
+## Project Description
 
-{% youtube MOTBg2mQ8H4 %}
+Statistician George Box said, “all models are wrong, but some are useful”. This project will use machine learning to spot and extract this useful information. This will allow us to link different computer models together more effectively. It will also allow us to better link these models to the real world so we can predict the things we care about.
 
-A motion capture system devised by the Met Office Informatics Lab activated striking mechanisms associated with each ceramic bell generating a continuous chiming whilst each speaker at the 250 delegate conference presented their findings.
+### Why combine models?
 
-BellHouse also invited Met Office scientists to interact through their work.  It played video climate data to curious staff and passers by in the main Met Office thoroughfare known as `the Street'.  Some of our favourite data translated into sound included Etna’s volcanic plumes, the European drought of 1976, solar winds, 250 years of English and Welsh anomalies in temperature and precipitation and the Fog of Uncertainty.
+The real world is complex. To make sense of it, we can use computer "models" - calculations which can represent and predict different parts of the real world.
+
+There are some things we would like to predict which can’t be described by any single model. By understanding how each model describes the world and what their limitations are, we can figure out the best way to use them together.
+
+### Why machine learning?
+
+When we talk about combining models in the "best" way, what this really means is, whichever way gives the best predictions. This is an exercise in function approximation; the goal is to use a combination of models to approximate real-world effects.
+
+Machine learning contains many powerful and flexible techniques for function approximation, which have been successfully applied in other fields. 
+
+### Another perspective
+
+To look at this from another point of view - why use models at all? Why not just feed observations into a machine learning algorithm and let it learn to predict the weather?
+
+The reason is that weather models are based on known laws of physics. Using machine learning to rediscover these laws will not gain us anything. 
+
+However, learning to use known laws to best effect would be of significant benefit to meteorology, and environmental science more broadly.
