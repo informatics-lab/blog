@@ -10,7 +10,7 @@ layout: post
 summary: Failing with genetic algorithm Connect 4 bots but doing it quickly.
 author: Theo McCaie
 project:
-thumbnail: https://images.informaticslab.co.uk/articles/2017-02-23-fail-fast-with-cloud/coon4.gif
+thumbnail: https://images.informaticslab.co.uk/articles/2017-02-23-fail-fast-with-cloud/static-conn4.gif
 header: https://images.informaticslab.co.uk/articles/2017-02-23-fail-fast-with-cloud/dna.jpg
 ---
 
