@@ -64,7 +64,7 @@ class NNEtPlayer():
         return (move,)
 ```
 
-The codes not terribly interesting, it's a simple neural net taking a feature vector of length 7 x 6 (the connect 4 board flattened), has one hidden layer of 64 nodes and outputs a vector of length 7 (the number columns, i.e. possible moves, in Connect 4). Which ever column has the highest value, is the selected column when the player takes there move.
+The codes not terribly interesting, it's a simple neural net taking a feature vector of length 7 x 6 (the connect 4 board flattened), has one hidden layer of 64 nodes and outputs a vector of length 7 (the number columns, i.e. possible moves, in Connect 4). Which ever column has the highest value, is the selected column when the player takes their move.
 
 ## Evolution
 
@@ -92,7 +92,7 @@ Average: 14.904287138584248. Ave top 5: 25.6, top: 27.0
 
 So it looked like progress but it was hard to tell, scores went up and down and I didn't know if progress was trailing off or was continuing to improve...
 
-I was getting board of waiting 💤.
+I was getting bored of waiting 💤.
 
 ## Cloud computing for the win
 
