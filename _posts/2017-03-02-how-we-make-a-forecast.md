@@ -1,3 +1,18 @@
+---
+title: How the Met Office makes a forecast
+date: 2017-03-02 00:00:00 Z
+categories:
+- forecast
+- work experience
+- internship
+layout: post
+summary: Learning about how the met office puts together it's weather forecasts
+author: Louis Schofield Sinden
+project:
+thumbnail: 
+header: 
+---
+
 ## **Introduction** 
 You use weather forecasts everyday, but how do you feel about the weather forecasts the Met Office provides? Before my work placement here at the Lab I took them for granted like everyone else. (as well as holding the same common criticisms we have for weather forecasters)
 
