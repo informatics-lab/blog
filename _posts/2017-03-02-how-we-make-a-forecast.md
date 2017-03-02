@@ -39,7 +39,7 @@ Even then the Met Office must collaborate globally through whats known as the *W
 
 ![Met Office Postage Stamp Plot](https://images.informaticslab.co.uk/articles/2017-03-02-how-we-make-a-forecast/ensemble.png)
 
-### Presenting the Impossible
+### Presenting the Impossible
 However no number of observations and models will make them any easier for the general public to understand, therefore a lot of effort goes into turning the raw data into something more accessible. Thankfully the Met Office has several tools to produce the more familiar forecast. The main one, and the one used to produce the forecasts you see on the news, is [VisualCortex](http://www.metoffice.gov.uk/services/media/graphics). Which - depending on the tv channel - operational meteorologists can construct the scene by overlaying different types of information, such as wind speed and pressure. 
 Each tv channel that the Met Office serves will each have their own requirements for the weather sequences shown, such as the specific graphics used for land masses or cloud-cover. This gives each tv channel the brand that their consumers are used to. Decisions such as how much technical information and jargon is used is critical to ensuring that the essential information can be conveyed without alienating the general public.
 
