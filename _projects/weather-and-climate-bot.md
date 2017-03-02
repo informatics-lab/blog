@@ -17,4 +17,4 @@ We have been using the JADE platform as the back end to support real-time distri
 Try it for yourself here...  
   
 
-<iframe style="width:100%; height:200px;" src='https://webchat.botframework.com/embed/weatherandclimate?s=je982Jt1ANs.cwA.2Jk.EEcyezjdVmDx03dDoGoqAVZpLpXIVI8CR0JxjC8Jb-A'></iframe>
+<iframe style="width:100%; height:500px;" src='https://webchat.botframework.com/embed/weatherandclimate?s=je982Jt1ANs.cwA.2Jk.EEcyezjdVmDx03dDoGoqAVZpLpXIVI8CR0JxjC8Jb-A'></iframe>
