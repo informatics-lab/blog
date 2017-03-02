@@ -8,7 +8,7 @@ categories:
 layout: post
 summary: Learning step-by-step how the forecasts are made...
 author: Louis Schofield Sinden
-project:
+project: work-experience
 thumbnail: https://images.informaticslab.co.uk/articles/2017-03-02-how-we-make-a-forecast/thumb.png 
 header: https://images.informaticslab.co.uk/articles/2017-03-02-how-we-make-a-forecast/header.png 
 ---
