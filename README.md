@@ -7,6 +7,7 @@ This is the blog for the Met Office Lab.
 For instructions on writing blog posts, updating projects or updating the site see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### Build the site locally
+Note: You must run with node version < 7.
 
 #### Requirements
  * May require RVM to get correct version of Ruby, this will need homebrew.
