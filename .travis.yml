@@ -7,8 +7,6 @@ script:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-notifications:
-  email: false
 deploy:
   provider: s3
   access_key_id: $AWS_KEY
@@ -23,6 +21,7 @@ deploy:
 after_deploy:
   - grunt purge
 notifications:
+  email: false
   webhooks:
     urls:
       - $NOTIFICATION_WEBHOOK
