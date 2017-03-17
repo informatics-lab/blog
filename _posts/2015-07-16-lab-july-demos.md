@@ -9,8 +9,8 @@ layout: post
 summary: We've hit the half-way stage in our first project, so we thought we'd show
   you how far we've got.
 project: threedvis
-thumbnail: https://dl.dropboxusercontent.com/u/2665124/blogimages/july-demos/icon.png
-header: https://dl.dropboxusercontent.com/u/2665124/blogimages/july-demos/banner.png
+thumbnail: https://images.informaticslab.co.uk/dropbox_port/icon.png
+header: https://images.informaticslab.co.uk/dropbox_port/banner.png
 ---
 
 The Lab is now three months old! We're half way through our first project, which is to create a [3D visualisation of our weather fields](/projects/three-d-vis.html), so we though it might be time to take stock and tell you where we're up to.
@@ -21,7 +21,7 @@ The new apps
 ------------
 The [first app](http://julydemo.3dvis.informaticslab.co.uk/volume-rendering/viewer.html) is the latest version of our [volume rendered weather fields](/technical/perspiration/2015/03/24/volume-rendering.html). This is the most processing intensive of our demos, so it may run fairly slowly on your computer, and probably not at all on a tablet or phone ([let us know](/#contact) if it does!).
 
-![This is a screengrab from our new app](https://dl.dropboxusercontent.com/u/2665124/blogimages/july-demos/icon.png)
+![This is a screengrab from our new app](https://images.informaticslab.co.uk/dropbox_port/july-demos/icon.png)
 
 You can then reach the [second app](http://julydemo.3dvis.informaticslab.co.uk/uk-weather-3d/view3d/) by clicking the layers icon in the top left corner. This approach renders the 3D field by displaying all the layers as 2D slices sitting on top of each other. While this approach doesn't give as nice an effect as the first app, we have been experimenting with it to see if we could "cheat" and get a similar effect which was less processing intensive.
 
