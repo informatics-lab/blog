@@ -8,7 +8,7 @@ author: Rachel Prudden
 layout: post
 summary: What we're working on for the front end
 project: threedvis
-thumbnail: https://dl.dropboxusercontent.com/u/2665124/blogimages/cloud_after.jpg
+thumbnail: https://images.informaticslab.co.uk/dropbox_port/cloud_after.jpg
 ---
 
 Our WebGL based front-end is on the verge of being usable, thanks to a couple of recent improvements.
@@ -37,9 +37,9 @@ We've eventually traced this problem to an issue with the automatic mipmapping d
 This is good news, as it means we can get rid of the bug by disabling mipmapping! The downside is that it slows the rendering down badly. Even so, we are working on some other improvements which we hope will compensate for the loss in performance.
 
 <div style="text-align:center">
-	<img src="https://dl.dropboxusercontent.com/u/2665124/blogimages/cloud_before.png" height="250" width="250" alt="Before"/>
+	<img src="https://images.informaticslab.co.uk/dropbox_port/cloud_before.png" height="250" width="250" alt="Before"/>
 	<cite><p>Before</p></cite>
-	<img src="https://dl.dropboxusercontent.com/u/2665124/blogimages/cloud_after.jpg" height="250" width="250" alt="After"/>
+	<img src="https://images.informaticslab.co.uk/dropbox_port/cloud_after.jpg" height="250" width="250" alt="After"/>
 	<cite><p>After</p></cite>
 </div>
 
