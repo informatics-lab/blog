@@ -37,7 +37,7 @@ By treating the real-world effect we'd like to predict as a target, we can use m
 
 Another way of looking at these connections between models is as information transmitters. Ideal connections would pass only the important points from one model to the next, and not dilute them with useless detail.
 
-If we view a model's output as "truth", it is easy to work out which parts are relevant. However, in complex models useful details may be spread across the output. A straightforward reading of the output would ignore this hidden information. The objective is to use machine learning to spot these diffuse patterns, and so rescue information that would otherwise be lost.
+If we view a model's output as "truth", it is clear which parts are relevant. However, in complex models useful details may be spread across the output. A straightforward reading of the output would ignore this hidden information. The objective is to use machine learning to spot these diffuse patterns, and so rescue information that would otherwise be lost.
 
 ### Summary
 
@@ -49,7 +49,7 @@ Skillful predictions rely on the efficient transfer of information, from model t
 
 Downscaling means converting model data into a more detailed local forecast. By taking into account the outcomes of previous model runs, and combining other high resolution data sources, we can get more information about the probable outcome.
 
-<img src="https://images.informaticslab.co.uk/projects/machinelearning/downscalingimg.png" alt="downscaling" width="60%" align="middle"/>
+<img src="https://images.informaticslab.co.uk/projects/machinelearning/downscalingimg.png" alt="downscaling" width="60%"/>
 
 The target for downscaling a model can be either a high resolution grid, or a point forecast for a specific location. A grid can describe the distribution of forecasts across an entire area, while point forecasts are good for very localised predictions.
 
@@ -60,7 +60,7 @@ The target for downscaling a model can be either a high resolution grid, or a po
 
 <br><br><br><br><br><br><br><br><br><br><br>
 
-### Summary
+### Project goals
 
 This first project will investigate the problem of downscaling, paying special attention to 
 
