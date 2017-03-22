@@ -27,9 +27,9 @@ What if the thing we would like to predict can’t be described by any single mo
 
 There are any number of ways we could link models together. How can we be sure of making a good choice? 
 
-If there are lots of past records of the thing we are trying to predict, we can use experiments to guide us. Having chosen some combination of models, we compare the results to the past data and see if gives the right answers. If not, we can tweak the links to make it better.
+If there are lots of past records of the thing we are trying to predict, we can use experiments to guide us. Having chosen some combination of models, we compare the results to the past records and see if it gives the right answers. If not, we can tweak the links to make it better.
 
-This process is known as machine learning. "Machine learning" is a name for computer algorithms which learn from data. If you have a lot of examples of inputs and outputs, a machine learning algorithm can recognize the relationship between them.  
+We can do this automatically using a process known as "machine learning". Machine learning is a name for computer algorithms which learn from data. If you have a lot of examples of inputs and outputs, a machine learning algorithm can recognize the relationship between them.  
 
 By treating the real-world effect we'd like to predict as a target, we can use machine learning to find useful connections between models.
 
@@ -47,7 +47,7 @@ Skillful predictions rely on the efficient transfer of information, from model t
 
 ### Downscaling
 
-Downscaling means converting model data into a more detailed local forecast. This is made possible by combining the forecast with other sources of information such as altitude, current observations, and the results of past forecasts.
+Downscaling means converting model data into a more detailed local forecast. This is made possible by combining the forecast with other information such as the altitude, what the weather is like now, and the model's past performance.
 
 <img src="https://images.informaticslab.co.uk/projects/machinelearning/downscalingimg.png" alt="downscaling" width="60%"/>
 
