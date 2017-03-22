@@ -2,7 +2,7 @@
 title: Jacob Tomlinson
 layout: profile
 name: Jacob Tomlinson
-summary: Jacob builds servers, websites and is madly in love with GitHub.
+summary: Lead Engineer Informatics Lab
 affiliation: core
 current: true
 twitter-url: http://www.twitter.com/_jacobtomlinson
@@ -13,4 +13,4 @@ stackoverflow-url: http://stackoverflow.com/users/1003288/jacob-tomlinson
 mugshot: https://images.informaticslab.co.uk/profiles/cropped/jacob-tomlinson.png
 ---
 
-Jacob is an engineer with experience in software development and operational system administration. He uses these skills to ensure the lab is building prototypes on the cutting edge of technology.
+Jacob is the lead engineer for the Met Office Informatics Lab with experience in software development, operational system engineering and cloud architecture. He uses these skills to ensure the lab is building robust prototypes that are pushing the boundaries of technology.
