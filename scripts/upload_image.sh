@@ -10,6 +10,7 @@
 #   * Write permission to the informatics-webimages bucket
 #
 # Tip: you may want to alias this to `blogimage` or something.
+#      alias blogimage="/path/to/blog/scripts/upload_image.sh"
 
 # Bail if no file specified
 : ${1?"File to upload required. Usage: $0 <image_path>"}
