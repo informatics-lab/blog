@@ -8,7 +8,7 @@ NC='\033[0m' # No Color
 
 echo "Testing for blog thumbnails"
 
-for POST in _posts/*
+for POST in _posts/*/*
 do
   if sed -n '/^---$/,/^---$/p' $POST | grep -q "thumbnail[ \t]*:"
   then
