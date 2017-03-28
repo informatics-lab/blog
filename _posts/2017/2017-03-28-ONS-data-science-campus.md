@@ -11,7 +11,7 @@ thumbnail: https://images.informaticslab.co.uk/articles/2017-03-28-ONS-data-scie
 header: https://images.informaticslab.co.uk/articles/2017-03-28-ONS-data-science-campus/C76gRaZVQAAjqlI.jpg
 ---
 
-This week Niall and myself were honoured to give a talk (you can find the slides [here][talk-slides]) as part of the opening ceremony for the [ONS][ons]'s new [Data Science Campus][data-science-campus].
+This week Niall and myself were honoured to give a talk (you can find the slides [here][talk-slides]) as part of the opening ceremony for the [ONS][ons]'s new [Data Science Campus][data-science-campus] in Newport, Wales.
 
 ![Informatics Lab speaking at ONS](https://images.informaticslab.co.uk/articles/2017-03-28-ONS-data-science-campus/IMG_8994.JPG)
 
