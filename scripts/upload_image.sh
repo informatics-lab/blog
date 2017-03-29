@@ -63,7 +63,12 @@ aws s3 cp "$LOCAL_FILE" s3://${BUCKET}/${TYPE}/${FILENAME}.${EXTENSION} > /dev/n
 # Notify the user of success or failure
 if [ $? -eq 0 ]; then
   log "Your file is now available "
-  echo "https://images.informaticslab.co.uk/${TYPE}/${FILENAME}.${EXTENSION}"
+  S3_URL="https://images.informaticslab.co.uk/${TYPE}/${FILENAME}.${EXTENSION}"
+  echo $S3_URL
+  if hash pbcopy 2>/dev/null; then
+    echo $S3_URL | pbcopy
+    echo "Copied to clipboard!"
+  fi
 else
   echo "Upload failed"
 fi
