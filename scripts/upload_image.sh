@@ -93,6 +93,7 @@ if [ $? -eq 0 ]; then
   fi
 else
   echo "Upload failed"
+  exit 1
 fi
 
 # If pasting remove temp file
