@@ -14,22 +14,20 @@
 
 _VERBOSE=0 # Vermose mode
 _PASTE=0 # Paste from clipboard instead of using local file
-while getopts "vp" OPTION
+while getopts "v" OPTION
 do
   case $OPTION in
     v) _VERBOSE=1
        shift
        ;;
-    p) _PASTE=1
-       shift
-       ;;
   esac
 done
 
-# Bail if no file specified and not pasting
-if [[ $_PASTE -eq 0 ]]; then
-  : ${1?"File to upload required. Usage: $0 <image_path>"}
-fi
+# Function for Usage
+function usage () {
+  echo "Usage: $0 [image_path]"
+  echo "       You must either specify an image or have an image in your clipboard."
+}
 
 # Function to echo only when verbose mode is on
 function log () {
@@ -38,16 +36,20 @@ function log () {
     fi
 }
 
-if [[ $_PASTE -eq 1 ]]; then
-  if hash pbcopy 2>/dev/null; then
+# Bail if no file specified and not pasting
+if [ "$#" -ne 1 ]; then
+  if hash pngpaste 2>/dev/null; then
     LOCAL_FILE=/tmp/$(openssl rand -hex 16).png
     pngpaste $LOCAL_FILE
     if ! [ $? -eq 0 ]; then
-      echo "Paste failed"
+      usage
       exit 1
     fi
+    echo "Uploading from your clipboard"
+    _PASTE=1
   else
-    echo "pngpaste not installed. Run `brew install pngpaste`"
+    echo "Cannot check your clipboard as pngpaste is not installed. Run `brew install pngpaste`."
+    usage
     exit 1
   fi
 else
@@ -87,7 +89,7 @@ if [ $? -eq 0 ]; then
   echo $S3_URL
   if hash pbcopy 2>/dev/null; then
     echo $S3_URL | pbcopy
-    echo "Copied to clipboard!"
+    echo "Copied the url to your clipboard!"
   fi
 else
   echo "Upload failed"
