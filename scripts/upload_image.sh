@@ -12,30 +12,50 @@
 # Tip: you may want to alias this to `blogimage` or something.
 #      alias blogimage="/path/to/blog/scripts/upload_image.sh"
 
-# Bail if no file specified
-: ${1?"File to upload required. Usage: $0 <image_path>"}
-
-# Vermose mode
-_V=0
-while getopts "v" OPTION
+_VERBOSE=0 # Vermose mode
+_PASTE=0 # Paste from clipboard instead of using local file
+while getopts "vp" OPTION
 do
   case $OPTION in
-    v) _V=1
+    v) _VERBOSE=1
+       shift
+       ;;
+    p) _PASTE=1
        shift
        ;;
   esac
 done
 
+# Bail if no file specified and not pasting
+if [[ $_PASTE -eq 0 ]]; then
+  : ${1?"File to upload required. Usage: $0 <image_path>"}
+fi
+
 # Function to echo only when verbose mode is on
 function log () {
-    if [[ $_V -eq 1 ]]; then
+    if [[ $_VERBOSE -eq 1 ]]; then
         echo "$@"
     fi
 }
 
+if [[ $_PASTE -eq 1 ]]; then
+  if hash pbcopy 2>/dev/null; then
+    LOCAL_FILE=/tmp/$(openssl rand -hex 16).png
+    pngpaste $LOCAL_FILE
+    if ! [ $? -eq 0 ]; then
+      echo "Paste failed"
+      exit 1
+    fi
+  else
+    echo "pngpaste not installed. Run `brew install pngpaste`"
+    exit 1
+  fi
+else
+  LOCAL_FILE="$1"
+fi
+
 # Define variables
 BUCKET="informatics-webimages"
-LOCAL_FILE="$1"
 IMAGE=$(basename ${LOCAL_FILE})
 EXTENSION="${LOCAL_FILE##*.}"
 FILENAME=$(openssl rand -hex 16)
@@ -71,4 +91,9 @@ if [ $? -eq 0 ]; then
   fi
 else
   echo "Upload failed"
+fi
+
+# If pasting remove temp file
+if [[ $_PASTE -eq 1 ]]; then
+  rm $LOCAL_FILE
 fi
