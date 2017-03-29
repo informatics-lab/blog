@@ -12,30 +12,52 @@
 # Tip: you may want to alias this to `blogimage` or something.
 #      alias blogimage="/path/to/blog/scripts/upload_image.sh"
 
-# Bail if no file specified
-: ${1?"File to upload required. Usage: $0 <image_path>"}
-
-# Vermose mode
-_V=0
+_VERBOSE=0 # Vermose mode
+_PASTE=0 # Paste from clipboard instead of using local file
 while getopts "v" OPTION
 do
   case $OPTION in
-    v) _V=1
+    v) _VERBOSE=1
        shift
        ;;
   esac
 done
 
+# Function for Usage
+function usage () {
+  echo "Usage: $0 [image_path]"
+  echo "       You must either specify an image or have an image in your clipboard."
+}
+
 # Function to echo only when verbose mode is on
 function log () {
-    if [[ $_V -eq 1 ]]; then
+    if [[ $_VERBOSE -eq 1 ]]; then
         echo "$@"
     fi
 }
 
+# Bail if no file specified and not pasting
+if [ "$#" -ne 1 ]; then
+  if hash pngpaste 2>/dev/null; then
+    LOCAL_FILE=/tmp/$(openssl rand -hex 16).png
+    pngpaste $LOCAL_FILE
+    if ! [ $? -eq 0 ]; then
+      usage
+      exit 1
+    fi
+    echo "Uploading from your clipboard"
+    _PASTE=1
+  else
+    echo "Cannot check your clipboard as pngpaste is not installed. Run `brew install pngpaste`."
+    usage
+    exit 1
+  fi
+else
+  LOCAL_FILE="$1"
+fi
+
 # Define variables
 BUCKET="informatics-webimages"
-LOCAL_FILE="$1"
 IMAGE=$(basename ${LOCAL_FILE})
 EXTENSION="${LOCAL_FILE##*.}"
 FILENAME=$(openssl rand -hex 16)
@@ -67,8 +89,13 @@ if [ $? -eq 0 ]; then
   echo $S3_URL
   if hash pbcopy 2>/dev/null; then
     echo $S3_URL | pbcopy
-    echo "Copied to clipboard!"
+    echo "Copied the url to your clipboard!"
   fi
 else
   echo "Upload failed"
+fi
+
+# If pasting remove temp file
+if [[ $_PASTE -eq 1 ]]; then
+  rm $LOCAL_FILE
 fi
