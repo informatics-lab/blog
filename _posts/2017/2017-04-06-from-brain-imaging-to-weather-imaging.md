@@ -47,7 +47,7 @@ So what we are looking at is about 4GB of data. In order to get that into the br
 For more information on this compression technique [read the paper we've wrote about it](http://www.informaticslab.co.uk/report/2016/04/11/compression-paper.html)
 
 
-![Typhoon Koppu, volume rendered at 0000 * 2700 * 60 ](https://images.informaticslab.co.uk/misc/d37980682920794eb1a52f326c3a18be.gif)
+![Typhoon Koppu, volume rendered at 0000 * 2700 * 60 ](https://images.informaticslab.co.uk/misc/551b44555aa86960c8c29a9ec6999d1f.gif)
 
 
 I love conferences because I always learn something new and Graphical Web 2016 was no exception. Amongst all the new things I learnt was a new word and new concept - sparklines. One of my favourite descriptions of a sparkline is by  Edward Tufte who described them as "data-intense, design-simple, word-sized graphics" [*](https://en.wikipedia.org/wiki/Sparkline#cite_note-BE06-5). For example a sparkline might add more context to explain how Graphical Web effected my knowledge of sparklines: ᴶᴬᴺ²⁰¹⁶▁▁▁▁▁▁▁▁▁▁██ᴶᴬᴺ²⁰¹⁷. If you wan't to learn something new too then all the Graphical Web talks are up on YouTube including [Matt Ström talking about Tiny Data Visualisations](https://www.youtube.com/watch?v=WAVsG33ijjg&list=PLBs84wlNEgZJ3NHaGV26VYJB5H_ZgmJHs&index=2) which is what inspired this side project.
