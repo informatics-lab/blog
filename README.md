@@ -37,7 +37,7 @@ grunt serve
 
 ### Blog images
 
-This repo contains a neat helper script I wrote for uploading pictures to the blog. It takes an image path as an argument and returns a url that you can use in your blog post. You can also copy an image to your clipboard and run the command with no arguments and it will upload from your clipboard.
+This repo contains a neat helper script for uploading pictures to the blog. It takes an image path as an argument and returns a url that you can use in your blog post. You can also copy an image to your clipboard and run the command with no arguments and it will upload from your clipboard.
 
 #### Requirements
  * aws-cli (and configured with keys that can write to the `informatics-webimages` bucket)
