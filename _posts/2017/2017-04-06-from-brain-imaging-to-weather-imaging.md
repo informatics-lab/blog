@@ -47,13 +47,13 @@ For more information on this compression technique [read the paper we've wrote a
 
 Once we've got this data in the [AMI JS ToolKit](https://github.com/FNNDSC/ami)  we can visualise is using using a volume rendering approach:
 
-[![Typhoon Koppu, volume rendered at 0000 * 2700 * 60 ](https://images.informaticslab.co.uk/misc/551b44555aa86960c8c29a9ec6999d1f.gif)](https://s3-eu-west-1.amazonaws.com/typhoon-koppu/vr_singlepass/index.html)
+[![Typhoon Koppu, volume rendered at 3000 * 2700 * 60 ](https://images.informaticslab.co.uk/misc/551b44555aa86960c8c29a9ec6999d1f.gif)](https://s3-eu-west-1.amazonaws.com/typhoon-koppu/vr_singlepass/index.html)
 
 (click the image to go to a live demo but be patient for one to three minutes whilst it loads)
 
 Alternatively it can be visualised by looking at cross-sections through the data. This approach might work particularly well for data like temperature or windspeed which you can't visualise in the way you would actually see it. The example below shows taking three orthogonal cross-sections and using these to interrogate the data.
 
-[![](https://images.informaticslab.co.uk/misc/cbbf81152e6691016bf9e6ff450a84b1.gif
+[![Typhoon Koppu, orthogonal planes at 300 * 270 * 60](https://images.informaticslab.co.uk/misc/cbbf81152e6691016bf9e6ff450a84b1.gif
 )](https://s3-eu-west-1.amazonaws.com/typhoon-koppu/typhoon_cloud_planes/index.html)
 
 (again click the image to go to a live demo. There is 100 times less data in this example so it should run much more smoothly)
