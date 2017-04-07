@@ -10,8 +10,8 @@ layout: post
 summary: Borrowing brain imaging tools to visualise the deadly Typhoon Koppu.
 author: Theo McCaie
 project:
-thumbnail: https://images.informaticslab.co.uk/articles/2017-01-20-weather-sparkline/weather_spark_thumb.png
-header: https://images.informaticslab.co.uk/articles/2017-01-20-weather-sparkline/sparkline_head.png
+thumbnail: https://images.informaticslab.co.uk/misc/c1ffad2ec1ebacbea7b124353820b1d3.jpg
+header: https://images.informaticslab.co.uk/misc/f251807d461e3eeafe93ae89e273172b.png
 ---
 
 There is a myth that innovation just happens, that it's a spark of genius that happens when you least expect it. Whilst this can be true the majority of innovation comes from hard work. Hard work understanding a problem, hard work making the conditions right for innovation, hard work coming up with ideas, hard work testing them, hard work trying and failing and trying again. Often hard work is often not enough but what can make the difference is an understanding of how innovation happens and having the knowledge, tools and techniques to help it along. This post isn't going to teach you how to innovate but it does touch one technique that can sometimes help.
@@ -38,16 +38,44 @@ Visualising in 3D examples
 
 To create the examples below I used the excellent [AMI Medical Imaging (AMI) JS ToolKit for THREEJS](https://github.com/FNNDSC/ami). I created [a fork](https://github.com/met-office-lab/ami-weather) in order to implement my own parser and loader and tweak some examples to use weather images.
 
-One of the things I was keen to test was how much data we could visualise, if you want to run these visualisations you'll need to be a modern browser and a little patience (a minute or two to load). The reason for this is because the original data set is at a latitude, longitude resolution of 6000 x 5400. For these visualisations I've had to half that so that's 3000 * 2700 ~ 8 million data points per level. The visualisations have 60 levels in them (the original data set has 80) so we are now up to 8M * 60 = 480 Million data points. Each point starts life as a float 64 so 480M *  8 (float 64 = 64 bits = 8 bytes) ~ 4GB.
+One of the things I was keen to test was how much data we could visualise, if you want to run these visualisations you'll need to be a modern browser and a little patience (a minute or two to load). The reason for this is because the original data set is at a latitude, longitude resolution of 6000 x 5400. For these visualisations I've had to half that so that's 3000 * 2700 ~ 8 million data points per level. The visualisations have 60 levels in them (the original data set has 80) so we are now up to 8M * 60 = 480 million data points. Each point starts life as a float 64 so 480M *  8 (float 64 = 64 bits = 8 bytes) ~ 4GB.
 
-So what we are looking at is about 4GB of data. In order to get that into the browser in a timely-*ish* manor we compress that by converting the data in to JPGs using the three channels (red, green, blue) each as a different data level. The input images (20 of them) look like this:
+So what we are looking at is about 4GB of data. In order to get that into the browser in a timely-*ish* manor we compress that by converting the data in to JPGs using the three channels (red, green, blue) each as a different model level. The input images (20 of them) containing the data to visualise look like this:
 
-![Typhoon Koppu, one of the raw images that go into the 3D visualisations](https://s3-eu-west-1.amazonaws.com/typhoon-koppu/vr_singlepass/pres_levels_large/cloud.2700x3000x3.19.rawjpg.jpg)
+![Typhoon Koppu, one of the raw images that go into the 3D visualisations](https://images.informaticslab.co.uk/misc/c1ffad2ec1ebacbea7b124353820b1d3.jpg)
 
 For more information on this compression technique [read the paper we've wrote about it](http://www.informaticslab.co.uk/report/2016/04/11/compression-paper.html)
 
+Once we've got this data in the [AMI JS ToolKit](https://github.com/FNNDSC/ami)  we can visualise is using using a volume rendering approach:
 
-![Typhoon Koppu, volume rendered at 0000 * 2700 * 60 ](https://images.informaticslab.co.uk/misc/551b44555aa86960c8c29a9ec6999d1f.gif)
+[![Typhoon Koppu, volume rendered at 0000 * 2700 * 60 ](https://images.informaticslab.co.uk/misc/551b44555aa86960c8c29a9ec6999d1f.gif)](https://s3-eu-west-1.amazonaws.com/typhoon-koppu/vr_singlepass/index.html)
+
+(click the image to go to a live demo but be patient whilst it loads)
+
+it looks like this (click the image to go to a live demo but be patient whilst it loads)
+
+Alternatively it can be visualised by looking at cross-sections through the data. This approach might work particularly well for data like temperature or windspeed which you can't visualise in the way you would actually see it. The example below shows taking three orthogonal cross-sections and using these to interrogate the data.
+
+[![](https://images.informaticslab.co.uk/misc/cbbf81152e6691016bf9e6ff450a84b1.gif
+)](https://s3-eu-west-1.amazonaws.com/typhoon-koppu/typhoon_cloud_planes/index.html)
+
+(again click the image to go to a live demo. There is 100 times less data in this example so it should run more smoothly.)
+
+# What's next
+
+There are loads of things I'd like to look at with this project but might not find the time for such as if [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) could be used to parallelise the processing of the images in a non UI blocking way, or introducing colour to provide more informative data interrogation tools. Whilst these and other experiments would be really interesting what I will be doing first is working with the scientists at the Met Office who are producing the next generation weather model to try provide the visualisation tools they need to test and explore their work.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 I love conferences because I always learn something new and Graphical Web 2016 was no exception. Amongst all the new things I learnt was a new word and new concept - sparklines. One of my favourite descriptions of a sparkline is by  Edward Tufte who described them as "data-intense, design-simple, word-sized graphics" [*](https://en.wikipedia.org/wiki/Sparkline#cite_note-BE06-5). For example a sparkline might add more context to explain how Graphical Web effected my knowledge of sparklines: ᴶᴬᴺ²⁰¹⁶▁▁▁▁▁▁▁▁▁▁██ᴶᴬᴺ²⁰¹⁷. If you wan't to learn something new too then all the Graphical Web talks are up on YouTube including [Matt Ström talking about Tiny Data Visualisations](https://www.youtube.com/watch?v=WAVsG33ijjg&list=PLBs84wlNEgZJ3NHaGV26VYJB5H_ZgmJHs&index=2) which is what inspired this side project.
