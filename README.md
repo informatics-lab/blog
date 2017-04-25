@@ -61,4 +61,5 @@ Copied the url to your clipboard!
 $ blogimage
 Uploading from your clipboard
 https://images.informaticslab.co.uk/misc/d7420c5a925dac8d397a6bd6e358f39f.png
-Copied the url to your clipboard!```
+Copied the url to your clipboard!
+```
