@@ -7,8 +7,8 @@ layout: post
 summary: Flexible and modular monitoring stacks for data collection, storage, alerting and visualisation.
 author: Jacob Tomlinson
 project: Infrastructure
-thumbnail:
-header:
+thumbnail: https://images.informaticslab.co.uk/articles/article-monitoring/bff4cefb8273cd0c1aafd1055d9c90b9.png
+header: https://images.informaticslab.co.uk/articles/article-monitoring/29709f05a71b43ff096589fdb490a804.png
 ---
 
 Recently I've been thinking a lot about monitoring. In a world of ephemeral servers, auto-scaling, spot instances and infrastructure-as-code, monitoring has to be tackled differently.
@@ -72,3 +72,5 @@ You can of course still integrate these tools into your system. For instance Gra
 In the Lab we use a combination of Telegraf, Logstash, InfluxDB, Elasticsearch and Grafana along with opsdroid and Slack. Many of these components could easily be swapped out for a different one if we found something that had extra features that we wanted. All of these tools can scale up to the workloads we want to run and are ready for the future.
 
 _When I started thinking about this work I gave a talk about it at the TechExeter conference. [Listen to it here](https://soundcloud.com/techexeter/2016-track-1-jacob-tomlinson-monitoring-in-a-scalable-world)._
+
+![Monitoring screenshot](https://images.informaticslab.co.uk/articles/article-monitoring/29709f05a71b43ff096589fdb490a804.png)
