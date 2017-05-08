@@ -19,7 +19,7 @@ We are currently working on a project called [Jade][jade] which involves putting
 
 One of our aims is to shift from analysing gigabytes of data in hours to terabytes in minutes or seconds. Therefore to do some reasonable tests we need multiple terabytes of data to practice on, but getting that much data into a cloud service like AWS is non-trivial.
 
-We are fortunate to have some big pipes to the internet at the Met Office, however operational services get priority and the rest has to be shared between over a thousand employees. Therefore as an individual it seems I am able to upload data at around 15-50mbps depending on what else is going on. Normally that feels like a decent amount of bandwidth for one person but assuming I can constantly use 50mbps I would only be able to upload just over half a terabyte of data per day. So uploading a 40TB dataset would take nearly three months.
+We are fortunate to have some big pipes to the internet at the Met Office, however operational services get priority and the rest has to be shared between over a thousand employees. Therefore, an individual user is only able upload data at around 15-50mbps depending on what else is going on. Normally that feels like a decent amount of bandwidth for one person but assuming I can constantly use 50mbps I would only be able to upload just over half a terabyte of data per day. So uploading a 70TB dataset would take nearly six months.
 
 ### The solution
 
@@ -31,7 +31,7 @@ In a word, [sneakernet][xkcd-sneakernet].
 
 It sounds like a joke at first, but when you do the maths it turns out that copying data to a hard drive and transporting it somewhere else is still a pretty efficient way to move large amounts of data around.
 
-Luckily for us Amazon Web Services provide a robust and secure way of doing this called [AWS Snowball][aws-snowball]. Taking it's name from their archive storage system [AWS Glacier][aws-glacier] it is a service for importing big chunks of data into their cloud storage. It works by posting you a very large and durable hard drive appliance, you simply fill the drive up with data and then ship it back to them.
+Luckily for us Amazon Web Services provide a robust and secure way of doing this called [AWS Snowball][aws-snowball]. Taking its name from their archive storage system [AWS Glacier][aws-glacier] Snowball is a service for importing big chunks of data into their cloud storage. It works by posting you a very large and durable hard drive appliance, you simply fill the drive up with data and then ship it back to them.
 
 ![AWS Snowball](https://images.informaticslab.co.uk/misc/10adfa9c1864f2b35d2c408aae7ded86.jpg)
 
@@ -39,27 +39,25 @@ Luckily for us Amazon Web Services provide a robust and secure way of doing this
 
 #### Regions and availability
 
-We decided we wanted to put the data into [S3][aws-s3] in the new [London region][aws-london-region] of AWS. As that region had only been open for a number of weeks we were unable to order the newer 100TB [Snowball Edge][aws-snowball-edge] and so went for an 80TB 2nd gen snowball.
+We decided we wanted to put the data into [S3][aws-s3] in the new [London region][aws-london-region] of AWS. As that region had only been open for a number of weeks we were unable to order the newer 100TB [Snowball Edge][aws-snowball-edge] and so went for the older 80TB Snowball.
 
-It turned out that this affected the software stack we had to use to copy the data to the device. There are two applications provided for interacting with the snowball. The first is the [snowball client][aws-snowball-client] which in a command line utility for copying data to the device using syntax similar to the unix `cp`, `mv` and `rm` commands. The other is the [snowball s3 adapter][aws-snowball-s3-adapter] which connects to the device and then serves up an S3 API compatible endpoint. With the S3 adapter you can then use any S3 compatible tool such as the [aws-cli][aws-cli], the [boto][boto] python client or anything else. The Snowball Edge automatically runs the s3 adapter itself and therefore you do not require anything other than an S3 compatible tool, however the older models require you to use one or other of the supplied applications.
+There are two applications provided for interacting with the Snowball. The first is the [Snowball Client][aws-snowball-client] which is a command line utility for copying data to the device using syntax similar to the unix `cp`, `mv` and `rm` commands. The other is the [Snowball S3 Adapter][aws-snowball-s3-adapter] which connects to the device and then serves up an S3 API compatible endpoint, allowing you to use any S3 compatible tool such as the [aws-cli][aws-cli], or the [boto][boto] python client. The Snowball Edge runs the S3 adapter itself and therefore you do not require anything other than an S3 compatible tool, however the older models require you to install one or other of the supplied applications yourself on a separate machine.
 
 #### Installing the device
 
-To get the best performance from the device you need to connect it to a 10gbps copper or optical SFP+ port on your network. You need a rather powerful workstation or client to run the software and that needs to be connected to the network with a 10gbps connection. The workstation/client also needs to have access to the data via a dedicated 10gbps link to ensure there are no bottlenecks to slow down the transfer.
+To get the best performance from the device you need to ensure there are no bottlenecks to slow down the transfer. Every connection to connection between the Snowball and the storage much be 10gbps or higher. Therefore it nust connect to a 10gbps copper or optical SFP+ port on your network. You need a rather powerful workstation or client to run the software and that needs to be connected to the network with a 10gbps connection. The workstation/client also needs to have access to the data via a dedicated 10gbps link.
 
-As the data was in the archive in our data centre we decided to install the snowball in an adjacent rack where it could be connected to a high speed switch. This was not a problem technically however it did involve some pre-planning as the pricing for the device is currently $250 for the first 10 days with additional charges for each day after that. Therefore we wanted to have engineers ready to install the device as soon as it arrived to give us as much time to work with it as possible. We calculated that transferring at full speed would take just under a day, but we wanted as larger margin for error as possible as we had never done this before.
+[Pricing for the device][aws-snowball-pricing] is an up front payment for the first 10 days you have it on site with additional charges for each day after that. Therefore we wanted to have engineers ready to install the device as soon as it arrived. As the data was on disk in our data centre we decided to install the Snowball in an adjacent rack where it could be connected to a high speed switch. This was not a problem technically, however it did involve some pre-planning. We calculated that transferring at full speed would take just under a day, but we wanted as larger margin for error as possible as we had never done this before.
 
 #### Running the transfer
 
-We decided to copy the data using the snowball client, which in hindsight was probably as a mistake as it seems to be unofficially deprecated in favour of the s3 adapter. Sadly we came to this realisation too late and didn't want to complicate things by changing tool mid transfer.
+We decided to copy the data using the Snowball client, which in hindsight was probably as a mistake as it seems to be unofficially deprecated in favour of the s3 adapter. Sadly we came to this realisation too late and didn't want to start over by changing tool mid transfer.
 
-Despite running the software on a machine with 24 CPU cores and 256GB or memory we repeatedly encountered "out of memory" errors. After troubleshooting this we discovered a hard limit of 8GB set in the shell wrapper for the tool. Once we raised this to something higher the problems went away.
+Despite running the software on a machine with 24 CPU cores and 256GB or memory we repeatedly encountered "out of memory" errors. After troubleshooting this we discovered a hard limit of 8GB set in the shell wrapper for the tool. Once we raised this to something higher, the memory problems went away.
 
-This also lead on to a few further issues with listing the contents of the snowball and getting it to resume the transfer. We were copying ~2,000,000 files onto the device and ended up starting from scratch after a failure at 20% because we simply could not get it to resume. In the snowball documentation it [recommends][aws-snowball-recommendations] breaking your data down into smaller chunks separated by directory and doing multiple copy commands, this suggests they are aware of the resuming issues but have favoured a workaround. This is probably a pragmatic decision as doing a list operation on an object store can be very slow.
+This also lead on to a few further issues with listing the contents of the Snowball and getting it to resume the transfer. We were copying ~2,000,000 files onto the device and ended up starting from scratch after a failure at 20%  of files transferred because we simply could not get the transfer to resume. In the Snowball documentation it [recommends][aws-snowball-recommendations] breaking your data down into smaller chunks separated by directory and doing multiple copy commands, this suggests they are aware of the resuming issues but have favoured a workaround. This is probably a pragmatic decision as doing a list operation on an object store can be very slow.
 
-The final challenge we faced was around transfer speed. Despite the device being connected via a 10gbps link the data was only copying at around 1.5gbps. We spent a substantial amount of time troubleshooting to check if there were any bottlenecks between our systems and the device but were unable to find any. This resulted in us just scraping past the 10 day deadline. Speaking with an AWS Solutions Architect it was suggested that the device may have been running at a reduced capacity due to some damage in transit and that it would be investigated on it's return to them. We were probably just unlucky.
-
-![Snowball transfer](https://images.informaticslab.co.uk/misc/054e3a5c7c973fc0f95fa083e93b3e52.png)
+The final challenge we faced was around transfer speed. Despite the device being connected via a 10gbps link the data was only copying at around 1.5gbps despite having lots of cpu and memory available. We spent a substantial amount of time troubleshooting to check if there were any bottlenecks between our systems and the device but were unable to find any. This resulted in us just scraping past the 10 day deadline. Speaking with an AWS Solutions Architect it was suggested that the device may have been running at a reduced capacity due to some damage in transit and that it would be investigated on it's return to them. We were probably just unlucky.
 
 ### Summary
 
@@ -72,6 +70,7 @@ Overall we were very pleased with the relative ease and speed of using a Snowbal
 [aws-snowball]: https://aws.amazon.com/snowball/
 [aws-snowball-client]: http://docs.aws.amazon.com/snowball/latest/ug/using-client.html
 [aws-snowball-edge]: https://aws.amazon.com/snowball-edge/
+[aws-snowball-pricing]: https://aws.amazon.com/snowball/pricing/
 [aws-snowball-recommendations]: http://docs.aws.amazon.com/snowball/latest/ug/transfer-petabytes.html
 [aws-snowball-s3-adapter]: http://docs.aws.amazon.com/snowball/latest/ug/snowball-transfer-adapter.html
 [aws-s3]: https://aws.amazon.com/s3/
