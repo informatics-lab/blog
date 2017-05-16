@@ -31,7 +31,7 @@ In a word, [sneakernet][xkcd-sneakernet].
 
 It sounds like a joke at first, but when you do the maths it turns out that copying data to a hard drive and transporting it somewhere else is still a pretty efficient way to move large amounts of data around.
 
-Luckily for us Amazon Web Services provide a robust and secure way of doing this called [AWS Snowball][aws-snowball]. Taking its name from their archive storage system [AWS Glacier][aws-glacier] Snowball is a service for importing big chunks of data into their cloud storage. It works by posting you a very large and durable hard drive appliance, you simply fill the drive up with data and then ship it back to them.
+Luckily for us Amazon Web Services provide a robust and secure way of doing this called [AWS Snowball][aws-snowball]. Taking its name from their archive storage system [AWS Glacier][aws-glacier], Snowball is a service for importing big chunks of data into their cloud storage. It works by posting you a very large and durable hard drive appliance, you simply fill the drive up with data and then ship it back to them.
 
 ![AWS Snowball](https://images.informaticslab.co.uk/misc/10adfa9c1864f2b35d2c408aae7ded86.jpg)
 
@@ -45,13 +45,13 @@ There are two applications provided for interacting with the Snowball. The first
 
 #### Installing the device
 
-To get the best performance from the device you need to ensure there are no bottlenecks to slow down the transfer. Every connection to connection between the Snowball and the storage much be 10gbps or higher. Therefore it nust connect to a 10gbps copper or optical SFP+ port on your network. You need a rather powerful workstation or client to run the software and that needs to be connected to the network with a 10gbps connection. The workstation/client also needs to have access to the data via a dedicated 10gbps link.
+To get the best performance from the device you need to ensure there are no bottlenecks to slow down the transfer. Every connection between the Snowball and the storage must be 10gbps or higher. Therefore it must connect to a 10gbps copper or optical SFP+ port on your network. You need a rather powerful workstation or client to run the software and that needs to be connected to the network with a 10gbps connection. The workstation/client also needs to have access to the data via a dedicated 10gbps link.
 
 [Pricing for the device][aws-snowball-pricing] is an up front payment for the first 10 days you have it on site with additional charges for each day after that. Therefore we wanted to have engineers ready to install the device as soon as it arrived. As the data was on disk in our data centre we decided to install the Snowball in an adjacent rack where it could be connected to a high speed switch. This was not a problem technically, however it did involve some pre-planning. We calculated that transferring at full speed would take just under a day, but we wanted as larger margin for error as possible as we had never done this before.
 
 #### Running the transfer
 
-We decided to copy the data using the Snowball client, which in hindsight was probably as a mistake as it seems to be unofficially deprecated in favour of the s3 adapter. Sadly we came to this realisation too late and didn't want to start over by changing tool mid transfer.
+We decided to copy the data using the Snowball client, which in hindsight was probably as a mistake as it seems to be unofficially deprecated in favour of the s3 adapter. Sadly we came to this realisation too late and didn't want to start again by changing tool mid transfer.
 
 Despite running the software on a machine with 24 CPU cores and 256GB or memory we repeatedly encountered "out of memory" errors. After troubleshooting this we discovered a hard limit of 8GB set in the shell wrapper for the tool. Once we raised this to something higher, the memory problems went away.
 
