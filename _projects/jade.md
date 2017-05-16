@@ -25,10 +25,10 @@ Technology and science can no longer be considered separate concerns. Data techn
 ## What's the solution?
 
 #### We need a fundamentally new way of working
-It is no longer the case that computer power is the bottle-neck for data analysis, an at any rate, computer chip manufacturers have announced that we cannot rely on them making faster chips in the future. The limiting factor in data analysis is now data storage, and moving the data to where it's needed. The solution to these problems isn't brute force, but a paradigm shift in how we analyse data.
+It is no longer the case that computer power is the bottle-neck for data analysis, and at any rate, computer chip manufacturers have announced that we cannot rely on them making faster chips in the future. The limiting factor in data analysis is now data storage, and moving the data to where it's needed. The solution to these problems isn't brute force, but a paradigm shift in how we analyse data.
 
 #### Instead of moving data, we need to move the analysis
-Under these data volumes, we will stop moving data from a traditional data base to a computer for analysis. Instead, we have a new kind of data store, where the data is split into many chunks which are stored in the same place as the compute. This is the basis of many of the big data platforms which have sprung up over the last few years, such as [Hadoop][hadoop], [Spark][spark] and [Dask][dask].
+With these data volumes, we will stop moving data from a traditional data base to a computer for analysis. Instead, we have a new kind of data store, where the data is split into many chunks which are stored in the same place as the compute. This is the basis of many of the big data platforms which have sprung up over the last few years, such as [Hadoop][hadoop], [Spark][spark] and [Dask][dask].
 
 A system like this can speed up analyses from months to minutes by allowing all the chunks to be processed simultaneously. It is a very scalable solution: as data volumes grow, you can just add more compute chunks to your data store, allowing your analysis time to remain the same.
 
