@@ -11,7 +11,7 @@ thumbnail: https://images.informaticslab.co.uk/articles/article-monitoring/bff4c
 header: https://images.informaticslab.co.uk/articles/article-monitoring/29709f05a71b43ff096589fdb490a804.png
 ---
 
-Recently I've been thinking a lot about monitoring. In a world of ephemeral servers, auto-scaling, spot instances and infrastructure-as-code, monitoring has to be tackled differently.
+Recently we've been thinking a lot about monitoring. In a world of ephemeral servers, auto-scaling, spot instances and infrastructure-as-code, monitoring has to be tackled differently.
 
 To solve this problem it is simpler to think about the end result. What do you want to do with your monitoring? In most cases you want something to keep an eye on your services. You want it to notify you when there is an issue and then be able to review historical data to find the root cause of the problem.
 
@@ -19,11 +19,11 @@ To achieve this you need something to collect data, somewhere to store it, a way
 
 ## Collection
 
-There are two main types on information that any system has which indicate how it is performing; logs and telemetry. Logs are the lines of text that applications spit out either into a file or into the terminal. Telemetry is all the little metrics that describe your system, cpu usage, memory usage, network performance, disk space, etc.
+There are two main types of information which indicate how a system is performing: logs and telemetry. Logs are the lines of text that applications spit out either into a file or into the terminal. Telemetry are all the little metrics that describe your system, cpu usage, memory usage, network performance, disk space, etc.
 
-When it comes to recording this information you can either do it locally by running an agent on every machine, or remotely by running an agent somewhere else which has remote access to your machines. Both of which will retrieve the information and forward it to a central data store.
+When it comes to recording this information you can either do it by recording on every machine, or remotely by running the collection agent software somewhere else which has remote access to your machines. Both of which will retrieve the information and forward it to a central data store.
 
-Our preferred telemetry collection agent is [telegraf](https://www.influxdata.com/telegraf/). It's pretty flexible in terms of datastores it can write to, it comes with application support for many common services such as apache and it comes packaged as a single binary file which can just be dropped onto a system. Other agents include [statsD](https://github.com/etsy/statsd), [colllectd](https://collectd.org/), [cAdvisor](https://github.com/google/cadvisor), and more.
+Our preferred telemetry collection agent is [telegraf](https://www.influxdata.com/telegraf/). It's pretty flexible in terms of datastores it can write to, it comes with application support for many common services such as Apache and it comes packaged as a single binary file which can just be dropped onto a system. Other agents include [statsD](https://github.com/etsy/statsd), [colllectd](https://collectd.org/), [cAdvisor](https://github.com/google/cadvisor), and more.
 
 For logs you'll either need to configure your applications to forward their logs to a central source, or use a collection agent like [filebeat](https://www.elastic.co/products/beats/filebeat), [winlogbeat](https://www.elastic.co/products/beats/winlogbeat) or [logstash](https://www.elastic.co/products/logstash). You will also want to parse and filter the logs before ingesting them into your data store to avoid filling up with garbage. Logstash has the capability to do this with [filters](https://www.elastic.co/guide/en/logstash/current/filter-plugins.html).
 
