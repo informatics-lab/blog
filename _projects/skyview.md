@@ -14,7 +14,7 @@ project: skyview
   
 ## What's Sky View 360  
   
-The Informatics Lab has been working alongside the Met Office College to deliver a [virtual-reality prototype application](http://moc-vr.informaticslab.co.uk/) that it is hoped can further enrich and inform the students of the College’s courses.
+The Informatics Lab has been working alongside the Met Office College to deliver a <span data-proofer-ignore>[virtual-reality prototype application](http://moc-vr.informaticslab.co.uk/)</span> that it is hoped can further enrich and inform the students of the College’s courses.
 
 The Met Office College delivers bespoke training courses and programmes to people from around the world for anything weather and climate related, including the 'Aeronautical Meteorological Observing Course’; This is delivered numerous times a year predominantly to customers from UK civil and military airports and airfields, but also to the Met Office’s own trainee meteorologists.  
 
