@@ -22,7 +22,7 @@ There is a large practical element to the course. Trainees must be able to recog
 
 When delivering this type of recognition training the College is at the mercy of the weather. Often during a course there is little variation in the sky which limits the learners exposure to different conditions. 
 
-We are seeking to solve this challenge in the Lab using low-cost virtual-reality headsets (e.g. [Google Cardboard](https://vr.google.com/cardboard/).  
+We are seeking to solve this challenge in the Lab using low-cost virtual-reality headsets (e.g. [Google Cardboard](https://vr.google.com/cardboard/)).  
 
 We will be able to immerse students in various weather scenarios chosen at will from an online catalogue, all delivered on-site in the classroom.  
 
