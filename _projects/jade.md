@@ -15,7 +15,7 @@ thumbnail: https://images.informaticslab.co.uk/jade-gem.jpg
 We've got some seriously big data at the Met Office. In fact, with the advent of our new supercomputer, our archive will contain as many numbers as there are grains of sand on all the beaches in the world. The data volumes are so big that the status quo - downloading the data to a desktop computer for analysis - is fast becoming impractical.
 
 #### Why we should be worried
-This is not a problem unique to the Met Office, although we have an acute case as our data archive is one of the largest environmental datasets in the world. In general, a lot of analysts can no longer analyse all the data that is relevant to their problem. They have to make a priori decisions about how to process their data into a manageable form: perhaps they choose to look for a phenomenon in a subset of the data, or maybe they downscale the data.
+This is not a problem unique to the Met Office, although we have an acute case as our data archive is one of the largest environmental datasets in the world. In general, a lot of analysts can no longer analyse all the data that is relevant to their problem. They have to make prior decisions about how to process their data into a manageable form: perhaps they choose to look for a phenomenon in a subset of the data, or maybe they downscale the data.
 
 But what if they look in the wrong place? And what if they downscale away the important information? This kind of pragmatic approach to managing big data volumes is pernicious. Analysts can be coerced into non-scientific habits, which will ultimately lead to incorrect conclusions and missed opportunities.
 
@@ -25,10 +25,10 @@ Technology and science can no longer be considered separate concerns. Data techn
 ## What's the solution?
 
 #### We need a fundamentally new way of working
-It is no longer the case that computer power is the bottle-neck for data analysis, an at any rate, computer chip manufacturers have announced that we cannot rely on them making faster chips in the future. The limiting factor in data analysis is now data storage, and moving the data to where it's needed. The solution to these problems isn't brute force, but a paradigm shift in how we analyse data.
+It is no longer the case that computer power is the bottle-neck for data analysis, and at any rate, computer chip manufacturers have announced that we cannot rely on them making faster chips in the future. The limiting factor in data analysis is now data storage, and moving the data to where it's needed. The solution to these problems isn't brute force, but a paradigm shift in how we analyse data.
 
 #### Instead of moving data, we need to move the analysis
-Under these data volumes, we will stop moving data from a traditional data base to a computer for analysis. Instead, we have a new kind of data store, where the data is split into many chunks which are stored in the same place as the compute. This is the basis of many of the big data platforms which have sprung up over the last few years, such as [Hadoop][hadoop], [Spark][spark] and [Dask][dask].
+With these data volumes, we will stop moving data from a traditional data base to a computer for analysis. Instead, we have a new kind of data store, where the data is split into many chunks which are stored in the same place as the compute. This is the basis of many of the big data platforms which have sprung up over the last few years, such as [Hadoop][hadoop], [Spark][spark] and [Dask][dask].
 
 A system like this can speed up analyses from months to minutes by allowing all the chunks to be processed simultaneously. It is a very scalable solution: as data volumes grow, you can just add more compute chunks to your data store, allowing your analysis time to remain the same.
 
