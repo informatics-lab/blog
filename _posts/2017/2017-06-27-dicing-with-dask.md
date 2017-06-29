@@ -19,5 +19,4 @@ The atmospheric data fields from our Met Office models are defined on a latitude
 
 We're doing the regridding using Iris, the Met Office's excellent open source data analysis module. The results below use a 2D linear interpolation scheme to try and guess what a high resolution version of the same output would look like.
 
-![Low resolution](./lowresuk.png)
-![High resolution](./highresuk.png)
+![Low resolution](./cfresolutions.png)
