@@ -17,8 +17,14 @@ We have been using the [JADE platform](/projects/jade.html) as the back end to s
 Here we illustrate how the data required to answer a simple question can be distributed across a cluster in realtime and distilled into the information the user needs.
 
 {% youtube n-YRZd3Ptgg %}
-<!--
+
+<!-- Bot server currently broken, needs an elastic IP + to be turned on permanently -->
+
+<!-- 
+
 <br />
 Try it for yourself here...  
 
-<iframe style="width:100%; height:500px; border:none; background-color:white;" src='https://webchat.botframework.com/embed/weatherandclimate?s=je982Jt1ANs.cwA.2Jk.EEcyezjdVmDx03dDoGoqAVZpLpXIVI8CR0JxjC8Jb-A'></iframe> -->
+<iframe style="width:100%; height:500px; border:none; background-color:white;" src='https://webchat.botframework.com/embed/weatherandclimate?s=je982Jt1ANs.cwA.2Jk.EEcyezjdVmDx03dDoGoqAVZpLpXIVI8CR0JxjC8Jb-A'></iframe>
+
+ -->
