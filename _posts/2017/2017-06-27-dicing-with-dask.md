@@ -78,9 +78,12 @@ We called this a list of three different parameters. It looks like this graph is
 
 A breakthrough came after meditating on the wisdom of the Dask Father, Matt Rocklin. In particular, this:
 >...you should not use delayed functions within other delayed functions (unless you are doing something very strange). However you can pass delayed values into other delayed functions...Generally you want to immediately call any code that builds out your task graph and delay any function that just does work.
+
 from a [Stack Overflow post](https://stackoverflow.com/questions/44427981/how-to-recursively-compute-delayed-in-collection) and this line
+
 > A Delayed supports most python operations, each of which creates another Delayed representing the result.
 from the [`delayed` documentation](http://dask.pydata.org/en/latest/delayed-overview.html).
+
 This means that we do want to `delay` the `regrid_a_chunk` function (as it 'just does work'). On the other-hand, `regrid_a_param` is just doing some house keeping before calling `regrid_a_chunk`, or 'building our [our] task graph', so it shouldn't be a `delayed` function.
 
 This small change was to parallelise both the processing of chunks, and parameters, giving a graph like this:
