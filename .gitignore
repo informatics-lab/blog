@@ -11,3 +11,6 @@ bower_components
 lib
 vendor
 tmp
+
+.bundle/*
+package-lock.json

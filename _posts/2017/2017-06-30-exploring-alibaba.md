@@ -1,5 +1,5 @@
 ---
-title: Exploring Alibaba a AWS alternative
+title: Exploring AliCloud an AWS alternative
 date: 2017-06-30 00:00:00 Z
 categories:
 - side-projects
@@ -7,11 +7,12 @@ categories:
 - big data
 - infrastructure
 layout: post
-summary: Exploring
+summary: We explore AliCloud to test the waters with a major new player in the cloud computing space.
 author: Theo McCaie
 project:
-thumbnail: https://images.informaticslab.co.uk/articles/2017-01-20-weather-sparkline/weather_spark_thumb.png
-header: https://images.informaticslab.co.uk/articles/2017-01-20-weather-sparkline/sparkline_head.png
+thumbnail: https://images.informaticslab.co.uk/misc/07ebd56db60067cac2dc19696e7cbaf7.png
+header: https://images.informaticslab.co.uk/misc/ef577075d1ef964f6540fcffbd394155.png
+
 ---
  
  
