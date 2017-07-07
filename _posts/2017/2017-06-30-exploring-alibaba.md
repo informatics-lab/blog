@@ -19,7 +19,7 @@ header: https://images.informaticslab.co.uk/misc/ef577075d1ef964f6540fcffbd39415
 # Alibaba
  
  
-Alibaba is a giant of a company, I'll let [- Wikipedia](https://en.wikipedia.org/wiki/Alibaba_Group) out line that for you.
+Alibaba is a giant of a company, I'll let [Wikipedia](https://en.wikipedia.org/wiki/Alibaba_Group) out line that for you.
  
 > Alibaba Group is a Chinese e-commerce company that provides consumer-to-consumer, business-to-consumer and business-to-business sales services, electronic payment services, a shopping search engine and data-centric cloud computing services.
  
@@ -31,7 +31,7 @@ So it's big! One of the service offered by Alibaba is AliCloud, a cloud computin
  
 AliCloud has pretty much all the features that you'd expect such as elastic computing, object storage, networking, virtual private cloud, databases, monitoring, resource and identity management, domains management and more. The only notable absence I noted where lambda functions or equivalent.
  
-# Bid data processing
+# Big data processing
  
 In order to give Alibaba a spin we decided to test some of our favorite tools on one of our favorite problems, distributed big data processing. Since we are big fans of infrastructure as code we wrote a implementation of our Dask Distributed compute infrastructure in [Terraform](https://www.terraform.io/) targeting the AliCloud platform. It took some work to get there in part because of the tooling but also due to unfamiliarity. However, it didn't take too long to get ourselves a 120 core distributed compute platform which was able to make quick work of some parallel computing tasks such as distributed re-gridding and averaging over large datasets. Here is the cluster in action:
  
