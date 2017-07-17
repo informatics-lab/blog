@@ -9,28 +9,22 @@ For instructions on writing blog posts, updating projects or updating the site s
 ### Build the site locally
 Note: You must run with node version < 7.
 
-#### Requirements
- * May require RVM to get correct version of Ruby, this will need homebrew.
-   * Homebrew: `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-   * RVM: `curl -sSL https://get.rvm.io | bash`
-   * `rvm install ruby 2.1.2`
- * Ruby bundler
-   * `sudo gem install bundler`
- * npm
- * grunt
-   * `sudo npm install -g grunt-cli`
+#### Pre-requisites 
+* `homebrew`
+* `node` (with `npm`)
+
+#### Set up
+* `brew install rbenv`
+* `rbenv install 2.4.1`
+* `rbenv local 2.4.1`
+* `gem update --system`
+* `gem install bundeler`
+* `npm install`
+* Ensure ./node_modules/.bin is in your path. Perhaps add `export PATH=./node_modules/.bin::$PATH` to `~/.bashrc` or other.
+
+#### Run
 
 ```bash
-# Clone the repository
-git clone https://github.com/met-office-lab/met-office-lab.github.io.git
-
-# Enter repository
-cd met-office-lab.github.io
-
-# Install dependancies
-sudo bundle install # Installs jekyll and related libraries
-npm install # Installs grunt and build tools
-
 # Serve the site
 grunt serve
 ```
