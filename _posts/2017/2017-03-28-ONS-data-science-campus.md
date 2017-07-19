@@ -27,4 +27,4 @@ It was a great opportunity to meet with data scientists from across government a
 
 [data-science-campus]: https://www.ons.gov.uk/aboutus/whatwedo/datasciencecampus
 [ons]: https://www.ons.gov.uk/
-[talk-slides]: https://www.slideshare.net/statisticsONS/data-science-campus-launch-the-story-of-the-informatics-lab
+[talk-slides]: https://speakerdeck.com/jacobtomlinson/the-story-of-the-informatics-lab
