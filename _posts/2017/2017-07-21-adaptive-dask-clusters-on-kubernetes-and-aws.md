@@ -15,11 +15,11 @@ header: https://images.informaticslab.co.uk/misc/00a5ab452c75e9d0848c6a38f4f6ac9
 
 This article assumes a basic understanding of [Amazon Web Services (AWS)][aws], [Kubernetes][kubernetes], [Docker][docker] and [Dask][dask]. If you are unfamiliar with any of these you should do some preliminary research before continuing.
 
-Running a dask cluster is a really powerful way to do interactive data analysis. However if nobody is using the cluster then it can take up a lot of resources. Our current workaround for this is to have a scalable cluster which can be manually scaled up before doing some work and is automatically scaled back down at the end of the day. This has worked well during testing but Dask supports something called [adaptive clusters][dask-adaptive] which allows it to manage it's own resources.
+Running a dask cluster is a really powerful way to do interactive data analysis. However if nobody is using the cluster then it can take up a lot of resources. Our current workaround for this is to have a scalable cluster which can be manually scaled up before doing some work and is automatically scaled back down at the end of the day. This has worked well during testing but Dask supports something called [adaptive clusters][dask-adaptive] which allows it to manage its own resources.
 
 ## Adaptive clusters
 
-An [adaptive Dask cluster][dask-adaptive] is a cluster which consists of just a scheduler, but has the ability to add and remove workers as needed. This means you can run Dask on a cluster along with other services and it will not hog resources when idle, it will only use what it needs and then release them again.
+An [adaptive Dask cluster][dask-adaptive] is a cluster which consists of a scheduler only, but has the ability to add and remove workers as needed. This means you can run Dask on a cluster along with other services and it will not hog resources when idle, it will only use what it needs and then release them again.
 
 However the Dask developers do not want to have to support adding and removing workers on multiple platforms, so the feature has been implemented as a [Python class][dask-adaptive-class] that you can create and attach to a cluster at startup. The cluster will call a method of the class when it wants more workers and another method when it is happy to release them. It is then up to you write those methods so that they behave as expected.
 
@@ -29,7 +29,7 @@ We are in the habit of running our Dask schedulers and workers in Docker contain
 
 One way we can empower Dask to add and remove workers is to allow it to create and delete Dask worker containers. We could of course manage the lifecycle of these containers ourself but there is an ever growing list of container orchestration tools on the market which makes this easy for you. Kubernetes is arguably the most popular and mature of these tools, so we are going to use it to add and remove worker containers in a cluster.
 
-One of the nice things about Kubernetes is that instead of asking it to run 5 containers you tell it that 5 containers should be running. This subtle difference means that your application will be fault tolerant as Kubernetes regularly checks to see if the actual number of running containers matches the required number, if there is a discrepancy then it starts or stops containers to bring it in line. So if some containers stop due to hardware failure Kubernetes will notice and recreate those containers elsewhere in the cluster.
+One of the nice things about Kubernetes is that instead of asking it to run five containers you tell it that five containers should be running. This subtle difference means that your application will be fault tolerant as Kubernetes regularly checks to see if the actual number of running containers matches the required number, if there is a discrepancy then it starts or stops containers to bring it in line. So if some containers stop due to hardware failure Kubernetes will notice and recreate those containers elsewhere in the cluster. Dask is clever enough to transfer any state required to the new workers and recalculate anything which was lost while still running the calculation allowing workers to come and go without causing major problems.
 
 ## AWS
 
@@ -49,15 +49,15 @@ Each layer in this flow scales up as quickly as it can, but scales down with a s
 
 ## Running the adaptive cluster
 
-The Kubernetes config for creating teh adaptive cluster [lives here][lab-dask-k8s].
+The Kubernetes config for creating the adaptive cluster [lives here][lab-dask-k8s].
 
-The Dask scheduler cli allows you to pass it a python file using the `--preload /path/tp/my/file.py` which it calls when starting up the server. It must contain a function called `dask_setup(cluster)` which gets a cluster object as an argument.
+The Dask scheduler command line tool allows you to pass it a python file using the `--preload /path/tp/my/file.py` which it calls when starting up the server. It must contain a function called `dask_setup(cluster)` which gets a cluster object as an argument.
 
 In our [preload file][lab-dask-adaptive-preload] we also define the adaptive cluster class which implements the `scale_up(n)` and `scale_down(workers)` methods and attached it to the cluster in the setup function. These methods call out to the Kubernetes API and modify the number of workers in the [worker replica set][lab-dask-k8s-workers].
 
 In order to do this the scheduler must have permissions to access the Kubernetes API. This is done with a [Service account][lab-dask-k8s-svcacc] and [RBAC][kubernetes-rbac].
 
-We are exposing the scheduler as a service within the Kubernetes cluster. So we can connect to it from our [Jupyter notebooks][lab-k8s-jupyter also running on the cluster. We are also exposing the scheduler status page externally via an ingress so we can check the status of the cluster.
+We are exposing the scheduler as a service within the Kubernetes cluster. So we can connect to it from our [Jupyter notebooks][lab-k8s-jupyter] also running on the cluster. We are also exposing the scheduler status page externally via an ingress so we can check the status of the cluster.
 
 ![Dask Tasks Scaling](https://images.informaticslab.co.uk/misc/00a5ab452c75e9d0848c6a38f4f6ac90.png)
 
