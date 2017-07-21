@@ -21,7 +21,7 @@ Running a dask cluster is a really powerful way to do interactive data analysis.
 
 An [adaptive Dask cluster][dask-adaptive] is a cluster which consists of just a scheduler, but has the ability to add and remove workers as needed. This means you can run Dask on a cluster along with other services and it will not hog resources when idle, it will only use what it needs and then release them again.
 
-However the Dask developers do not want to have to support adding and removing workers on multiple platforms, so the feature has been implemented as a Python Class that you can create and attach to a cluster at startup. The cluster will call a method of the class when it wants more workers and another method when it is happy to release them. It is then up to you write those methods so that they behave as expected.
+However the Dask developers do not want to have to support adding and removing workers on multiple platforms, so the feature has been implemented as a [Python class][dask-adaptive-class] that you can create and attach to a cluster at startup. The cluster will call a method of the class when it wants more workers and another method when it is happy to release them. It is then up to you write those methods so that they behave as expected.
 
 ## Kubernetes
 
@@ -49,18 +49,45 @@ Each layer in this flow scales up as quickly as it can, but scales down with a s
 
 ## Running the adaptive cluster
 
+The Kubernetes config for creating teh adaptive cluster [lives here][lab-dask-k8s].
 
+The Dask scheduler cli allows you to pass it a python file using the `--preload /path/tp/my/file.py` which it calls when starting up the server. It must contain a function called `dask_setup(cluster)` which gets a cluster object as an argument.
+
+In our [preload file][lab-dask-adaptive-preload] we also define the adaptive cluster class which implements the `scale_up(n)` and `scale_down(workers)` methods and attached it to the cluster in the setup function. These methods call out to the Kubernetes API and modify the number of workers in the [worker replica set][lab-dask-k8s-workers].
+
+In order to do this the scheduler must have permissions to access the Kubernetes API. This is done with a [Service account][lab-dask-k8s-svcacc] and [RBAC][kubernetes-rbac].
+
+We are exposing the scheduler as a service within the Kubernetes cluster. So we can connect to it from our [Jupyter notebooks][lab-k8s-jupyter also running on the cluster. We are also exposing the scheduler status page externally via an ingress so we can check the status of the cluster.
 
 ### Demo
 
+Finally let's have a demo of this working in practice. The following video shows a Jupyter notebook which is connecting to our adaptive cluster. When it connects it shows zero workers, Kubernetes also shows zero workers and the AWS cluster is at the minimum size required to run Kubernetes.
+
+When I submit a task to Dask (just a basic one which does some simple maths and sleeps a lot to simulate being busy) workers start provisioning and the job processes faster and faster as the workers are adding.
+
+Once the job finishes all the workers are removed except the one which is holding the final answer causing the clauster to start scaling back down.
+
 {% youtube R2xntfsDxtA %}
+
+## Conclusion
+
+This demonstrates the ability to create a Dask cluster which scales automatically based on the amount of work it needs to do. 
+
+This is very useful when running Dask on a scalable cloud platform like AWS. It is also useful if you wish to run Dask on a non-scalable infrastructure that needs to share resources with other services. For example you may have an on-site cluster of machines running a scheduler like Mesos or Slurm. You can submit jobs directly to the batch scheduler, or with adaptive Dask the Dask scheduler could submit batch jobs which would start workers, which would then run the Dask task and then stop the batch job again. This would release resource for the batch scheduler to assign to someone else.
 
 [aws]: https://aws.amazon.com
 [dask]: https://dask.pydata.org/en/latest/
 [dask-adaptive]: http://distributed.readthedocs.io/en/latest/adaptive.html
+[dask-adaptive-class]: http://distributed.readthedocs.io/en/latest/adaptive.html#adaptive-class-interface
 [docker]: https://www.docker.com/
 [kops]: https://github.com/kubernetes/kops
 [kubernetes]: https://kubernetes.io/
 [kubernetes-autoscaler]: https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler
+[kubernetes-rbac]: https://kubernetes.io/docs/admin/authorization/rbac/
+[lab-dask-adaptive-preload]: https://github.com/met-office-lab/jade-dask/blob/master/kubernetes/adaptive.py
+[lab-dask-k8s]: https://github.com/met-office-lab/jade-dask/tree/master/kubernetes
+[lab-dask-k8s-svcacc]: https://github.com/met-office-lab/jade-dask/blob/master/kubernetes/scheduler.yaml
+[lab-dask-k8s-workers]: https://github.com/met-office-lab/jade-dask/blob/master/kubernetes/worker.yaml
+[lab-k8s-kupyter]: https://github.com/met-office-lab/jade-jupyter/tree/master/kubernetes
 [lab-terraform-kops]: https://github.com/met-office-lab/terraform-kubernetes
 [terraform]: https://www.terraform.io/
