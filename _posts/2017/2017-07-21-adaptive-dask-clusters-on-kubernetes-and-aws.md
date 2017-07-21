@@ -7,8 +7,8 @@ layout: post
 summary: Building a Dask cluster which autoscales based on workload using Kubernetes and AWS.
 author: Jacob Tomlinson
 project: jade
-thumbnail: 
-header: 
+thumbnail: https://images.informaticslab.co.uk/misc/362404fd731f7a1bc750864c7289f9c2.png
+header: https://images.informaticslab.co.uk/misc/00a5ab452c75e9d0848c6a38f4f6ac90.png
 ---
 
 ### Introduction
@@ -58,6 +58,8 @@ In our [preload file][lab-dask-adaptive-preload] we also define the adaptive clu
 In order to do this the scheduler must have permissions to access the Kubernetes API. This is done with a [Service account][lab-dask-k8s-svcacc] and [RBAC][kubernetes-rbac].
 
 We are exposing the scheduler as a service within the Kubernetes cluster. So we can connect to it from our [Jupyter notebooks][lab-k8s-jupyter also running on the cluster. We are also exposing the scheduler status page externally via an ingress so we can check the status of the cluster.
+
+![Dask Tasks Scaling](https://images.informaticslab.co.uk/misc/00a5ab452c75e9d0848c6a38f4f6ac90.png)
 
 ### Demo
 
