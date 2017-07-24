@@ -5,7 +5,7 @@ categories:
 - lab
 layout: post
 summary: We have built up our own culture in the lab. These principals encapsulate that culture.
-author: The Informatics Lab
+author: The Informatics Lab team
 project:
 thumbnail: 
 header: 
