@@ -41,10 +41,10 @@ Simply talking about things isn't enough. Ideas are cheap. Good innovation is bu
 
 This old computer adage applies to more than just code. You can spend hours talking about how to do something, but there is only so much useful theorising you can do without the insight gained from getting your hands dirty. When building something the first thing you should do is make it work, even if it doesn't satisfy all of the requirements. You should create something simple and then iterate on it to make it better, but always leaving it in a working and usable state.
 
-## 8. Don't take the piss
+## 8. A long don't take the piss, just do it
 
 This is the primary rule of the lab. It's fundamental for empowering Lab members to act, and therefore make progress. Ever feel like you should ask permission to do something? Just simply ask yourself if you think it takes the piss, if it doesn't then just do it and stop wasting time! In addition, as you are closer to the issue, you (not your boss) are often best placed to make this call.
 
 ## 9. See rule 8
 
-Rule 1 is so foundational that it bears repeating. It also has a secondary function. The Lab is a hard-working close-knit team - you can't get a free ride, and there is nowhere to hide. We'll do all we can to help you perform, but if aren't self-motivated to with us, then perhaps this isn't the place for your.
+Rule 8 is so foundational that it bears repeating. It also has a secondary function. The Lab is a hard-working close-knit team - you can't get a free ride, and there is nowhere to hide. We'll do all we can to help you perform, but if aren't self-motivated to with us, then perhaps this isn't the place for your.
