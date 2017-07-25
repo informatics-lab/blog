@@ -31,7 +31,7 @@ For each project, we create a high level project card describing it (currently u
 * who the stakeholders are
 * and what research themes the project belongs to.
 
-Crucially, these cards are private in order to encourage brutally honest (and therefore accurate) project definitions. I also helps us decide on what we are doing as a team, leading to ownership of and therefore pride in what we are doing.
+Crucially, these cards are private in order to encourage brutally honest (and therefore accurate) project definitions. I also helps us decide on what we are doing as a team, leading to ownership of, and therefore pride in what we are doing.
 
 ## 4. If there is no blog post it didn't happen
 
@@ -39,7 +39,7 @@ Our work can produce a variety of useful outcomes: for instance a working protot
 
 ## 5. No bean bags
 
-"Innovation" has, in some places, become a dirty word. It conjurers up images of ping-pong-tables and beanbag-filled spaces that people use merely to talk endlessly about what they are going to do. This is bad innovation culture. Incidentally, we like bean-bags and ping-pong as much as the next person, but good intentions alone are not enough for productive innovation. Which brings us to...
+"Innovation" has, in some places, become a dirty word. It can conjurer up images of wacky beanbag-filled spaces that people use merely to talk endlessly about what they are going to do. This is bad innovation culture. Incidentally, we like bean-bags as much as the next person, but good intentions alone are not enough for productive innovation. Which brings us to...
 
 ## 6. Make things
 
@@ -51,7 +51,7 @@ This old computer adage applies to more than just code. You can spend hours talk
 
 ## 8. No free rides
 
-The Lab is a hard-working close-knit team - you can't get a free ride, and there is nowhere to hide. We'll do all we can to help you perform, but if aren't self-motivated to work with us, then perhaps this isn't the place for your.
+The Lab is a hard-working close-knit team, and we rely upon each other - there is no room to coast here. We'll do eveything we can to support you and help you perform at your best, but if aren't self-motivated to work with us, then perhaps this isn't the place for your.
 
 ## 9. Spirit of the law not letter of the law
 
