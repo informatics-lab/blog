@@ -1,6 +1,13 @@
 <i class="fa fa-map-marker"></i><span class="location {{ profile.slack-user }}">unknown</span>
 <script defer>
-  $.getJSON('https://locate.informaticslab.co.uk/user/{{ profile.slack-user }}', function(data){
-    $(".location.{{ profile.slack-user }}").html(data["location"]);
-  });
+  (function () {
+    var updateLocation = function(){
+      console.log("Updating location for {{ profile.slack-user }}")
+      $.getJSON('https://locate.informaticslab.co.uk/user/{{ profile.slack-user }}', function(data){
+        $(".location.{{ profile.slack-user }}").html(data["location"]);
+      });
+    }
+    updateLocation();
+    setInterval(updateLocation, 30000);
+  })();
 </script>
