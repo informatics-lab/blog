@@ -189,7 +189,7 @@
       margin: 0 auto;
       text-align: center;
       padding: 25px;
-      height: 150px;
+      height: 125px;
       overflow-y: hidden;
       h4 {
         text-transform: none;
@@ -201,6 +201,13 @@
         font-style: italic;
         font-size: 16px;
         margin: 0;
+      }
+      img {
+        width: 25px;
+        height: 25px;
+        margin-top: 25px;
+        margin-left: 2px;
+        border-radius: 2px;
       }
     }
   }
