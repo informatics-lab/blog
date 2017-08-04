@@ -9,6 +9,7 @@ twitter-url: http://www.twitter.com/rossymids
 github-url: https://github.com/RossJM
 email: ross.middleham@informaticslab.co.uk
 mugshot: https://images.informaticslab.co.uk/profiles/cropped/ross-middleham.png
+slack-user: rossjm
 ---
 
 Creative design is what I do. I live and breathe design taking inspiration from everything around me.

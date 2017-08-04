@@ -9,6 +9,7 @@ twitter-url: https://twitter.com/informatics_lab
 github-url: https://github.com/alberto-arribas
 email: alberto.arribas@informaticslab.co.uk
 mugshot: https://images.informaticslab.co.uk/profiles/cropped/alberto-arribas.png
+slack-user: alberto.arribas
 ---
 
 I am a lucky chap, I like what I do for a living.

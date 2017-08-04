@@ -1,0 +1,6 @@
+<i class="fa fa-map-marker"></i><span class="location {{ profile.slack-user }}">unknown</span>
+<script defer>
+  $.getJSON('https://locate.informaticslab.co.uk/user/{{ profile.slack-user }}', function(data){
+    $(".location.{{ profile.slack-user }}").html(data["location"]);
+  });
+</script>

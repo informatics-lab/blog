@@ -12,6 +12,18 @@ article.profile {
     height: 350px;
   }
 
+  .location-wrapper {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .location {
+    font-size: 0.8em;
+    margin-left: 5px;
+    color: $mo-medium-grey;
+  }
+
   .social-buttons {
     text-align: center;
     margin-bottom: 20px;
