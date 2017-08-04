@@ -8,16 +8,8 @@
             </div>
         </div>
         <div class="row">
-
           {% for project in site.projects %}
-            {% if project.completed == false %}
-                {% include project-snippet.html %}
-            {% endif %}
-          {% endfor %}
-          {% for project in site.projects %}
-            {% if project.completed == true %}
-                {% include project-snippet.html %}
-            {% endif %}
+              {% include project-snippet.html %}
           {% endfor %}
         </div>
     </div>

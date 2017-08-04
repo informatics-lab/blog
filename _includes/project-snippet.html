@@ -5,11 +5,6 @@
         <a href="{{ project.url | prepend: site.baseurl }}">
           <h4>{{ project.title }}</h4>
         </a>
-        {% if project.completed == false %}
-        <p class="text-muted">In progress</p>
-        {% else %}
-        <p class="text-muted">Completed</p>
-        {% endif %}
         <p class="project-body">
             {{ project.summary }}
         </p>
