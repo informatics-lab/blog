@@ -11,6 +11,7 @@
         <div class="text">
           <a href="{{ profile.url | prepend: site.baseurl }}"><h4>{{ profile.name }}</h4></a>
           <p class="text-muted summary">{{ profile.summary | truncatewords: 13 }}</p>
+          {% include location.html %}
         </div>
         {% include team-social-links.html %}
     </div>

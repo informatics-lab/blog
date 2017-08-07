@@ -26,6 +26,12 @@
     cursor: pointer;
   }
 
+  .location {
+    font-size: 0.8em;
+    margin-left: 5px;
+    color: $mo-medium-grey;
+  }
+
   // All text (h4 and p)
   .text {
     margin: 0;

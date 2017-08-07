@@ -17,6 +17,9 @@ layout: default
     {% endif %}
 
     <h2>{{ page.name }}</h2>
+		<div class="location-wrapper">
+			{% include location.html %}
+		</div>
     {% include team-social-links.html %}
 
 		{{ content }}
