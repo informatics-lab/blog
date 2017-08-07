@@ -3,22 +3,45 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Projects</h2>
-                <h3 class="section-subheading text-muted">The different things we're doing.</h3>
+                <h2 class="section-heading">This week</h2>
+                <h3 class="section-subheading text-muted">The things we are looking at right now.</h3>
             </div>
         </div>
+        <div class="row" id="current-projects">
+        </div>
         <div class="row">
-
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Projects</h2>
+                <h3 class="section-subheading text-muted">The different things we've done.</h3>
+            </div>
+        </div>
+        <div class="row" id="main-projects">
           {% for project in site.projects %}
-            {% if project.completed == false %}
-                {% include project-snippet.html %}
-            {% endif %}
-          {% endfor %}
-          {% for project in site.projects %}
-            {% if project.completed == true %}
-                {% include project-snippet.html %}
-            {% endif %}
+              {% include project-snippet.html %}
           {% endfor %}
         </div>
     </div>
 </section>
+
+
+<script defer>
+  $.getJSON( 'https://currentprojects.informaticslab.co.uk/current-projects/', function(data){
+    for (i = 0; i < data.length; i++){
+      var project = $("#main-projects .project-item:nth-child(1)").clone().appendTo("#current-projects");
+      project.removeClass("col-md-4").addClass("col-md-2");
+      project.removeClass("col-sm-6").addClass("col-sm-3");
+      project.find("h4").html(data[i]["project_name"]);
+      project.find("a").contents().unwrap();
+      project.find(".project-image")
+        .css("background-image", "url(" + data[i]["project_image"].replace('"', '') + ")")
+        .css("cursor", "auto")
+        .prop('onclick',null).off('click');
+      project.find(".project-body").html("");
+      console.log(data[i]["members"]);
+      for (j = 0; j < data[i]["members"].length; j++){
+        project.find(".project-body").append("<img src='" + data[i]["members"][j]["image"] + "' alt='" + data[i]["members"][j]["name"] + "' title='" + data[i]["members"][j]["name"]  + "' />");
+      }
+      // console.log(data[i])
+    }
+  })
+</script>
