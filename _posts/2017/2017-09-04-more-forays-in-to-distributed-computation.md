@@ -11,13 +11,10 @@ thumbnail: https://images.informaticslab.co.uk/misc/a31af87414c1ef8b412d44890ba4
 header: https://images.informaticslab.co.uk/misc/9a0f354eb07aa78497f80b89bd554afc.png
 ---
 
-### Pre-reading
+### Adaptive Dask clusters on Kubernetes and AWS
 
-It's worth having a look back at [Adaptive Dask clusters on Kubernetes and AWS](/dask/2017/07/21/adaptive-dask-clusters-on-kubernetes-and-aws.html) which sets the scene for this folow up.
 
-## Next steps
-
-I thought it would be fun to take this and apply it to a slightly more real problem. I didn't like the way there was `sleep` statements in the previous example to simulate CPU load but not actually create CPU load. So to give this concept of scaling distributed computing a bit more of a test run I thought of a large but highly parallelalisable task, cracking passwords.
+We've done some previous work on [Adaptive Dask clusters on Kubernetes and AWS](/dask/2017/07/21/adaptive-dask-clusters-on-kubernetes-and-aws.html) in which we hooked the dask scheduler up to Kubernetes and Kubernetes up to AWS. In this setup when the scheduler detects it's got more work to do than workers to do it it requests more workers from Kubernetes, and Kubernetes will provide them if it can. When Kubernetes detects that it's unable to provide new workers as it doesn't have the resources on any of its nodes to do so then it provisions new nodes from AWS. This setup creates a worker pool that will quickly scale from no workers at all to hundreds or perhaps even thousands (but we never pushed it that far) to quickly get and scheduled work done. Once the scheduler detects that it has less work to do than workers to do it then it scales back down again and Kubernetes un-provisions any AWS instances it no longer needs. In our original work on these adaptive clusters we used some dummy code that used `sleep` statements to simulate cpu load. In this next step work we wanted to test this concept further by applying some real CPU load. To do that we needed a large but highly parallelizable task and for this we chose simulating cracking passwords. It's worth noting that no real passwords were under attack in this work and for a range of reasons this approach would not really be suitable for real world password cracking.
 
 ## The problem space
 
@@ -39,17 +36,17 @@ If possible try understand how big your problem is and how long it will take to 
 
 ### It will break, make that ok
 
-For a big problems, something will go wrong at some point, if you design your task so that it can break and be restarted this will save you a lot of time in the long run. Many tools (such as dask-distributed that I was using) will be tollarant to node faults, network faluts, etc and handel these for you. However, they will all have weakness and will not be able to save you from the code bugs you itroduce. If you need to start you 4 hour task from scratch whenever your schedular node falls over or a bug kills the whole execution or your notebook server dies or, or, or... 
+For a big problems, something will go wrong at some point, if you design your task so that it can break and be restarted this will save you a lot of time in the long run. Many tools (such as dask-distributed that I was using) will be tolerant to node faults, network faults, etc and handle these for you. However, they will all have weakness and will not be able to save you from the code bugs you introduce. If you need to start your four hour task from scratch whenever your schedular node falls over or a bug kills the whole execution or your notebook server dies or, or, or... 
 
 On this lesson I got some help in the form of [this answer from MRocklin](https://stackoverflow.com/a/45985149/1498817). With dask for big/long running tasks it was really useful to use the [concurrent.futures](http://dask.pydata.org/en/latest/futures.html) interface and in particular the [as_completed](http://dask.pydata.org/en/latest/futures.html#waiting-on-futures) iterator.
 
-Remember that everything is breakable, a workers will die, the scheduler will fall over, your notebook server will bomb out, the wifi will disconnect, your brain will forget where you got to... It's nearly always easier to make things that can recover from failure than it is to make things that do not fail.
+Remember that everything is breakable, a worker will die, the scheduler will fall over, your notebook server will bomb out, the wifi will disconnect, your brain will forget where you got to... It's nearly always easier to make things that can recover from failure than it is to make things that do not fail.
 
-### Try package you tasks well
+### Package your tasks well
 
-There are many ways to skin a cat and the same is true of packaging you work to send to the worker nodes. For my task I tried a few different options all with their own pros and cons but I'll highlight perhaps the two at the opposite ends of the spectrum.
+There are many ways to bake a cake and the same is true of packaging you work to send to the worker nodes. For my task I tried a few different options all with their own pros and cons but I'll highlight perhaps the two at the opposite ends of the spectrum.
 
-First I tried a big computation graph with each permutation being a vertex. This worked well in a small problem space but as soon as the problem space started growing (more possible characters or longer passwords) the graph quickly came too big to build (not compute, just to put together how it would be computed) and to big too send over the network.
+First I tried a big computation graph with each permutation being a vertex. This worked well in a small problem space but as soon as the problem space started growing (more possible characters or longer passwords) the graph became big to build (not compute, just to put together how it would be computed) and to big too send over the network.
 
 My final iteration was in two main parts. Part one is a function that could take a integer and turn it in to a password guess that would if you went from `0` to `number of perutations`would cover every guess. That looked like this:
 
@@ -82,7 +79,7 @@ I could then send one or more (usually many more) of these tasks to the schedule
 
 ### The right sized tasks
 
-This is related to the point above but for a task such as this one with a very simple computation (one md5 hash) but a huge number of times it needs to be done it would be inefficient to send each individual md5 job to a different node to compute get an answer and send the next one. More time would be spent on network traffic than CPU cycles. It makes more sense to send a thousand or a million to do at once and get the answer from that. On the other hand don't send too bigger jobs, especially if you have fragile nodes as a fault will take take more time to recover from and feedback will be slower coming. If you've packaged your job well you can chose and refine the size and simultaneous number of jobs to send to the workers at anyone time.
+This is related to the point above but for a task such as this one with a very simple computation (one md5 hash) but a huge number of times it needs to be done it would be inefficient to send each individual md5 job to a different node to compute get an answer and send the next one. More time would be spent on network traffic than CPU cycles. It makes more sense to send a thousand or a million to do at once and get the answer from that. On the other hand don't send very large jobs, especially if you have fragile nodes as a fault will take take more time to recover from and feedback will be slower coming. If you've packaged your job well you can choose and refine the size and simultaneous number of jobs to send to the workers at anyone time.
 
 
 ### Worker pressure
@@ -92,18 +89,18 @@ This is not a call to create a union but is about always asking you scheduler to
 
 ### You need to change, your code needs to change and the tools are just there to help you do it.
 
-I think that it is a myth that any tool will magically take the serial code you are used to writing and magically turn it into a parallel code that will distribute well and 'just work'. There are probably some exceptions, for example a with a simple [NumPy](http://www.numpy.org/) job it might be a simple mater of swapping in [dask array](http://dask.pydata.org/en/latest/array-overview.html), but I think for real world problems these are the exception. 
+I think that it is a myth that any tool will magically take the serial code you are used to writing and magically turn it into a parallel code that will distribute well and 'just work'. There will be some exceptions, for example with a simple [NumPy](http://www.numpy.org/) job it might be a simple matter of swapping in [dask array](http://dask.pydata.org/en/latest/array-overview.html), but I think for real world problems these are few and far between. 
 
-Most of the parallisation librarys out there make us change our code and/or way of thinking and this is good. Parallelisum is going to be the new paradigme I think. To the next generation of programers it will 'just be how we write code', the way object orentation was for me. Tools that ease us into a new way of working and thinking prepare us for the future.
+Most of the parallelisation libraries out there make us change our code and/or way of thinking and this is good. Parallelism is going to be the new paradigm I think. To the next generation of programmers it will 'just be how we write code', the way object orientation was for me. Tools that ease us into a new way of working and thinking prepare us for the future.
  
 
 ## Other random helpful things I learn in this process
 
-So in this process I also lernt some other random bits and bobs that I'm putting here for prosperity but they are a bit of a job lot so feel free to stop reading now.
+So in this process I also learnt some other random bits and bobs that I'm putting here for prosperity but they are a bit of a job lot so feel free to stop reading now.
 
-### kubectrl port forward
+### kubectl port forward
 
-I had a lot of problems running on our hosted Jupyter cluster so I wanted to run Jupyter locally but without exposing our dask cluster publicly. I found that I could do this using `kubectl port-forward` (once `kuectl proxy` was running in another  terminal). Since the scheduler kept falling over when I was hammering it rather than keep looking up the schedulers pod name I just made a composite command:
+I had a lot of problems running on our hosted Jupyter cluster so I wanted to run Jupyter locally but without exposing our dask cluster publicly. I found that I could do this using `kubectl port-forward` (once `kubectl proxy` was running in another  terminal). Since the scheduler kept falling over when I was hammering it rather than keep looking up the schedulers pod name I just made a composite command:
 
 ```
 kubectl -n dask port-forward $(kubectl -n dask get pods | grep dask-sch | cut -d' ' -f1) 8786:8786`
@@ -111,8 +108,8 @@ kubectl -n dask port-forward $(kubectl -n dask get pods | grep dask-sch | cut -d
 
 ### Docker to host machine communication
 
-Some of the libraries I wanted on my Jupyter notebook weren't available on Mac so I was running the notebook server through Docker. Since the port-forward to the dask cluster was on the host machine I needed to tunnel from Docker to my host machine and then out in to the Kubenetted dask cluster. I found once the port-forwadding was running I could do this but using the address `docker.for.mac.localhost` so connecting to my scheduler was a matter of running `client = distributed.Client('docker.for.mac.localhost:8786')`. To be honest I'm not 100% on what's going on here as this seems rather 'anti-Docker' but it worked so I stopped digging...
+Some of the libraries I wanted on my Jupyter notebook weren't available on Mac so I was running the notebook server through Docker. Since the port-forward to the dask cluster was on the host machine I needed to tunnel from Docker to my host machine and then out in to the Kubernetes dask cluster. I found once the port-forwarding was running I could do this but using the address `docker.for.mac.localhost` so connecting to my scheduler was a matter of running `client = distributed.Client('docker.for.mac.localhost:8786')`. To be honest I'm not 100% on what's going on here as this seems rather 'anti-Docker' but it worked so I stopped digging...
 
 ### File handles on Mac
 
-The default number of file handles allowed for a process on macOS seemed to be 256, I found I quickly broke this in the terminal window running the port-forwarding. Luckily this was easy to solve, `sudo ulimit -n 5000` brought it up to a more reasonable number. I needed so many since (I think) that each job submitted to to the scheduler represented on file handle to make the network connection, and I was making several thousand of these simultaneously.
+The default number of file handles allowed for a process on macOS seemed to be 256, I found I quickly broke this in the terminal window running the port-forwarding. Luckily this was easy to solve, `sudo ulimit -n 5000` brought it up to a more reasonable number. I needed so many since (I think) that each job submitted to to the scheduler represented one file handle to make the network connection, and I was making several thousand of these simultaneously.
