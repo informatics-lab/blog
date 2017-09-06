@@ -1,11 +1,12 @@
 ---
-title: Aleks Zaforemska
+title: Aleksandra Zaforemska
 layout: profile
-name: Aleks Zaforemska
+name: Aleksandra Zaforemska
 summary: Aleks is a geography grad on a summer placement at the Lab
 affiliation: intern
 current: false
 linkedin-url: https://www.linkedin.com/in/aleksandra-zaforemska-04906a8b/
+twitter-url: https://twitter.com/alekszafi
 github-url: https://github.com/alekszaf
 email: a.zaforemska@informaticslab.co.uk
 ---
