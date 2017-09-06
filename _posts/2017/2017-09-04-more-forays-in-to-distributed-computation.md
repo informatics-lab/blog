@@ -1,6 +1,6 @@
 ---
 title: Reflections on distributed parallel computation
-date: 2017-09-21 00:00:00 Z
+date: 2017-09-05 00:00:00 Z
 categories:
 - dask
 layout: post
