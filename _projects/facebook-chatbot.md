@@ -10,52 +10,53 @@ header: https://images.informaticslab.co.uk/misc/3ce648336a410b9ba320cb0ce055a76
 ---
 
 ## Developing a 'conversational' Facebook Chatbot
-Following on from the successful work done with Microsoft developing the 
+Following the successful work done with Microsoft developing the 
 [weather and climate bot](http://www.informaticslab.co.uk/projects/weather-and-climate-bot.html) the Informatics Lab have 
 been busy creating a more user-friendly, public-facing bot, due appear on Facebook Messenger as a prototype in the very near future.  
 
 Using virtually the same tool set ([Microsoft Bot Framework](https://dev.botframework.com/) and [LUIS](https://www.luis.ai/)) 
-significant time and effort has been spent implementing features that will hopefully serve to make our bot respond 
-in a reasonably natural manner, hopefully providing a more conversational style than other existing similar bots.
+significant time and effort has been spent working on features that will hopefully make our bot respond 
+similar to how a person might, we hope this will provide a more conventional messenger experience than some existing 
+similar bots currently provide.
+
+Here's some of the stuff we've been working on:
 
 <b>Interchangeable persona with multiple responses per intent:</b> 
-Most bots already provide a means of varying responses to the same intent (similar questions). Developers provide a list of 
-suitable responses which when triggered one will be chosen at random and returned to the user. Our bot has this. 
-However, our bot has been designed in a way that responses are all read from a single JSON file. This gives us the 
-ability to completely alter all of the bots responses (style and tone of how it responds) with a single update.
+Most bots already provide a means of replying to the same question in multiple ways. Our bot definitely has this too, 
+however what's new is all our responses are read from a single JSON file. This gives us the 
+flexibility to completely alter all the bot's responses (style and tone of how it responds) with a single update.
 
 <b>Expiry of contextual, conversational information:</b>  
 Say a user asks for a forecast in a given location. The bot will remember we are talking about that location for a 
-period of time, allowing the user to ask follow up questions more intuitively after which the bot forgets this 
-information; "Will it be cold in Exeter today?", "Will I need a coat?"
+period of time, allowing the user to ask follow up questions more intuitively; "Will it be cold in Exeter today?", 
+"Will I need a coat?"
 
 <b>Repeat intents:</b>  
-Similar to the above, aiming to provide a more natural and intuitive conversational style. This allows for users to 
-execute the same intent multiple times, potentially adjusting a variable; "Will I need a coat today?", 
-"How about tomorrow?"  
+This allows for users to ask the same thing multiple times, potentially just adjusting the question slightly;  
+"Will I need a coat today?", "How about tomorrow?"  
 
 <b>Variable certainty responses:</b>
-Say a user asks "Will I need a coat tomorrow in Brighton?" our bot knows that a user could need a coat if the 
-temperature is low, but also if its likely to rain. The bot can be configured to read in a list of forecast parameters,
-then score each against some given rules. The scores are then combined to provide an overall score for how sure we are 
-that a user should take action. This variation of certainty can then be conveyed to the user via the matching 
-appropriate responses for the given intent and score.
+Say a user asks "Will I need a coat tomorrow in Brighton?" our bot knows a user might need a coat if the 
+temperature is low, but also if it's likely to rain. The bot can use lists of weather variables 
+to score questions against some given rules. Scores are then combined in various ways to calculate a score for how sure we are 
+that a user should take action. The variation of certainty can be conveyed to the user via matching 
+appropriately scored responses.
 
 <b>Multimedia responses:</b>
-Images including animated gifs and videos can be returned along with varying textual information. We have also 
+The bot can respond with various images (including animated gifs) and videos along with varying textual information. We have also 
 implemented the Facebook Messenger UI buttons to aid some basic usage.   
 
 <b>String templating with [dot.js](http://olado.github.io/doT/index.html):</b>
-Within our responses we have enabled dynamic content, inserting string templates then applying a data model to it. 
+We have enabled dynamic content, by inserting string templates then applying a data model to it. 
 This allows us to inject data and evaluate conditional statements at runtime further modifying our responses.
 
 <b>Deployment, logging and analytics:</b>
-Our app is essentially a single [node.js](https://nodejs.org/en/) server running on an Amazon [EC2](https://aws.amazon.com/ec2/) 
-instance, inside a [docker](https://www.docker.com/) container. All of this is managed via [Terraform](https://www.terraform.io/). 
-Conversations are tracked via several analytics platforms, including [Google Analytics](https://analytics.google.com/) 
-enabling us to see exactly what the most frequent utterances and intents are. This data can inform the development 
-of new features, prioritising those that users really want. We are using this neat library called 
-[sentry](https://sentry.io/for/javascript/) to track any errors, which is set up to email us if something goes wrong. 
+Our app is a single [node.js](https://nodejs.org/en/) server running on an Amazon [EC2](https://aws.amazon.com/ec2/) 
+instance, inside a [docker](https://www.docker.com/) container. All of this is managed using [Terraform](https://www.terraform.io/). 
+Conversations are tracked on several analytics platforms, including [Google Analytics](https://analytics.google.com/). 
+This enables us to see exactly what the most frequent questions are. The data collected here can inform the development 
+of new features, prioritising those that users really want. We are using a neat library called 
+[sentry](https://sentry.io/for/javascript/) to track any errors, this is set up to email us if something goes wrong. 
 All logs are piped into Amazon's [Cloudwatch](https://aws.amazon.com/cloudwatch/).
 
 Other features we would still ideally like to develop or explore include; push notification alerts. Varied personas, each 
