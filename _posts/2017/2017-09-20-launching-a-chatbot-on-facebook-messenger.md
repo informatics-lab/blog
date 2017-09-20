@@ -7,8 +7,8 @@ layout: post
 summary: We've been testing an experimental chatbot on Facebook Messenger.
 author: Jacob Tomlinson
 project: weatherbot
-thumbnail: 
-header: 
+thumbnail: https://images.informaticslab.co.uk/misc/dfffbc18686dba3ba96f64547dcf704c.png
+header: https://images.informaticslab.co.uk/misc/d283b1273ea19199df56879535345ce7.png
 ---
 
 ## What does it do?
