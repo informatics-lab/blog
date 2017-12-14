@@ -117,7 +117,8 @@ processing and we reduce the overhead for using distributed processing on SPICE.
 #### Scaleable scheduler
 
 A follow-up benefit from having a persisted scheduler is that we could make it
-scale the number of workers it has with the amount of jobs being submitted to it.
+[scale the number of workers](https://distributed.readthedocs.io/en/latest/adaptive.html)
+it has with the amount of jobs being submitted to it.
 This means we can be much leaner with the amount of SPICE resources being used
 at any given time, for the trade-off of having a scheduler continually running on SPICE.
 We have already proven such technologies with using Kubernetes on AWS.
