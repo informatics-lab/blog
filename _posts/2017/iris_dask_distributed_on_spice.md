@@ -7,7 +7,7 @@ layout: post
 summary: Massively parallel processing of large datasets using Iris.
 author: Peter Killick
 project:
-thumbnail: https://images.informaticslab.co.uk/misc/f096cbfd65171d987610090bcf32d230.png
+thumbnail: https://images.informaticslab.co.uk/misc/d7546afb5bd3cd9c05a8df138f893168.PNG
 header: https://images.informaticslab.co.uk/misc/0b0760a5dd423cefc7d7355fa87473d2.jpg
 ---
 
@@ -49,7 +49,7 @@ in size, and there were many more similar files available from other model runs 
 could be used to massively scale up the amount of data to be loaded and processed.
 
 <figure>
-    <img src="https://images.informaticslab.co.uk/misc/f096cbfd65171d987610090bcf32d230.png" width="470px" height="484px" alt="Graph showing many parallel file loads on SPICE" />
+    <img src="https://images.informaticslab.co.uk/misc/d7546afb5bd3cd9c05a8df138f893168.PNG" width="825" height="591" alt="Graph showing many parallel file loads on SPICE" />
     <figcaption>Parallel loading lots of files using SPICE</figcaption>
 </figure>
 
