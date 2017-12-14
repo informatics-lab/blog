@@ -5,7 +5,7 @@
 +- dask
 +layout: post
 +summary: Massively parallel processing of large datasets using Iris.
-+author:
++author: Peter Killick
 +project:
 +thumbnail:
 +header:
@@ -150,7 +150,7 @@ be that all that is needed is a rebuild of the libraries that are not thread-saf
 which would bring a whole lot of benefit for not too much work!
 
 
-### In Conclusion
+### In conclusion
 
 To sum up then, we added dask to Iris and tested them on SPICE, the Met Office's parallel
 compute cluster. We found that using distributed with Iris gave noticeable performance
