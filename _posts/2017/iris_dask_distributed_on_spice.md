@@ -7,8 +7,8 @@
 +summary: Massively parallel processing of large datasets using Iris.
 +author: Peter Killick
 +project:
-+thumbnail:
-+header:
++thumbnail: https://images.informaticslab.co.uk/misc/f096cbfd65171d987610090bcf32d230.png
++header: https://images.informaticslab.co.uk/misc/0b0760a5dd423cefc7d7355fa87473d2.jpg
 +---
 
 ## Iris, dask, distributed and SPICE
@@ -47,6 +47,11 @@ with distributed Iris (using dask
 We found some x-wind and y-wind data from an old model run. Each file was about 1.5G
 in size, and there were many more similar files available from other model runs that
 could be used to massively scale up the amount of data to be loaded and processed.
+
+<figure>
+    <img src="https://images.informaticslab.co.uk/misc/f096cbfd65171d987610090bcf32d230.png" width=470px height=484px alt="Graph showing many parallel file loads on SPICE" />
+    <figcaption>Parallel loading lots of files using SPICE</figcaption>
+</figure>
 
 
 #### Loading
