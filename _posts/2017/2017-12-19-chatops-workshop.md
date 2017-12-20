@@ -198,7 +198,7 @@ The `^` and `$` operators ensure that there is no other text between the beginni
 
 Now if you tell the bot to `reload` and then try that message again it will not match because there are other characters either side of the words `hello` and `hi`.
 
-![](https://images.informaticslab.co.uk/misc/acf6e067a682e52f95c14465253bf055.png)
+![HiHello](https://images.informaticslab.co.uk/misc/acf6e067a682e52f95c14465253bf055.png)
 
 ## Automating interesting things with your bot
 
