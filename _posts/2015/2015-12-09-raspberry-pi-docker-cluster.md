@@ -219,7 +219,7 @@ This project has been very useful for improving my understanding of clustering c
 [nginx-proxy]: https://github.com/jwilder/nginx-proxy
 [nginx-reverse-proxy]: https://www.nginx.com/resources/admin-guide/reverse-proxy/
 [nginx-proxy-rpi]: https://github.com/bestlibre/nginx-proxy
-[overlay-network]: http://docs.docker.com/engine/userguide/networking/get-started-overlay/
+[overlay-network]: https://docs.docker.com/engine/userguide/networking/
 [pi-rack]: http://www.thingiverse.com/thing:30563
 [swarm]: https://docs.docker.com/swarm/
 [swarm-issue-1488]: https://github.com/docker/swarm/issues/1488
