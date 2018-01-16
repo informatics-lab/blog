@@ -43,8 +43,6 @@ First we need to install opsdroid. You will need to have Python 3.5 and pip alre
 
 
 ```bash
-%%bash
-
 pip install opsdroid
 ```
 
@@ -53,8 +51,6 @@ Next we should create an opsdroid directory for us to work in. We'll clone a "He
 
 
 ```bash
-%%bash
-
 # Make the directory
 mkdir -p $HOME/opsdroid
 
@@ -70,8 +66,6 @@ When you run opsdroid for the first time a [yaml](http://yaml.org/) config file 
 
 
 ```bash
-%%bash
-
 # Create the opsdroid config directory
 mkdir -p $HOME/.opsdroid
 
