@@ -67,7 +67,7 @@ cluster = KubeCluster(name=os.environ.get('JUPYTERHUB_USER'),
 cluster
 ```
 
-![daskernetes widget](https://images.informaticslab.co.uk/articles/article-daskernetes/f0eded58b3beb2d5ee64c4f2d1532547.png)
+![daskernetes widget](https://images.informaticslab.co.uk/articles/article-daskernetes/d352529d3b94a7f0215cd81e7de1b651.png)
 
 
 ## Create a client for your cluster
