@@ -54,7 +54,6 @@ We'll set the number of workers to one for now but we can use the HTML widget to
 
 ```python
 cluster = KubeCluster(name=os.environ.get('JUPYTERHUB_USER'),
-                      namespace='daskernetes',
                       worker_image='informaticslab/singleuser-notebook:latest',
                       n_workers=1,
                       threads_per_worker=1,
@@ -158,7 +157,6 @@ _Be sure to close your cluster first if you created one above as you can only ha
 
 ```python
 with KubeCluster(name=os.environ.get('JUPYTERHUB_USER'),
-                 namespace='daskernetes',
                  worker_image='informaticslab/singleuser-notebook:latest',
                  n_workers=5,
                  threads_per_worker=1,
