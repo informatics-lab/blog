@@ -13,7 +13,7 @@ header: https://images.informaticslab.co.uk/articles/article-daskernetes/3898d09
 
 We are excited to announce that the work we've been doing with distributed dask clusters running on kubernetes has been absorbed into an awesome new tool called daskernetes through our work on the [pangeo project](http://matthewrocklin.com/blog/work/2018/01/22/pangeo-2).
 
-The [daskernetes](https://github.com/dask/daskernetes) python module allows you to create personal [distributed dask](https://distributed.readthedocs.io/en/latest/) cluster when running your notebook on a kubernetes cluster. This article will walk through getting started with daskernetes. You will need to have at least some knowledge of [python](https://www.python.org/), [jupyter](http://jupyter.org/), [dask](https://dask.pydata.org/en/latest/) (and [dask distributed](https://distributed.readthedocs.io/en/latest/)), [docker](https://www.docker.com/) and [kubernetes](https://kubernetes.io/).
+The [daskernetes](https://github.com/dask/daskernetes) python module allows you to create personal [distributed dask](https://distributed.readthedocs.io/en/latest/) cluster when running your notebook on a kubernetes cluster. This article will walk through getting started with daskernetes.
 
 This article is also a notebook which you can [download](https://gist.github.com/jacobtomlinson/f4365393463fc3247f494673de110263) and run on your own kubernetes cluster. If you don't have access to a kubernetes cluster and want to try it out then you should check out the beta of [pangeo.pydata.org](http://pangeo.pydata.org).
 
@@ -182,4 +182,10 @@ cluster.logs(pod)
 ```
 
 ## Conclusion
+
+As daskernetes is a work in progress there are currently a few issues which you may have come across during this notebook:
+ - No access to the dask dashboard. ([#6](https://github.com/dask/daskernetes/issues/6))
+ - Cannot scale down again. ([#27](https://github.com/dask/daskernetes/issues/27))
+ - When a  cluster exits many errors will be sprayed into the notebook. ([#29](https://github.com/dask/daskernetes/issues/29))
+
 While daskernetes and pangeo are still in early phases we already think this is going to be a vital tool in processing and analysing the vast quantities of data we are producing.
