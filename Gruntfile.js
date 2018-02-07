@@ -33,7 +33,7 @@ module.exports = function(grunt) {
         command: "bundle install --path vendor/bundle"
       },
       jekyllTest: {
-        command: "bundle exec htmlproof ./_site --only-4xx"
+        command: "bundle exec htmlproof ./_site --url-ignore \"/.*mozillafestival.org/,/foo.com/\" --only-4xx"
       },
       runTests: {
         command: "for SCRIPT in tests/*; do if [ -f $SCRIPT -a -x $SCRIPT ]; then $SCRIPT; fi; done"
