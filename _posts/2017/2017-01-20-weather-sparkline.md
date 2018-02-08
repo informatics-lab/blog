@@ -79,7 +79,7 @@ print ('the time is ' + clock(datetime.now().hour % 12))
 
 ## Making it Tweet 🐦
 
-Hooking it all up to Twitter was easy but slow (because you need to wait for Twitter to move your keys). I followed [Molly White blog on twitter bots](http://blog.mollywhite.net/twitter-bots-pt2/) which uses the [Tweepy](http://www.tweepy.org/) library. I made some small changes from her approach, the most important one is that I decided to put my Twitter secrets in to environment variables rather thank into a file. The advantage of this is that it's less likely to accidentally end up on GitHub and still works well with tools like Docker and Terraform (which we'll get to). The downside is a lot of environment variables, by this point we have one for datapoint and four for twitter and we'll soon get two more for AWS.
+Hooking it all up to Twitter was easy but slow (because you need to wait for Twitter to move your keys). I followed [Molly White's](http://blog.mollywhite.net) blog on twitter bots which uses the [Tweepy](http://www.tweepy.org/) library. I made some small changes from her approach, the most important one is that I decided to put my Twitter secrets in to environment variables rather thank into a file. The advantage of this is that it's less likely to accidentally end up on GitHub and still works well with tools like Docker and Terraform (which we'll get to). The downside is a lot of environment variables, by this point we have one for datapoint and four for twitter and we'll soon get two more for AWS.
 
 ## Running the code ⚙
 
@@ -89,7 +89,7 @@ I decided that this app should run inside docker. This makes the application mor
 FROM python:2-onbuild
 ENV LANG en_US.UTF-8
 CMD ["python", "./src/weather_sparkline_bot.py"]
-```  
+```
 
 The `python:2` container I'm using as the base deals with pulling the scripts in the container and the `CMD` line sets our app to run inside the container when it starts up. I can't 100% remember now what `ENV LANG en_US.UTF-8` was about but I'm sure it was to get round a problem with the operating system inside the container not expecting the files to be UTF-8 and so complaining when it got to the more esoteric characters🕴
 
