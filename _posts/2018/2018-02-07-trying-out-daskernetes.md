@@ -1,6 +1,6 @@
 ---
 title: Instant access to auto-scaling personal Python clusters
-date: 2017-02-07 00:00:00 Z
+date: 2018-02-07 00:00:00 Z
 categories:
 - dask
 layout: post
