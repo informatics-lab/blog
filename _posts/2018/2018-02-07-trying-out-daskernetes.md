@@ -71,30 +71,7 @@ client = distributed.Client(cluster.scheduler_address)
 client
 ```
 
-
-
-
-<table style="border: 2px solid white;">
-<tr>
-<td style="vertical-align: top; border: 0px solid white">
-<h3>Client</h3>
-<ul>
-  <li><b>Scheduler: </b>tcp://100.96.53.80:8786
-  <li><b>Dashboard: </b><a href='http://100.96.53.80:8787' target='_blank'>http://100.96.53.80:8787</a>
-</ul>
-</td>
-<td style="vertical-align: top; border: 0px solid white">
-<h3>Cluster</h3>
-<ul>
-  <li><b>Workers: </b>1</li>
-  <li><b>Cores: </b>1</li>
-  <li><b>Memory: </b>4.22 GB</li>
-</ul>
-</td>
-</tr>
-</table>
-
-
+![Distributed client](https://images.informaticslab.co.uk/misc/0979af4a0d853a04855c8723e061c17c.png)
 
 You can now use the client within your dask distributed workflow and scale the number of workers dynamically using the widget above. You can also access the DCask dashboard using the address information printed in the table, on Pangeo you can simply click the link!
 
