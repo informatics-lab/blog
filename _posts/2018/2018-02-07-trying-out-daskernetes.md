@@ -45,11 +45,7 @@ import dask
 import distributed
 from daskernetes.core import KubeCluster
 
-cluster = KubeCluster(name=os.environ.get('JUPYTERHUB_USER'),
-                      n_workers=1,
-                      threads_per_worker=1,
-                      host='0.0.0.0',
-                      port=8786)
+cluster = KubeCluster()
 ```
 
 It is possible to replace the worker Docker image with our own [Informatics Lab docker image](https://github.com/met-office-lab/singleuser-notebook), if you're running your notebook in a Docker container we recommend using the same image as you can ensure that your Python library versions are the same. The only requirements for an image is Python 3, Dask and Distributed. You simply add a kwarg to list above, for example `worker_image='informaticslab/singleuser-notebook:latest'`.
@@ -130,16 +126,12 @@ _Be sure to close your cluster first if you created one above as you can only ha
 
 
 ```python
-with KubeCluster(name=os.environ.get('JUPYTERHUB_USER'),
-                 worker_image='informaticslab/singleuser-notebook:latest',
-                 n_workers=5,
-                 threads_per_worker=1,
-                 host='0.0.0.0',
-                 port=8786) as cluster:
+with KubeCluster() as cluster:
     client = distributed.Client(cluster.scheduler_address)
 
     cube = lambda x: x**3
-    cubed_numbers = client.map(cube, range(1000))
+    data = client.scatter(range(100000))
+    cubed_numbers = client.map(cube, data)
     total = client.submit(sum, cubed_numbers)
     print(total.result())
 ```
