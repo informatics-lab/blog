@@ -34,7 +34,7 @@ _If you're using Pangeo then you can skip this step as it is already available o
 
 We need to import some dependancies. We'll import `os` so that we can access some environment variables later. Then we'll import `dask` and `distrubuted` and then finally our `KubeCluster` constructor from `daskernetes.core`.
 
-We can now go ahead and create a cluster. Creating this object will start a Dask distributed scheduler within your notebook session. You can also specify details such as a name to prepend your worker container names with (in this case we'll get our username from the `JUPYTERHUB_USER` environment variable but feel free to replace this with anything you like).
+We can now go ahead and create a cluster. Creating this object will start a Dask distributed scheduler within your notebook session. You can also specify details such as a name to prepend your worker container names with.
 
 We'll set the number of workers to one for now but we can use the HTML widget to update this later. Finally we'll set some boiler plate details such as the ip and port to run the service on and the number of Python threads to start in each worker.
 
@@ -59,7 +59,9 @@ It is possible to replace the worker Docker image with our own [Informatics Lab 
 cluster
 ```
 
-![daskernetes widget](https://images.informaticslab.co.uk/articles/article-daskernetes/d352529d3b94a7f0215cd81e7de1b651.png)
+![daskernetes widget](https://images.informaticslab.co.uk/articles/article-daskernetes/5de6fae8195efb572219a17f8eae118b.png)
+
+You can access the Dask dashboard using the address information printed in the table, on Pangeo you can simply click the link!
 
 
 ## Create a client for your cluster
@@ -73,7 +75,7 @@ client
 
 ![Distributed client](https://images.informaticslab.co.uk/misc/0979af4a0d853a04855c8723e061c17c.png)
 
-You can now use the client within your dask distributed workflow and scale the number of workers dynamically using the widget above. You can also access the DCask dashboard using the address information printed in the table, on Pangeo you can simply click the link!
+You can now use the client within your dask distributed workflow and scale the number of workers dynamically using the widget above.
 
 ## Example distributed task
 Let's take our cluster for a test drive. We'll create a very simple lambda function which takes a number and cubes it, then we'll use dask to map that function over every number between 0 and 999 in a distributed fashion. Then we'll use distributed to sum the results and print the answer back into our notebook.
@@ -82,9 +84,11 @@ Feel free to scale your cluster using the widget above and increase the range an
 
 
 ```python
-cube = lambda x: x**3
+cube = lambda x: x*3
 
-cubed_numbers = client.map(cube, range(1000))
+data = client.scatter(range(100000))
+
+cubed_numbers = client.map(cube, data)
 
 total = client.submit(sum, cubed_numbers)
 
@@ -152,10 +156,5 @@ cluster.logs(pod)
 ```
 
 ## Conclusion
-
-As daskernetes is a work in progress there are currently a few issues which you may have come across during this notebook:
- - No access to the dask dashboard. ([#6](https://github.com/dask/daskernetes/issues/6))
- - Cannot scale down again. ([#27](https://github.com/dask/daskernetes/issues/27))
- - When a  cluster exits many errors will be sprayed into the notebook. ([#29](https://github.com/dask/daskernetes/issues/29))
 
 While daskernetes and pangeo are still in early phases we already think this is going to be a vital tool in processing and analysing the vast quantities of data we are producing.
