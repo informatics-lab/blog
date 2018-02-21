@@ -80,7 +80,7 @@ Feel free to scale your cluster using the widget above and increase the range an
 
 
 ```python
-cube = lambda x: x*3
+cube = lambda x: x**3
 
 data = client.scatter(range(100000))
 
