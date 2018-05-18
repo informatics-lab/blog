@@ -3,8 +3,8 @@ rvm:
 - 2.1
 script:
   - echo "Skipping tests as this site is now archived and unmaintained"
-# - npm install
-# - grunt test
+  - npm install
+  - grunt build
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
