@@ -1,4 +1,4 @@
-# Met Office Lab Jekyll Blog [![Build Status](https://img.shields.io/travis/met-office-lab/blog/master.svg)](https://travis-ci.org/met-office-lab/blog)
+# Met Office Lab Jekyll Blog [![Build Status](https://img.shields.io/travis/informatics-lab/blog/master.svg)](https://travis-ci.org/informatics-lab/blog)
 
 This is the blog for the Met Office Lab.
 
@@ -9,7 +9,7 @@ For instructions on writing blog posts, updating projects or updating the site s
 ### Build the site locally
 Note: You must run with node version < 7.
 
-#### Pre-requisites 
+#### Pre-requisites
 * `homebrew`
 * `node` (with `npm`)
 
@@ -36,7 +36,7 @@ This repo contains a neat helper script for uploading pictures to the blog. It t
 #### Requirements
  * aws-cli (`pip install awscli`) (and configured with keys that can write to the `informatics-webimages` bucket)
  * pngpaste (`brew install pngpaste`)
- 
+
 #### Setup
 
 Once you've got this repo cloned somewhere and you've installed the requirements you can just run the `scripts/upload_image.sh` script directly, but you'll probably want to setup an alias to it in your `~/.bashrc`
