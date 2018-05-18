@@ -9,13 +9,17 @@ layout:
     <description>{{ site.description | xml_escape }}</description>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
     <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    {% for post in site.posts %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <description>{{ post.content | xml_escape }}</description>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
+        <author>{{ post.author }}</author>
+        <summary>{{ post.summary }}</summary>
+        <categories>{{ post.categories }}<categories>
         <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        <thumbnail>{{ post.thumbnail }}</thumbnail>
       </item>
     {% endfor %}
   </channel>
